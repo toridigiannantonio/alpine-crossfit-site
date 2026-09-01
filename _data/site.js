@@ -2,7 +2,28 @@
 // Anything Lisa shouldn't have to know about (URLs, schema constants,
 // nav structure, etc.) lives here, NOT in editable content files.
 
+import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
+
+// Short content hash of a static asset, used as a ?v= cache-busting token.
+// The value only changes when the file's contents change, so browsers keep
+// using their cached copy until we actually ship a new version of the file.
+// Without this, a returning visitor can sit on a stale stylesheet for a year
+// (see the immutable cache header in netlify.toml).
+function assetHash(path) {
+  try {
+    return createHash("sha256").update(readFileSync(path)).digest("hex").slice(0, 8);
+  } catch {
+    return "dev";
+  }
+}
+
 export default {
+  // Cache-busting tokens for /assets — see assetHash() above.
+  cssVersion: assetHash("assets/css/styles.css"),
+  mainJsVersion: assetHash("assets/js/main.js"),
+  imagesJsVersion: assetHash("assets/js/images.js"),
+
   name: "Alpine CrossFit",
   url: "https://alpinecrossfit.com",
   tagline: "CrossFit gym in Wheat Ridge, CO",
