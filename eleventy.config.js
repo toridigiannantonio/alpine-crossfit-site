@@ -44,6 +44,8 @@ export default function (eleventyConfig) {
   eleventyConfig.ignores.add("sitemap.xml");
   eleventyConfig.ignores.add("CMS-SETUP.md");
   eleventyConfig.ignores.add("DEPLOY.md");
+  // Internal ownership/handoff notes — never meant to be a public page.
+  eleventyConfig.ignores.add("HANDOFF.md");
   eleventyConfig.ignores.add("_backup/**");
   eleventyConfig.ignores.add("README.md");
 
