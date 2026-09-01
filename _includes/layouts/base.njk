@@ -42,7 +42,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Barlow+Condensed:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css?v={{ site.cssVersion }}">
   {% include "partials/schema-org.njk" %}
   {% if extraHead %}{{ extraHead | safe }}{% endif %}
 </head>
@@ -73,7 +73,7 @@
   }
 </script>
 
-<script src="/assets/js/main.js" defer></script>
-{% if loadImagesScript %}<script src="/assets/js/images.js" defer></script>{% endif %}
+<script src="/assets/js/main.js?v={{ site.mainJsVersion }}" defer></script>
+{% if loadImagesScript %}<script src="/assets/js/images.js?v={{ site.imagesJsVersion }}" defer></script>{% endif %}
 </body>
 </html>
