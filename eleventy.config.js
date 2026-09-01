@@ -124,6 +124,17 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("jsonStringify", (value) => JSON.stringify(value));
 
+  // Hides the "Workout of the Day" block at the end of a blog post without
+  // deleting it. The workouts stay in the markdown files and in git; flip
+  // site.showWods to true in _data/site.js to bring them back everywhere.
+  eleventyConfig.addFilter("hideWod", (html, show) => {
+    if (show) return html;
+    return String(html).replace(
+      /(?:<hr\s*\/?>\s*)?<h2[^>]*>\s*Workout of the Day\s*<\/h2>[\s\S]*$/i,
+      ""
+    );
+  });
+
   // Custom Nunjucks "split" filter — used by coach.njk to derive a
   // first name from the full name. Some Nunjucks builds don't ship it.
   eleventyConfig.addFilter("split", (value, sep) => String(value).split(sep));
