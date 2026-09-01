@@ -9,7 +9,8 @@ eyebrow: "Golden"
 heading: "CrossFit for <span class=\"accent\">Golden</span>."
 dek: "Alpine CrossFit serves Golden residents from our Wheat Ridge location — about 12 minutes east on I-70 from downtown Golden and the Colorado School of Mines. CF-L2 coaches, in-house programming, month-to-month memberships from $69 to $999."
 heroCtas:
-  - { label: "Book a Free Intro", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", style: "btn-primary btn-lg" }
+  - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", style: "btn-secondary btn-lg" }
   - { label: "Text (720) 964-1505", href: "sms:+17209641505", style: "btn-secondary btn-lg" }
 trustStrip: '<span>12 min from Golden</span><span class="sep">·</span><span class="stars">★★★★★</span><span>5.0 from 180 reviews</span>'
 finalCtaHeading: "Book your free intro."
@@ -94,7 +95,7 @@ serviceSchema:
           <dt>Phone</dt><dd><a href="tel:+17209641505">(720) 964-1505</a></dd>
           <dt>Parking</dt><dd>Free on-site</dd>
         </dl>
-        <div class="mt-6"><a class="btn btn-primary" href="/free-intro/">Book a free intro</a></div>
+        <div class="mt-6"><a class="btn btn-primary" href="/free-intro/">Not sure where to start?</a> <a class="btn btn-secondary" href="/drop-in/">Drop-In</a></div>
       </div>
       <iframe class="map-embed" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=12090+West+50th+Pl,+Wheat+Ridge,+CO+80033&output=embed"></iframe>
     </div>
