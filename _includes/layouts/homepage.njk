@@ -44,7 +44,6 @@ speakable: true
         {%- for cta in hero.ctas %}
         <div class="cta-stack">
         <a class="btn {{ cta.style or 'btn-primary btn-lg' }}" href="{{ cta.href }}">{{ cta.label }}</a>
-        {% if cta.note %}<span class="cta-note">{{ cta.note }}</span>{% endif %}
       </div>
         {%- endfor %}
       </div>
@@ -279,7 +278,6 @@ speakable: true
       {%- for cta in finalCta.ctas %}
       <div class="cta-stack">
         <a class="btn btn-lg" style="{{ cta.inlineStyle or 'background:#000;color:#fff;' }}" href="{{ cta.href }}">{{ cta.label }}</a>
-        {% if cta.note %}<span class="cta-note">{{ cta.note }}</span>{% endif %}
       </div>
       {%- endfor %}
     </div>
