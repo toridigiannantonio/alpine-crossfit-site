@@ -70,7 +70,7 @@ export default {
     { label: "About", url: "/about/" },
     { label: "Pricing", url: "/pricing/" },
     { label: "Blog", url: "/blog/" },
-    { label: "Visit", url: "/visit/" },
+    { label: "Location", url: "/visit/" },
   ],
 
   // Footer columns (locked layout — content edits should not change this)
@@ -90,6 +90,9 @@ export default {
       { label: "Schedule", url: "/schedule/" },
       { label: "Blog", url: "/blog/" },
       { label: "FAQ", url: "/faq/" },
+      { label: "What to Expect", url: "/what-to-expect/" },
+      { label: "Drop-In", url: "/drop-in/" },
+      { label: "Location & Hours", url: "/visit/" },
     ],
     areas: [
       { label: "Wheat Ridge", url: "/gym/wheat-ridge/" },
