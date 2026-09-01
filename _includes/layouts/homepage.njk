@@ -42,7 +42,10 @@ speakable: true
       {% if hero.ctas %}
       <div class="hero-cta">
         {%- for cta in hero.ctas %}
+        <div class="cta-stack">
         <a class="btn {{ cta.style or 'btn-primary btn-lg' }}" href="{{ cta.href }}">{{ cta.label }}</a>
+        {% if cta.note %}<span class="cta-note">{{ cta.note }}</span>{% endif %}
+      </div>
         {%- endfor %}
       </div>
       {% endif %}
@@ -118,8 +121,9 @@ speakable: true
     {%- endfor %}
     </div>
     {% if howToStart.ctaLabel %}
-    <div class="mt-8 text-center">
+    <div class="mt-8 text-center hero-cta" style="justify-content:center;">
       <a class="btn btn-primary btn-lg" href="{{ howToStart.ctaHref }}">{{ howToStart.ctaLabel }}</a>
+      {% if howToStart.ctaLabel2 %}<a class="btn btn-secondary btn-lg" href="{{ howToStart.ctaHref2 }}">{{ howToStart.ctaLabel2 }}</a>{% endif %}
     </div>
     {% endif %}
   </div>
@@ -233,8 +237,9 @@ speakable: true
           <dt>{{ row.label }}</dt><dd>{{ row.value | safe }}</dd>
         {%- endfor %}
         </dl>
-        <div class="mt-6">
+        <div class="mt-6 hero-cta">
           <a class="btn btn-primary" href="{{ scheduleSection.locationCard.ctaHref }}">{{ scheduleSection.locationCard.ctaLabel }}</a>
+          {% if scheduleSection.locationCard.ctaLabel2 %}<a class="btn btn-secondary" href="{{ scheduleSection.locationCard.ctaHref2 }}">{{ scheduleSection.locationCard.ctaLabel2 }}</a>{% endif %}
         </div>
       </div>
       {% endif %}
@@ -270,9 +275,12 @@ speakable: true
   <div class="container text-center">
     <h2>{{ finalCta.heading }}</h2>
     {% if finalCta.body %}<p class="hero-dek" style="margin-left:auto;margin-right:auto;color:rgba(0,0,0,0.8);">{{ finalCta.body | safe }}</p>{% endif %}
-    <div class="hero-cta" style="justify-content:center;">
+    <div class="hero-cta hero-cta-center" style="justify-content:center;">
       {%- for cta in finalCta.ctas %}
-      <a class="btn btn-lg" style="{{ cta.inlineStyle or 'background:#000;color:#fff;' }}" href="{{ cta.href }}">{{ cta.label }}</a>
+      <div class="cta-stack">
+        <a class="btn btn-lg" style="{{ cta.inlineStyle or 'background:#000;color:#fff;' }}" href="{{ cta.href }}">{{ cta.label }}</a>
+        {% if cta.note %}<span class="cta-note">{{ cta.note }}</span>{% endif %}
+      </div>
       {%- endfor %}
     </div>
   </div>
