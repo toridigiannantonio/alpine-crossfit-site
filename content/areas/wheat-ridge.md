@@ -9,8 +9,8 @@ eyebrow: "Wheat Ridge"
 heading: "CrossFit in <span class=\"accent\">Wheat Ridge</span>, Colorado."
 dek: "Alpine CrossFit is a locally-owned CrossFit gym in Wheat Ridge, CO, at 12090 West 50th Place — minutes from the Wheat Ridge/Ward light rail station, Applewood, and the 38th Avenue Main Street district. Three CF-L2 coaches, in-house programming, month-to-month memberships from $69 to $999, and 24/7 member access."
 heroCtas:
-  - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", style: "btn-primary btn-lg" }
-  - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", style: "btn-secondary btn-lg" }
+  - { label: "Not sure where to start?", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Drop-In", href: "/drop-in/", style: "btn-secondary btn-lg" }
   - { label: "Text (720) 964-1505", href: "sms:+17209641505", style: "btn-secondary btn-lg" }
 trustStrip: '<span>Founded 2010</span><span class="sep">·</span><span>Under current ownership since 2026</span><span class="sep">·</span><span class="stars">★★★★★</span><span>5.0 from 180 reviews</span>'
 finalCtaHeading: "Book your free intro."

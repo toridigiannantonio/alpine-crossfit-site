@@ -9,8 +9,8 @@ eyebrow: "Applewood"
 heading: "CrossFit for <span class=\"accent\">Applewood</span>."
 dek: "Alpine CrossFit is essentially Applewood's neighborhood CrossFit gym — about 5 minutes east from the Applewood Golf Course and the surrounding neighborhoods. CF-L2 coaches, in-house programming, month-to-month memberships from $69 to $999."
 heroCtas:
-  - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", style: "btn-primary btn-lg" }
-  - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", style: "btn-secondary btn-lg" }
+  - { label: "Not sure where to start?", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Drop-In", href: "/drop-in/", style: "btn-secondary btn-lg" }
   - { label: "Text (720) 964-1505", href: "sms:+17209641505", style: "btn-secondary btn-lg" }
 trustStrip: '<span>5 min from Applewood</span><span class="sep">·</span><span class="stars">★★★★★</span><span>5.0 from 180 reviews</span>'
 finalCtaHeading: "Book your free intro."
