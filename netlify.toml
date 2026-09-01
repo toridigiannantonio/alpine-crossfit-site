@@ -8,12 +8,36 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# Cache headers for static assets — keep CSS/JS/images cached for a year
-# (filename-based busting if they ever change).
+# ----------------------------------------------------------------------
+# Cache headers.
+#
+# Images and uploads are safe to cache hard: when a photo changes, it is
+# uploaded under a new filename, so the URL changes with it.
 [[headers]]
-  for = "/assets/*"
+  for = "/assets/img/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# CSS and JS are NOT cached hard. These files keep the same filename when
+# their contents change, so an "immutable" year-long cache used to strand
+# returning visitors on an old stylesheet — that is what left people seeing
+# the pre-2026 green palette after the tan rebrand shipped.
+#
+# Belt and braces, two things now prevent that:
+#   1. base.njk requests them as styles.css?v=<content hash> (see _data/site.js),
+#      so the URL itself changes whenever the file's contents change.
+#   2. These headers tell the browser to check with the server on every load.
+#      The check is cheap — an unchanged file answers "304 Not Modified" —
+#      and it makes it impossible to get stuck on a stale version again.
+[[headers]]
+  for = "/assets/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/assets/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 # Don't cache HTML — Lisa's edits should appear within seconds of the
 # Netlify rebuild finishing.
