@@ -1,5 +1,5 @@
 ---
-permalink: "/blog/progress-not-perfection-2026-07-24/"
+permalinkOverride: "/blog/progress-not-perfection-2026-07-24/"
 title: "Progress, Not Perfection"
 description: "We often look for grand transformations, a sudden leap to peak performance."
 date: 2026-07-24
