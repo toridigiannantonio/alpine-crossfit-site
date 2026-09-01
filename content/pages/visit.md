@@ -1,14 +1,15 @@
 ---
 layout: layouts/page.njk
 permalink: /visit/
-title: "Visit Alpine CrossFit — Hours, Address, Parking in Wheat Ridge"
-description: "Alpine CrossFit is at 12090 W 50th Place, Wheat Ridge, CO 80033. Free parking, tap-to-call (720) 964-1505. Hours, directions, and first-visit info inside."
+title: "Location & Hours — Alpine CrossFit in Wheat Ridge, CO"
+description: "Alpine CrossFit is at 12090 W 50th Place, Wheat Ridge, CO 80033. Staffed hours, 24/7 member access, free on-site parking, and directions from Arvada, Applewood, Lakewood, and Golden."
 canonical: "https://alpinecrossfit.com/visit/"
-eyebrow: "Visit"
-heading: "Come train at Alpine."
+eyebrow: "Location & Hours"
+heading: "Location &amp; hours."
 dek: "12090 West 50th Place, Wheat Ridge, CO 80033. Free parking. Unlimited members have 24/7 access."
 heroCtas:
-  - { label: "Book a free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", style: "btn-primary btn-lg" }
+  - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", style: "btn-secondary btn-lg" }
   - { label: "Text (720) 964-1505", href: "sms:+17209641505", style: "btn-secondary btn-lg" }
 trustStrip: '<span class="stars">★★★★★</span><span>5.0 from 180 Google reviews</span>'
 extraSchemas:
@@ -17,25 +18,22 @@ extraSchemas:
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://alpinecrossfit.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Visit", "item": "https://alpinecrossfit.com/visit/"}
+        {"@type": "ListItem", "position": 2, "name": "Location & Hours", "item": "https://alpinecrossfit.com/visit/"}
       ]
     }
   - {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "Do I need an appointment to visit Alpine CrossFit?", "acceptedAnswer": { "@type": "Answer", "text": "Yes for the free No Sweat Intro — that's a scheduled 30-minute conversation with a coach. For a drop-in class, 24 hours notice is helpful but not required — text or call (720) 964-1505 and we'll fit you in." } },
-        { "@type": "Question", "name": "What should I bring to my first Alpine CrossFit visit?", "acceptedAnswer": { "@type": "Answer", "text": "Workout clothes, athletic shoes, and a water bottle. Alpine provides everything else — towels, sanitizing spray, movement modifications, and coaching. Nothing to bring for the free No Sweat Intro since it isn't a workout." } },
-        { "@type": "Question", "name": "What if I'm brand new to CrossFit?", "acceptedAnswer": { "@type": "Answer", "text": "Every Alpine class is scaled to the athlete. Your coach modifies movements and weights to match your level, and no one will judge you for it — every member in the room was new once. Most new members start with a private Foundations on-ramp before joining group classes." } },
-        { "@type": "Question", "name": "Can I watch a class before I join Alpine?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Your free No Sweat Intro includes a tour of the gym and time to observe a class in progress if you'd like." } },
         { "@type": "Question", "name": "Where is Alpine CrossFit located?", "acceptedAnswer": { "@type": "Answer", "text": "Alpine CrossFit is at 12090 West 50th Place, Wheat Ridge, CO 80033 — just off I-70 near Kipling. Free on-site parking. 5 minutes from downtown Arvada or Applewood, 10 from Belmar in Lakewood, 12 from downtown Golden." } },
         { "@type": "Question", "name": "What are Alpine CrossFit's hours?", "acceptedAnswer": { "@type": "Answer", "text": "Staffed hours are Monday–Friday 5:30 AM – 6:30 PM, Saturday 8:00–10:00 AM, and Sunday 8:00–10:00 AM. Unlimited members have 24/7 facility access." } }
       ]
     }
 finalCta:
-  heading: "Ready to visit?"
+  heading: "Come see the gym."
   ctas:
-    - { label: "Book your free intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
 ---
 
 <section class="section">
@@ -50,7 +48,7 @@ finalCta:
           <dt>Hours</dt><dd>Mon–Fri 5:30 AM – 6:30 PM<br>Sat 8:00–10:00 AM<br>Sun 8:00–10:00 AM<br><em>Unlimited members: 24/7</em></dd>
           <dt>Parking</dt><dd>Free on-site</dd>
         </dl>
-        <div class="mt-6"><a class="btn btn-primary" href="/free-intro/">Book a free intro</a></div>
+        <div class="mt-6"><a class="btn btn-primary" href="/free-intro/">Not sure where to start?</a> <a class="btn btn-secondary" href="/drop-in/">Drop-In</a></div>
       </div>
       <iframe class="map-embed" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=12090+West+50th+Pl,+Wheat+Ridge,+CO+80033&output=embed"></iframe>
     </div>
@@ -73,12 +71,7 @@ finalCta:
 </section>
 
 <section class="section">
-  <div class="container container-narrow">
-    <span class="eyebrow">First visit</span>
-    <h2>What to expect.</h2>
-    <details class="faq-item"><summary>Do I need an appointment?</summary><div class="faq-answer">Yes, for your free No Sweat Intro. For a drop-in class, 24 hours notice is helpful but not required — text or call and we'll fit you in.</div></details>
-    <details class="faq-item"><summary>What do I bring?</summary><div class="faq-answer">Workout clothes, athletic shoes, a water bottle. We provide everything else — towels, sanitizing spray, modifications, and coaching.</div></details>
-    <details class="faq-item"><summary>What if I'm new to CrossFit?</summary><div class="faq-answer">Every class is scaled. Your coach will scale movements and weights to match your level, and no one will judge you for it — everyone in the room was new once.</div></details>
-    <details class="faq-item"><summary>Can I watch a class before I join?</summary><div class="faq-answer">Absolutely. Your No Sweat Intro includes a tour and time to sit and observe a class if you want to.</div></details>
+  <div class="container container-narrow text-center">
+    <p class="text-muted">First time coming in? <a href="/what-to-expect/">Here's what to expect</a> — what to bring, whether you need an appointment, and what happens when you walk through the door.</p>
   </div>
 </section>

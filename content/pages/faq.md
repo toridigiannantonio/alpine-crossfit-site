@@ -8,7 +8,8 @@ eyebrow: "FAQ"
 heading: "Frequently Asked Questions."
 dek: "Straight answers to the questions we get most from prospective and new members at Alpine CrossFit in Wheat Ridge."
 heroCtas:
-  - { label: "Book a Free Intro", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", style: "btn-primary btn-lg" }
+  - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", style: "btn-secondary btn-lg" }
   - { label: "Text (720) 964-1505", href: "sms:+17209641505", style: "btn-secondary btn-lg" }
 faqGroups:
   - {
@@ -176,7 +177,8 @@ faqs:
 finalCta:
   heading: "Didn't find your question?"
   ctas:
-    - { label: "Book a Free No Sweat Intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
     - { label: "Or text (720) 964-1505", href: "sms:+17209641505", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
 extraSchemas:
   - {

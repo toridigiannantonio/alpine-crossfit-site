@@ -20,7 +20,8 @@ hero:
   heading: "CrossFit for <span class=\"accent\">every body</span> in Wheat Ridge."
   dek: "Alpine CrossFit is a locally-owned CrossFit gym + Official HYROX Training Center in Wheat Ridge, Colorado, serving Wheat Ridge, Lakewood, Arvada, Applewood, and Golden. Coach-led classes, an in-house wellness center (sauna, cold plunge, compression, peptide therapy), and 24/7 member access."
   ctas:
-    - { label: "Book a Free Intro", href: "/free-intro/", style: "btn-primary btn-lg" }
+    - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", style: "btn-primary btn-lg" }
+    - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", style: "btn-secondary btn-lg" }
     - { label: "See the schedule", href: "#schedule", style: "btn-secondary btn-lg" }
   trustItems:
     - { type: "stars" }
@@ -51,8 +52,10 @@ howToStart:
     - { heading: "1. Book a free No Sweat Intro.", body: "Come meet a coach for a 30-minute chat. We'll tour the gym, talk through your goals, and figure out the right starting point together. No pressure. No cost." }
     - { heading: "2. Try a class.", body: "Once we've matched you to the right program — CrossFit, personal training, or Prime Vitality for members 55+ — we'll get you into your first coached session." }
     - { heading: "3. Start training.", body: "Sign up for the membership that fits. Show up. We'll handle the rest." }
-  ctaLabel: "Book my free intro"
+  ctaLabel: "Not sure where to start?"
   ctaHref: "/free-intro/"
+  ctaLabel2: "Drop-In"
+  ctaHref2: "/drop-in/"
 services:
   eyebrow: "What we offer"
   heading: "Training built around you."
@@ -99,8 +102,10 @@ scheduleSection:
       - { label: "Address", value: "12090 W 50th Pl<br>Wheat Ridge, CO 80033" }
       - { label: "Phone", value: "<a href=\"tel:+17209641505\">(720) 964-1505</a>" }
       - { label: "Parking", value: "Free on-site" }
-    ctaLabel: "Book a free intro"
+    ctaLabel: "Not sure where to start?"
     ctaHref: "/free-intro/"
+    ctaLabel2: "Drop-In"
+    ctaHref2: "/drop-in/"
 faqs:
   - { question: "Do I need to be in shape before I start?", answer: "No. Most new Alpine members start from scratch or come back after years away. Every class scales to your body. Your coach will never throw you into something you can't handle." }
   - { question: "How much does a CrossFit membership cost?", answer: "Memberships at Alpine range from $69/month (Open Gym: facility, wellness, 24/7) to $199/month (Unlimited: classes, wellness center, Prime Vitality, and 24/7 access). <a href=\"/pricing/\">See full pricing →</a>" }
@@ -112,6 +117,7 @@ finalCta:
   heading: "Come see the gym."
   body: "The fastest way to figure out if Alpine is right for you is to meet a coach in person. It's free, it's 30 minutes, and there's no pressure to join."
   ctas:
-    - { label: "Book my free No Sweat Intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
     - { label: "Or text (720) 964-1505", href: "sms:+17209641505", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
 ---

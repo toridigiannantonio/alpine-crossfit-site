@@ -8,7 +8,8 @@ eyebrow: "Pricing"
 heading: "What it costs to train at Alpine CrossFit."
 dek: "Alpine memberships range from $69 to $999 per month. Every tier includes the wellness center (sauna, cold plunges, compression boots, peptide therapy) and 24/7 facility access. Higher tiers add coached classes and personal training."
 heroCtas:
-  - { label: "Book a Free No Sweat Intro", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", style: "btn-primary btn-lg" }
+  - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", style: "btn-secondary btn-lg" }
   - { label: "See class schedule →", href: "/schedule/", style: "btn-secondary btn-lg" }
 trustStrip: "<span>Month-to-month</span><span class=\"sep\">·</span><span>No contracts</span><span class=\"sep\">·</span><span>No initiation fees</span>"
 extraSchemas:
@@ -44,7 +45,8 @@ finalCta:
   heading: "Still have questions?"
   body: "The fastest way to figure out if Alpine is right for you is to come meet a coach in person. Free, 30 minutes, no pressure."
   ctas:
-    - { label: "Book my free No Sweat Intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
     - { label: "Or text (720) 964-1505", href: "sms:+17209641505", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
 ---
 
@@ -118,7 +120,7 @@ finalCta:
         <p>You've never trained at a CrossFit gym, or you're returning after a long time off. You want a coach to look at where you are and recommend a real path — not sell you a tier.</p>
         <p class="eyebrow" style="margin-top:var(--space-4);margin-bottom:var(--space-2);">Start with</p>
         <p><strong>Free No Sweat Intro</strong> — 30 minutes with a coach, no workout, no pressure. You'll leave with a clear recommendation.</p>
-        <a class="btn btn-primary mt-3" href="/free-intro/">Book Free Intro</a>
+        <a class="btn btn-primary mt-3" href="/free-intro/">Not sure where to start?</a>
       </div>
       <div class="card">
         <p class="eyebrow" style="color:var(--color-alpine-green);margin-bottom:var(--space-2);">If you are…</p>
@@ -166,42 +168,29 @@ finalCta:
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="visit-options">
   <div class="container">
     <span class="eyebrow">Try before you join</span>
     <h2 class="section-heading">Visit options.</h2>
-    <p class="hero-dek">Pick your entry point. Brand new to fitness, experienced CrossFitter, dropping in, or trying us for a week — there's a right starting point for every situation.</p>
-    <div class="grid grid-4 mt-8">
+    <p class="hero-dek">Two ways in, depending on where you're starting from.</p>
+    <div class="grid grid-2 mt-8">
       <div class="card">
-        <h3>Free No Sweat Intro</h3>
+        <h3>Not sure where to start?</h3>
         <div class="price">$0<span class="price-unit">/once</span></div>
         <p class="eyebrow" style="margin-top:var(--space-4);margin-bottom:var(--space-2);">Best for</p>
-        <p>Brand new to fitness or first-time Alpine visitor. 30-minute conversation, no workout, no pressure.</p>
-        <a class="btn btn-primary" href="/free-intro/">Book Free Intro</a>
+        <p>You haven't trained this way before, or you're coming back after time off. A 30-minute conversation with a coach — a tour, your goals, and a clear recommendation. No workout.</p>
+        <a class="btn btn-primary" href="/free-intro/">Book a free intro</a>
       </div>
       <div class="card">
-        <h3>Experienced CrossFit Trial</h3>
-        <div class="price">Free<span class="price-unit">/one-time</span></div>
-        <p class="eyebrow" style="margin-top:var(--space-4);margin-bottom:var(--space-2);">Best for</p>
-        <p>Experienced CrossFitters trying Alpine for the first time. One free class on us — limited to one use per person.</p>
-        <a class="btn btn-primary" href="https://app.chalkitpro.com/dropIns/754/11814/x" target="_blank" rel="noopener">Book Free Class</a>
-      </div>
-      <div class="card">
-        <h3>Drop-In Class</h3>
+        <h3>Visiting or dropping in</h3>
         <div class="price">$30<span class="price-unit">/class</span></div>
         <p class="eyebrow" style="margin-top:var(--space-4);margin-bottom:var(--space-2);">Best for</p>
-        <p>Travelers, members of other affiliates, or anyone who's already used their free trial. A single class, no commitment.</p>
-        <a class="btn btn-primary" href="https://app.chalkitpro.com/gymProductLink/754/prod_TmRdqYxSRVMV2f/13440/" target="_blank" rel="noopener">Buy Drop-In</a>
-      </div>
-      <div class="card">
-        <h3>Week Pass</h3>
-        <div class="price">$95<span class="price-unit">/week</span></div>
-        <p class="eyebrow" style="margin-top:var(--space-4);margin-bottom:var(--space-2);">Best for</p>
-        <p>Getting the full Alpine experience before committing. Unlimited classes, wellness center, and full facility access for seven days.</p>
-        <a class="btn btn-primary" href="https://app.chalkitpro.com/gymProductLink/754/prod_TmRiaLLHwsRPig/13441/" target="_blank" rel="noopener">Buy Week Pass</a>
+        <p>You already train and want a class while you're in town. $30 a class or $95 for the week, wellness center included — and your first class is free if you're visiting from another affiliate.</p>
+        <a class="btn btn-primary" href="/drop-in/">See drop-in options</a>
       </div>
     </div>
-    <p class="text-center text-muted mt-8" style="font-size:0.9rem;">Brand new to fitness or unsure where to start? The free No Sweat Intro is a conversation, not a class — you'll leave with a clear recommendation.</p>
+
+    <p class="text-center text-muted mt-8" style="font-size:0.9rem;">The free No Sweat Intro is a conversation, not a class. If you already train and just want to get a workout in, <a href="/drop-in/">drop in</a> instead.</p>
   </div>
 </section>
 

@@ -9,7 +9,8 @@ eyebrow: "About"
 heading: "About Alpine CrossFit."
 dek: "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, owned by April and Tori DiGiannantonio. April brings a decade of CrossFit gym ownership plus five-plus years as a Division I Director of Sports Performance; Tori brings a career in mental performance coaching (LCSW, CMPC) and endurance sport. Programming remains in-house, led by head programmer Megan Markee (CSCS) in collaboration with April."
 heroCtas:
-  - { label: "Book a Free Intro", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", style: "btn-primary btn-lg" }
+  - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", style: "btn-secondary btn-lg" }
   - { label: "Meet the coaches →", href: "/coaches/", style: "btn-secondary btn-lg" }
 heroImage:
   src: "/assets/img/member-front-squat.jpg"
@@ -38,7 +39,8 @@ finalCta:
   heading: "Come see the gym."
   body: "The best way to understand Alpine is to walk in. Your free No Sweat Intro is 30 minutes with a coach — tour, conversation, and a recommendation. No pressure, no cost."
   ctas:
-    - { label: "Book my free No Sweat Intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
     - { label: "Or text (720) 964-1505", href: "sms:+17209641505", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
 ---
 

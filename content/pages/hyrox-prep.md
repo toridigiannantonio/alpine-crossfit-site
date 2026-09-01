@@ -148,7 +148,7 @@ finalCta:
     <p>Come do one HYROX-prep class at Alpine. First class is free if you have CrossFit experience.</p>
     <div class="hero-cta">
       <a class="btn btn-primary btn-lg" href="https://app.chalkitpro.com/dropIns/754/11814/x" target="_blank" rel="noopener">Free Trial Class</a>
-      <a class="btn btn-secondary btn-lg" href="/free-intro/">Book a Free Intro</a>
+      <a class="btn btn-secondary btn-lg" href="/free-intro/">Not sure where to start?</a> <a class="btn btn-secondary btn-lg" href="/drop-in/">Drop-In</a>
     </div>
   </div>
 </section>

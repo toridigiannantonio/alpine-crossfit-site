@@ -58,7 +58,8 @@ finalCta:
   body: "Get the free 12-week prep plan, or come do a sim with us."
   ctas:
     - { label: "Get the Free Plan", href: "/hyrox-prep/", inlineStyle: "background:#000;color:#fff;" }
-    - { label: "Book a Free Intro", href: "/free-intro/", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+    - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+    - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
 ---
 
 <section class="section">
