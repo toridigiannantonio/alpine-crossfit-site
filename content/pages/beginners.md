@@ -8,8 +8,8 @@ eyebrow: "Beginners"
 heading: "Brand new to CrossFit? <span class=\"accent\">Start here.</span>"
 dek: "Most Alpine members started with zero CrossFit experience. The path: a free No Sweat Intro, then a private Foundations on-ramp, then group classes — every step coached by a CF-L2 professional."
 heroCtas:
-  - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", style: "btn-primary btn-lg" }
-  - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", style: "btn-secondary btn-lg" }
+  - { label: "Not sure where to start?", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Drop-In", href: "/drop-in/", style: "btn-secondary btn-lg" }
   - { label: "See membership pricing", href: "/pricing/", style: "btn-secondary btn-lg" }
 trustStrip: "<span>Free intro · 30 min</span><span class=\"sep\">·</span><span>Private Foundations on-ramp</span><span class=\"sep\">·</span><span>CF-L2 coached</span>"
 extraSchemas:
@@ -38,8 +38,8 @@ finalCta:
   heading: "Take the first step."
   body: "Your free No Sweat Intro is 30 minutes with a coach — tour the gym, talk through your goals, and leave with a clear recommendation. No workout, no cost, no pressure."
   ctas:
-    - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", inlineStyle: "background:#000;color:#fff;" }
-    - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+    - { label: "Not sure where to start?", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Drop-In", href: "/drop-in/", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
     - { label: "Or text (720) 964-1505", href: "sms:+17209641505", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
 ---
 

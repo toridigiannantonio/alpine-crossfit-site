@@ -8,8 +8,8 @@ eyebrow: "Prime Vitality"
 heading: "Real strength training for <span class=\"accent\">adults 55+</span>."
 dek: "Prime Vitality is Alpine's Monday, Wednesday, Friday 10 AM class — barbell training, functional movement, and measurable strength progression, scaled for the 55+ body. Coached by Lisa Arcangel, a CrossFit Masters Semifinals qualifier."
 heroCtas:
-  - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", style: "btn-primary btn-lg" }
-  - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", style: "btn-secondary btn-lg" }
+  - { label: "Not sure where to start?", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Drop-In", href: "/drop-in/", style: "btn-secondary btn-lg" }
   - { label: "See membership pricing", href: "/pricing/", style: "btn-secondary btn-lg" }
 trustStrip: "<span>Mon · Wed · Fri at 10 AM</span><span class=\"sep\">·</span><span>CF-L2 coached</span><span class=\"sep\">·</span><span>Included with Unlimited</span>"
 extraSchemas:
@@ -39,8 +39,8 @@ finalCta:
   heading: "Ready to get stronger?"
   body: "Book a free No Sweat Intro — 30 minutes with a coach to talk through your goals, see the gym, and find the right way in."
   ctas:
-    - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", inlineStyle: "background:#000;color:#fff;" }
-    - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+    - { label: "Not sure where to start?", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Drop-In", href: "/drop-in/", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
     - { label: "Or text (720) 964-1505", href: "sms:+17209641505", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
 ---
 

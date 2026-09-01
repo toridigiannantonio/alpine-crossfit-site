@@ -8,8 +8,8 @@ eyebrow: "HYROX"
 heading: "HYROX training in <span class=\"accent\">Wheat Ridge</span>, near Denver."
 dek: "Alpine CrossFit is an official HYROX Training Center in Wheat Ridge, Colorado — coached, race-specific programming and Friday run clubs for athletes across the northwest Denver metro prepping for a HYROX event."
 heroCtas:
-  - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", style: "btn-primary btn-lg" }
-  - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", style: "btn-secondary btn-lg" }
+  - { label: "Not sure where to start?", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Drop-In", href: "/drop-in/", style: "btn-secondary btn-lg" }
   - { label: "See membership pricing", href: "/pricing/", style: "btn-secondary btn-lg" }
 trustStrip: "<span>Official HYROX affiliate</span><span class=\"sep\">·</span><span>Coached programming</span><span class=\"sep\">·</span><span>Friday run clubs</span>"
 extraSchemas:
@@ -50,8 +50,8 @@ finalCta:
   heading: "Ready to train for HYROX?"
   body: "Book a free No Sweat Intro — 30 minutes with a coach to talk through your race goal and the right starting point."
   ctas:
-    - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", inlineStyle: "background:#000;color:#fff;" }
-    - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+    - { label: "Not sure where to start?", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Drop-In", href: "/drop-in/", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
     - { label: "Or text (720) 964-1505", href: "sms:+17209641505", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
 ---
 

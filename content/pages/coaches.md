@@ -11,11 +11,9 @@ dek: Every class at Alpine is led by one of three CF-L2 certified coaches.
   2× CrossFit Games Semifinalist) in collaboration with April.
 heroCtas:
   - label: "Not sure where to start?"
-    note: "Free 30-minute conversation. No workout."
     href: /free-intro/
     style: btn-primary btn-lg
   - label: "Drop-In"
-    note: "$30 single class · $95 week pass."
     href: /drop-in/
     style: btn-secondary btn-lg
 layout: layouts/page.njk

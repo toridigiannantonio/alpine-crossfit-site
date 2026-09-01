@@ -8,8 +8,8 @@ eyebrow: "First visit"
 heading: "What to expect."
 dek: "Walking into a CrossFit gym for the first time is the hardest part. Here's exactly what happens, so none of it is a surprise."
 heroCtas:
-  - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", style: "btn-primary btn-lg" }
-  - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", style: "btn-secondary btn-lg" }
+  - { label: "Not sure where to start?", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Drop-In", href: "/drop-in/", style: "btn-secondary btn-lg" }
   - { label: "Text (720) 964-1505", href: "sms:+17209641505", style: "btn-secondary btn-lg" }
 trustStrip: '<span class="stars">★★★★★</span><span>5.0 from 180 Google reviews</span><span class="sep">·</span><span>3 CF-L2 coaches</span>'
 extraSchemas:
@@ -35,8 +35,8 @@ finalCta:
   heading: "Come see the gym."
   body: "The fastest way to figure out if Alpine is right for you is to meet a coach in person. It's free, it's 30 minutes, and there's no pressure to join."
   ctas:
-    - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", inlineStyle: "background:#000;color:#fff;" }
-    - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+    - { label: "Not sure where to start?", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Drop-In", href: "/drop-in/", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
 ---
 
 <section class="section">

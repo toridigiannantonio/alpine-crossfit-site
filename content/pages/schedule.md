@@ -7,11 +7,9 @@ heading: 10+ classes a day, seven days a week.
 dek: Drop in anytime. Every class is coached by a CF-L2 certified professional.
 heroCtas:
   - label: "Not sure where to start?"
-    note: "Free 30-minute conversation. No workout."
     href: /free-intro/
     style: btn-primary btn-lg
   - label: "Drop-In"
-    note: "$30 single class · $95 week pass."
     href: /drop-in/
     style: btn-secondary btn-lg
 layout: layouts/page.njk
@@ -40,11 +38,9 @@ finalCta:
   heading: Ready to train?
   ctas:
     - label: "Not sure where to start?"
-      note: "Free 30-minute conversation. No workout."
       href: /free-intro/
       inlineStyle: background:#000;color:#fff;
     - label: "Drop-In"
-      note: "$30 single class · $95 week pass."
       href: /drop-in/
       inlineStyle: background:transparent;color:#000;border-color:#000;
 ---

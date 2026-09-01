@@ -8,8 +8,8 @@ eyebrow: "CrossFit"
 heading: "Coach-led CrossFit classes in <span class=\"accent\">Wheat Ridge</span>."
 dek: "Every Alpine CrossFit class is led by a CF-L2 certified coach, capped at 15 athletes, and programmed in-house by head programmer Megan Markee (CSCS, 2× CrossFit Games Semifinalist) in collaboration with owner April DiGiannantonio (CSCS, SCCC). Scaled to every level — beginners through competitive athletes train in the same room."
 heroCtas:
-  - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", style: "btn-primary btn-lg" }
-  - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", style: "btn-secondary btn-lg" }
+  - { label: "Not sure where to start?", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Drop-In", href: "/drop-in/", style: "btn-secondary btn-lg" }
   - { label: "See the schedule", href: "/schedule/", style: "btn-secondary btn-lg" }
 trustStrip: "<span>Every class CF-L2 coached</span><span class=\"sep\">·</span><span>Capped at 15 athletes</span><span class=\"sep\">·</span><span>Scaled to every level</span>"
 extraSchemas:
@@ -38,8 +38,8 @@ finalCta:
   heading: "Ready to train?"
   body: "Book a free No Sweat Intro — 30 minutes with a coach to talk through goals, tour the gym, and find the right way in."
   ctas:
-    - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", inlineStyle: "background:#000;color:#fff;" }
-    - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+    - { label: "Not sure where to start?", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Drop-In", href: "/drop-in/", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
     - { label: "Or text (720) 964-1505", href: "sms:+17209641505", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
 ---
 

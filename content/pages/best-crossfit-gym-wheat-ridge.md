@@ -9,8 +9,8 @@ eyebrow: "Compare CrossFit gyms near Wheat Ridge"
 heading: "How Alpine compares to other CrossFit gyms in the Wheat Ridge area."
 dek: "An honest breakdown of what Alpine CrossFit offers, what we don't, who we're built for, and how we stack up against other CrossFit gyms in Wheat Ridge, Arvada, Lakewood, Applewood, and Golden. Written by the team at Alpine — not a marketing agency."
 heroCtas:
-  - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", style: "btn-primary btn-lg" }
-  - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", style: "btn-secondary btn-lg" }
+  - { label: "Not sure where to start?", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Drop-In", href: "/drop-in/", style: "btn-secondary btn-lg" }
   - { label: "Jump to the comparison →", href: "#at-a-glance", style: "btn-secondary btn-lg" }
 trustStrip: "<span class=\"stars\">★★★★★</span><span>5.0 from 180 Google reviews</span><span class=\"sep\">·</span><span>Founded 2010</span><span class=\"sep\">·</span><span>3 CF-L2 coaches</span>"
 extraSchemas:
@@ -44,8 +44,8 @@ finalCta:
   heading: "Come see for yourself."
   body: "The fastest way to figure out if Alpine is the right fit for you is to walk in. Your free No Sweat Intro is 30 minutes with a coach — tour, conversation, and a recommendation. Zero cost, zero pressure."
   ctas:
-    - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", inlineStyle: "background:#000;color:#fff;" }
-    - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+    - { label: "Not sure where to start?", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Drop-In", href: "/drop-in/", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
     - { label: "Or text (720) 964-1505", href: "sms:+17209641505", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
 ---
 

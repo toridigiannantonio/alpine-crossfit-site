@@ -8,8 +8,8 @@ eyebrow: "Location & Hours"
 heading: "Location &amp; hours."
 dek: "12090 West 50th Place, Wheat Ridge, CO 80033. Free parking. Unlimited members have 24/7 access."
 heroCtas:
-  - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", style: "btn-primary btn-lg" }
-  - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", style: "btn-secondary btn-lg" }
+  - { label: "Not sure where to start?", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Drop-In", href: "/drop-in/", style: "btn-secondary btn-lg" }
   - { label: "Text (720) 964-1505", href: "sms:+17209641505", style: "btn-secondary btn-lg" }
 trustStrip: '<span class="stars">★★★★★</span><span>5.0 from 180 Google reviews</span>'
 extraSchemas:
@@ -32,8 +32,8 @@ extraSchemas:
 finalCta:
   heading: "Come see the gym."
   ctas:
-    - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", inlineStyle: "background:#000;color:#fff;" }
-    - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+    - { label: "Not sure where to start?", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Drop-In", href: "/drop-in/", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
 ---
 
 <section class="section">

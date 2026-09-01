@@ -20,8 +20,8 @@ hero:
   heading: "CrossFit for <span class=\"accent\">every body</span> in Wheat Ridge."
   dek: "Alpine CrossFit is a locally-owned CrossFit gym + Official HYROX Training Center in Wheat Ridge, Colorado, serving Wheat Ridge, Lakewood, Arvada, Applewood, and Golden. Coach-led classes, an in-house wellness center (sauna, cold plunge, compression, peptide therapy), and 24/7 member access."
   ctas:
-    - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", style: "btn-primary btn-lg" }
-    - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", style: "btn-secondary btn-lg" }
+    - { label: "Not sure where to start?", href: "/free-intro/", style: "btn-primary btn-lg" }
+    - { label: "Drop-In", href: "/drop-in/", style: "btn-secondary btn-lg" }
     - { label: "See the schedule", href: "#schedule", style: "btn-secondary btn-lg" }
   trustItems:
     - { type: "stars" }
@@ -50,7 +50,7 @@ howToStart:
   heading: "Getting started is easy."
   steps:
     - { heading: "1. Book a free No Sweat Intro.", body: "Come meet a coach for a 30-minute chat. We'll tour the gym, talk through your goals, and figure out the right starting point together. No pressure. No cost." }
-    - { heading: "2. Try a class.", body: "Once we've matched you to the right program — CrossFit, personal training, or Prime Vitality for members 55+ — we'll get you into your first coached session." }
+    - { heading: "2. Try a class.", body: "Once we've matched you to the right program — CrossFit, personal training, HYROX, Prime Vitality for members 55+, and more — we'll get you into your first coached session." }
     - { heading: "3. Start training.", body: "Sign up for the membership that fits. Show up. We'll handle the rest." }
   ctaLabel: "Not sure where to start?"
   ctaHref: "/free-intro/"
@@ -94,7 +94,6 @@ scheduleSection:
     - { heading: "CrossFit", lines: ["<strong>Mon–Fri:</strong> 5:30, 6:30, 8:00 AM · 12:00, 3:30, 4:30, 5:30 PM", "<strong>Saturday:</strong> 8:00, 9:00 AM", "<strong>Sunday:</strong> 9:00 AM"] }
     - { heading: "Prime Vitality (55+)", lines: ["<strong>Mon · Wed · Fri:</strong> 10:00 AM"] }
     - { heading: "Wellness Center", lines: ["<strong>Mon–Fri:</strong> 5:30 AM – 6:30 PM", "<strong>Sat:</strong> 8:00 – 10:00 AM · <strong>Sun:</strong> 8:00 – 9:00 AM"] }
-  note: "Unlimited members also have 24/7 facility access."
   moreLink: { label: "See the full schedule →", href: "/schedule/" }
   locationCard:
     heading: "Visit us in Wheat Ridge"
@@ -117,7 +116,7 @@ finalCta:
   heading: "Come see the gym."
   body: "The fastest way to figure out if Alpine is right for you is to meet a coach in person. It's free, it's 30 minutes, and there's no pressure to join."
   ctas:
-    - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", inlineStyle: "background:#000;color:#fff;" }
-    - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+    - { label: "Not sure where to start?", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Drop-In", href: "/drop-in/", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
     - { label: "Or text (720) 964-1505", href: "sms:+17209641505", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
 ---

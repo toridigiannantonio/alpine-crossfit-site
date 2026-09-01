@@ -8,8 +8,8 @@ eyebrow: "Pricing"
 heading: "What it costs to train at Alpine CrossFit."
 dek: "Alpine memberships range from $69 to $999 per month. Every tier includes the wellness center (sauna, cold plunges, compression boots, peptide therapy) and 24/7 facility access. Higher tiers add coached classes and personal training."
 heroCtas:
-  - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", style: "btn-primary btn-lg" }
-  - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", style: "btn-secondary btn-lg" }
+  - { label: "Not sure where to start?", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Drop-In", href: "/drop-in/", style: "btn-secondary btn-lg" }
   - { label: "See class schedule →", href: "/schedule/", style: "btn-secondary btn-lg" }
 trustStrip: "<span>Month-to-month</span><span class=\"sep\">·</span><span>No contracts</span><span class=\"sep\">·</span><span>No initiation fees</span>"
 extraSchemas:
@@ -45,8 +45,8 @@ finalCta:
   heading: "Still have questions?"
   body: "The fastest way to figure out if Alpine is right for you is to come meet a coach in person. Free, 30 minutes, no pressure."
   ctas:
-    - { label: "Not sure where to start?", href: "/free-intro/", note: "Free 30-minute conversation. No workout.", inlineStyle: "background:#000;color:#fff;" }
-    - { label: "Drop-In", href: "/drop-in/", note: "$30 single class · $95 week pass.", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+    - { label: "Not sure where to start?", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Drop-In", href: "/drop-in/", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
     - { label: "Or text (720) 964-1505", href: "sms:+17209641505", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
 ---
 

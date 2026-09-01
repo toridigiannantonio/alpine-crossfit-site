@@ -8,8 +8,8 @@ eyebrow: "Drop-In"
 heading: "Drop in to a class in <span class=\"accent\">Wheat Ridge</span>."
 dek: "Travelling through the Denver metro, visiting from another affiliate, or just want to train with us for a day? Book a single coached class for $30 — or a full week for $95. Both include the wellness center."
 heroCtas:
-  - { label: "Buy Drop-In — $30", href: "https://app.chalkitpro.com/gymProductLink/754/prod_TmRdqYxSRVMV2f/13440/", note: "Waiver and payment in one step.", style: "btn-primary btn-lg" }
-  - { label: "Buy Week Pass — $95", href: "https://app.chalkitpro.com/gymProductLink/754/prod_TmRiaLLHwsRPig/13441/", note: "Seven days, unlimited classes.", style: "btn-secondary btn-lg" }
+  - { label: "Buy Drop-In — $30", href: "https://app.chalkitpro.com/gymProductLink/754/prod_TmRdqYxSRVMV2f/13440/", style: "btn-primary btn-lg" }
+  - { label: "Buy Week Pass — $95", href: "https://app.chalkitpro.com/gymProductLink/754/prod_TmRiaLLHwsRPig/13441/", style: "btn-secondary btn-lg" }
   - { label: "Text (720) 964-1505", href: "sms:+17209641505", style: "btn-secondary btn-lg" }
 trustStrip: "<span class=\"stars\">★★★★★</span><span>5.0 from 180 Google reviews</span><span class=\"sep\">·</span><span>CrossFit affiliate &amp; Official HYROX Training Center</span><span class=\"sep\">·</span><span>Free on-site parking</span>"
 extraSchemas:
@@ -80,8 +80,8 @@ finalCta:
   heading: "See you in class."
   body: "Book online and the waiver is handled in the same step. If anything is unclear, text (720) 964-1505 — a coach will answer."
   ctas:
-    - { label: "Buy Drop-In — $30", href: "https://app.chalkitpro.com/gymProductLink/754/prod_TmRdqYxSRVMV2f/13440/", note: "Single coached class.", inlineStyle: "background:#000;color:#fff;" }
-    - { label: "Buy Week Pass — $95", href: "https://app.chalkitpro.com/gymProductLink/754/prod_TmRiaLLHwsRPig/13441/", note: "Seven days, unlimited.", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+    - { label: "Buy Drop-In — $30", href: "https://app.chalkitpro.com/gymProductLink/754/prod_TmRdqYxSRVMV2f/13440/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Buy Week Pass — $95", href: "https://app.chalkitpro.com/gymProductLink/754/prod_TmRiaLLHwsRPig/13441/", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
 ---
 
 <section class="section">
