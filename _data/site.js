@@ -28,6 +28,10 @@ export default {
   // otherwise a returning visitor's browser tab keeps the old icon.
   faviconVersion: assetHash("assets/img/favicon.png"),
 
+  // Set true to show the "Workout of the Day" block on blog posts again.
+  // The workouts are still in the post files — this only controls display.
+  showWods: false,
+
   name: "Alpine CrossFit",
   url: "https://alpinecrossfit.com",
   tagline: "CrossFit gym in Wheat Ridge, CO",
