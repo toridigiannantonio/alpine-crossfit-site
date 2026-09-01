@@ -1,0 +1,34 @@
+# Publishes the day's scheduled blog post.
+#
+# Blog posts are written in batches and dated ahead. Eleventy skips any post
+# whose date is still in the future, so a post only becomes a page once the
+# site is rebuilt on or after its date. Netlify rebuilds on every push, but
+# nothing is pushed on a quiet day — so this job pokes it each morning.
+#
+# Setup (one time): create a build hook in Netlify under
+# Site configuration -> Build & deploy -> Build hooks, then add the URL as a
+# repository secret named NETLIFY_BUILD_HOOK under
+# Settings -> Secrets and variables -> Actions.
+
+name: Daily blog publish
+
+on:
+  schedule:
+    # 12:00 UTC — 6am Mountain in summer, 5am in winter.
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger a Netlify rebuild
+        env:
+          HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "NETLIFY_BUILD_HOOK is not set — add it in repository settings."
+            exit 1
+          fi
+          curl -fsS -X POST -d '{}' "$HOOK"
+          echo "Rebuild requested."
