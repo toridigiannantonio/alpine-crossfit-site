@@ -57,7 +57,7 @@ layout: layouts/base.njk
 
 <section class="section">
   <div class="container container-narrow">
-    {{ content | safe }}
+    {{ content | hideWod(site.showWods) | safe }}
   </div>
 </section>
 
