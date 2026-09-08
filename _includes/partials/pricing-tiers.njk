@@ -1,0 +1,29 @@
+{# Membership tier table, rendered from site.pricing.tiers.
+   A price change is one edit in _data/site.js — this partial, the homepage
+   price strip, and the schema Offers all follow.
+
+   Optional variables:
+     pricingNote — a muted line under the grid #}
+<div class="grid grid-3">
+{%- for t in site.pricing.tiers %}
+  <div class="card{% if t.featured %} card-featured{% endif %}">
+    <h3>{{ t.name }}</h3>
+    <div class="price">{{ t.price }}<span class="price-unit">{{ t.unit }}</span></div>
+    <ul class="feature-list">
+    {%- for f in t.features %}
+      <li>{{ f }}</li>
+    {%- endfor %}
+    {%- for f in t.excluded %}
+      <li class="muted">{{ f }}</li>
+    {%- endfor %}
+    </ul>
+    <a class="btn {% if t.featured %}btn-primary{% else %}btn-secondary{% endif %}" href="{{ t.ctaHref }}"{% if t.ctaExternal %} target="_blank" rel="noopener"{% endif %}>{{ t.ctaLabel }}</a>
+    {%- if t.altCtaLabel %}
+    <p class="text-center mt-3" style="font-size:0.9rem;"><a href="{{ t.altCtaHref }}">{{ t.altCtaLabel }}</a></p>
+    {%- endif %}
+  </div>
+{%- endfor %}
+</div>
+{%- if pricingNote %}
+<p class="text-center text-muted mt-8">{{ pricingNote | safe }}</p>
+{%- endif %}

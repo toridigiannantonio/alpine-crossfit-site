@@ -1,0 +1,32 @@
+{# Location card — address, phone, hours, parking.
+   Every value comes from _data/site.js, so an address or hours change is
+   one edit. Used on /visit/, /about/, /pricing/, /intro/ and the homepage.
+
+   Optional variables (set with {% set %} before including):
+     locationHeading  — an <h3> above the card (omit for no heading)
+     locationCompact  — true to drop the hours rows (address + parking only)
+     locationCta      — true to render the primary CTA button inside the card
+#}
+<div class="location-card">
+  {% if locationHeading %}<h3>{{ locationHeading }}</h3>{% endif %}
+  <dl>
+    <dt>Address</dt>
+    <dd>{{ site.address.street }}<br>{{ site.address.city }}, {{ site.address.region }} {{ site.address.postalCode }}</dd>
+    <dt>Phone</dt>
+    <dd><a href="tel:{{ site.phone }}">{{ site.phoneDisplay }}</a></dd>
+    {%- if not locationCompact %}
+    <dt>Hours</dt>
+    <dd>
+      {%- for h in site.hoursDisplay %}{{ h.days }} {{ h.time }}{% if not loop.last %}<br>{% endif %}{% endfor %}
+      <br><em>{{ site.memberAccess }}</em>
+    </dd>
+    {%- endif %}
+    <dt>Parking</dt>
+    <dd>{{ site.parking }}</dd>
+  </dl>
+  {%- if locationCta %}
+  <div class="mt-6">
+    <a class="btn btn-primary" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a>
+  </div>
+  {%- endif %}
+</div>

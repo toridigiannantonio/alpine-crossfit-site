@@ -66,7 +66,7 @@ extraSchemas:
         "instructor": {
           "@type": "Person",
           "name": "Megan Markee",
-          "jobTitle": "Head Programmer",
+          "jobTitle": "Programmer",
           "url": "https://alpinecrossfit.com/coaches/megan-markee/",
           "worksFor": {"@id": "https://alpinecrossfit.com/#organization"}
         }
@@ -104,7 +104,7 @@ finalCta:
   <div class="container container-narrow">
     <span class="eyebrow">Why this plan</span>
     <h2>Written by people who've raced.</h2>
-    <p>Most free HYROX plans are generic. This one is written by Alpine's head programmer Megan Markee — a 2× CrossFit Games Semifinalist who's spent a decade programming for competitive athletes. The plan reflects how we train our own members for HYROX races.</p>
+    <p>Most free HYROX plans are generic. This one is written by Alpine's Megan Markee — a 2× CrossFit Games Semifinalist who's spent a decade programming for competitive athletes. The plan reflects how we train our own members for HYROX races.</p>
     <p>Alpine is an <strong>Official HYROX Training Center</strong>. We run HYROX-focused programming Tuesday, Thursday, and Sunday plus Friday run club. Our coaches Lisa (Masters Semifinalist), Liz (Quarterfinalist), and Dean (decade of training, active competitor) bring real race-day experience to the room.</p>
   </div>
 </section>
@@ -134,7 +134,7 @@ finalCta:
     </div>
     <script src="https://link.gymntx.com/js/form_embed.js"></script>
 
-    <p class="text-muted mt-6" style="font-size:0.85rem;">Form slow to load or having trouble? <a href="sms:+17209641505">Text us (720) 964-1505</a> and we'll get the plan to you.</p>
+    <p class="text-muted mt-6" style="font-size:0.85rem;">Form slow to load or having trouble? <a href="sms:{{ site.phoneSms }}">Text us {{ site.phoneDisplay }}</a> and we'll get the plan to you.</p>
 
     <p class="text-muted mt-6" style="font-size:0.85rem;">Prefer to start training in person? <a href="/hyrox/">See our HYROX classes →</a> or <a href="/free-intro/">book a free intro</a>.</p>
   </div>
@@ -148,7 +148,7 @@ finalCta:
     <p>Come do one HYROX-prep class at Alpine. First class is free if you have CrossFit experience.</p>
     <div class="hero-cta">
       <a class="btn btn-primary btn-lg" href="https://app.chalkitpro.com/dropIns/754/11814/x" target="_blank" rel="noopener">Free Trial Class</a>
-      <a class="btn btn-secondary btn-lg" href="/free-intro/">Not sure where to start?</a> <a class="btn btn-secondary btn-lg" href="/drop-in/">Drop-In</a>
+      <a class="btn btn-secondary btn-lg" href="/free-intro/">Book a free intro</a> <a class="btn btn-secondary btn-lg" href="/pricing/#visiting">Drop-In</a>
     </div>
   </div>
 </section>

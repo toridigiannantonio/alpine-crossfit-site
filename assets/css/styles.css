@@ -834,7 +834,7 @@ strong { font-weight: 700; color: var(--color-text); }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   gap: var(--space-8);
   margin-bottom: var(--space-12);
 }
@@ -908,3 +908,426 @@ th {
 
 td { color: var(--color-text-muted); }
 td:first-child, th:first-child { color: var(--color-text); font-weight: 500; }
+
+
+/* --------------------------------------------------------------------------
+   Compact link tiles — the homepage services block. A tile is a heading and
+   a link, not a card with a paragraph, so six of them cost about as much
+   vertical space as two old cards did.
+   -------------------------------------------------------------------------- */
+.grid-tiles {
+  display: grid;
+  /* Fixed 3-up rather than auto-fit: six tiles land as two clean rows of
+     three instead of five-plus-an-orphan. */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+@media (max-width: 900px) {
+  .grid-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.tile {
+  display: block;
+  padding: var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.tile:hover { border-color: var(--color-alpine-green); transform: translateY(-2px); }
+
+.tile-title {
+  display: block;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  color: var(--color-text);
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.tile-note {
+  display: block;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* --------------------------------------------------------------------------
+   One-line price strip — replaces the full pricing table on the homepage.
+   The table lives on /pricing/, which owns it.
+   -------------------------------------------------------------------------- */
+.price-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-3) var(--space-6);
+  padding: var(--space-5, 1.25rem) var(--space-6);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.price-strip-item { display: flex; align-items: baseline; gap: var(--space-2); }
+
+.price-strip-amount {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--color-alpine-green);
+  line-height: 1;
+}
+
+.price-strip-label {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 600px) {
+  .price-strip { gap: var(--space-2) var(--space-4); padding: var(--space-4); }
+  .price-strip-amount { font-size: 1.3rem; }
+  .price-strip-label { font-size: 0.75rem; letter-spacing: 0.05em; }
+}
+
+/* --------------------------------------------------------------------------
+   Areas-we-serve list — replaced five near-duplicate city landing pages.
+   -------------------------------------------------------------------------- */
+.area-list { list-style: none; padding: 0; margin: var(--space-6) 0 0; }
+
+.area-item {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: var(--space-4);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-border);
+  align-items: baseline;
+}
+
+.area-time {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-alpine-green);
+}
+
+.area-body { color: var(--color-text-muted); font-size: 0.95rem; }
+.area-body strong { color: var(--color-text); }
+
+@media (max-width: 480px) {
+  .area-item { grid-template-columns: 1fr; gap: 2px; }
+}
+
+/* Secondary actions rendered as text links rather than a stack of buttons —
+   three stacked full-width buttons cost ~180px on a phone for one decision. */
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-5, 1.25rem);
+  margin-top: var(--space-4);
+  font-size: 0.95rem;
+}
+
+.hero-links a { text-decoration: underline; text-underline-offset: 3px; }
+
+/* ==========================================================================
+   MOBILE DENSITY PASS  (added in the 2026 simplification)
+
+   The homepage measured 12,203px tall on a 390px viewport — 14.5 phone
+   screens for about 895 words. Most of that was structural, not editorial:
+
+   1. `.section` carried 4rem of padding top AND bottom with no mobile
+      override. Roughly 1,000px of empty space across a long page.
+   2. Every card grid used `minmax(260px, 1fr)`, which collapses to ONE
+      full-width column below ~600px. Six service cards became six
+      full-height blocks stacked down the screen.
+
+   This block fixes both at the CSS layer, so every page gets shorter without
+   anyone deleting a word.
+   ========================================================================== */
+@media (max-width: 760px) {
+  /* 1. Vertical rhythm: 4rem -> 2.25rem top and bottom. */
+  .section { padding: var(--space-8) 0 var(--space-8); }
+  .section .section-heading { margin-bottom: var(--space-6); }
+  .hero { padding: var(--space-8) 0 var(--space-6); }
+
+  /* 2. Card grids keep two columns instead of collapsing to one. A pair of
+        half-width cards is half the height of two stacked full-width ones. */
+  .grid { gap: var(--space-4); }
+  .grid-2,
+  .grid-3,
+  .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .card { padding: var(--space-4); }
+  .card h3 { font-size: 1.05rem; margin-bottom: var(--space-2); }
+  .card p { font-size: 0.88rem; }
+
+  /* Pricing cards stay full width — the feature lists need the room to be
+     comparable, and there are only three of them. */
+  .pricing-grid.grid-3 { grid-template-columns: 1fr; }
+  .price { font-size: 2.25rem; }
+
+  /* 3. Tighter type and lists. */
+  h1 { font-size: clamp(2rem, 9vw, 2.75rem); }
+  h2 { font-size: 1.5rem; }
+  .hero-dek { font-size: 1rem; }
+  .feature-list li { margin-bottom: var(--space-2); }
+  .faq-item summary { padding: var(--space-3) 0; }
+
+  /* 4. Hero CTAs sit inline rather than stacking full-width buttons. */
+  .hero-cta { gap: var(--space-3); }
+  .btn-lg { padding: var(--space-3) var(--space-6); font-size: 0.95rem; }
+
+  /* 5. Map is a fixed band, not a tall square. */
+  .map-embed { min-height: 200px; }
+  .location-card { padding: var(--space-5, 1.25rem); }
+
+  /* 6. Compact link tiles stay two-up. auto-fit with a 200px minimum
+        collapses to one column at 390px, which is what we were escaping. */
+  .grid-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2); }
+  .tile { padding: var(--space-3); }
+  .tile-title { font-size: 0.92rem; }
+  .tile-note { font-size: 0.78rem; }
+
+  /* 7. The stat row was four full-width blocks stacked (~4 x 110px).
+        Two-by-two grid instead. */
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4);
+    padding: var(--space-6) 0 0;
+  }
+  .stat { min-width: 0; }
+  .stat-value { font-size: 2rem; }
+  .stat-label { font-size: 0.75rem; }
+
+  /* 8. Affiliation badges sit on one row. */
+  .affiliations { padding: var(--space-5, 1.25rem) 0; }
+  .affiliations-row { gap: var(--space-4); }
+
+  /* 9. Footer: three columns of links is a lot of stacked height. */
+  .site-footer { padding: var(--space-8) 0 var(--space-6); }
+  .footer-grid { gap: var(--space-6); margin-bottom: var(--space-6); }
+}
+
+@media (max-width: 480px) {
+  /* Below ~480px two columns of body copy get too narrow to read, so the
+     text-heavy grids go single-column — but the compact link tiles and the
+     stat row stay two-up, which is where most of the height was. */
+  .grid-2:not(.grid-tiles),
+  .grid-3:not(.grid-tiles):not(.stat-row),
+  .grid-4:not(.grid-tiles) { grid-template-columns: 1fr; }
+  .grid-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+
+/* ==========================================================================
+   BLOG ARCHIVE  (/blog/)
+   Articles listed in full at the top; the 147 daily notes grouped by theme
+   in collapsed <details> so the page opens short and searches wide.
+   ========================================================================== */
+
+.archive-article {
+  padding: var(--space-6) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.archive-article:first-of-type { padding-top: 0; }
+.archive-article h3 { margin: 0 0 var(--space-2); font-size: 1.35rem; }
+.archive-article h3 a { color: var(--color-text); }
+.archive-article h3 a:hover { color: var(--color-alpine-green); }
+.archive-article p { color: var(--color-text-muted); margin: 0 0 var(--space-3); }
+
+.archive-date {
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-size: 0.75rem;
+  margin: 0 0 var(--space-2);
+}
+
+.archive-more { color: var(--color-alpine-green); font-weight: 700; }
+
+/* --- search box --- */
+.archive-controls { margin: var(--space-6) 0 var(--space-4); }
+
+.archive-search-label {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-alpine-green);
+  margin-bottom: var(--space-2);
+}
+
+.archive-search {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  -webkit-appearance: none;
+  appearance: none;
+}
+.archive-search::placeholder { color: var(--color-text-muted); }
+.archive-search:focus {
+  outline: 2px solid var(--color-alpine-green);
+  outline-offset: 2px;
+  border-color: var(--color-alpine-green);
+}
+
+.archive-status {
+  margin: var(--space-2) 0 0;
+  min-height: 1.25em;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+/* --- theme groups --- */
+.archive-group {
+  border-bottom: 1px solid var(--color-border);
+}
+.archive-group[hidden] { display: none; }
+
+.archive-group > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-4) 0;
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--font-sans);
+  font-weight: 700;
+}
+.archive-group > summary::-webkit-details-marker { display: none; }
+.archive-group > summary:hover .archive-group-title { color: var(--color-alpine-green); }
+.archive-group > summary:focus-visible {
+  outline: 2px solid var(--color-alpine-green);
+  outline-offset: 2px;
+}
+
+.archive-group-title {
+  position: relative;
+  padding-left: var(--space-6);
+  color: var(--color-text);
+  transition: color var(--transition);
+}
+/* A rotating chevron, so open/closed is obvious without a marker. */
+.archive-group-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid var(--color-alpine-green);
+  border-bottom: 2px solid var(--color-alpine-green);
+  transform: translateY(-70%) rotate(-45deg);
+  transition: transform var(--transition);
+}
+.archive-group[open] .archive-group-title::before {
+  transform: translateY(-30%) rotate(45deg);
+}
+
+.archive-count {
+  flex: none;
+  min-width: 2.25rem;
+  text-align: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.archive-blurb {
+  margin: 0 0 var(--space-3);
+  padding-left: var(--space-6);
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+/* --- note rows --- */
+.note-list {
+  list-style: none;
+  margin: 0 0 var(--space-5, 1.25rem);
+  padding: 0 0 0 var(--space-6);
+}
+
+.note-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2) var(--space-4);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.note-item[hidden] { display: none; }
+.note-item:last-child { border-bottom: 0; }
+.note-item > a { color: var(--color-text); font-weight: 500; }
+.note-item > a:hover { color: var(--color-alpine-green); }
+
+.note-meta {
+  flex: none;
+  color: var(--color-text-muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.archive-empty {
+  padding: var(--space-6) 0;
+  color: var(--color-text-muted);
+}
+.archive-empty[hidden] { display: none; }
+
+@media (max-width: 760px) {
+  .archive-group > summary { padding: var(--space-3) 0; font-size: 0.95rem; }
+  .archive-blurb { padding-left: 0; font-size: 0.85rem; }
+  .note-list { padding-left: 0; }
+  .note-item { gap: 2px; }
+  /* Date and source drop below the title rather than squeezing it. */
+  .note-item > a { flex: 1 1 100%; }
+  .note-meta { font-size: 0.72rem; }
+  .archive-article h3 { font-size: 1.15rem; }
+}
+
+/* Credential grid on the homepage — four short claims, two up on desktop. */
+.cred-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6) var(--space-8);
+  margin-top: var(--space-6);
+}
+
+.cred h3 {
+  font-size: 1.05rem;
+  margin: 0 0 var(--space-2);
+  color: var(--color-alpine-green);
+}
+
+.cred p { margin: 0; color: var(--color-text-muted); font-size: 0.95rem; }
+
+.visit-line { font-size: 1.05rem; margin-bottom: var(--space-2); }
+
+@media (max-width: 760px) {
+  .cred-grid { grid-template-columns: 1fr; gap: var(--space-5, 1.25rem); }
+  .cred h3 { font-size: 1rem; }
+  .cred p { font-size: 0.9rem; }
+  .visit-line { font-size: 0.95rem; }
+}

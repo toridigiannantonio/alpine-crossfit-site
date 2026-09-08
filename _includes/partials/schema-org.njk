@@ -59,7 +59,7 @@
   "dateModified": "{{ page.date | isoDate }}",
   "url": "{{ site.url }}/",
   "telephone": "{{ site.phone }}",
-  "priceRange": "$69-$999/month",
+  "priceRange": {{ site.pricing.range | jsonStringify | safe }},
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "{{ site.address.street }}",
@@ -84,7 +84,18 @@
     { "@type": "LocationFeatureSpecification", "name": "Free parking", "value": true },
     { "@type": "LocationFeatureSpecification", "name": "Showers", "value": true },
     { "@type": "LocationFeatureSpecification", "name": "24/7 member access", "value": true },
+    {%- for a in site.wellness.amenities %}
+    { "@type": "LocationFeatureSpecification", "name": {{ a | jsonStringify | safe }}, "value": true },
+    {%- endfor %}
     { "@type": "LocationFeatureSpecification", "name": "Wellness center", "value": true }
+  ],
+  "makesOffer": [
+    {%- for t in site.pricing.tiers %}
+    { "@type": "Offer", "name": {{ t.name | jsonStringify | safe }}, "price": "{{ t.amount }}", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
+    {%- endfor %}
+    {%- for o in site.pricing.visitOptions %}
+    { "@type": "Offer", "name": {{ o.name | jsonStringify | safe }}, "price": "{{ o.amount }}", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }{% if not loop.last %},{% endif %}
+    {%- endfor %}
   ],
   "aggregateRating": {
     "@type": "AggregateRating",
@@ -97,17 +108,21 @@
 </script>
 {% endif %}
 
-{% if schemaTypes and 'faq' in schemaTypes and faqs %}
+{# FAQPage built from the page's `faqIds`, resolved against the canonical
+   set in _data/faqs.js — the SAME list the faq-list partial renders visibly.
+   There is no second copy of a question or answer to fall out of sync. #}
+{% if schemaTypes and 'faq' in schemaTypes and faqIds %}
+{%- set resolvedFaqs = faqIds | faqPick(faqs) %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {%- for f in faqs %}
+    {%- for f in resolvedFaqs %}
     {
       "@type": "Question",
-      "name": {{ f.question | jsonStringify | safe }},
-      "acceptedAnswer": { "@type": "Answer", "text": {{ f.answer | jsonStringify | safe }} }
+      "name": {{ f.q | jsonStringify | safe }},
+      "acceptedAnswer": { "@type": "Answer", "text": {{ f.a | jsonStringify | safe }} }
     }{% if not loop.last %},{% endif %}
     {%- endfor %}
   ]

@@ -1,0 +1,16 @@
+{# Renders a page's FAQ block from canonical entries in _data/faqs.js.
+   The page sets `faqIds` in front matter; schema-org.njk builds the FAQPage
+   JSON-LD from the very same list, so the two stay in sync by construction.
+
+   Optional front matter:
+     faqHeading  — the <h2> (defaults "Common questions.")
+     faqEyebrow  — the eyebrow above it
+     faqMoreLink — set false to hide the "See all FAQs" link #}
+<span class="eyebrow">{{ faqEyebrow or 'Questions' }}</span>
+<h2>{{ faqHeading or 'Common questions.' }}</h2>
+{%- for f in faqIds | faqPick(faqs) %}
+<details class="faq-item"><summary>{{ f.q }}</summary><div class="faq-answer">{{ f.a | safe }}</div></details>
+{%- endfor %}
+{% if faqMoreLink !== false %}
+<p class="mt-6"><a href="/faq/">See all {{ faqs.items.length }} FAQs →</a></p>
+{% endif %}

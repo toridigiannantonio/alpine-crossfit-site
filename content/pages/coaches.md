@@ -1,20 +1,20 @@
 ---
 title: Meet the Coaches & Owners — Alpine CrossFit Wheat Ridge
-description: Alpine is owned by April & Tori DiGiannantonio. Three CF-L2
-  coaches. Head programmer Megan Markee, a 2× CrossFit Games Semifinalist.
+description: Alpine is owned by April DiGiannantonio (CSCS, SCCC, former
+  Division I Director of Sports Performance) and Tori DiGiannantonio (LCSW,
+  CMPC). Programming by Megan Markee (CSCS). Three CF-L2
+  coaches run every class.
 eyebrow: Coaches &amp; Owners
-heading: Two new <span class="accent">owners</span>. Three CF-L2 coaches. One
-  standard.
-dek: Every class at Alpine is led by one of three CF-L2 certified coaches.
-  Alpine is owned by April and Tori DiGiannantonio, who took over in 2026.
-  Programming stays in-house — written by head programmer Megan Markee (CSCS,
-  2× CrossFit Games Semifinalist) in collaboration with April.
+heading: The people <span class="accent">actually coaching</span> you.
+dek: Two CSCS-certified professionals write the programming, a former
+  Division I Director of Sports Performance owns the gym, and a CF-L2 coach
+  runs every class. Here's the whole staff.
 heroCtas:
-  - label: "Not sure where to start?"
+  - label: "Book a free intro"
     href: /free-intro/
     style: btn-primary btn-lg
   - label: "Drop-In"
-    href: /drop-in/
+    href: /pricing/#visiting
     style: btn-secondary btn-lg
 layout: layouts/page.njk
 permalink: /coaches/
@@ -59,7 +59,7 @@ extraSchemas:
         item:
           "@type": Person
           name: Megan Markee
-          jobTitle: Head Programmer
+          jobTitle: Programmer
           url: https://alpinecrossfit.com/coaches/megan-markee/
           worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
       - "@type": ListItem
@@ -90,7 +90,7 @@ extraSchemas:
 <section class="section">
   <div class="container">
     <span class="eyebrow">The coaches</span>
-    <h2 class="section-heading">Three CF-L2 trainers. Every class, every time.</h2>
+    <h2 class="section-heading">A CF-L2 trainer in every class, every time.</h2>
     <div class="grid grid-3">
       <div class="card">
         <h3>Lisa Arcangel</h3>
@@ -123,7 +123,7 @@ extraSchemas:
       <div class="card">
         <h3>April DiGiannantonio</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-alpine-green);">Owner · CSCS · SCCC · Former D1 Director of Sports Performance</p>
-        <p>Ten-plus years in fitness and sports performance. Opened her first CrossFit gym in Denver in 2013. Spent over five years coaching Division I athletes across a dozen sports. Programs Alpine's in-house training alongside head programmer Megan Markee.</p>
+        <p>Ten-plus years in fitness and sports performance. Has owned CrossFit gyms on and off since 2013 and competed at CrossFit Games Regionals, individually and on a team. Spent over five years coaching Division I athletes across a dozen sports. Programs Alpine's in-house training alongside Megan Markee.</p>
         <a href="/coaches/april-digiannantonio/">Learn about April →</a>
       </div>
       <div class="card">
@@ -143,7 +143,7 @@ extraSchemas:
     <div class="grid grid-2 mt-8">
       <div class="card">
         <h3>Megan Markee</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-alpine-green);">Head Programmer · CSCS · CF-L2 · 2× CrossFit Semifinalist</p>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-alpine-green);">Programming · CSCS · CF-L1 · 2× Semifinalist · 2× Regionals</p>
         <p>Designs every workout Alpine members follow, in collaboration with owner April. Twice qualified for the CrossFit Games Semifinals, and twice for CrossFit Games Regionals on a team. Started CrossFit in 2011.</p>
         <a href="/coaches/megan-markee/">Learn about Megan →</a>
       </div>
@@ -155,7 +155,7 @@ extraSchemas:
   <div class="container text-center">
     <h2>Come train here.</h2>
     <div class="hero-cta" style="justify-content:center;">
-      <a class="btn btn-lg" style="background:#000;color:#fff;" href="/free-intro/">Not sure where to start?</a> <a class="btn btn-lg" style="background:transparent;color:#000;border-color:#000;" href="/drop-in/">Drop-In</a>
+      <a class="btn btn-lg" style="background:#000;color:#fff;" href="/free-intro/">Book a free intro</a> <a class="btn btn-lg" style="background:transparent;color:#000;border-color:#000;" href="/pricing/#visiting">Drop-In</a>
     </div>
   </div>
 </section>

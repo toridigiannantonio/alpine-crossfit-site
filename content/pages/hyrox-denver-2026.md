@@ -34,18 +34,6 @@ extraSchemas:
     }
   - {
       "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "When is HYROX Denver 2026?", "acceptedAnswer": { "@type": "Answer", "text": "HYROX Denver 2026 is November 12-15, 2026 at the Colorado Convention Center in downtown Denver. It's the first regional HYROX race held in Denver." } },
-        { "@type": "Question", "name": "What is HYROX?", "acceptedAnswer": { "@type": "Answer", "text": "HYROX is a hybrid fitness race combining eight 1-kilometer runs with eight functional workout stations: SkiErg, sled push, sled pull, burpee broad jumps, rowing, farmers carry, sandbag lunges, and wall balls — one continuous race." } },
-        { "@type": "Question", "name": "How do I train for HYROX Denver 2026?", "acceptedAnswer": { "@type": "Answer", "text": "HYROX training combines compromised running, functional strength, and station-specific practice. Alpine CrossFit is an Official HYROX Training Center in Wheat Ridge — we run HYROX-focused classes Tuesday, Thursday, and Sunday, plus Friday run club." } },
-        { "@type": "Question", "name": "Where can I train for HYROX near Denver?", "acceptedAnswer": { "@type": "Answer", "text": "Alpine CrossFit in Wheat Ridge is an Official HYROX Training Center serving Wheat Ridge, Arvada, Lakewood, Applewood, and Golden. We're 12 minutes from downtown Denver and the Colorado Convention Center." } },
-        { "@type": "Question", "name": "How long does a HYROX race take?", "acceptedAnswer": { "@type": "Answer", "text": "Most first-time HYROX racers finish in 1:30 to 2:00. Competitive Open athletes finish 60-90 minutes. Pro division winners are typically under 60 minutes." } },
-        { "@type": "Question", "name": "Do I need CrossFit experience to do HYROX?", "acceptedAnswer": { "@type": "Answer", "text": "No. HYROX is designed to be accessible to a wider range of athletes than CrossFit. If you can run, push a sled, and do basic functional movements, you can complete a HYROX race." } }
-      ]
-    }
-  - {
-      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://alpinecrossfit.com/"},
@@ -58,8 +46,17 @@ finalCta:
   body: "Get the free 12-week prep plan, or come do a sim with us."
   ctas:
     - { label: "Get the Free Plan", href: "/hyrox-prep/", inlineStyle: "background:#000;color:#fff;" }
-    - { label: "Not sure where to start?", href: "/free-intro/", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
-    - { label: "Drop-In", href: "/drop-in/", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+    - { label: "Book a free intro", href: "/free-intro/", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+schemaTypes: ["healthclub", "faq"]
+faqEyebrow: "Race questions"
+faqHeading: "Race-day and training questions."
+faqIds:
+  - race-when
+  - race-register
+  - race-duration
+  - race-experience-needed
+  - race-how-long-to-train
+  - hyrox-vs-crossfit
 ---
 
 <section class="section">
@@ -128,23 +125,15 @@ finalCta:
       <li><strong>Thursday classes</strong> — sled work, sandbag, wall ball volume</li>
       <li><strong>Sunday classes</strong> — full station simulations</li>
       <li><strong>Friday run club</strong> — building the engine</li>
-      <li><strong>Race simulations</strong> hosted on the floor — confirm times with Alpine staff or text us at <a href="sms:+17209641505">(720) 964-1505</a></li>
+      <li><strong>Race simulations</strong> hosted on the floor — confirm times with Alpine staff or text us at <a href="sms:{{ site.phoneSms }}">{{ site.phoneDisplay }}</a></li>
     </ul>
-    <p>Our head programmer Megan Markee is a 2× CrossFit Games Semifinalist who writes the program for the whole gym. Our coaches Lisa (Masters Semifinalist), Liz (Quarterfinalist), and Dean (decade of training, active competitor) bring real race experience to the room.</p>
+    <p>Our Megan Markee is a 2× CrossFit Games Semifinalist who writes the program for the whole gym. Our coaches Lisa (Masters Semifinalist), Liz (Quarterfinalist), and Dean (decade of training, active competitor) bring real race experience to the room.</p>
     <p class="mt-6"><a class="btn btn-primary btn-lg" href="/hyrox-prep/">Get the Free 12-Week Prep Plan</a></p>
   </div>
 </section>
 
 <section class="section">
   <div class="container container-narrow">
-    <span class="eyebrow">FAQ</span>
-    <h2>Race-day &amp; training questions.</h2>
-    <details class="faq-item"><summary>When exactly is HYROX Denver 2026?</summary><div class="faq-answer">November 12-15, 2026 at the Colorado Convention Center (700 14th Street, Denver, CO 80202). Specific heat times are released by HYROX closer to the race.</div></details>
-    <details class="faq-item"><summary>How do I register?</summary><div class="faq-answer">Registration is through <a href="https://hyrox.com" target="_blank" rel="noopener">hyrox.com</a>. Denver-area races sell out — register as soon as the event opens to lock in your division and preferred wave.</div></details>
-    <details class="faq-item"><summary>Do I need CrossFit experience to race HYROX?</summary><div class="faq-answer">No. HYROX is designed to be more accessible than CrossFit. If you can run, push a sled, and do basic functional movements, you can complete a HYROX race. Specific training improves your time significantly.</div></details>
-    <details class="faq-item"><summary>What does HYROX-specific training look like?</summary><div class="faq-answer">It's a mix of compromised running (running while fatigued), functional strength on the eight stations, and pacing practice. At Alpine, our Tuesday, Thursday, and Sunday classes plus Friday run club are scoped for HYROX athletes. Get the full 12-week plan free.</div></details>
-    <details class="faq-item"><summary>How early should I start training?</summary><div class="faq-answer">12 weeks is the standard prep window if you're already conditioned. 16-20 weeks if you're newer to functional fitness. Starting now (April 2026) puts you well ahead for November.</div></details>
-    <details class="faq-item"><summary>How long does a HYROX race take?</summary><div class="faq-answer">First-time racers typically finish in 1:30 to 2:00. Competitive Open athletes finish 60-90 minutes. Pro division winners are under 60 minutes.</div></details>
-    <details class="faq-item"><summary>Can I try HYROX-style training at Alpine before committing?</summary><div class="faq-answer">Yes. Drop into a Tuesday, Thursday, or Sunday class as an experienced CrossFitter ($30 drop-in or your first one's free), or book a free No Sweat Intro to talk through a training plan with a coach.</div></details>
+    {% include "partials/faq-list.njk" %}
   </div>
 </section>

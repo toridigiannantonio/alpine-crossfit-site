@@ -1,0 +1,11 @@
+{# "Areas we serve" — real drive times from site.areas.
+   This replaced five near-duplicate /gym/<city>/ landing pages. One
+   physical location, one page, honest numbers. #}
+<ul class="area-list">
+{%- for a in site.areas %}
+  <li class="area-item">
+    <span class="area-time">{{ a.time }}</span>
+    <span class="area-body"><strong>{{ a.city }}</strong> — {{ a.note }}</span>
+  </li>
+{%- endfor %}
+</ul>

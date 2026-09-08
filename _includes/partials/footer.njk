@@ -1,10 +1,14 @@
 <footer class="site-footer">
   <div class="container">
+    {# 12 links across 3 columns. The Areas column went away with the
+       five /gym/<city>/ pages; About and Blog moved down here from the
+       primary nav. #}
     <div class="footer-grid">
       <div>
-        <h4>Alpine CrossFit</h4>
+        <h4>{{ site.name }}</h4>
         <p>{{ site.address.street }}<br>{{ site.address.city }}, {{ site.address.region }} {{ site.address.postalCode }}<br><a href="tel:{{ site.phone }}">{{ site.phoneDisplay }}</a></p>
         <p class="text-muted" style="font-size:0.85rem;">Founded {{ site.founded }} · Under current ownership since {{ site.ownershipSince }}</p>
+        <p><a class="btn btn-primary" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a></p>
       </div>
       <div>
         <h4>Train</h4>
@@ -15,24 +19,22 @@
         </ul>
       </div>
       <div>
-        <h4>Info</h4>
+        <h4>Visit</h4>
         <ul>
-        {%- for item in site.footerColumns.info %}
+        {%- for item in site.footerColumns.visit %}
           <li><a href="{{ item.url }}">{{ item.label }}</a></li>
         {%- endfor %}
         </ul>
-      </div>
-      <div>
-        <h4>Areas</h4>
+        <h4 class="mt-6">About</h4>
         <ul>
-        {%- for item in site.footerColumns.areas %}
+        {%- for item in site.footerColumns.about %}
           <li><a href="{{ item.url }}">{{ item.label }}</a></li>
         {%- endfor %}
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <div>© 2026 Alpine CrossFit. All rights reserved.</div>
+      <div>© 2026 {{ site.name }}. All rights reserved.</div>
       <div><a href="{{ site.instagram }}">Instagram</a></div>
     </div>
   </div>

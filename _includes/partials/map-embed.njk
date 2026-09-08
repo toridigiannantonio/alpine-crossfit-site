@@ -1,0 +1,5 @@
+{# Google Maps embed for the gym address. The URL lives in _data/site.js
+   alongside the address it points at, so the two can't drift apart. #}
+<iframe class="map-embed" loading="lazy" allowfullscreen
+        title="Map to {{ site.name }}, {{ site.address.street }}, {{ site.address.city }}"
+        src="{{ site.mapEmbed }}"></iframe>
