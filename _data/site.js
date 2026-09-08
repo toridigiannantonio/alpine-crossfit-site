@@ -30,6 +30,7 @@ export default {
   cssVersion: assetHash("assets/css/styles.css"),
   mainJsVersion: assetHash("assets/js/main.js"),
   imagesJsVersion: assetHash("assets/js/images.js"),
+  archiveJsVersion: assetHash("assets/js/blog-archive.js"),
   // The favicon keeps its filename across redesigns but sits under the
   // year-long immutable cache for /assets/img, so it needs a token too —
   // otherwise a returning visitor's browser tab keeps the old icon.

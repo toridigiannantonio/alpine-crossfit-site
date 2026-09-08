@@ -1,8 +1,28 @@
 ---
 layout: layouts/base.njk
 ---
-{# Blog index. Lists every post in collections.blog, newest first.
+{# Blog index, rebuilt as a searchable archive.
+
+   Two kinds of post live in content/blog/ (see _lib/blog-taxonomy.js):
+
+     ARTICLES — hand-written, indexed, listed in full at the top.
+     NOTES    — the daily Stoic post. 147 of them, median 144 words.
+                Grouped by theme in collapsed sections so this page is short
+                by default, searchable across all of them, and noindexed
+                individually.
+
+   The search is progressive enhancement: every note is in the HTML, so with
+   JavaScript off you get the full archive, just without filtering.
+
    Frontmatter expected: title, description, eyebrow, heading, dek. #}
+
+{% set articles = [] %}
+{% set notes = [] %}
+{%- for post in collections.blog %}
+  {%- if post.data.postType == 'article' %}{% set articles = (articles.push(post), articles) %}
+  {%- else %}{% set notes = (notes.push(post), notes) %}{% endif %}
+{%- endfor %}
+
 <section class="hero">
   <div class="container container-narrow">
     {% if eyebrow %}<div class="hero-eyebrow">{{ eyebrow }}</div>{% endif %}
@@ -11,19 +31,78 @@ layout: layouts/base.njk
   </div>
 </section>
 
-<section class="section">
+{% if articles | length %}
+<section class="section" id="articles">
   <div class="container container-narrow">
-    {% if collections.blog | length %}
-    {%- for post in collections.blog %}
-    <article style="padding:var(--space-8) 0;border-bottom:1px solid rgba(0,0,0,0.1);">
-      <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.1em;font-weight:700;font-size:0.85rem;margin-bottom:var(--space-2);">{{ post.date | readableDate }}</p>
-      <h2 style="margin-bottom:var(--space-3);"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+    <span class="eyebrow">Articles</span>
+    <h2 class="section-heading">Guides and gym news.</h2>
+    <p class="archive-empty" id="articles-empty" hidden>No articles match that.</p>
+    {%- for post in articles %}
+    <article class="archive-article"
+             data-search="{{ (post.data.title ~ ' ' ~ (post.data.description or '') ~ ' article guide') | lower }}">
+      <p class="archive-date">{{ post.date | readableDate }}</p>
+      <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
       {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
-      <a href="{{ post.url }}" style="color:var(--color-alpine-green);font-weight:700;">Read the post →</a>
+      <a class="archive-more" href="{{ post.url }}">Read the post →</a>
     </article>
     {%- endfor %}
-    {% else %}
-    <p class="text-muted">No posts yet — check back soon.</p>
-    {% endif %}
+  </div>
+</section>
+{% endif %}
+
+{% if notes | length %}
+<section class="section section-dark" id="archive">
+  <div class="container container-narrow">
+    <span class="eyebrow">Daily notes</span>
+    <h2 class="section-heading">The archive, by theme.</h2>
+    <p>A short Stoic note goes up most mornings — a passage, what it means in a gym, and one thing to try that day. {{ notes | length }} of them so far, grouped by what they're about. The search above covers the articles too.</p>
+
+    <div class="archive-controls">
+      <label class="archive-search-label" for="archive-search">Search the archive</label>
+      <input type="search" id="archive-search" class="archive-search"
+             placeholder="Try “control”, “Seneca”, “Murph”…"
+             autocomplete="off" spellcheck="false">
+      <p class="archive-status" id="archive-status" role="status" aria-live="polite"></p>
+    </div>
+
+    <div id="archive-groups">
+    {%- for theme in blogThemes.THEMES %}
+      {%- set inTheme = [] %}
+      {%- for n in notes %}{% if n.data.theme == theme.id %}{% set inTheme = (inTheme.push(n), inTheme) %}{% endif %}{% endfor %}
+      {%- if inTheme | length %}
+      <details class="archive-group" data-theme="{{ theme.id }}" id="{{ theme.id }}">
+        <summary>
+          <span class="archive-group-title">{{ theme.label }}</span>
+          <span class="archive-count" data-count="{{ inTheme | length }}">{{ inTheme | length }}</span>
+        </summary>
+        <p class="archive-blurb">{{ theme.blurb }}</p>
+        <ul class="note-list">
+          {%- for n in inTheme %}
+          <li class="note-item"
+              data-search="{{ (n.data.title ~ ' ' ~ (n.data.description or '') ~ ' ' ~ theme.label ~ ' ' ~ (n.data.source or '')) | lower }}">
+            <a href="{{ n.url }}">{{ n.data.title }}</a>
+            <span class="note-meta">
+              <time datetime="{{ n.date | isoDate }}">{{ n.date | readableDate }}</time>
+              {%- if n.data.source %} · {{ blogThemes.sourceById[n.data.source].label }}{% endif %}
+            </span>
+          </li>
+          {%- endfor %}
+        </ul>
+      </details>
+      {%- endif %}
+    {%- endfor %}
+    </div>
+
+    <p class="archive-empty" id="archive-empty" hidden>No daily notes match that. Try a shorter word.</p>
+  </div>
+</section>
+{% endif %}
+
+<section class="section section-green">
+  <div class="container text-center">
+    <h2>Ready to train with us?</h2>
+    <div class="hero-cta" style="justify-content:center;">
+      <a class="btn btn-lg" style="background:#000;color:#fff;" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a>
+    </div>
   </div>
 </section>

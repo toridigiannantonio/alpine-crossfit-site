@@ -7,7 +7,6 @@ canonical: "https://alpinecrossfit.com/intro/"
 ogImage: "https://alpinecrossfit.com/assets/img/hero-alpine-wall.jpg"
 noindex: true
 schemaTypes: []
-extraHead: '<meta name="robots" content="noindex,nofollow">'
 eyebrow: "You're in"
 heading: "Now pick a <span class=\"accent\">time</span>."
 dek: "Thanks for your info. Choose a time below for your free No Sweat Intro — 30 minutes with a coach, no workout, no pressure."

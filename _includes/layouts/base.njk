@@ -31,6 +31,13 @@
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
   {% if canonical %}<link rel="canonical" href="{{ canonical }}">{% else %}<link rel="canonical" href="{{ site.url }}{{ page.url }}">{% endif %}
+  {# The `noindex` flag previously only suppressed the WebPage schema and kept
+     the page out of the sitemap — it never emitted an actual robots tag, so
+     /intro/ relied on a hand-written one in `extraHead`. It emits the real
+     tag now. "follow" is deliberate: the daily notes are not worth indexing,
+     but the links out of them to /crossfit/, /pricing/ and the rest still
+     count. #}
+  {% if noindex %}<meta name="robots" content="noindex,follow">{% endif %}
   <link rel="icon" type="image/png" href="/assets/img/favicon.png?v={{ site.faviconVersion }}">
   <link rel="apple-touch-icon" href="/assets/img/favicon.png?v={{ site.faviconVersion }}">
   <meta property="og:image" content="{{ ogImage or (site.url + '/assets/img/hero-alpine-wall.jpg') }}">
@@ -81,5 +88,6 @@
 
 <script src="/assets/js/main.js?v={{ site.mainJsVersion }}" defer></script>
 {% if loadImagesScript %}<script src="/assets/js/images.js?v={{ site.imagesJsVersion }}" defer></script>{% endif %}
+{% if loadArchiveScript %}<script src="/assets/js/blog-archive.js?v={{ site.archiveJsVersion }}" defer></script>{% endif %}
 </body>
 </html>

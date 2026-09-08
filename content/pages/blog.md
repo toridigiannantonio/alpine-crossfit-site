@@ -2,11 +2,12 @@
 layout: layouts/blog.njk
 permalink: /blog/
 title: "Blog — Alpine CrossFit, Wheat Ridge CO"
-description: "News, training tips, and the daily workout from Alpine CrossFit in Wheat Ridge, Colorado."
+description: "Guides from the coaches at Alpine CrossFit in Wheat Ridge, plus a searchable archive of the daily Stoic notes, grouped by theme."
 canonical: "https://alpinecrossfit.com/blog/"
+loadArchiveScript: true
 eyebrow: "The Alpine blog"
 heading: "What's happening at <span class=\"accent\">Alpine</span>."
-dek: "Training tips, gym news, and the workout of the day — straight from the coaches at Alpine CrossFit in Wheat Ridge."
+dek: "Guides and gym news from the coaches — plus a searchable archive of the daily notes, grouped by what they're about."
 extraSchemas:
   - {
       "@context": "https://schema.org",
