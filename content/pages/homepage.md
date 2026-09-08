@@ -45,7 +45,7 @@ credentials:
     - heading: "Mental performance on staff."
       body: "Co-owner Tori DiGiannantonio is an LCSW and Certified Mental Performance Coach. Few gyms have that in the building."
     - heading: "Owner-operators, not absentees."
-      body: "April and Tori train at Alpine alongside members. April has owned and run CrossFit gyms since 2013."
+      body: "April and Tori train at Alpine alongside members. April has owned and run CrossFit gyms on and off since 2013, with a stretch in the collegiate world in between."
   link: { label: "Meet the coaches and owners →", href: "/coaches/" }
 services:
   eyebrow: "What we offer"
