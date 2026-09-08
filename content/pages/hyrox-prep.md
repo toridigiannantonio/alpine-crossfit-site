@@ -152,8 +152,8 @@ finalCta:
        rather than straight at the booking form, so the offer is read in the
        context of who it is actually for. #}
     <div class="hero-cta">
-      <a class="btn btn-primary btn-lg" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a>
-      <a class="btn btn-secondary btn-lg" href="/pricing/#visiting">Drop in to a class</a>
+      <a class="btn btn-primary btn-lg" href="{{ site.pricing.visitOptions[1].ctaHref }}" target="_blank" rel="noopener">Drop in — {{ site.pricing.visitOptions[1].price }}</a>
+      <a class="btn btn-secondary btn-lg" href="/free-intro/">New to CrossFit? Book a free intro</a>
     </div>
     <p class="text-muted mt-4" style="font-size:0.9rem;">Already training at another CrossFit affiliate? <a href="/about/#from-another-gym">Your first class is on us.</a></p>
   </div>
