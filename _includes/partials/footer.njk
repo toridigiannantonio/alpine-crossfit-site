@@ -8,7 +8,10 @@
         <h4>{{ site.name }}</h4>
         <p>{{ site.address.street }}<br>{{ site.address.city }}, {{ site.address.region }} {{ site.address.postalCode }}<br><a href="tel:{{ site.phone }}">{{ site.phoneDisplay }}</a></p>
         <p class="text-muted" style="font-size:0.85rem;">Founded {{ site.founded }} · Under current ownership since {{ site.ownershipSince }}</p>
-        <p><a class="btn btn-primary" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a></p>
+        <p class="footer-cta">
+          <a class="btn btn-primary" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a>
+          <a class="btn btn-primary" href="{{ site.pricing.visitOptions[1].ctaHref }}" target="_blank" rel="noopener">Drop in — {{ site.pricing.visitOptions[1].price }}</a>
+        </p>
       </div>
       <div>
         <h4>Train</h4>

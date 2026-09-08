@@ -214,6 +214,7 @@ speakable: true
     {% if finalCta.body %}<p class="hero-dek" style="margin-left:auto;margin-right:auto;color:rgba(0,0,0,0.8);">{{ finalCta.body | safe }}</p>{% endif %}
     <div class="hero-cta hero-cta-center" style="justify-content:center;">
       <a class="btn btn-lg" style="background:#000;color:#fff;" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a>
+      <a class="btn btn-lg" style="background:#000;color:#fff;" href="{{ site.pricing.visitOptions[1].ctaHref }}" target="_blank" rel="noopener">Drop in — {{ site.pricing.visitOptions[1].price }}</a>
     </div>
   </div>
 </section>

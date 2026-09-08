@@ -6,10 +6,14 @@
       <li><a href="{{ item.url }}">{{ item.label }}</a></li>
     {%- endfor %}
     </ul>
-    {# One CTA, not two. The header used to run "Not sure where to start?"
-       and "Drop-In" side by side, so neither won. #}
+    {# Two CTAs, for two different people: someone starting out books the
+       intro, someone who already trains buys a drop-in. This is not the old
+       pattern it replaced — that was two buttons chasing the SAME visitor,
+       so neither won. These buttons hide below 860px; the sticky bar carries
+       both on phones. #}
     <div class="nav-cta">
       <a class="btn btn-primary" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a>
+      <a class="btn btn-primary nav-cta-dropin" href="{{ site.pricing.visitOptions[1].ctaHref }}" target="_blank" rel="noopener">Drop in — {{ site.pricing.visitOptions[1].price }}</a>
     </div>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
   </nav>

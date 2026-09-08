@@ -776,7 +776,11 @@ strong { font-weight: 700; color: var(--color-text); }
 
 /* Sticky mobile CTA */
 .sticky-cta {
-  display: none;
+  /* Shown on every viewport, not just phones. Both doors stay reachable at
+     any scroll depth — a visiting athlete should never have to hunt for the
+     paid option. body gets matching bottom padding below so nothing hides
+     behind it. */
+  display: block;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -790,11 +794,14 @@ strong { font-weight: 700; color: var(--color-text); }
 .sticky-cta-inner {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-4);
   max-width: var(--max-width);
   margin: 0 auto;
 }
 
+/* Phones: the two buttons share the width. Desktop: they sit at their natural
+   size, centred, rather than stretching across the whole viewport. */
 /* Both doors share the bar evenly — the free intro and the paid drop-in are
    for different people, so neither is the quieter one. Labels stay short so
    the row holds on a 320px phone. */
@@ -806,6 +813,17 @@ strong { font-weight: 700; color: var(--color-text); }
   padding-right: var(--space-2);
   font-size: 0.78rem;
   text-align: center;
+}
+
+/* Desktop: the two buttons sit at their natural size, centred, instead of
+   stretching the full width of a 1400px viewport. This has to come AFTER the
+   flex:1 above — it lost to source order the first time. */
+@media (min-width: 861px) {
+  .sticky-cta .btn {
+    flex: 0 0 auto;
+    font-size: 0.8rem;
+    padding: var(--space-3) var(--space-8);
+  }
 }
 
 /* The bar has to hold both doors on a 320px phone, so the secondary
@@ -825,9 +843,13 @@ strong { font-weight: 700; color: var(--color-text); }
 
 .sticky-cta-alt:hover { color: var(--color-alpine-green); }
 
-@media (max-width: 860px) {
-  .sticky-cta { display: block; }
-  body { padding-bottom: 80px; }
+/* Fallback offset for the always-on sticky bar. main.js replaces this with
+   the bar's measured height, which matters at narrow widths where the two
+   buttons wrap and the bar grows. */
+body { padding-bottom: 92px; }
+
+@media (max-width: 380px) {
+  body { padding-bottom: 112px; }
 }
 
 /* Footer */
@@ -1336,4 +1358,18 @@ td:first-child, th:first-child { color: var(--color-text); font-weight: 500; }
   .cred h3 { font-size: 1rem; }
   .cred p { font-size: 0.9rem; }
   .visit-line { font-size: 0.95rem; }
+}
+
+/* Footer CTA pair — wraps rather than overflowing the narrow first column. */
+.footer-cta { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+.footer-cta .btn { font-size: 0.8rem; padding: var(--space-3) var(--space-4); }
+
+/* Header CTA pair. Both buttons are already hidden below 860px by the mobile
+   nav rules, where the sticky bar takes over. */
+.nav-cta .btn { white-space: nowrap; font-size: 0.72rem; padding: var(--space-3) var(--space-4); }
+
+@media (max-width: 1080px) and (min-width: 861px) {
+  /* Narrow desktop: keep the nav from crowding by trimming the CTA padding. */
+  .nav-cta .btn { font-size: 0.68rem; padding: var(--space-2) var(--space-3); }
+  .nav-links { gap: var(--space-5, 1.25rem); }
 }
