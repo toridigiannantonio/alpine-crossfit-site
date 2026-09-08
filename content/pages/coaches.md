@@ -143,7 +143,7 @@ extraSchemas:
     <div class="grid grid-2 mt-8">
       <div class="card">
         <h3>Megan Markee</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-alpine-green);">CSCS · CF-L1 · 2× CrossFit Semifinalist</p>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-alpine-green);">Programming · CSCS · CF-L1 · 2× CrossFit Semifinalist</p>
         <p>Designs every workout Alpine members follow, in collaboration with owner April. Twice qualified for the CrossFit Games Semifinals, and twice for CrossFit Games Regionals on a team. Started CrossFit in 2011.</p>
         <a href="/coaches/megan-markee/">Learn about Megan →</a>
       </div>

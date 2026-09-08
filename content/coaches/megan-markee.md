@@ -1,6 +1,6 @@
 ---
 name: Megan Markee
-credentialsLine: CF-L1 · CSCS ·  4 × CrossFit Semifinalist · Masters Athlete
+credentialsLine: Programming · CSCS · CF-L1 · 4 × CrossFit Semifinalist · Masters Athlete
 bio: "Megan Markee, CSCS, CF-L1, writes Alpine's in-house programming in
   collaboration with owner April DiGiannantonio. As an
   athlete, she has twice qualified for the CrossFit Games Semifinals
@@ -64,5 +64,5 @@ personSchema:
     - https://www.instagram.com/megan_markee/
     - https://games.crossfit.com/athlete/244983
   "@type": Person
-  jobTitle: Programmer
+  jobTitle: Programming
 ---
