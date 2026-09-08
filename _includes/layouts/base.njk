@@ -63,11 +63,14 @@
 
 {% include "partials/footer.njk" %}
 
-{# Mobile sticky bar. One CTA, matching the header and footer. #}
+{# Mobile sticky bar — the most persistent CTA on a phone, so it carries both
+   doors rather than only the free one. It used to offer the intro plus a
+   tap-to-call; the call is still one tap away in the footer and on /visit/,
+   and someone who already trains needs the paid option in front of them. #}
 <div class="sticky-cta">
   <div class="sticky-cta-inner">
     <a class="btn btn-primary" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a>
-    <a class="sticky-cta-alt" href="tel:{{ site.phone }}">or call {{ site.phoneDisplay }}</a>
+    <a class="btn btn-primary" href="{{ site.pricing.visitOptions[1].ctaHref }}" target="_blank" rel="noopener">Drop in — {{ site.pricing.visitOptions[1].price }}</a>
   </div>
 </div>
 
