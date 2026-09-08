@@ -2,7 +2,7 @@
 title: Meet the Coaches & Owners — Alpine CrossFit Wheat Ridge
 description: Alpine is owned by April DiGiannantonio (CSCS, SCCC, former
   Division I Director of Sports Performance) and Tori DiGiannantonio (LCSW,
-  CMPC). Programming by head programmer Megan Markee (CSCS). Three CF-L2
+  CMPC). Programming by Megan Markee (CSCS). Three CF-L2
   coaches run every class.
 eyebrow: Coaches &amp; Owners
 heading: The people <span class="accent">actually coaching</span> you.
@@ -59,7 +59,7 @@ extraSchemas:
         item:
           "@type": Person
           name: Megan Markee
-          jobTitle: Head Programmer
+          jobTitle: Programmer
           url: https://alpinecrossfit.com/coaches/megan-markee/
           worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
       - "@type": ListItem
@@ -123,7 +123,7 @@ extraSchemas:
       <div class="card">
         <h3>April DiGiannantonio</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-alpine-green);">Owner · CSCS · SCCC · Former D1 Director of Sports Performance</p>
-        <p>Ten-plus years in fitness and sports performance. Opened her first CrossFit gym in Denver in 2013. Spent over five years coaching Division I athletes across a dozen sports. Programs Alpine's in-house training alongside head programmer Megan Markee.</p>
+        <p>Ten-plus years in fitness and sports performance. Opened her first CrossFit gym in Denver in 2013. Spent over five years coaching Division I athletes across a dozen sports. Programs Alpine's in-house training alongside Megan Markee.</p>
         <a href="/coaches/april-digiannantonio/">Learn about April →</a>
       </div>
       <div class="card">
@@ -143,7 +143,7 @@ extraSchemas:
     <div class="grid grid-2 mt-8">
       <div class="card">
         <h3>Megan Markee</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-alpine-green);">Head Programmer · CSCS · CF-L2 · 2× CrossFit Semifinalist</p>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-alpine-green);">CSCS · CF-L1 · 2× CrossFit Semifinalist</p>
         <p>Designs every workout Alpine members follow, in collaboration with owner April. Twice qualified for the CrossFit Games Semifinals, and twice for CrossFit Games Regionals on a team. Started CrossFit in 2011.</p>
         <a href="/coaches/megan-markee/">Learn about Megan →</a>
       </div>

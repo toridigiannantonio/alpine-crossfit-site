@@ -127,7 +127,7 @@ faqIds:
       <li><strong>Friday run club</strong> — building the engine</li>
       <li><strong>Race simulations</strong> hosted on the floor — confirm times with Alpine staff or text us at <a href="sms:{{ site.phoneSms }}">{{ site.phoneDisplay }}</a></li>
     </ul>
-    <p>Our head programmer Megan Markee is a 2× CrossFit Games Semifinalist who writes the program for the whole gym. Our coaches Lisa (Masters Semifinalist), Liz (Quarterfinalist), and Dean (decade of training, active competitor) bring real race experience to the room.</p>
+    <p>Our Megan Markee is a 2× CrossFit Games Semifinalist who writes the program for the whole gym. Our coaches Lisa (Masters Semifinalist), Liz (Quarterfinalist), and Dean (decade of training, active competitor) bring real race experience to the room.</p>
     <p class="mt-6"><a class="btn btn-primary btn-lg" href="/hyrox-prep/">Get the Free 12-Week Prep Plan</a></p>
   </div>
 </section>

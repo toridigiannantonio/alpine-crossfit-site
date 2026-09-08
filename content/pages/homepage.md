@@ -39,7 +39,7 @@ credentials:
   intro: "Plenty of gyms are run by people with a weekend certification. Alpine isn't one of them."
   items:
     - heading: "Programming written by two CSCS."
-      body: "Every workout comes from head programmer Megan Markee and owner April DiGiannantonio, together — no franchise template, no subscription feed. April adds the SCCC and five-plus years as a Division I Director of Sports Performance; Megan has known this community for a decade. Both compete in CrossFit, and both came up in other sports first."
+      body: "Every workout comes from Megan Markee and owner April DiGiannantonio, together — no franchise template, no subscription feed. April adds the SCCC and five-plus years as a Division I Director of Sports Performance; Megan has known this community for a decade. Both compete in CrossFit, and both came up in other sports first."
     - heading: "A CF-L2 coach in every class."
       body: "Lisa Arcangel, Dean Weeks, and Liz Kushner — 10 to 15+ years coaching apiece, and all three still compete."
     - heading: "Mental performance on staff."

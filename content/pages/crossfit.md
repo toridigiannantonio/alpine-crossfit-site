@@ -58,7 +58,7 @@ finalCta:
   <div class="container container-narrow">
     <span class="eyebrow">In-house programming</span>
     <h2>Who writes the workouts.</h2>
-    <p>Every workout is programmed in-house by head programmer Megan Markee (CSCS, 2× CrossFit Games Semifinalist) in collaboration with owner April DiGiannantonio (CSCS, SCCC, former Division I Director of Sports Performance). Constantly varied — true CrossFit methodology, not a franchise template, not a subscription service, not a random WOD generator.</p>
+    <p>Every workout is programmed in-house by Megan Markee (CSCS, 2× CrossFit Games Semifinalist) in collaboration with owner April DiGiannantonio (CSCS, SCCC, former Division I Director of Sports Performance). Constantly varied — true CrossFit methodology, not a franchise template, not a subscription service, not a random WOD generator.</p>
     <p>Megan trains at Alpine every day and does the workouts she writes, alongside the members doing them with her. That keeps the programming honest.</p>
   </div>
 </section>

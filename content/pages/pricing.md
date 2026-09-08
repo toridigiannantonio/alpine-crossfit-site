@@ -78,7 +78,7 @@ finalCta:
     <ul class="feature-list" style="font-size:1rem;">
       <li><strong>Wellness center access.</strong> {{ site.wellness.prose | capitalize }} — recovery tools usually reserved for high-end clinics, bundled into every tier.</li>
       <li><strong>24/7 facility access.</strong> Train on your schedule, not ours.</li>
-      <li><strong>A gym where the owners train alongside you.</strong> Programming stays in-house, written by head programmer Megan Markee (2× CrossFit Games Semifinalist) in collaboration with owner April DiGiannantonio.</li>
+      <li><strong>A gym where the owners train alongside you.</strong> Programming stays in-house, written by Megan Markee (2× CrossFit Games Semifinalist) in collaboration with owner April DiGiannantonio.</li>
       <li><strong>No hidden fees.</strong> No initiation, no annual fee, no surcharges.</li>
       <li><strong>Month-to-month freedom.</strong> No contracts. Cancel with 30 days notice.</li>
     </ul>

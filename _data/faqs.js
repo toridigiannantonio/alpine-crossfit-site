@@ -179,7 +179,7 @@ export const items = [
     id: "who-programs",
     group: "classes",
     q: "Who writes the workouts?",
-    a: "Every workout is programmed in-house by head programmer Megan Markee (CSCS) in collaboration with owner April DiGiannantonio (CSCS, SCCC, former Division I Director of Sports Performance). Two CSCS-certified professionals — not a franchise template, not a subscription service, not a random WOD generator.",
+    a: "Every workout is programmed in-house by Megan Markee (CSCS) in collaboration with owner April DiGiannantonio (CSCS, SCCC, former Division I Director of Sports Performance). Two CSCS-certified professionals — not a franchise template, not a subscription service, not a random WOD generator.",
   },
   {
     id: "programming-cycles",
@@ -395,13 +395,13 @@ export const items = [
     id: "who-coaches",
     group: "coaches",
     q: "Who coaches the classes?",
-    a: 'Three CF-L2 certified professionals run every class: Lisa Arcangel, Liz Kushner, and Dean Weeks. Behind them, programming is written by head programmer Megan Markee (CSCS) with owner April DiGiannantonio, who holds the CSCS and SCCC and spent five-plus years as a Division I Director of Sports Performance. <a href="/coaches/">Meet the team →</a>',
+    a: 'Three CF-L2 certified professionals run every class: Lisa Arcangel, Liz Kushner, and Dean Weeks. Behind them, programming is written by Megan Markee (CSCS) with owner April DiGiannantonio, who holds the CSCS and SCCC and spent five-plus years as a Division I Director of Sports Performance. <a href="/coaches/">Meet the team →</a>',
   },
   {
     id: "owners-coach",
     group: "coaches",
     q: "Do the owners coach the classes?",
-    a: "Group classes are coached by the three CF-L2 professionals. Owners April and Tori DiGiannantonio train at the gym alongside members — April holds the CSCS and SCCC and was a Division I Director of Sports Performance for five-plus years. Head programmer Megan Markee (CSCS) writes every workout members follow, in collaboration with April.",
+    a: "Group classes are coached by the three CF-L2 professionals. Owners April and Tori DiGiannantonio train at the gym alongside members — April holds the CSCS and SCCC and was a Division I Director of Sports Performance for five-plus years. Megan Markee (CSCS) writes every workout members follow, in collaboration with April.",
   },
   {
     id: "how-long-in-wheat-ridge",

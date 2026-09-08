@@ -7,7 +7,7 @@ canonical: "https://alpinecrossfit.com/about/"
 loadImagesScript: true
 eyebrow: "About"
 heading: "About Alpine CrossFit."
-dek: "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, owned by April and Tori DiGiannantonio. April brings a decade of CrossFit gym ownership plus five-plus years as a Division I Director of Sports Performance; Tori brings a career in mental performance coaching (LCSW, CMPC) and endurance sport. Programming remains in-house, led by head programmer Megan Markee (CSCS) in collaboration with April."
+dek: "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, owned by April and Tori DiGiannantonio. April brings a decade of CrossFit gym ownership plus five-plus years as a Division I Director of Sports Performance; Tori brings a career in mental performance coaching (LCSW, CMPC) and endurance sport. Programming remains in-house, led by Megan Markee (CSCS) in collaboration with April."
 heroCtas:
   - { label: "Book a free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
 faqEyebrow: "Common questions"
@@ -31,7 +31,7 @@ extraSchemas:
       "@type": "AboutPage",
       "url": "https://alpinecrossfit.com/about/",
       "name": "About Alpine CrossFit",
-      "description": "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, owned by April DiGiannantonio (CSCS, SCCC, CrossFit Trainer, former Director of Sports Performance for a Division I program) and Tori DiGiannantonio (LCSW, CMPC, yoga instructor, ultrarunner). Programming is in-house, led by head programmer Megan Markee (CSCS, CF-L1) in collaboration with April. Group classes are coached by three CF-L2 professionals.",
+      "description": "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, owned by April DiGiannantonio (CSCS, SCCC, CrossFit Trainer, former Director of Sports Performance for a Division I program) and Tori DiGiannantonio (LCSW, CMPC, yoga instructor, ultrarunner). Programming is in-house, led by Megan Markee (CSCS, CF-L1) in collaboration with April. Group classes are coached by three CF-L2 professionals.",
       "mainEntity": {"@id": "https://alpinecrossfit.com/#healthclub"}
     }
   - {
@@ -71,7 +71,7 @@ finalCta:
     <p>Alpine CrossFit was founded in 2010. In 2016, Annie Brunner and Megan Markee took over — and over the next decade they grew Alpine into a gym with a fully professional coaching staff and a facility refined around a single goal: getting members better results than any gym around. In 2026, they passed the torch to April and Tori DiGiannantonio, who now own and lead the gym while preserving what makes Alpine, Alpine.</p>
     <p>April brings a decade in fitness and sports performance. She opened her first CrossFit gym in Denver in 2013, later served as a Division I Director of Sports Performance for over five years, and holds the CSCS and SCCC credentials on top of her CrossFit certifications.</p>
     <p>Tori comes at fitness from a different angle: a lifelong athlete and ultrarunner, a former firefighter and paramedic, and now a therapist (LCSW) and mental performance coach (CMPC) working primarily with first responders. Her work lives at the intersection of physical capacity and mental resilience.</p>
-    <p>Megan Markee remains as head programmer. Every workout Alpine members follow is written by Megan (2× CrossFit Games Semifinalist) in collaboration with April.</p>
+    <p>Megan Markee still writes Alpine's programming, now with April. Every workout Alpine members follow is written by Megan (2× CrossFit Games Semifinalist) in collaboration with April.</p>
   </div>
 </section>
 
@@ -95,11 +95,11 @@ finalCta:
       </div>
       <div class="card">
         <h3>In-house programming.</h3>
-        <p>Every workout at Alpine is written by head programmer Megan Markee (CSCS) in collaboration with owner April DiGiannantonio (CSCS, SCCC, former D1 Director of Sports Performance). No franchise templates. No random WOD generators.</p>
+        <p>Every workout at Alpine is written by Megan Markee (CSCS) in collaboration with owner April DiGiannantonio (CSCS, SCCC, former D1 Director of Sports Performance). No franchise templates. No random WOD generators.</p>
       </div>
       <div class="card">
         <h3>Credentials, not just certifications.</h3>
-        <p>Two CSCS-certified professionals on staff — head programmer Megan Markee and owner April DiGiannantonio, who also holds the SCCC and spent five-plus years as a Division I Director of Sports Performance. Add three CF-L2 trainers running the floor and a Certified Mental Performance Coach in the building.</p>
+        <p>Two CSCS-certified professionals on staff — Megan Markee and owner April DiGiannantonio, who also holds the SCCC and spent five-plus years as a Division I Director of Sports Performance. Add three CF-L2 trainers running the floor and a Certified Mental Performance Coach in the building.</p>
       </div>
       <div class="card">
         <h3>A community that spans every age.</h3>
