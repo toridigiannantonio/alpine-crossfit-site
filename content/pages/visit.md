@@ -9,6 +9,7 @@ heading: "Location &amp; hours."
 dek: "{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postalCode }}. Free parking. Every membership includes 24/7 facility access."
 heroCtas:
   - { label: "Book a free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Drop in — {{ site.pricing.visitOptions[1].price }}", href: "{{ site.pricing.visitOptions[1].ctaHref }}", style: "btn-primary btn-lg" }
 trustStrip: '<span class="stars">★★★★★</span><span>5.0 from 180 Google reviews</span>'
 faqEyebrow: "Getting here"
 faqHeading: "Visiting questions."

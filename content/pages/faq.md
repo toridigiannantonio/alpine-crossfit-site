@@ -9,6 +9,7 @@ heading: "Frequently asked questions."
 dek: "Every question we get, answered once. This is the master set — page-level FAQs elsewhere on the site are short excerpts from it."
 heroCtas:
   - { label: "Book a free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Drop in — {{ site.pricing.visitOptions[1].price }}", href: "{{ site.pricing.visitOptions[1].ctaHref }}", style: "btn-primary btn-lg" }
 finalCta:
   heading: "Didn't find your question?"
   body: "Text us and a coach will answer, usually in under five minutes during gym hours."

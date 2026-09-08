@@ -9,6 +9,7 @@ heading: "HYROX training in <span class=\"accent\">Wheat Ridge</span>, near Denv
 dek: "Alpine CrossFit is an official HYROX Training Center in Wheat Ridge, Colorado — coached, race-specific programming and Friday run clubs for athletes across the northwest Denver metro prepping for a HYROX event."
 heroCtas:
   - { label: "Book a free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Drop in — {{ site.pricing.visitOptions[1].price }}", href: "{{ site.pricing.visitOptions[1].ctaHref }}", style: "btn-primary btn-lg" }
 trustStrip: "<span>Official HYROX affiliate</span><span class=\"sep\">·</span><span>Coached programming</span><span class=\"sep\">·</span><span>Friday run clubs</span>"
 extraSchemas:
   - {

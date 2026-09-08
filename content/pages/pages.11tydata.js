@@ -50,6 +50,9 @@ function resolve(value, site) {
 
 // Front-matter keys that may carry a {{ site.* }} reference. Deliberately a
 // whitelist: extraSchemas and friends are left strictly alone.
+// The resolver walks nested objects and arrays, so listing a container here
+// covers everything inside it. extraSchemas, personSchema and serviceSchema
+// are deliberately absent — JSON-LD is left strictly alone.
 const RESOLVED = [
   "title",
   "description",
@@ -60,6 +63,14 @@ const RESOLVED = [
   "ogDescription",
   "finalCta",
   "heroCtas",
+  // homepage section objects
+  "hero",
+  "announcement",
+  "credentials",
+  "services",
+  "pricing",
+  "proof",
+  "visit",
 ];
 
 const computed = Object.fromEntries(

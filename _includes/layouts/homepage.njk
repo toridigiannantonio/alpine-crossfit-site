@@ -49,8 +49,14 @@ speakable: true
       {% if hero.eyebrow %}<div class="hero-eyebrow">{{ hero.eyebrow }}</div>{% endif %}
       <h1>{{ hero.heading | safe }}</h1>
       {% if hero.dek %}<p class="hero-dek">{{ hero.dek | safe }}</p>{% endif %}
+      {# Two buttons, same weight. Someone who already trains needs to see the
+         paid drop-in rather than defaulting into the free intro because it
+         was the only thing that looked like a button. #}
       <div class="hero-cta">
         <a class="btn btn-primary btn-lg" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a>
+        {%- if hero.secondaryCta %}
+        <a class="btn btn-primary btn-lg" href="{{ hero.secondaryCta.href }}"{% if hero.secondaryCta.external %} target="_blank" rel="noopener"{% endif %}>{{ hero.secondaryCta.label }}</a>
+        {%- endif %}
       </div>
       {% if hero.links %}
       <div class="hero-links">
