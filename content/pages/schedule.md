@@ -6,11 +6,11 @@ eyebrow: Schedule
 heading: 10+ classes a day, seven days a week.
 dek: Drop in anytime. Every class is coached by a CF-L2 certified professional.
 heroCtas:
-  - label: "Not sure where to start?"
+  - label: "Book a free intro"
     href: /free-intro/
     style: btn-primary btn-lg
   - label: "Drop-In"
-    href: /drop-in/
+    href: /pricing/#visiting
     style: btn-secondary btn-lg
 layout: layouts/page.njk
 permalink: /schedule/
@@ -24,25 +24,24 @@ extraSchemas:
         {"@type": "ListItem", "position": 2, "name": "Schedule", "item": "https://alpinecrossfit.com/schedule/"}
       ]
     }
-  - {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "How often should I come to Alpine CrossFit per week?", "acceptedAnswer": { "@type": "Answer", "text": "3–4 times per week is the sweet spot for most Alpine members. 2× per week works for maintenance. 5–6 days per week is typical for competitive athletes. Consistency matters more than frequency." } },
-        { "@type": "Question", "name": "Can I drop in to an Alpine CrossFit class without scheduling?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, but 24 hours notice is ideal so we can plan for space. Call or text (720) 964-1505 and we'll fit you in. Drop-in classes are $30, or $95 for a week pass. Visiting from another CrossFit affiliate? Your first class is free." } },
-        { "@type": "Question", "name": "What are Alpine CrossFit's group class times?", "acceptedAnswer": { "@type": "Answer", "text": "Monday–Friday CrossFit classes at 5:30, 6:30, and 8:00 AM plus 12:00, 3:30, 4:30, and 5:30 PM. Saturday classes at 8:00 and 9:00 AM. Sunday at 9:00 AM. Prime Vitality (55+) runs Monday, Wednesday, and Friday at 10:00 AM. Every class is capped at 15 athletes and coached by a CF-L2 professional." } },
-        { "@type": "Question", "name": "What are the wellness center hours?", "acceptedAnswer": { "@type": "Answer", "text": "The wellness center is open Monday–Friday 5:30 AM – 6:30 PM, Saturday 8:00–10:00 AM, and Sunday 8:00–9:00 AM. Unlimited members have 24/7 facility access, including the wellness center." } }
-      ]
-    }
 finalCta:
   heading: Ready to train?
   ctas:
-    - label: "Not sure where to start?"
+    - label: "Book a free intro"
       href: /free-intro/
       inlineStyle: background:#000;color:#fff;
     - label: "Drop-In"
-      href: /drop-in/
+      href: /pricing/#visiting
       inlineStyle: background:transparent;color:#000;border-color:#000;
+schemaTypes: ["healthclub", "faq"]
+faqEyebrow: "Questions"
+faqHeading: "Schedule questions."
+faqIds:
+  - how-often
+  - class-length
+  - class-size
+  - sunday-classes
+  - can-i-drop-in
 ---
 
 <section class="section">
@@ -79,10 +78,6 @@ finalCta:
 
 <section class="section section-dark">
   <div class="container container-narrow">
-    <span class="eyebrow">Questions</span>
-    <h2>FAQ.</h2>
-    <details class="faq-item"><summary>How often should I come per week?</summary><div class="faq-answer">3–4 times per week is the sweet spot for most members. 2× per week works for maintenance. 5–6 days per week is typical for competitive athletes.</div></details>
-    <details class="faq-item"><summary>Can I drop in without scheduling?</summary><div class="faq-answer">Yes, but 24 hours' notice is ideal so we can plan for space. Call or text (720) 964-1505 and we'll fit you in.</div></details>
-    <details class="faq-item"><summary>What if I can only make certain times?</summary><div class="faq-answer">Most members pick 2–3 times per week that fit their schedule and come consistently. The consistency matters more than the frequency.</div></details>
+    {% include "partials/faq-list.njk" %}
   </div>
 </section>

@@ -10,11 +10,11 @@ dek: Every class at Alpine is led by one of three CF-L2 certified coaches.
   Programming stays in-house — written by head programmer Megan Markee (CSCS,
   2× CrossFit Games Semifinalist) in collaboration with April.
 heroCtas:
-  - label: "Not sure where to start?"
+  - label: "Book a free intro"
     href: /free-intro/
     style: btn-primary btn-lg
   - label: "Drop-In"
-    href: /drop-in/
+    href: /pricing/#visiting
     style: btn-secondary btn-lg
 layout: layouts/page.njk
 permalink: /coaches/
@@ -155,7 +155,7 @@ extraSchemas:
   <div class="container text-center">
     <h2>Come train here.</h2>
     <div class="hero-cta" style="justify-content:center;">
-      <a class="btn btn-lg" style="background:#000;color:#fff;" href="/free-intro/">Not sure where to start?</a> <a class="btn btn-lg" style="background:transparent;color:#000;border-color:#000;" href="/drop-in/">Drop-In</a>
+      <a class="btn btn-lg" style="background:#000;color:#fff;" href="/free-intro/">Book a free intro</a> <a class="btn btn-lg" style="background:transparent;color:#000;border-color:#000;" href="/pricing/#visiting">Drop-In</a>
     </div>
   </div>
 </section>

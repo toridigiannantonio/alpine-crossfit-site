@@ -56,10 +56,11 @@
 
 {% include "partials/footer.njk" %}
 
+{# Mobile sticky bar. One CTA, matching the header and footer. #}
 <div class="sticky-cta">
   <div class="sticky-cta-inner">
-    <a class="btn btn-primary" href="/drop-in/">Drop-In</a>
-    <a class="sticky-cta-alt" href="/free-intro/#book-form">Not sure where to start?</a>
+    <a class="btn btn-primary" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a>
+    <a class="sticky-cta-alt" href="tel:{{ site.phone }}">or call {{ site.phoneDisplay }}</a>
   </div>
 </div>
 

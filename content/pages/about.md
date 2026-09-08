@@ -9,9 +9,16 @@ eyebrow: "About"
 heading: "About Alpine CrossFit."
 dek: "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, owned by April and Tori DiGiannantonio. April brings a decade of CrossFit gym ownership plus five-plus years as a Division I Director of Sports Performance; Tori brings a career in mental performance coaching (LCSW, CMPC) and endurance sport. Programming remains in-house, led by head programmer Megan Markee (CSCS) in collaboration with April."
 heroCtas:
-  - { label: "Not sure where to start?", href: "/free-intro/", style: "btn-primary btn-lg" }
-  - { label: "Drop-In", href: "/drop-in/", style: "btn-secondary btn-lg" }
-  - { label: "Meet the coaches →", href: "/coaches/", style: "btn-secondary btn-lg" }
+  - { label: "Book a free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
+faqEyebrow: "Common questions"
+faqHeading: "About Alpine."
+faqIds:
+  - who-coaches
+  - owners-coach
+  - who-programs
+  - how-long-in-wheat-ridge
+  - crossfit-for-women
+schemaTypes: ["healthclub", "faq"]
 heroImage:
   src: "/assets/img/member-front-squat.jpg"
   alt: "Alpine CrossFit members training during a coached class"
@@ -39,9 +46,7 @@ finalCta:
   heading: "Come see the gym."
   body: "The best way to understand Alpine is to walk in. Your free No Sweat Intro is 30 minutes with a coach — tour, conversation, and a recommendation. No pressure, no cost."
   ctas:
-    - { label: "Not sure where to start?", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
-    - { label: "Drop-In", href: "/drop-in/", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
-    - { label: "Or text (720) 964-1505", href: "sms:+17209641505", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+    - { label: "Book a free intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
 ---
 
 <section class="affiliations">
@@ -137,15 +142,32 @@ finalCta:
     <span class="eyebrow">Where we are</span>
     <h2 class="section-heading">Wheat Ridge — minutes from Applewood, Arvada, Lakewood, and Golden.</h2>
     <div class="split">
-      <div class="location-card">
-        <dl>
-          <dt>Address</dt><dd>12090 West 50th Place<br>Wheat Ridge, CO 80033</dd>
-          <dt>Phone</dt><dd><a href="tel:+17209641505">(720) 964-1505</a></dd>
-          <dt>Hours</dt><dd>Mon–Fri 5:30 AM – 6:30 PM<br>Sat 8:00–10:00 AM · Sun 8:00–10:00 AM<br>Members: 24/7 access</dd>
-          <dt>Parking</dt><dd>Free on-site</dd>
-        </dl>
-      </div>
-      <iframe class="map-embed" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=12090+West+50th+Pl,+Wheat+Ridge,+CO+80033&output=embed"></iframe>
+      {% include "partials/location-card.njk" %}
+      {% include "partials/map-embed.njk" %}
     </div>
+  </div>
+</section>
+
+{# The one section worth keeping from the former
+   /best-crossfit-gym-wheat-ridge/ comparison page. The rest of that page was
+   keyword filler; this part is the honest half. #}
+<section class="section section-dark" id="what-we-dont-offer">
+  <div class="container container-narrow">
+    <span class="eyebrow">Honest about gaps</span>
+    <h2>What Alpine doesn't offer.</h2>
+    <p>If we're going to claim Alpine is the right fit for the right person, we should be equally clear about who we're <em>not</em> the right fit for.</p>
+    <ul class="feature-list">
+      <li><strong>No childcare.</strong> Our class schedule is built around school drop-off and pickup windows, which works for many Alpine parents, but it isn't childcare. If on-site childcare is a hard requirement, a big-box gym will fit better.</li>
+      <li><strong>No CrossFit Kids program.</strong> Alpine welcomes athletes 13 and up — teens train in the regular coached classes alongside adults, scaled appropriately. If you want a dedicated kids-only program, this isn't it.</li>
+      <li><strong>No yoga, breath work, or meditation classes.</strong> Alpine focuses on strength and conditioning. Mobility work happens inside class warm-ups and cool-downs, but there's nothing standalone on the schedule.</li>
+      <li><strong>No weekend afternoon classes.</strong> Saturday runs 8:00–10:00 AM and Sunday runs 9:00–10:00 AM. If a weekend afternoon class is essential, we're not it.</li>
+    </ul>
+    <p>If none of those are deal-breakers, Alpine is probably a great fit. If one of them is, we can usually point you to a local gym that does that thing well.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container container-narrow">
+    {% include "partials/faq-list.njk" %}
   </div>
 </section>

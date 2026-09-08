@@ -3,45 +3,17 @@
 // Content lives in /content as markdown files. Templates and partials
 // live in /_includes. Everything renders to /_site, which Netlify serves.
 //
-// Three content collections feed into Decap CMS:
+// Two content collections feed into Decap CMS:
 //   - content/pages/   -> generic pages (homepage, about, pricing, etc.)
 //   - content/coaches/ -> individual coach bio pages
-//   - content/areas/   -> service-area pages (Wheat Ridge, Arvada, etc.)
 
 export default function (eleventyConfig) {
-  // ----- Files / dirs to ignore (replaces .eleventyignore) -----
-  // Doing this in code (instead of a dotfile) is more robust on Windows,
-  // where File Explorer hides files that start with "." by default.
-  const originalPages = [
-    "index.html",
-    "intro-standalone.html",
-    "about/index.html",
-    "beginners/index.html",
-    "coaches/index.html",
-    "coaches/annie-brunner/index.html",
-    "coaches/dean-weeks/index.html",
-    "coaches/lisa-arcangel/index.html",
-    "coaches/liz-kushner/index.html",
-    "coaches/megan-markee/index.html",
-    "crossfit/index.html",
-    "faq/index.html",
-    "free-intro/index.html",
-    "gym/applewood/index.html",
-    "gym/arvada/index.html",
-    "gym/golden/index.html",
-    "gym/lakewood/index.html",
-    "gym/wheat-ridge/index.html",
-    "hyrox/index.html",
-    "intro/index.html",
-    "personal-training/index.html",
-    "pricing/index.html",
-    "prime-vitality/index.html",
-    "schedule/index.html",
-    "visit/index.html",
-    "wellness/index.html",
-  ];
-  for (const p of originalPages) eleventyConfig.ignores.add(p);
-  eleventyConfig.ignores.add("sitemap.xml");
+  // ----- Files / dirs to ignore -----
+  // The 26-file `originalPages` list that used to live here is gone along
+  // with the files it named: pre-11ty HTML pages (~14,400 words) that were
+  // still on disk, still looked authoritative, and were never built. Editing
+  // one changed nothing on the live site. The hand-maintained sitemap.xml
+  // went with them — sitemap.njk generates it from the real page list.
   eleventyConfig.ignores.add("CMS-SETUP.md");
   eleventyConfig.ignores.add("DEPLOY.md");
   // Internal ownership/handoff notes — never meant to be a public page.
@@ -64,12 +36,6 @@ export default function (eleventyConfig) {
       .sort((a, b) => (a.data.order || 0) - (b.data.order || 0))
   );
 
-  eleventyConfig.addCollection("areas", (api) =>
-    api
-      .getFilteredByGlob("content/areas/*.md")
-      .sort((a, b) => (a.data.order || 0) - (b.data.order || 0))
-  );
-
   eleventyConfig.addCollection("pages", (api) =>
     api.getFilteredByGlob("content/pages/*.md")
   );
@@ -89,6 +55,14 @@ export default function (eleventyConfig) {
       .filter((item) => {
         if (item.data.eleventyExcludeFromCollections) return false;
         if (item.data.sitemap === false) return false;
+        // A noindex page in the sitemap is a contradictory signal to Google:
+        // "crawl this" and "don't index this" at once. /intro/ was doing
+        // exactly that. Excluding by the noindex flag means a page can never
+        // fall back into this state by someone forgetting `sitemap: false`.
+        if (item.data.noindex) return false;
+        // The CMS login screen carries its own noindex meta tag but was
+        // still listed here — same contradictory signal.
+        if (item.url && item.url.startsWith("/admin")) return false;
         if (!item.url || !item.url.endsWith("/")) {
           if (item.url && !item.url.endsWith(".html")) return false;
         }
@@ -123,6 +97,26 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("jsonStringify", (value) => JSON.stringify(value));
+
+  // Resolve a list of FAQ ids from front matter into the canonical entries in
+  // _data/faqs.js. Both the visible <details> list and that page's FAQPage
+  // JSON-LD run through this same filter, so a page's structured data can
+  // never disagree with what a visitor reads. An unknown id fails the build
+  // instead of silently rendering nothing.
+  eleventyConfig.addFilter("faqPick", (ids, faqs) => {
+    if (!ids || !faqs) return [];
+    const byId = new Map(faqs.items.map((i) => [i.id, i]));
+    return ids.map((id) => {
+      const hit = byId.get(id);
+      if (!hit) throw new Error(`Unknown FAQ id "${id}" — see _data/faqs.js`);
+      return hit;
+    });
+  });
+
+  // All canonical FAQ entries in one group, for the /faq/ master page.
+  eleventyConfig.addFilter("faqGroup", (faqs, groupId) =>
+    faqs.items.filter((i) => i.group === groupId)
+  );
 
   // Hides the "Workout of the Day" block at the end of a blog post without
   // deleting it. The workouts stay in the markdown files and in git; flip

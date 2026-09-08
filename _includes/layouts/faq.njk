@@ -3,18 +3,12 @@ layout: layouts/base.njk
 schemaTypes: ["faq", "healthclub"]
 speakable: true
 ---
-{# FAQ page layout. Frontmatter expected:
-   - title, description, canonical
-   - eyebrow (defaults "FAQ")
-   - heading (H1)
-   - dek (lead paragraph)
-   - heroCtas: [{label, href, style}]
-   - faqGroups: [ { heading, sectionStyle, items: [{question, answer}] } ]
-       — sectionStyle is "" or "section-dark" to alternate the visual sections
-   - faqs: full flat list (drives FAQPage schema; auto-derive if missing)
-   - extraSchemas: any additional JSON-LD blocks (e.g., BreadcrumbList)
-   - finalCta: { heading, ctas[] }
-#}
+{# The master FAQ page. It renders every canonical entry in _data/faqs.js,
+   grouped by that file's `groups` order — there is no question list in this
+   page's front matter to fall out of sync with the rest of the site.
+
+   Its FAQPage JSON-LD comes from `faqIds` computed below, through the same
+   faqPick filter every other page uses. #}
 <section class="hero">
   <div class="container container-narrow">
     <div class="hero-eyebrow">{{ eyebrow or 'FAQ' }}</div>
@@ -30,12 +24,12 @@ speakable: true
   </div>
 </section>
 
-{%- for g in faqGroups %}
-<section class="section{% if g.sectionStyle %} {{ g.sectionStyle }}{% endif %}">
+{%- for g in faqs.groups %}
+<section class="section{% if loop.index0 % 2 %} section-dark{% endif %}" id="{{ g.id }}">
   <div class="container container-narrow">
-    <h4>{{ g.heading | safe }}</h4>
-    {%- for item in g.items %}
-    <details class="faq-item"><summary>{{ item.question }}</summary><div class="faq-answer">{{ item.answer | safe }}</div></details>
+    <h2>{{ g.heading | safe }}</h2>
+    {%- for item in faqs | faqGroup(g.id) %}
+    <details class="faq-item"><summary>{{ item.q }}</summary><div class="faq-answer">{{ item.a | safe }}</div></details>
     {%- endfor %}
   </div>
 </section>
@@ -45,6 +39,7 @@ speakable: true
 <section class="section section-green">
   <div class="container text-center">
     <h2>{{ finalCta.heading }}</h2>
+    {% if finalCta.body %}<p class="hero-dek" style="margin-left:auto;margin-right:auto;color:rgba(0,0,0,0.8);">{{ finalCta.body | safe }}</p>{% endif %}
     <div class="hero-cta" style="justify-content:center;">
       {%- for cta in finalCta.ctas %}
       <a class="btn btn-lg" style="{{ cta.inlineStyle or 'background:#000;color:#fff;' }}" href="{{ cta.href }}">{{ cta.label }}</a>

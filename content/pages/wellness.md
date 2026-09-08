@@ -2,30 +2,16 @@
 layout: layouts/page.njk
 permalink: /wellness/
 title: "Sauna & Cold Plunge in Wheat Ridge — Alpine CrossFit Wellness Center"
-description: "Steam sauna, cold plunges, compression boots, and peptide therapy in Wheat Ridge. Included with every Alpine membership from $69/month — no CrossFit required."
+description: "Steam sauna, cold plunges, compression boots, and peptide therapy in Wheat Ridge. Included with every Alpine membership from {{ site.pricing.tiers[0].price }}/month — no CrossFit required."
 canonical: "https://alpinecrossfit.com/wellness/"
 eyebrow: "Wellness Center"
 heading: "Sauna, cold plunge, and recovery in <span class=\"accent\">Wheat Ridge</span>."
-dek: "Alpine's wellness center brings a steam sauna, cold plunges, compression boots, and peptide therapy together under one roof — in Wheat Ridge, serving Lakewood, Arvada, Applewood, and Golden. Included with every membership, starting at $69/month."
+dek: "Alpine's wellness center brings {{ site.wellness.prose }} together under one roof — in Wheat Ridge, serving Lakewood, Arvada, Applewood, and Golden. Included with every membership, starting at {{ site.pricing.tiers[0].price }}/month."
 heroCtas:
-  - { label: "Not sure where to start?", href: "/free-intro/", style: "btn-primary btn-lg" }
-  - { label: "Drop-In", href: "/drop-in/", style: "btn-secondary btn-lg" }
+  - { label: "Book a free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
   - { label: "See membership pricing", href: "/pricing/", style: "btn-secondary btn-lg" }
-trustStrip: "<span>Steam sauna</span><span class=\"sep\">·</span><span>Cold plunges</span><span class=\"sep\">·</span><span>From $69/month</span>"
+trustStrip: "<span>Steam sauna</span><span class=\"sep\">·</span><span>Cold plunges</span><span class=\"sep\">·</span><span>From {{ site.pricing.tiers[0].price }}/month</span>"
 extraSchemas:
-  - {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "Can I use Alpine's wellness center without doing CrossFit?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The wellness center is included with every Alpine membership, and that starts with the $69/month Open Gym tier — which covers facility access, the wellness center, and 24/7 entry. You never have to take a CrossFit class to use the sauna, cold plunges, or compression boots." } },
-        { "@type": "Question", "name": "What is in Alpine's wellness center?", "acceptedAnswer": { "@type": "Answer", "text": "Alpine's wellness center in Wheat Ridge includes a steam sauna, cold plunges, sequential compression boots, and peptide therapy — recovery tools usually spread across separate clinics and studios, here on one site and included with membership." } },
-        { "@type": "Question", "name": "How much does it cost to use the sauna and cold plunge at Alpine?", "acceptedAnswer": { "@type": "Answer", "text": "There is no per-visit fee. Access to the sauna, cold plunges, and compression boots is included with every Alpine membership. The entry point is the $69/month Open Gym tier; the $199/month Unlimited tier adds CrossFit classes and 24/7 facility access. All memberships are month-to-month with no contract." } },
-        { "@type": "Question", "name": "Where is Alpine's wellness center located?", "acceptedAnswer": { "@type": "Answer", "text": "Alpine CrossFit's wellness center is at 12090 West 50th Place, Wheat Ridge, CO 80033 — just off I-70, about five minutes from Arvada and Applewood, ten minutes from Lakewood, and twelve from Golden." } },
-        { "@type": "Question", "name": "What are the wellness center's hours?", "acceptedAnswer": { "@type": "Answer", "text": "The wellness center is open Monday–Friday 5:30 AM to 6:30 PM, Saturday 8:00 to 10:00 AM, and Sunday 8:00 to 9:00 AM. Unlimited members have 24/7 facility access, including the wellness center." } },
-        { "@type": "Question", "name": "Is contrast therapy (sauna and cold plunge) good for recovery?", "acceptedAnswer": { "@type": "Answer", "text": "Many athletes use sauna and cold-plunge contrast routines to support recovery, circulation, and stress management between training days. At Alpine, the sauna, cold plunges, and compression boots are all on-site, so a full contrast-and-compression routine takes one stop." } },
-        { "@type": "Question", "name": "Is Alpine's wellness center cheaper than a standalone Denver sauna studio?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Standalone sauna studios in the Denver metro typically charge $149–$199/month for unlimited infrared sauna access alone; multi-service recovery clinics run $199–$349/month for a mix of sauna, cold plunge, or compression as add-ons. Alpine's $69/month Open Gym membership bundles steam sauna, cold plunges, compression boots, and peptide therapy — plus 24/7 facility access — into a single flat rate with no per-visit booking." } }
-      ]
-    }
   - {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
@@ -38,9 +24,16 @@ finalCta:
   heading: "Ready to recover better?"
   body: "Book a free No Sweat Intro — a 30-minute visit with a coach. Tour the wellness center, see the sauna and cold plunges, and find the membership that fits."
   ctas:
-    - { label: "Not sure where to start?", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
-    - { label: "Drop-In", href: "/drop-in/", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
-    - { label: "Or text (720) 964-1505", href: "sms:+17209641505", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+    - { label: "Book a free intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+schemaTypes: ["healthclub", "faq"]
+faqEyebrow: "Wellness center"
+faqHeading: "Wellness questions."
+faqIds:
+  - wellness-included
+  - wellness-without-crossfit
+  - wellness-hours
+  - peptide-therapy
+  - where-located
 ---
 
 <section class="section">
@@ -66,7 +59,7 @@ finalCta:
   <div class="container container-narrow">
     <span class="eyebrow">No CrossFit required</span>
     <h2>Can you use the wellness center without doing CrossFit?</h2>
-    <p>Yes. The wellness center is included with <em>every</em> Alpine membership — and that starts with the <a href="/pricing/">$69/month Open Gym tier</a>, which covers facility access, the wellness center, and 24/7 entry. You never have to take a CrossFit class to use the sauna, cold plunges, or compression boots.</p>
+    <p>Yes. The wellness center is included with <em>every</em> Alpine membership — and that starts with the <a href="/pricing/">{{ site.pricing.tiers[0].price }}/month Open Gym tier</a>, which covers facility access, the wellness center, and 24/7 entry. You never have to take a CrossFit class to use the sauna, cold plunges, or compression boots.</p>
     <p>That makes Alpine one of the few places in Wheat Ridge where sauna and cold plunge come bundled into a single flat monthly membership — no per-session booking, no per-visit fee.</p>
   </div>
 </section>
@@ -75,15 +68,15 @@ finalCta:
   <div class="container">
     <span class="eyebrow">How it compares</span>
     <h2 class="section-heading">Alpine wellness vs standalone Denver studios.</h2>
-    <p class="short-answer" style="max-width:70ch;">In the Denver metro, sauna, cold plunge, and compression are usually spread across three separate businesses at $149–$249/month each. Alpine bundles all three — plus peptide therapy and a full strength-and-conditioning gym — into one flat membership starting at $69/month.</p>
+    <p class="short-answer" style="max-width:70ch;">In the Denver metro, sauna, cold plunge, and compression are usually spread across three separate businesses at $149–$249/month each. Alpine bundles all three — plus peptide therapy and a full strength-and-conditioning gym — into one flat membership starting at {{ site.pricing.tiers[0].price }}/month.</p>
 
     <div style="overflow-x:auto; margin-top:var(--space-6); border-radius:var(--radius); background:#0e0e0e; padding:var(--space-4);">
       <table style="min-width:640px;">
         <thead>
           <tr>
             <th></th>
-            <th>Alpine<br>Open Gym<br><span style="color:var(--color-text-muted);font-weight:400;font-size:0.85em;">$69/mo</span></th>
-            <th>Alpine<br>Unlimited<br><span style="color:var(--color-text-muted);font-weight:400;font-size:0.85em;">$199/mo</span></th>
+            <th>Alpine<br>Open Gym<br><span style="color:var(--color-text-muted);font-weight:400;font-size:0.85em;">{{ site.pricing.tiers[0].price }}/mo</span></th>
+            <th>Alpine<br>Unlimited<br><span style="color:var(--color-text-muted);font-weight:400;font-size:0.85em;">{{ site.pricing.tiers[1].price }}/mo</span></th>
             <th>Sauna-only<br>studio<br><span style="color:var(--color-text-muted);font-weight:400;font-size:0.85em;">~$149–199/mo</span></th>
             <th>Multi-service<br>recovery clinic<br><span style="color:var(--color-text-muted);font-weight:400;font-size:0.85em;">~$199–349/mo</span></th>
           </tr>
@@ -122,18 +115,12 @@ finalCta:
     <strong>Saturday:</strong> 8:00 – 10:00 AM<br>
     <strong>Sunday:</strong> 8:00 – 9:00 AM</p>
     <p>Unlimited members have 24/7 facility access, including the wellness center.</p>
-    <p>Alpine CrossFit is at 12090 West 50th Place, Wheat Ridge, CO 80033 — just off I-70, about five minutes from Arvada and Applewood, ten minutes from Lakewood, and twelve from downtown Golden.</p>
+    <p>Alpine CrossFit is at {{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postalCode }} — just off I-70, about five minutes from Arvada and Applewood, ten minutes from Lakewood, and twelve from downtown Golden.</p>
   </div>
 </section>
 
 <section class="section section-dark">
   <div class="container container-narrow">
-    <span class="eyebrow">Common questions</span>
-    <h2>Sauna &amp; cold plunge questions.</h2>
-    <details class="faq-item"><summary>Can I use the wellness center without doing CrossFit?</summary><div class="faq-answer">Yes. The wellness center is included with every Alpine membership, starting with the $69/month Open Gym tier — facility access, wellness center, and 24/7 entry. No CrossFit class required.</div></details>
-    <details class="faq-item"><summary>How much does it cost to use the sauna and cold plunge?</summary><div class="faq-answer">There's no per-visit fee. Access is included with every membership: $69/month for Open Gym, or $199/month for Unlimited (which adds CrossFit classes and 24/7 access). All memberships are month-to-month with no contract.</div></details>
-    <details class="faq-item"><summary>What's in the wellness center?</summary><div class="faq-answer">A steam sauna, cold plunges, sequential compression boots, and peptide therapy — all on-site in Wheat Ridge.</div></details>
-    <details class="faq-item"><summary>What are the hours?</summary><div class="faq-answer">Monday–Friday 5:30 AM – 6:30 PM, Saturday 8:00 – 10:00 AM, Sunday 8:00 – 9:00 AM. Unlimited members have 24/7 access.</div></details>
-    <details class="faq-item"><summary>Where is it located?</summary><div class="faq-answer">12090 West 50th Place, Wheat Ridge, CO 80033 — about 5 minutes from Arvada and Applewood, 10 from Lakewood, 12 from Golden.</div></details>
+    {% include "partials/faq-list.njk" %}
   </div>
 </section>

@@ -14,19 +14,6 @@ trustStrip: "<span>12 sessions/month included</span><span class=\"sep\">·</span
 extraSchemas:
   - {
       "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "How much does personal training cost at Alpine CrossFit?", "acceptedAnswer": { "@type": "Answer", "text": "Alpine's Personal Training membership is $999/month, month-to-month, with no contract. That includes 12 one-on-one sessions per month (roughly three per week), individualized programming, unlimited group CrossFit classes, Prime Vitality, the wellness center, and 24/7 facility access." } },
-        { "@type": "Question", "name": "How often will I train one-on-one with my coach?", "acceptedAnswer": { "@type": "Answer", "text": "The Personal Training tier includes 12 sessions per month — typically three per week, though you and your coach can structure the schedule to fit your goals and travel. Many members pair one-on-one sessions with regular group classes throughout the week." } },
-        { "@type": "Question", "name": "What is the difference between personal training and group CrossFit classes at Alpine?", "acceptedAnswer": { "@type": "Answer", "text": "Group CrossFit classes follow the day's programming and are coached for the entire room of up to 15 athletes. Personal training is one-on-one — your coach builds programming specific to your body, your goals, and your schedule, and coaches the entire session just for you. Many members do both: PT for specific work, group classes for community and intensity." } },
-        { "@type": "Question", "name": "Can I do personal training at Alpine to recover from an injury?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Injury recovery is one of the most common reasons members use personal training. Alpine's CF-L2 coaches are experienced at working around limitations, progressing loads carefully, and coordinating with your physical therapist or doctor if needed. Programming is built around what your body can do today and adjusts as you recover." } },
-        { "@type": "Question", "name": "Who are the personal trainers at Alpine CrossFit?", "acceptedAnswer": { "@type": "Answer", "text": "Personal training at Alpine is coached by Lisa Arcangel, Liz Kushner, Dean Weeks, or owner April DiGiannantonio — all CF-L2 certified with years of one-on-one coaching experience. Your coach builds your program and coaches every session personally." } },
-        { "@type": "Question", "name": "Is personal training a good fit if I have specific goals like a first pull-up or a faster mile?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Personal training is built for specific goals — first strict pull-up, heavier squat, faster mile, return to a sport, postpartum strength rebuild, or a target body composition. Your coach designs programming pointed directly at the goal you bring in." } },
-        { "@type": "Question", "name": "Where is personal training at Alpine located?", "acceptedAnswer": { "@type": "Answer", "text": "Alpine CrossFit is at 12090 West 50th Place, Wheat Ridge, CO 80033 — just off I-70, about five minutes from Arvada and Applewood, ten from Lakewood, and twelve from downtown Golden. All personal training takes place at the Wheat Ridge facility." } }
-      ]
-    }
-  - {
-      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://alpinecrossfit.com/"},
@@ -38,7 +25,15 @@ finalCta:
   body: "Book a free consultation — 30 minutes with a coach to talk through your goals and see if personal training is the right fit."
   ctas:
     - { label: "Schedule a consultation", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
-    - { label: "Or text (720) 964-1505", href: "sms:+17209641505", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+schemaTypes: ["healthclub", "faq"]
+faqEyebrow: "Common questions"
+faqHeading: "Personal training questions."
+faqIds:
+  - personal-training
+  - pt-tier
+  - pt-vs-classes
+  - pt-injury-recovery
+  - who-coaches
 ---
 
 <section class="section">
@@ -68,7 +63,7 @@ finalCta:
   <div class="container container-narrow">
     <span class="eyebrow">The tier</span>
     <h2>What does personal training cost?</h2>
-    <p><strong>$999/month</strong> — month-to-month, no contract, no initiation fee.</p>
+    <p><strong>{{ site.pricing.tiers[2].price }}/month</strong> — month-to-month, no contract, no initiation fee.</p>
     <p>The Personal Training membership includes:</p>
     <ul class="feature-list">
       <li>12 one-on-one PT sessions per month (roughly three per week)</li>
@@ -91,13 +86,6 @@ finalCta:
 
 <section class="section">
   <div class="container container-narrow">
-    <span class="eyebrow">Common questions</span>
-    <h2>Personal training questions.</h2>
-    <details class="faq-item"><summary>How much does personal training cost?</summary><div class="faq-answer">$999/month, month-to-month, no contract. Includes 12 one-on-one sessions per month, individualized programming, unlimited group classes, Prime Vitality, wellness center, and 24/7 access.</div></details>
-    <details class="faq-item"><summary>How often will I train with my coach?</summary><div class="faq-answer">12 sessions per month — roughly three per week. You and your coach structure the schedule around your goals and travel.</div></details>
-    <details class="faq-item"><summary>What's the difference between PT and group CrossFit classes?</summary><div class="faq-answer">Group classes follow the day's programming for up to 15 athletes. PT is one-on-one — your coach builds programming specific to you and coaches the whole session for you alone.</div></details>
-    <details class="faq-item"><summary>Can I do personal training for injury recovery?</summary><div class="faq-answer">Yes — it is one of the most common reasons members use PT. Coaches work around limitations, progress loads carefully, and coordinate with your PT or doctor if appropriate.</div></details>
-    <details class="faq-item"><summary>Who are the personal trainers?</summary><div class="faq-answer">Lisa Arcangel, Liz Kushner, Dean Weeks, or owner April DiGiannantonio — all CF-L2 certified.</div></details>
-    <details class="faq-item"><summary>Where is it located?</summary><div class="faq-answer">12090 West 50th Place, Wheat Ridge, CO 80033 — about 5 minutes from Arvada and Applewood, 10 from Lakewood, 12 from Golden.</div></details>
+    {% include "partials/faq-list.njk" %}
   </div>
 </section>

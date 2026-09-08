@@ -1,23 +1,36 @@
-# Netlify redirects file
+# Netlify redirects.
 # Format: from-path   to-path   status-code
-#
-# When you switch DNS, add redirects here for any old URLs that should
-# forward to new paths. Examples below are placeholders — replace with
-# actual old URLs from your current Big Little Gyms site before launch.
 
-# /old-about-page/   /about/   301
-# /get-started/      /free-intro/   301
-# /member-reviews/   /#reviews   301
+# ---------------------------------------------------------------------------
+# 2026 site consolidation — every URL removed in the simplification has a
+# 301 here, pointing at the section that absorbed its content.
+# ---------------------------------------------------------------------------
 
-# Consolidation: alpinecrossfit.com pages
-# (These redirects only activate if alpinecrossfit.com is pointed at
-# this Netlify site or a redirect rule is set at the domain registrar.)
-# /blog/*     /#   301
-# /personnel/* /coaches/*   301
+# The five city landing pages. They were 40–46% word-for-word identical to
+# each other, which is a doorway-page pattern for a single physical location
+# and a Google spam-policy problem. Their one genuinely useful element — the
+# real drive times — now lives in the "Areas we serve" block on /visit/.
+/gym/wheat-ridge/                 /visit/#areas                 301
+/gym/arvada/                      /visit/#areas                 301
+/gym/lakewood/                    /visit/#areas                 301
+/gym/applewood/                   /visit/#areas                 301
+/gym/golden/                      /visit/#areas                 301
+/gym/*                            /visit/#areas                 301
 
-# Trailing slash normalization (Netlify handles this automatically
-# for folders with index.html, but uncomment if needed)
-# /about  /about/   301!
+# Beginner content merged into the CrossFit page.
+/beginners/                       /crossfit/#beginners          301
+/what-to-expect/                  /crossfit/#first-visit        301
 
-# 2026 ownership transition — removed coach pages redirect to the coaches index
-/coaches/annie-brunner/   /coaches/   301
+# Drop-in options merged into the pricing page.
+/drop-in/                         /pricing/#visiting            301
+
+# The comparison page. Its honest "what Alpine doesn't offer" section moved
+# to /about/; the rest was keyword filler.
+/best-crossfit-gym-wheat-ridge/   /about/#what-we-dont-offer    301
+
+# ---------------------------------------------------------------------------
+# Earlier redirects, still live.
+# ---------------------------------------------------------------------------
+
+# 2026 ownership transition — removed coach page redirects to the coaches index
+/coaches/annie-brunner/           /coaches/                     301

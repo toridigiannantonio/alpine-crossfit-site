@@ -1,28 +1,36 @@
 ---
 layout: layouts/base.njk
-schemaTypes: ["organization", "healthclub", "faq"]
+schemaTypes: ["website", "organization", "healthclub"]
 loadImagesScript: true
 speakable: true
 ---
-{# Homepage layout. The homepage is unique enough that nearly every section
-   has its own structured frontmatter — Lisa edits text, the layout stays
-   locked. Frontmatter expected:
-     - hero: { eyebrow, heading, dek, ctas, image{ src, alt, slot }, trustItems[] }
-     - affiliations: [ { image, label } ]
-     - whoSection: { eyebrow, heading, intro[], cards[{ heading, body }] }
-     - howToStart: { eyebrow, heading, steps[{ heading, body }], ctaLabel, ctaHref }
-     - services: { eyebrow, heading, items[{ heading, body, link }] }
-     - pricing: { eyebrow, heading, intro, tiers[{ heading, price, unit, features[], ctaLabel, ctaHref, featured }], moreLink }
-     - reviews: { eyebrow, heading, testimonials[{ stars, quote, attribution }], stats[{ value, label }] }
-     - scheduleSection: { eyebrow, heading, blocks[{ heading, lines[] }], moreLink, locationCard{ heading, dl[{label, value}], ctaLabel, ctaHref } }
-     - faqs: [ { question, answer } ]
-     - faqMoreLink: string (URL)
+{# Homepage layout — rebuilt in the 2026 simplification.
+   Eleven sections became six. Nothing was deleted from the SITE; the
+   duplicated blocks were removed from the HOMEPAGE and now live only on the
+   page that owns them:
+
+     - the full pricing table  -> /pricing/  (here: a one-line price strip)
+     - the full class schedule -> /schedule/ (here: a link)
+     - the FAQ accordion       -> /faq/      (here: a link)
+     - "Who Alpine is for" and "Getting started" merged into one section
+     - services became compact link tiles instead of six full cards
+     - two of three testimonials dropped; one featured review + the stat row
+
+   Front matter expected:
+     - hero: { eyebrow, heading, dek, cta{label,href}, links[{label,href}],
+               image{src,alt,slot}, trustItems[] }
+     - affiliations: [ { image, alt, label } ]
+     - intro: { eyebrow, heading, body[], cards[{heading, body}], steps[{heading, body}] }
+     - services: { eyebrow, heading, items[{ heading, note, link }] }
+     - pricing: { eyebrow, heading, note, moreLink{label,href} }
+     - proof: { eyebrow, heading, featured{quote, attribution}, stats[{value,label}] }
+     - visit: { eyebrow, heading, body }
      - finalCta: { heading, body, ctas[{ label, href, inlineStyle }] }
 #}
 
 {% if announcement %}
 <!-- ANNOUNCEMENT BANNER -->
-<section class="announcement-banner" style="background: var(--color-alpine-green); color: var(--color-black); padding: 12px 0; text-align: center;">
+<section class="announcement-banner" style="background: var(--color-alpine-green); color: var(--color-black); padding: 10px 0; text-align: center;">
   <div class="container">
     <p style="margin: 0; font-size: 14px; line-height: 1.5;">
       {% if announcement.eyebrow %}<strong>{{ announcement.eyebrow }}</strong> — {% endif %}{{ announcement.text | safe }}
@@ -32,20 +40,19 @@ speakable: true
 </section>
 {% endif %}
 
-<!-- HERO -->
+<!-- 1. HERO — one sentence, ONE button, secondary actions as text links -->
 <section class="hero">
   <div class="container hero-with-image">
     <div class="hero-text">
       {% if hero.eyebrow %}<div class="hero-eyebrow">{{ hero.eyebrow }}</div>{% endif %}
       <h1>{{ hero.heading | safe }}</h1>
       {% if hero.dek %}<p class="hero-dek">{{ hero.dek | safe }}</p>{% endif %}
-      {% if hero.ctas %}
       <div class="hero-cta">
-        {%- for cta in hero.ctas %}
-        <div class="cta-stack">
-        <a class="btn {{ cta.style or 'btn-primary btn-lg' }}" href="{{ cta.href }}">{{ cta.label }}</a>
+        <a class="btn btn-primary btn-lg" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a>
       </div>
-        {%- endfor %}
+      {% if hero.links %}
+      <div class="hero-links">
+        {%- for l in hero.links %}<a href="{{ l.href }}">{{ l.label }}</a>{% endfor %}
       </div>
       {% endif %}
       {% if hero.trustItems %}
@@ -65,7 +72,6 @@ speakable: true
 </section>
 
 {% if affiliations %}
-<!-- AFFILIATIONS -->
 <section class="affiliations">
   <div class="container">
     <div class="affiliations-row">
@@ -80,68 +86,53 @@ speakable: true
 </section>
 {% endif %}
 
-{% if whoSection %}
-<!-- WHO -->
+{% if intro %}
+<!-- 2. WHO IT'S FOR + HOW TO START, merged into one section -->
 <section class="section">
   <div class="container">
-    <span class="eyebrow">{{ whoSection.eyebrow }}</span>
-    <h2 class="section-heading">{{ whoSection.heading }}</h2>
+    <span class="eyebrow">{{ intro.eyebrow }}</span>
+    <h2 class="section-heading">{{ intro.heading }}</h2>
     <div class="split">
       <div>
-        {%- for p in whoSection.intro %}
-        <p>{{ p | safe }}</p>
+        {%- for para in intro.body %}
+        <p>{{ para | safe }}</p>
         {%- endfor %}
+        {% if intro.cards %}
+        <ul class="feature-list mt-6">
+        {%- for c in intro.cards %}
+          <li><strong>{{ c.heading }}</strong> — {{ c.body | safe }}</li>
+        {%- endfor %}
+        </ul>
+        {% endif %}
       </div>
-      <div class="grid grid-3" style="gap: var(--space-4);">
-      {%- for c in whoSection.cards %}
-        <div class="card">
-          <h3>{{ c.heading }}</h3>
-          <p>{{ c.body | safe }}</p>
+      <div>
+        <h3>{{ intro.stepsHeading or 'Getting started' }}</h3>
+        <ol class="feature-list" style="list-style-type: decimal;">
+        {%- for s in intro.steps %}
+          <li><strong>{{ s.heading }}</strong> {{ s.body | safe }}</li>
+        {%- endfor %}
+        </ol>
+        <div class="mt-6">
+          <a class="btn btn-primary" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a>
         </div>
-      {%- endfor %}
       </div>
     </div>
-  </div>
-</section>
-{% endif %}
-
-{% if howToStart %}
-<!-- HOW TO START -->
-<section class="section section-dark">
-  <div class="container">
-    <span class="eyebrow">{{ howToStart.eyebrow }}</span>
-    <h2 class="section-heading">{{ howToStart.heading }}</h2>
-    <div class="grid grid-3">
-    {%- for s in howToStart.steps %}
-      <div class="card">
-        <h3>{{ s.heading }}</h3>
-        <p>{{ s.body | safe }}</p>
-      </div>
-    {%- endfor %}
-    </div>
-    {% if howToStart.ctaLabel %}
-    <div class="mt-8 text-center hero-cta" style="justify-content:center;">
-      <a class="btn btn-primary btn-lg" href="{{ howToStart.ctaHref }}">{{ howToStart.ctaLabel }}</a>
-      {% if howToStart.ctaLabel2 %}<a class="btn btn-secondary btn-lg" href="{{ howToStart.ctaHref2 }}">{{ howToStart.ctaLabel2 }}</a>{% endif %}
-    </div>
-    {% endif %}
   </div>
 </section>
 {% endif %}
 
 {% if services %}
-<!-- SERVICES -->
-<section class="section">
+<!-- 3. SERVICES — compact link tiles, not full cards -->
+<section class="section section-dark">
   <div class="container">
     <span class="eyebrow">{{ services.eyebrow }}</span>
     <h2 class="section-heading">{{ services.heading }}</h2>
-    <div class="grid grid-3">
+    <div class="grid-tiles">
     {%- for item in services.items %}
-      <div class="card">
-        <h3>{{ item.heading }}</h3>
-        <p>{{ item.body | safe }}</p>
-        {% if item.link %}<a href="{{ item.link }}">Learn more →</a>{% endif %}
-      </div>
+      <a class="tile" href="{{ item.link }}">
+        <span class="tile-title">{{ item.heading }}</span>
+        <span class="tile-note">{{ item.note }}</span>
+      </a>
     {%- endfor %}
     </div>
   </div>
@@ -149,53 +140,40 @@ speakable: true
 {% endif %}
 
 {% if pricing %}
-<!-- PRICING -->
-<section class="section section-dark">
+<!-- 4. PRICING — a one-line strip, built from site.pricing. The full table
+     lives on /pricing/, which owns it. -->
+<section class="section">
   <div class="container">
     <span class="eyebrow">{{ pricing.eyebrow }}</span>
     <h2 class="section-heading">{{ pricing.heading }}</h2>
-    {% if pricing.intro %}<p class="hero-dek">{{ pricing.intro | safe }}</p>{% endif %}
-    <div class="grid grid-3 mt-8">
-    {%- for t in pricing.tiers %}
-      <div class="card{% if t.featured %} card-featured{% endif %}">
-        <h3>{{ t.heading }}</h3>
-        <div class="price">{{ t.price }}<span class="price-unit">{{ t.unit }}</span></div>
-        <ul class="feature-list">
-        {%- for f in t.features %}
-          <li{% if f.muted %} class="muted"{% endif %}>{{ f.text or f }}</li>
-        {%- endfor %}
-        </ul>
-        <a class="btn {% if t.featured %}btn-primary{% else %}btn-secondary{% endif %}" href="{{ t.ctaHref }}">{{ t.ctaLabel }}</a>
-      </div>
-    {%- endfor %}
+    <div class="price-strip">
+      {%- for t in site.pricing.tiers %}
+      <span class="price-strip-item">
+        <span class="price-strip-amount">{{ t.price }}</span>
+        <span class="price-strip-label">{{ t.name }}</span>
+      </span>
+      {%- endfor %}
     </div>
-    {% if pricing.moreLink %}
-    <div class="mt-8 text-center">
-      <a href="{{ pricing.moreLink.href }}">{{ pricing.moreLink.label }}</a>
-    </div>
-    {% endif %}
+    {% if pricing.note %}<p class="text-muted mt-4" style="font-size:0.9rem;">{{ pricing.note | safe }}</p>{% endif %}
+    <p class="mt-4"><a href="{{ pricing.moreLink.href }}">{{ pricing.moreLink.label }}</a></p>
   </div>
 </section>
 {% endif %}
 
-{% if reviews %}
-<!-- REVIEWS -->
-<section class="section">
+{% if proof %}
+<!-- 5. PROOF — one featured review plus the stat row (was three testimonials) -->
+<section class="section section-dark">
   <div class="container">
-    <span class="eyebrow">{{ reviews.eyebrow }}</span>
-    <h2 class="section-heading">{{ reviews.heading }}</h2>
-    <div class="grid grid-3">
-    {%- for t in reviews.testimonials %}
-      <div class="testimonial">
-        <div class="testimonial-stars">★★★★★</div>
-        <p class="testimonial-quote">"{{ t.quote | safe }}"</p>
-        <div class="testimonial-attribution">— {{ t.attribution | safe }}</div>
-      </div>
-    {%- endfor %}
+    <span class="eyebrow">{{ proof.eyebrow }}</span>
+    <h2 class="section-heading">{{ proof.heading }}</h2>
+    <div class="testimonial">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-quote">"{{ proof.featured.quote | safe }}"</p>
+      <div class="testimonial-attribution">— {{ proof.featured.attribution | safe }}</div>
     </div>
-    {% if reviews.stats %}
+    {% if proof.stats %}
     <div class="stat-row mt-8">
-    {%- for s in reviews.stats %}
+    {%- for s in proof.stats %}
       <div class="stat">
         <div class="stat-value">{{ s.value }}</div>
         <div class="stat-label">{{ s.label }}</div>
@@ -207,79 +185,38 @@ speakable: true
 </section>
 {% endif %}
 
-{% if scheduleSection %}
-<!-- SCHEDULE -->
-<section class="section section-dark" id="schedule">
+{% if visit %}
+<!-- 6. VISIT — the shared location card plus links. The full schedule grid
+     lives on /schedule/. -->
+<section class="section" id="visit">
   <div class="container">
-    <span class="eyebrow">{{ scheduleSection.eyebrow }}</span>
-    <h2 class="section-heading">{{ scheduleSection.heading }}</h2>
+    <span class="eyebrow">{{ visit.eyebrow }}</span>
+    <h2 class="section-heading">{{ visit.heading }}</h2>
     <div class="split">
+      {% include "partials/location-card.njk" %}
       <div>
-        {%- for b in scheduleSection.blocks %}
-        <h3{% if not loop.first %} class="mt-8"{% endif %}>{{ b.heading }}</h3>
-        {%- for line in b.lines %}
-        <p>{{ line | safe }}</p>
-        {%- endfor %}
-        {%- endfor %}
-        {% if scheduleSection.note %}<p class="text-muted">{{ scheduleSection.note | safe }}</p>{% endif %}
-        {% if scheduleSection.moreLink %}
+        {% if visit.body %}<p>{{ visit.body | safe }}</p>{% endif %}
+        <div class="hero-links" style="margin-top:var(--space-4);">
+          <a href="/schedule/">See the class schedule</a>
+          <a href="/visit/">Directions &amp; areas we serve</a>
+          <a href="/faq/">All {{ faqs.items.length }} FAQs</a>
+        </div>
         <div class="mt-6">
-          <a class="btn btn-secondary" href="{{ scheduleSection.moreLink.href }}">{{ scheduleSection.moreLink.label }}</a>
-        </div>
-        {% endif %}
-      </div>
-      {% if scheduleSection.locationCard %}
-      <div class="location-card">
-        <h3>{{ scheduleSection.locationCard.heading }}</h3>
-        <dl>
-        {%- for row in scheduleSection.locationCard.rows %}
-          <dt>{{ row.label }}</dt><dd>{{ row.value | safe }}</dd>
-        {%- endfor %}
-        </dl>
-        <div class="mt-6 hero-cta">
-          <a class="btn btn-primary" href="{{ scheduleSection.locationCard.ctaHref }}">{{ scheduleSection.locationCard.ctaLabel }}</a>
-          {% if scheduleSection.locationCard.ctaLabel2 %}<a class="btn btn-secondary" href="{{ scheduleSection.locationCard.ctaHref2 }}">{{ scheduleSection.locationCard.ctaLabel2 }}</a>{% endif %}
+          <a class="btn btn-primary" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a>
         </div>
       </div>
-      {% endif %}
     </div>
-  </div>
-</section>
-{% endif %}
-
-{% if faqs %}
-<!-- FAQ -->
-<section class="section">
-  <div class="container container-narrow">
-    <span class="eyebrow">Common questions</span>
-    <h2 class="section-heading">Common questions.</h2>
-    {%- for f in faqs %}
-    <details class="faq-item">
-      <summary>{{ f.question }}</summary>
-      <div class="faq-answer">{{ f.answer | safe }}</div>
-    </details>
-    {%- endfor %}
-    {% if faqMoreLink %}
-    <div class="mt-8">
-      <a href="{{ faqMoreLink }}">See all FAQs →</a>
-    </div>
-    {% endif %}
   </div>
 </section>
 {% endif %}
 
 {% if finalCta %}
-<!-- FINAL CTA -->
 <section class="section section-green">
   <div class="container text-center">
     <h2>{{ finalCta.heading }}</h2>
     {% if finalCta.body %}<p class="hero-dek" style="margin-left:auto;margin-right:auto;color:rgba(0,0,0,0.8);">{{ finalCta.body | safe }}</p>{% endif %}
     <div class="hero-cta hero-cta-center" style="justify-content:center;">
-      {%- for cta in finalCta.ctas %}
-      <div class="cta-stack">
-        <a class="btn btn-lg" style="{{ cta.inlineStyle or 'background:#000;color:#fff;' }}" href="{{ cta.href }}">{{ cta.label }}</a>
-      </div>
-      {%- endfor %}
+      <a class="btn btn-lg" style="background:#000;color:#fff;" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a>
     </div>
   </div>
 </section>

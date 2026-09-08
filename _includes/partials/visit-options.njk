@@ -1,0 +1,14 @@
+{# Ways in that aren't a monthly membership: free intro, drop-in, week pass,
+   first-class-free. This is the block that replaced the standalone
+   /drop-in/ page — it now lives at /pricing/#visiting. #}
+<div class="grid grid-4">
+{%- for o in site.pricing.visitOptions %}
+  <div class="card{% if o.featured %} card-featured{% endif %}">
+    <h3>{{ o.name }}</h3>
+    <div class="price">{{ o.price }}<span class="price-unit">{{ o.unit }}</span></div>
+    <p class="eyebrow" style="margin-top:var(--space-4);margin-bottom:var(--space-2);">Best for</p>
+    <p>{{ o.bestFor }}</p>
+    <a class="btn btn-primary" href="{{ o.ctaHref }}"{% if o.ctaExternal %} target="_blank" rel="noopener"{% endif %}>{{ o.ctaLabel }}</a>
+  </div>
+{%- endfor %}
+</div>

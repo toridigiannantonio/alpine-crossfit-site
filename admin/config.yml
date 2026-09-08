@@ -30,6 +30,102 @@ logo_url: https://alpinecrossfit.com/assets/img/logo.png
 collections:
 
   # ====================================================================
+  # GYM DETAILS — the single source of truth for prices, hours, address,
+  # phone, wellness amenities and drive times.
+  #
+  # These used to be pasted by hand into eleven different pages. Now they
+  # live in _data/gym.json, which _data/site.js reads and every page and
+  # FAQ answer renders from. Change a price here and it changes on the
+  # homepage price strip, the /pricing/ table, the FAQ answers that quote
+  # it, and the schema.org offers — in one edit.
+  # ====================================================================
+  - name: "settings"
+    label: "Gym details"
+    label_singular: "Gym details"
+    description: "Prices, hours, address, phone, wellness amenities, and drive times. Everything here appears in several places on the site at once."
+    delete: false
+    files:
+      - file: "_data/gym.json"
+        name: "gym"
+        label: "Prices, hours & location"
+        fields:
+          - {label: "Internal note (don't edit)", name: "_comment", widget: "hidden"}
+
+          - label: "Address"
+            name: "address"
+            widget: "object"
+            fields:
+              - {label: "Street", name: "street", widget: "string"}
+              - {label: "City", name: "city", widget: "string"}
+              - {label: "State", name: "region", widget: "string"}
+              - {label: "ZIP", name: "postalCode", widget: "string"}
+              - {label: "Country code", name: "country", widget: "hidden", default: "US"}
+
+          - {label: "Phone (as displayed)", name: "phoneDisplay", widget: "string", hint: "e.g. (720) 964-1505"}
+          - {label: "Phone (for tel: links)", name: "phone", widget: "string", hint: "e.g. +1-720-964-1505"}
+          - {label: "Phone (for text links)", name: "phoneSms", widget: "string", hint: "e.g. +17209641505"}
+          - {label: "Parking", name: "parking", widget: "string"}
+          - {label: "Member access line", name: "memberAccess", widget: "string"}
+
+          - label: "Staffed hours"
+            name: "hoursDisplay"
+            widget: "list"
+            summary: "{{fields.days}} {{fields.time}}"
+            fields:
+              - {label: "Days", name: "days", widget: "string", hint: "e.g. Mon–Fri"}
+              - {label: "Times", name: "time", widget: "string", hint: "e.g. 5:30 AM – 6:30 PM"}
+
+          - label: "Wellness center amenities"
+            name: "wellnessAmenities"
+            widget: "list"
+            field: {label: "Amenity", name: "amenity", widget: "string"}
+            hint: "Lowercase, e.g. 'cold plunges'. These are joined into a sentence automatically wherever the wellness center is described."
+
+          - label: "Membership tiers"
+            name: "tiers"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.price}}"
+            fields:
+              - {label: "Tier name", name: "name", widget: "string"}
+              - {label: "Price (as displayed)", name: "price", widget: "string", hint: "e.g. $199"}
+              - {label: "Price (digits only, for Google)", name: "amount", widget: "string", hint: "e.g. 199 — no dollar sign"}
+              - {label: "Per", name: "unit", widget: "string", default: "/month"}
+              - {label: "Highlight as most popular?", name: "featured", widget: "boolean", default: false}
+              - {label: "One-line summary", name: "summary", widget: "string", required: false}
+              - {label: "What's included", name: "features", widget: "list", field: {label: "Item", name: "item", widget: "string"}}
+              - {label: "What's NOT included (shown greyed out)", name: "excluded", widget: "list", required: false, field: {label: "Item", name: "item", widget: "string"}}
+              - {label: "Button label", name: "ctaLabel", widget: "string"}
+              - {label: "Button link", name: "ctaHref", widget: "string"}
+              - {label: "Opens in a new tab?", name: "ctaExternal", widget: "boolean", default: false, required: false}
+              - {label: "Secondary link label", name: "altCtaLabel", widget: "string", required: false}
+              - {label: "Secondary link", name: "altCtaHref", widget: "string", required: false}
+
+          - label: "Visit options (drop-in, week pass, free intro)"
+            name: "visitOptions"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.price}}"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Price (as displayed)", name: "price", widget: "string"}
+              - {label: "Price (digits only, for Google)", name: "amount", widget: "string"}
+              - {label: "Per", name: "unit", widget: "string"}
+              - {label: "Highlight?", name: "featured", widget: "boolean", default: false}
+              - {label: "Best for", name: "bestFor", widget: "text"}
+              - {label: "Button label", name: "ctaLabel", widget: "string"}
+              - {label: "Button link", name: "ctaHref", widget: "string"}
+              - {label: "Opens in a new tab?", name: "ctaExternal", widget: "boolean", default: false, required: false}
+
+          - label: "Areas we serve (drive times)"
+            name: "areas"
+            widget: "list"
+            summary: "{{fields.city}} — {{fields.time}}"
+            hint: "These render as the 'Areas we serve' block on /visit/. They replaced five near-duplicate city landing pages, so please keep the drive times honest."
+            fields:
+              - {label: "City", name: "city", widget: "string"}
+              - {label: "Drive time", name: "time", widget: "string", hint: "e.g. 10 min"}
+              - {label: "Detail", name: "note", widget: "text"}
+
+  # ====================================================================
   # IMAGE BLOCKS — preserved from the original CMS pattern
   # Hero photos that auto-swap on the homepage, about, and wellness
   # pages via /assets/js/images.js.
@@ -60,12 +156,16 @@ collections:
           - {label: "Alt text", name: "alt", widget: "string", default: "Alpine member training during wellness center hours"}
 
   # ====================================================================
-  # HOMEPAGE — single page, lots of structured sections
+  # HOMEPAGE — rebuilt in the 2026 simplification.
+  # Eleven sections became six. The pricing table, class schedule and FAQ
+  # accordion are gone from here: they live on the pages that own them
+  # (/pricing/, /schedule/, /faq/) and the homepage links to them. The
+  # price strip renders from Gym details, so there is nothing to retype.
   # ====================================================================
   - name: "homepage"
     label: "Homepage"
     label_singular: "Homepage"
-    description: "The main alpinecrossfit.com landing page. Every section here is editable as a form."
+    description: "The main alpinecrossfit.com landing page. Six sections, each editable as a form."
     delete: false
     files:
       - file: "content/pages/homepage.md"
@@ -74,225 +174,164 @@ collections:
         fields:
           - {label: "Browser title", name: "title", widget: "string", hint: "Shown in the browser tab and as the link in Google search results."}
           - {label: "Search snippet", name: "description", widget: "text", hint: "1–2 sentences shown under the title in Google. ~155 characters works best."}
-          - {label: "Social share title", name: "ogTitle", widget: "string", required: false, hint: "Title shown when the page is shared on Facebook, Twitter, etc. Leave blank to use the browser title."}
+          - {label: "Social share title", name: "ogTitle", widget: "string", required: false}
           - {label: "Social share description", name: "ogDescription", widget: "text", required: false}
-          - label: "Hero (top section)"
+
+          - label: "Announcement bar (optional)"
+            name: "announcement"
+            widget: "object"
+            required: false
+            collapsed: true
+            fields:
+              - {label: "Bold lead-in", name: "eyebrow", widget: "string", required: false}
+              - {label: "Message", name: "text", widget: "text"}
+              - {label: "Link target", name: "href", widget: "string", required: false}
+              - {label: "Link label", name: "linkLabel", widget: "string", required: false}
+
+          - label: "1. Hero (top of page)"
             name: "hero"
             widget: "object"
             fields:
-              - {label: "Eyebrow line", name: "eyebrow", widget: "string", hint: "Small text above the headline."}
-              - {label: "Headline", name: "heading", widget: "string", hint: "The big H1. Wrap an accent word in <span class=\"accent\">…</span> to color it green."}
-              - {label: "Subheadline paragraph", name: "dek", widget: "text"}
-              - label: "Hero buttons"
-                name: "ctas"
+              - {label: "Small text above the headline", name: "eyebrow", widget: "string", required: false}
+              - {label: "Headline (HTML allowed)", name: "heading", widget: "string", hint: "Wrap accent words in <span class=\"accent\">...</span>."}
+              - {label: "One-sentence summary", name: "dek", widget: "text", hint: "Keep this to ONE sentence. It sets the height of the whole first screen on a phone."}
+              - label: "Secondary links"
+                name: "links"
                 widget: "list"
+                required: false
+                summary: "{{fields.label}}"
+                hint: "These render as plain text links, not buttons. The one primary button ('Book a free intro') is added automatically on every page — you do not set it here."
                 fields:
-                  - {label: "Button label", name: "label", widget: "string"}
-                  - {label: "Link target", name: "href", widget: "string"}
-                  - {label: "Button style", name: "style", widget: "string", default: "btn-primary btn-lg", required: false}
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Link", name: "href", widget: "string"}
               - label: "Trust strip items"
                 name: "trustItems"
                 widget: "list"
                 required: false
                 summary: "{{fields.text}}"
                 fields:
-                  - {label: "Type", name: "type", widget: "select", options: ["text", "stars"], default: "text", required: false, hint: "'stars' shows ★★★★★, 'text' shows whatever you type below."}
+                  - {label: "Type (leave blank, or 'stars')", name: "type", widget: "string", required: false}
                   - {label: "Text", name: "text", widget: "string", required: false}
               - label: "Hero image"
                 name: "image"
                 widget: "object"
                 fields:
-                  - {label: "Image file", name: "src", widget: "image", media_folder: "/assets/img/uploads/gym-photos"}
-                  - {label: "Alt text (for accessibility)", name: "alt", widget: "string"}
+                  - {label: "Image", name: "src", widget: "image", media_folder: "/assets/img/uploads/gym-photos"}
+                  - {label: "Alt text", name: "alt", widget: "string"}
                   - {label: "Image slot ID (don't change)", name: "slot", widget: "hidden"}
-          - label: "Affiliations row (CrossFit / HYROX badges)"
+
+          - label: "Affiliation badges"
             name: "affiliations"
             widget: "list"
             required: false
-            summary: "{{fields.label}}"
+            collapsed: true
+            summary: "{{fields.alt}}"
             fields:
-              - {label: "Badge image", name: "image", widget: "image", media_folder: "/assets/img/uploads/gym-photos"}
+              - {label: "Badge image", name: "image", widget: "image"}
               - {label: "Alt text", name: "alt", widget: "string"}
-              - {label: "Label (line breaks with <br>)", name: "label", widget: "string"}
-          - label: "Who Alpine is for (the 'Not another big-box gym' section)"
-            name: "whoSection"
+              - {label: "Caption (HTML allowed)", name: "label", widget: "string"}
+
+          - label: "2. Who Alpine is for + Getting started"
+            name: "intro"
             widget: "object"
-            required: false
+            hint: "These used to be two separate sections. They are one now."
             fields:
-              - {label: "Eyebrow", name: "eyebrow", widget: "string"}
-              - {label: "Section heading", name: "heading", widget: "string"}
-              - label: "Intro paragraphs (left side)"
-                name: "intro"
-                widget: "list"
-                summary: "{{fields.p}}"
-                fields:
-                  - {label: "Paragraph", name: "p", widget: "text"}
-              - label: "Right-side cards"
+              - {label: "Small text above the headline", name: "eyebrow", widget: "string"}
+              - {label: "Section headline", name: "heading", widget: "string"}
+              - {label: "Paragraphs", name: "body", widget: "list", field: {label: "Paragraph", name: "para", widget: "text"}}
+              - label: "Short bullet points"
                 name: "cards"
                 widget: "list"
                 summary: "{{fields.heading}}"
                 fields:
-                  - {label: "Card heading", name: "heading", widget: "string"}
-                  - {label: "Card body", name: "body", widget: "string"}
-          - label: "How to start section ('Getting started is easy')"
-            name: "howToStart"
-            widget: "object"
-            required: false
-            fields:
-              - {label: "Eyebrow", name: "eyebrow", widget: "string"}
-              - {label: "Section heading", name: "heading", widget: "string"}
-              - label: "Steps"
+                  - {label: "Bold lead-in", name: "heading", widget: "string"}
+                  - {label: "Rest of the line", name: "body", widget: "string"}
+              - {label: "Steps column heading", name: "stepsHeading", widget: "string", required: false, default: "Getting started"}
+              - label: "Numbered steps"
                 name: "steps"
                 widget: "list"
                 summary: "{{fields.heading}}"
                 fields:
-                  - {label: "Step heading", name: "heading", widget: "string"}
-                  - {label: "Step body", name: "body", widget: "text"}
-              - {label: "Section button label", name: "ctaLabel", widget: "string"}
-              - {label: "Section button link", name: "ctaHref", widget: "string"}
-          - label: "Services section (the 6 service cards)"
+                  - {label: "Bold lead-in", name: "heading", widget: "string"}
+                  - {label: "Rest of the step", name: "body", widget: "text"}
+
+          - label: "3. What we offer (link tiles)"
             name: "services"
             widget: "object"
-            required: false
+            hint: "These render as compact tiles, not full cards. Keep the note to one short line."
             fields:
-              - {label: "Eyebrow", name: "eyebrow", widget: "string"}
-              - {label: "Section heading", name: "heading", widget: "string"}
-              - label: "Service cards"
+              - {label: "Small text above the headline", name: "eyebrow", widget: "string"}
+              - {label: "Section headline", name: "heading", widget: "string"}
+              - label: "Tiles"
                 name: "items"
                 widget: "list"
                 summary: "{{fields.heading}}"
                 fields:
-                  - {label: "Card heading", name: "heading", widget: "string"}
-                  - {label: "Card body", name: "body", widget: "text"}
-                  - {label: "Card link (optional)", name: "link", widget: "string", required: false}
-          - label: "Pricing teaser section"
+                  - {label: "Title", name: "heading", widget: "string"}
+                  - {label: "One-line note", name: "note", widget: "string"}
+                  - {label: "Link", name: "link", widget: "string"}
+
+          - label: "4. Pricing strip"
             name: "pricing"
             widget: "object"
-            required: false
+            hint: "The prices themselves come from 'Gym details' — edit them there once and they update here, on /pricing/, and in the FAQ answers. This section only sets the wording around them."
             fields:
-              - {label: "Eyebrow", name: "eyebrow", widget: "string"}
-              - {label: "Section heading", name: "heading", widget: "string"}
-              - {label: "Intro paragraph", name: "intro", widget: "text"}
-              - label: "Pricing tiers"
-                name: "tiers"
-                widget: "list"
-                summary: "{{fields.heading}} — {{fields.price}}"
-                fields:
-                  - {label: "Tier name", name: "heading", widget: "string"}
-                  - {label: "Price", name: "price", widget: "string", hint: "Include the dollar sign, e.g. $69"}
-                  - {label: "Unit", name: "unit", widget: "string", default: "/month"}
-                  - {label: "Featured tier?", name: "featured", widget: "boolean", default: false, hint: "Only one tier should be featured."}
-                  - {label: "CTA button label", name: "ctaLabel", widget: "string"}
-                  - {label: "CTA button link", name: "ctaHref", widget: "string"}
-                  - label: "Features list"
-                    name: "features"
-                    widget: "list"
-                    summary: "{{fields.text}}"
-                    fields:
-                      - {label: "Feature text", name: "text", widget: "string"}
-                      - {label: "Greyed out (not included in this tier)?", name: "muted", widget: "boolean", default: false, required: false}
-              - label: "More-pricing link"
+              - {label: "Small text above the headline", name: "eyebrow", widget: "string"}
+              - {label: "Section headline", name: "heading", widget: "string"}
+              - {label: "Note under the prices", name: "note", widget: "text", required: false}
+              - label: "Link to the full pricing page"
                 name: "moreLink"
                 widget: "object"
-                required: false
                 fields:
                   - {label: "Label", name: "label", widget: "string"}
-                  - {label: "URL", name: "href", widget: "string"}
-          - label: "Reviews / testimonials section"
-            name: "reviews"
+                  - {label: "Link", name: "href", widget: "string", default: "/pricing/"}
+
+          - label: "5. Proof (one review + stats)"
+            name: "proof"
             widget: "object"
-            required: false
+            hint: "One featured review, not three. The other reviews live on the pages that quote them."
             fields:
-              - {label: "Eyebrow", name: "eyebrow", widget: "string"}
-              - {label: "Section heading", name: "heading", widget: "string"}
-              - label: "Testimonials"
-                name: "testimonials"
-                widget: "list"
-                summary: "{{fields.attribution}}"
+              - {label: "Small text above the headline", name: "eyebrow", widget: "string"}
+              - {label: "Section headline", name: "heading", widget: "string"}
+              - label: "Featured review"
+                name: "featured"
+                widget: "object"
                 fields:
-                  - {label: "Quote", name: "quote", widget: "text"}
-                  - {label: "Attribution (e.g. 'Monica G. · New to CrossFit')", name: "attribution", widget: "string"}
-                  - {label: "Stars", name: "stars", widget: "number", default: 5, min: 1, max: 5}
-              - label: "Stat boxes (numbers below testimonials)"
+                  - {label: "Quote (no quotation marks needed)", name: "quote", widget: "text"}
+                  - {label: "Who said it", name: "attribution", widget: "string"}
+              - label: "Stat row"
                 name: "stats"
                 widget: "list"
                 summary: "{{fields.value}} — {{fields.label}}"
                 fields:
                   - {label: "Big number", name: "value", widget: "string"}
-                  - {label: "Label below number", name: "label", widget: "string"}
-          - label: "Schedule teaser section"
-            name: "scheduleSection"
+                  - {label: "Caption", name: "label", widget: "string"}
+
+          - label: "6. Visit us"
+            name: "visit"
             widget: "object"
-            required: false
+            hint: "The address, hours and parking card renders automatically from 'Gym details'. This section only sets the heading and the sentence beside it."
             fields:
-              - {label: "Eyebrow", name: "eyebrow", widget: "string"}
-              - {label: "Section heading", name: "heading", widget: "string"}
-              - label: "Schedule blocks"
-                name: "blocks"
-                widget: "list"
-                summary: "{{fields.heading}}"
-                fields:
-                  - {label: "Block heading", name: "heading", widget: "string"}
-                  - label: "Lines (HTML allowed for bolded days)"
-                    name: "lines"
-                    widget: "list"
-                    summary: "{{fields.line}}"
-                    fields:
-                      - {label: "Line", name: "line", widget: "string"}
-              - {label: "Note (small text under schedule)", name: "note", widget: "string", required: false}
-              - label: "Schedule 'see more' link"
-                name: "moreLink"
-                widget: "object"
-                required: false
-                fields:
-                  - {label: "Label", name: "label", widget: "string"}
-                  - {label: "URL", name: "href", widget: "string"}
-              - label: "Location card (right side)"
-                name: "locationCard"
-                widget: "object"
-                required: false
-                fields:
-                  - {label: "Card heading", name: "heading", widget: "string"}
-                  - label: "Detail rows (Address / Phone / Parking)"
-                    name: "rows"
-                    widget: "list"
-                    summary: "{{fields.label}}"
-                    fields:
-                      - {label: "Label", name: "label", widget: "string"}
-                      - {label: "Value (HTML allowed)", name: "value", widget: "string"}
-                  - {label: "CTA button label", name: "ctaLabel", widget: "string"}
-                  - {label: "CTA button link", name: "ctaHref", widget: "string"}
-          - label: "Homepage FAQ teaser (5 questions, drives FAQ schema)"
-            name: "faqs"
-            widget: "list"
-            required: false
-            summary: "{{fields.question}}"
-            fields:
-              - {label: "Question", name: "question", widget: "string"}
-              - {label: "Answer (HTML allowed)", name: "answer", widget: "text"}
-          - {label: "FAQ 'see all' link target", name: "faqMoreLink", widget: "string", required: false, default: "/faq/"}
-          - label: "Final call-to-action (green section at bottom)"
+              - {label: "Small text above the headline", name: "eyebrow", widget: "string"}
+              - {label: "Section headline", name: "heading", widget: "string"}
+              - {label: "Paragraph beside the card", name: "body", widget: "text", required: false}
+
+          - label: "Closing call to action"
             name: "finalCta"
             widget: "object"
-            required: false
             fields:
               - {label: "Heading", name: "heading", widget: "string"}
-              - {label: "Body paragraph (optional)", name: "body", widget: "text", required: false}
-              - label: "Buttons"
-                name: "ctas"
-                widget: "list"
-                fields:
-                  - {label: "Label", name: "label", widget: "string"}
-                  - {label: "Link", name: "href", widget: "string"}
-                  - {label: "Inline style", name: "inlineStyle", widget: "string", required: false, hint: "Advanced: custom CSS for the button."}
-          # ----- Hidden technical fields (preserved on save, never shown) -----
+              - {label: "Body", name: "body", widget: "text", required: false}
+
+          # ----- Hidden technical fields -----
           - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/homepage.njk"}
           - {label: "Permalink", name: "permalink", widget: "hidden", default: "/"}
-          - {label: "Canonical", name: "canonical", widget: "hidden", default: "https://alpinecrossfit.com/"}
-          - {label: "OG image", name: "ogImage", widget: "hidden", default: "https://alpinecrossfit.com/assets/img/hero-alpine-wall.jpg"}
+          - {label: "Canonical", name: "canonical", widget: "hidden"}
+          - {label: "Social share image", name: "ogImage", widget: "hidden"}
           - {label: "OG type", name: "ogType", widget: "hidden", default: "website"}
           - {label: "Load images.js", name: "loadImagesScript", widget: "hidden", default: true}
-          - {label: "Schema types", name: "schemaTypes", widget: "hidden", default: ["organization", "healthclub", "faq"]}
+          - {label: "Schema types", name: "schemaTypes", widget: "hidden", default: ["website", "organization", "healthclub"]}
+
 
   # ====================================================================
   # BLOG — folder collection. New posts auto-publish to /blog/<slug>/.
@@ -373,46 +412,6 @@ collections:
       - {label: "Person schema (auto-generated)", name: "personSchema", widget: "hidden"}
 
   # ====================================================================
-  # SERVICE AREAS — folder collection
-  # ====================================================================
-  - name: "areas"
-    label: "Service Areas"
-    label_singular: "Service Area"
-    description: "Local-SEO landing pages for each city Alpine serves. Each one becomes /gym/<slug>/."
-    folder: "content/areas"
-    create: true
-    delete: false
-    slug: "{{slug}}"
-    summary: "{{city}}"
-    media_folder: "/assets/img/uploads/gym-photos"
-    public_folder: "/assets/img/uploads/gym-photos"
-    fields:
-      - {label: "City name", name: "city", widget: "string"}
-      - {label: "Eyebrow text (optional)", name: "eyebrow", widget: "string", required: false, hint: "Small text above the H1. Defaults to city name if blank."}
-      - {label: "Page headline (HTML allowed)", name: "heading", widget: "string", hint: "Wrap accent words in <span class=\"accent\">...</span>. e.g., 'CrossFit in <span class=\"accent\">Wheat Ridge</span>, Colorado.'"}
-      - {label: "Subheadline paragraph", name: "dek", widget: "text"}
-      - label: "Hero buttons"
-        name: "heroCtas"
-        widget: "list"
-        required: false
-        summary: "{{fields.label}}"
-        fields:
-          - {label: "Button label", name: "label", widget: "string"}
-          - {label: "Link target", name: "href", widget: "string"}
-          - {label: "Button style", name: "style", widget: "string", default: "btn-primary btn-lg", required: false}
-      - {label: "Trust strip (HTML allowed)", name: "trustStrip", widget: "string", required: false}
-      - {label: "Final CTA heading (optional)", name: "finalCtaHeading", widget: "string", required: false}
-      - {label: "Page body", name: "body", widget: "markdown", hint: "The bulk of the page content. Wrap each section in <section class=\"section\"> for visual rhythm. You can edit visually (rich text) or as raw HTML — toggle in the top-right of the editor."}
-      - {label: "Browser title", name: "title", widget: "string"}
-      - {label: "Search snippet", name: "description", widget: "text"}
-      - {label: "Display order", name: "order", widget: "number", default: 99, required: false}
-      # ----- Hidden technical fields -----
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/area.njk"}
-      - {label: "Canonical", name: "canonical", widget: "hidden"}
-      - {label: "Permalink", name: "permalink", widget: "hidden"}
-      - {label: "Service schema (auto-generated)", name: "serviceSchema", widget: "hidden"}
-
-  # ====================================================================
   # PAGES — files collection (everything else: about, pricing, FAQ, etc.)
   # Each entry is one of the existing markdown files. Lisa edits them
   # but can't add new ones (those would need a new layout / template).
@@ -420,7 +419,7 @@ collections:
   - name: "pages"
     label: "Pages"
     label_singular: "Page"
-    description: "All other site pages: About, Pricing, FAQ, Visit, Schedule, service pages (CrossFit, HYROX, Wellness, etc.), and the Free Intro funnel."
+    description: "All other site pages: About, Pricing, FAQ, Visit, Schedule, service pages (CrossFit, HYROX, Wellness, etc.), the HYROX race pages, and the Free Intro funnel."
     delete: false
     files:
 
@@ -429,6 +428,92 @@ collections:
         name: "about"
         label: "About page"
         fields:
+          - {label: "FAQ block: small text above the heading", name: "faqEyebrow", widget: "string", required: false}
+          - {label: "FAQ block: heading", name: "faqHeading", widget: "string", required: false}
+          - label: "FAQ block: which questions to show"
+            name: "faqIds"
+            widget: "select"
+            multiple: true
+            required: false
+            hint: "Pick from the canonical question set. The answers live in _data/faqs.js — each is written once and reused, and this page's Google FAQ markup is generated from exactly this list, so the two can never disagree. Keep page FAQs short and topical; /faq/ carries the full set."
+            options:
+              - {label: "Do I need to be in shape before I start?", value: "in-shape-first"}
+              - {label: "How do I get started at Alpine?", value: "how-to-start"}
+              - {label: "What is the No Sweat Intro?", value: "no-sweat-intro"}
+              - {label: "What is the Foundations program?", value: "foundations"}
+              - {label: "How long does Foundations take?", value: "foundations-length"}
+              - {label: "Is Alpine good for beginners?", value: "good-for-beginners"}
+              - {label: "How long until I see results?", value: "how-long-results"}
+              - {label: "Do I need an appointment?", value: "need-appointment"}
+              - {label: "What should I bring?", value: "what-to-bring"}
+              - {label: "What happens in my first class?", value: "first-class"}
+              - {label: "Can I watch a class before I join?", value: "watch-a-class"}
+              - {label: "What if I'm brand new to CrossFit?", value: "brand-new"}
+              - {label: "What is CrossFit?", value: "what-is-crossfit"}
+              - {label: "Is CrossFit safe?", value: "is-crossfit-safe"}
+              - {label: "Is CrossFit good for weight loss?", value: "crossfit-weight-loss"}
+              - {label: "Is CrossFit good for women?", value: "crossfit-for-women"}
+              - {label: "What's the difference between CrossFit and a regular gym?", value: "crossfit-vs-gym"}
+              - {label: "How long is a class?", value: "class-length"}
+              - {label: "How many people are in a class?", value: "class-size"}
+              - {label: "How often should I come per week?", value: "how-often"}
+              - {label: "Who writes the workouts?", value: "who-programs"}
+              - {label: "Do you follow cycles in your programming?", value: "programming-cycles"}
+              - {label: "Do I need experience to take a class?", value: "need-experience"}
+              - {label: "Do you have Sunday classes?", value: "sunday-classes"}
+              - {label: "How much does Alpine cost?", value: "how-much"}
+              - {label: "Which membership should I pick?", value: "which-membership"}
+              - {label: "Is Unlimited worth it at $199 a month?", value: "unlimited-worth-it"}
+              - {label: "What's included in the $69 Open Gym tier?", value: "open-gym-included"}
+              - {label: "How does the $999 Personal Training tier work?", value: "pt-tier"}
+              - {label: "Is there a contract or initiation fee?", value: "contract"}
+              - {label: "Can I freeze my membership?", value: "freeze"}
+              - {label: "Do you offer military, first responder, or student discounts?", value: "discounts"}
+              - {label: "How do I cancel?", value: "cancel"}
+              - {label: "What payment methods do you accept?", value: "payment-methods"}
+              - {label: "Can I buy a membership online without talking to anyone?", value: "buy-online"}
+              - {label: "How does Alpine's pricing compare to other gyms?", value: "price-comparison"}
+              - {label: "Can I drop in to a class?", value: "can-i-drop-in"}
+              - {label: "Do I need to book a drop-in in advance?", value: "drop-in-advance"}
+              - {label: "Is my first class free if I train at another affiliate?", value: "first-class-free"}
+              - {label: "Does a drop-in include the wellness center?", value: "drop-in-wellness"}
+              - {label: "I've never done CrossFit. Should I drop in?", value: "new-should-i-drop-in"}
+              - {label: "What's in the wellness center?", value: "wellness-included"}
+              - {label: "How does peptide therapy work?", value: "peptide-therapy"}
+              - {label: "When is the wellness center open?", value: "wellness-hours"}
+              - {label: "What is Prime Vitality?", value: "prime-vitality"}
+              - {label: "Where can I train for HYROX near Denver?", value: "hyrox-where"}
+              - {label: "What are the 8 stations in a HYROX race?", value: "hyrox-stations"}
+              - {label: "How much does HYROX training cost?", value: "hyrox-cost"}
+              - {label: "How is HYROX different from CrossFit?", value: "hyrox-vs-crossfit"}
+              - {label: "How does personal training work?", value: "personal-training"}
+              - {label: "Where is Alpine located?", value: "where-located"}
+              - {label: "What are your hours?", value: "hours"}
+              - {label: "Is there free parking?", value: "parking"}
+              - {label: "What is 24/7 member access?", value: "24-7-access"}
+              - {label: "Who coaches the classes?", value: "who-coaches"}
+              - {label: "Do the owners coach the classes?", value: "owners-coach"}
+              - {label: "How long has Alpine been in Wheat Ridge?", value: "how-long-in-wheat-ridge"}
+              - {label: "What if I have an injury?", value: "injury"}
+              - {label: "I can't do a pull-up. Is that a problem?", value: "pull-up"}
+              - {label: "What does scaling actually mean?", value: "scaling"}
+              - {label: "How old do you have to be to train at Alpine?", value: "age-minimum"}
+              - {label: "Can I use the wellness center without doing CrossFit?", value: "wellness-without-crossfit"}
+              - {label: "What's the difference between personal training and group classes?", value: "pt-vs-classes"}
+              - {label: "Can I do personal training for injury recovery?", value: "pt-injury-recovery"}
+              - {label: "Is this kind of training safe over 55?", value: "prime-vitality-safe"}
+              - {label: "Can I join Prime Vitality if I've never lifted weights?", value: "prime-vitality-never-lifted"}
+              - {label: "How is Prime Vitality different from SilverSneakers?", value: "prime-vitality-vs-silversneakers"}
+              - {label: "When is HYROX Denver 2026?", value: "race-when"}
+              - {label: "How do I register for HYROX Denver 2026?", value: "race-register"}
+              - {label: "Do I need CrossFit experience to race HYROX?", value: "race-experience-needed"}
+              - {label: "How early should I start training for a HYROX race?", value: "race-how-long-to-train"}
+              - {label: "How long does a HYROX race take?", value: "race-duration"}
+              - {label: "Do you offer childcare?", value: "no-childcare"}
+              - {label: "Do you have a CrossFit Kids program?", value: "no-kids-program"}
+              - {label: "Do you offer yoga, breath work, or meditation?", value: "no-yoga"}
+              - {label: "Are there weekend afternoon classes?", value: "no-weekend-afternoons"}
+          - {label: "Schema types", name: "schemaTypes", widget: "hidden"}
           - {label: "Browser title", name: "title", widget: "string"}
           - {label: "Search snippet", name: "description", widget: "text"}
           - {label: "Hero eyebrow", name: "eyebrow", widget: "string"}
@@ -478,6 +563,92 @@ collections:
         name: "pricing"
         label: "Pricing page"
         fields:
+          - {label: "FAQ block: small text above the heading", name: "faqEyebrow", widget: "string", required: false}
+          - {label: "FAQ block: heading", name: "faqHeading", widget: "string", required: false}
+          - label: "FAQ block: which questions to show"
+            name: "faqIds"
+            widget: "select"
+            multiple: true
+            required: false
+            hint: "Pick from the canonical question set. The answers live in _data/faqs.js — each is written once and reused, and this page's Google FAQ markup is generated from exactly this list, so the two can never disagree. Keep page FAQs short and topical; /faq/ carries the full set."
+            options:
+              - {label: "Do I need to be in shape before I start?", value: "in-shape-first"}
+              - {label: "How do I get started at Alpine?", value: "how-to-start"}
+              - {label: "What is the No Sweat Intro?", value: "no-sweat-intro"}
+              - {label: "What is the Foundations program?", value: "foundations"}
+              - {label: "How long does Foundations take?", value: "foundations-length"}
+              - {label: "Is Alpine good for beginners?", value: "good-for-beginners"}
+              - {label: "How long until I see results?", value: "how-long-results"}
+              - {label: "Do I need an appointment?", value: "need-appointment"}
+              - {label: "What should I bring?", value: "what-to-bring"}
+              - {label: "What happens in my first class?", value: "first-class"}
+              - {label: "Can I watch a class before I join?", value: "watch-a-class"}
+              - {label: "What if I'm brand new to CrossFit?", value: "brand-new"}
+              - {label: "What is CrossFit?", value: "what-is-crossfit"}
+              - {label: "Is CrossFit safe?", value: "is-crossfit-safe"}
+              - {label: "Is CrossFit good for weight loss?", value: "crossfit-weight-loss"}
+              - {label: "Is CrossFit good for women?", value: "crossfit-for-women"}
+              - {label: "What's the difference between CrossFit and a regular gym?", value: "crossfit-vs-gym"}
+              - {label: "How long is a class?", value: "class-length"}
+              - {label: "How many people are in a class?", value: "class-size"}
+              - {label: "How often should I come per week?", value: "how-often"}
+              - {label: "Who writes the workouts?", value: "who-programs"}
+              - {label: "Do you follow cycles in your programming?", value: "programming-cycles"}
+              - {label: "Do I need experience to take a class?", value: "need-experience"}
+              - {label: "Do you have Sunday classes?", value: "sunday-classes"}
+              - {label: "How much does Alpine cost?", value: "how-much"}
+              - {label: "Which membership should I pick?", value: "which-membership"}
+              - {label: "Is Unlimited worth it at $199 a month?", value: "unlimited-worth-it"}
+              - {label: "What's included in the $69 Open Gym tier?", value: "open-gym-included"}
+              - {label: "How does the $999 Personal Training tier work?", value: "pt-tier"}
+              - {label: "Is there a contract or initiation fee?", value: "contract"}
+              - {label: "Can I freeze my membership?", value: "freeze"}
+              - {label: "Do you offer military, first responder, or student discounts?", value: "discounts"}
+              - {label: "How do I cancel?", value: "cancel"}
+              - {label: "What payment methods do you accept?", value: "payment-methods"}
+              - {label: "Can I buy a membership online without talking to anyone?", value: "buy-online"}
+              - {label: "How does Alpine's pricing compare to other gyms?", value: "price-comparison"}
+              - {label: "Can I drop in to a class?", value: "can-i-drop-in"}
+              - {label: "Do I need to book a drop-in in advance?", value: "drop-in-advance"}
+              - {label: "Is my first class free if I train at another affiliate?", value: "first-class-free"}
+              - {label: "Does a drop-in include the wellness center?", value: "drop-in-wellness"}
+              - {label: "I've never done CrossFit. Should I drop in?", value: "new-should-i-drop-in"}
+              - {label: "What's in the wellness center?", value: "wellness-included"}
+              - {label: "How does peptide therapy work?", value: "peptide-therapy"}
+              - {label: "When is the wellness center open?", value: "wellness-hours"}
+              - {label: "What is Prime Vitality?", value: "prime-vitality"}
+              - {label: "Where can I train for HYROX near Denver?", value: "hyrox-where"}
+              - {label: "What are the 8 stations in a HYROX race?", value: "hyrox-stations"}
+              - {label: "How much does HYROX training cost?", value: "hyrox-cost"}
+              - {label: "How is HYROX different from CrossFit?", value: "hyrox-vs-crossfit"}
+              - {label: "How does personal training work?", value: "personal-training"}
+              - {label: "Where is Alpine located?", value: "where-located"}
+              - {label: "What are your hours?", value: "hours"}
+              - {label: "Is there free parking?", value: "parking"}
+              - {label: "What is 24/7 member access?", value: "24-7-access"}
+              - {label: "Who coaches the classes?", value: "who-coaches"}
+              - {label: "Do the owners coach the classes?", value: "owners-coach"}
+              - {label: "How long has Alpine been in Wheat Ridge?", value: "how-long-in-wheat-ridge"}
+              - {label: "What if I have an injury?", value: "injury"}
+              - {label: "I can't do a pull-up. Is that a problem?", value: "pull-up"}
+              - {label: "What does scaling actually mean?", value: "scaling"}
+              - {label: "How old do you have to be to train at Alpine?", value: "age-minimum"}
+              - {label: "Can I use the wellness center without doing CrossFit?", value: "wellness-without-crossfit"}
+              - {label: "What's the difference between personal training and group classes?", value: "pt-vs-classes"}
+              - {label: "Can I do personal training for injury recovery?", value: "pt-injury-recovery"}
+              - {label: "Is this kind of training safe over 55?", value: "prime-vitality-safe"}
+              - {label: "Can I join Prime Vitality if I've never lifted weights?", value: "prime-vitality-never-lifted"}
+              - {label: "How is Prime Vitality different from SilverSneakers?", value: "prime-vitality-vs-silversneakers"}
+              - {label: "When is HYROX Denver 2026?", value: "race-when"}
+              - {label: "How do I register for HYROX Denver 2026?", value: "race-register"}
+              - {label: "Do I need CrossFit experience to race HYROX?", value: "race-experience-needed"}
+              - {label: "How early should I start training for a HYROX race?", value: "race-how-long-to-train"}
+              - {label: "How long does a HYROX race take?", value: "race-duration"}
+              - {label: "Do you offer childcare?", value: "no-childcare"}
+              - {label: "Do you have a CrossFit Kids program?", value: "no-kids-program"}
+              - {label: "Do you offer yoga, breath work, or meditation?", value: "no-yoga"}
+              - {label: "Are there weekend afternoon classes?", value: "no-weekend-afternoons"}
+          - {label: "Schema types", name: "schemaTypes", widget: "hidden"}
           - {label: "Browser title", name: "title", widget: "string"}
           - {label: "Search snippet", name: "description", widget: "text"}
           - {label: "Hero eyebrow", name: "eyebrow", widget: "string"}
@@ -530,29 +701,12 @@ collections:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Link", name: "href", widget: "string"}
               - {label: "Style", name: "style", widget: "string", default: "btn-primary btn-lg", required: false}
-          - label: "FAQ groups (each becomes a section on the page)"
-            name: "faqGroups"
-            widget: "list"
-            summary: "{{fields.heading}} ({{fields.items.length}})"
-            fields:
-              - {label: "Group heading", name: "heading", widget: "string"}
-              - {label: "Section style", name: "sectionStyle", widget: "select", options: ["", "section-dark"], default: "", required: false, hint: "Empty = light, 'section-dark' = dark. Alternate to create visual rhythm."}
-              - label: "Questions in this group"
-                name: "items"
-                widget: "list"
-                summary: "{{fields.question}}"
-                fields:
-                  - {label: "Question", name: "question", widget: "string"}
-                  - {label: "Answer (HTML allowed)", name: "answer", widget: "text"}
-          - label: "Schema FAQ list (drives FAQPage structured data)"
-            name: "faqs"
-            widget: "list"
-            required: false
-            summary: "{{fields.question}}"
-            hint: "Plain-text version of the most important Q&As. Used for Google's FAQ rich-result. Keep this in sync with the groups above."
-            fields:
-              - {label: "Question", name: "question", widget: "string"}
-              - {label: "Answer (plain text, no HTML)", name: "answer", widget: "text"}
+          # The question list is NOT edited here any more. Every canonical
+          # question and answer lives in _data/faqs.js, and this page renders
+          # all of them, grouped. Page-level FAQ blocks elsewhere on the site
+          # pick ids out of that same set, so an answer exists exactly once
+          # and each page's Google FAQ markup can't drift from what visitors
+          # read. To add or change a question, edit _data/faqs.js.
           - label: "Final CTA"
             name: "finalCta"
             widget: "object"
@@ -569,7 +723,7 @@ collections:
           - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/faq.njk"}
           - {label: "Permalink", name: "permalink", widget: "hidden", default: "/faq/"}
           - {label: "Canonical", name: "canonical", widget: "hidden"}
-          - {label: "Schema types", name: "schemaTypes", widget: "hidden", default: ["faq"]}
+          - {label: "Schema types", name: "schemaTypes", widget: "hidden", default: ["faq", "healthclub"]}
           - {label: "Extra schemas", name: "extraSchemas", widget: "hidden"}
 
       # ----- Free intro -----
@@ -577,6 +731,7 @@ collections:
         name: "free-intro"
         label: "Free Intro (No Sweat Intro) page"
         fields:
+          - {label: "Extra schemas", name: "extraSchemas", widget: "hidden"}
           - {label: "Browser title", name: "title", widget: "string"}
           - {label: "Search snippet", name: "description", widget: "text"}
           - {label: "Hero eyebrow", name: "eyebrow", widget: "string"}
@@ -614,6 +769,108 @@ collections:
         name: "visit"
         label: "Visit page"
         fields:
+          - {label: "FAQ block: small text above the heading", name: "faqEyebrow", widget: "string", required: false}
+          - {label: "FAQ block: heading", name: "faqHeading", widget: "string", required: false}
+          - label: "FAQ block: which questions to show"
+            name: "faqIds"
+            widget: "select"
+            multiple: true
+            required: false
+            hint: "Pick from the canonical question set. The answers live in _data/faqs.js — each is written once and reused, and this page's Google FAQ markup is generated from exactly this list, so the two can never disagree. Keep page FAQs short and topical; /faq/ carries the full set."
+            options:
+              - {label: "Do I need to be in shape before I start?", value: "in-shape-first"}
+              - {label: "How do I get started at Alpine?", value: "how-to-start"}
+              - {label: "What is the No Sweat Intro?", value: "no-sweat-intro"}
+              - {label: "What is the Foundations program?", value: "foundations"}
+              - {label: "How long does Foundations take?", value: "foundations-length"}
+              - {label: "Is Alpine good for beginners?", value: "good-for-beginners"}
+              - {label: "How long until I see results?", value: "how-long-results"}
+              - {label: "Do I need an appointment?", value: "need-appointment"}
+              - {label: "What should I bring?", value: "what-to-bring"}
+              - {label: "What happens in my first class?", value: "first-class"}
+              - {label: "Can I watch a class before I join?", value: "watch-a-class"}
+              - {label: "What if I'm brand new to CrossFit?", value: "brand-new"}
+              - {label: "What is CrossFit?", value: "what-is-crossfit"}
+              - {label: "Is CrossFit safe?", value: "is-crossfit-safe"}
+              - {label: "Is CrossFit good for weight loss?", value: "crossfit-weight-loss"}
+              - {label: "Is CrossFit good for women?", value: "crossfit-for-women"}
+              - {label: "What's the difference between CrossFit and a regular gym?", value: "crossfit-vs-gym"}
+              - {label: "How long is a class?", value: "class-length"}
+              - {label: "How many people are in a class?", value: "class-size"}
+              - {label: "How often should I come per week?", value: "how-often"}
+              - {label: "Who writes the workouts?", value: "who-programs"}
+              - {label: "Do you follow cycles in your programming?", value: "programming-cycles"}
+              - {label: "Do I need experience to take a class?", value: "need-experience"}
+              - {label: "Do you have Sunday classes?", value: "sunday-classes"}
+              - {label: "How much does Alpine cost?", value: "how-much"}
+              - {label: "Which membership should I pick?", value: "which-membership"}
+              - {label: "Is Unlimited worth it at $199 a month?", value: "unlimited-worth-it"}
+              - {label: "What's included in the $69 Open Gym tier?", value: "open-gym-included"}
+              - {label: "How does the $999 Personal Training tier work?", value: "pt-tier"}
+              - {label: "Is there a contract or initiation fee?", value: "contract"}
+              - {label: "Can I freeze my membership?", value: "freeze"}
+              - {label: "Do you offer military, first responder, or student discounts?", value: "discounts"}
+              - {label: "How do I cancel?", value: "cancel"}
+              - {label: "What payment methods do you accept?", value: "payment-methods"}
+              - {label: "Can I buy a membership online without talking to anyone?", value: "buy-online"}
+              - {label: "How does Alpine's pricing compare to other gyms?", value: "price-comparison"}
+              - {label: "Can I drop in to a class?", value: "can-i-drop-in"}
+              - {label: "Do I need to book a drop-in in advance?", value: "drop-in-advance"}
+              - {label: "Is my first class free if I train at another affiliate?", value: "first-class-free"}
+              - {label: "Does a drop-in include the wellness center?", value: "drop-in-wellness"}
+              - {label: "I've never done CrossFit. Should I drop in?", value: "new-should-i-drop-in"}
+              - {label: "What's in the wellness center?", value: "wellness-included"}
+              - {label: "How does peptide therapy work?", value: "peptide-therapy"}
+              - {label: "When is the wellness center open?", value: "wellness-hours"}
+              - {label: "What is Prime Vitality?", value: "prime-vitality"}
+              - {label: "Where can I train for HYROX near Denver?", value: "hyrox-where"}
+              - {label: "What are the 8 stations in a HYROX race?", value: "hyrox-stations"}
+              - {label: "How much does HYROX training cost?", value: "hyrox-cost"}
+              - {label: "How is HYROX different from CrossFit?", value: "hyrox-vs-crossfit"}
+              - {label: "How does personal training work?", value: "personal-training"}
+              - {label: "Where is Alpine located?", value: "where-located"}
+              - {label: "What are your hours?", value: "hours"}
+              - {label: "Is there free parking?", value: "parking"}
+              - {label: "What is 24/7 member access?", value: "24-7-access"}
+              - {label: "Who coaches the classes?", value: "who-coaches"}
+              - {label: "Do the owners coach the classes?", value: "owners-coach"}
+              - {label: "How long has Alpine been in Wheat Ridge?", value: "how-long-in-wheat-ridge"}
+              - {label: "What if I have an injury?", value: "injury"}
+              - {label: "I can't do a pull-up. Is that a problem?", value: "pull-up"}
+              - {label: "What does scaling actually mean?", value: "scaling"}
+              - {label: "How old do you have to be to train at Alpine?", value: "age-minimum"}
+              - {label: "Can I use the wellness center without doing CrossFit?", value: "wellness-without-crossfit"}
+              - {label: "What's the difference between personal training and group classes?", value: "pt-vs-classes"}
+              - {label: "Can I do personal training for injury recovery?", value: "pt-injury-recovery"}
+              - {label: "Is this kind of training safe over 55?", value: "prime-vitality-safe"}
+              - {label: "Can I join Prime Vitality if I've never lifted weights?", value: "prime-vitality-never-lifted"}
+              - {label: "How is Prime Vitality different from SilverSneakers?", value: "prime-vitality-vs-silversneakers"}
+              - {label: "When is HYROX Denver 2026?", value: "race-when"}
+              - {label: "How do I register for HYROX Denver 2026?", value: "race-register"}
+              - {label: "Do I need CrossFit experience to race HYROX?", value: "race-experience-needed"}
+              - {label: "How early should I start training for a HYROX race?", value: "race-how-long-to-train"}
+              - {label: "How long does a HYROX race take?", value: "race-duration"}
+              - {label: "Do you offer childcare?", value: "no-childcare"}
+              - {label: "Do you have a CrossFit Kids program?", value: "no-kids-program"}
+              - {label: "Do you offer yoga, breath work, or meditation?", value: "no-yoga"}
+              - {label: "Are there weekend afternoon classes?", value: "no-weekend-afternoons"}
+          - {label: "Trust strip (HTML)", name: "trustStrip", widget: "string", required: false}
+          - {label: "Schema types", name: "schemaTypes", widget: "hidden"}
+          - label: "Final CTA"
+            name: "finalCta"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Body", name: "body", widget: "text", required: false}
+              - label: "Buttons"
+                name: "ctas"
+                widget: "list"
+                required: false
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Link", name: "href", widget: "string"}
+                  - {label: "Inline style", name: "inlineStyle", widget: "string", required: false}
           - {label: "Browser title", name: "title", widget: "string"}
           - {label: "Search snippet", name: "description", widget: "text"}
           - {label: "Hero eyebrow", name: "eyebrow", widget: "string"}
@@ -638,6 +895,108 @@ collections:
         name: "schedule"
         label: "Schedule page"
         fields:
+          - {label: "FAQ block: small text above the heading", name: "faqEyebrow", widget: "string", required: false}
+          - {label: "FAQ block: heading", name: "faqHeading", widget: "string", required: false}
+          - label: "FAQ block: which questions to show"
+            name: "faqIds"
+            widget: "select"
+            multiple: true
+            required: false
+            hint: "Pick from the canonical question set. The answers live in _data/faqs.js — each is written once and reused, and this page's Google FAQ markup is generated from exactly this list, so the two can never disagree. Keep page FAQs short and topical; /faq/ carries the full set."
+            options:
+              - {label: "Do I need to be in shape before I start?", value: "in-shape-first"}
+              - {label: "How do I get started at Alpine?", value: "how-to-start"}
+              - {label: "What is the No Sweat Intro?", value: "no-sweat-intro"}
+              - {label: "What is the Foundations program?", value: "foundations"}
+              - {label: "How long does Foundations take?", value: "foundations-length"}
+              - {label: "Is Alpine good for beginners?", value: "good-for-beginners"}
+              - {label: "How long until I see results?", value: "how-long-results"}
+              - {label: "Do I need an appointment?", value: "need-appointment"}
+              - {label: "What should I bring?", value: "what-to-bring"}
+              - {label: "What happens in my first class?", value: "first-class"}
+              - {label: "Can I watch a class before I join?", value: "watch-a-class"}
+              - {label: "What if I'm brand new to CrossFit?", value: "brand-new"}
+              - {label: "What is CrossFit?", value: "what-is-crossfit"}
+              - {label: "Is CrossFit safe?", value: "is-crossfit-safe"}
+              - {label: "Is CrossFit good for weight loss?", value: "crossfit-weight-loss"}
+              - {label: "Is CrossFit good for women?", value: "crossfit-for-women"}
+              - {label: "What's the difference between CrossFit and a regular gym?", value: "crossfit-vs-gym"}
+              - {label: "How long is a class?", value: "class-length"}
+              - {label: "How many people are in a class?", value: "class-size"}
+              - {label: "How often should I come per week?", value: "how-often"}
+              - {label: "Who writes the workouts?", value: "who-programs"}
+              - {label: "Do you follow cycles in your programming?", value: "programming-cycles"}
+              - {label: "Do I need experience to take a class?", value: "need-experience"}
+              - {label: "Do you have Sunday classes?", value: "sunday-classes"}
+              - {label: "How much does Alpine cost?", value: "how-much"}
+              - {label: "Which membership should I pick?", value: "which-membership"}
+              - {label: "Is Unlimited worth it at $199 a month?", value: "unlimited-worth-it"}
+              - {label: "What's included in the $69 Open Gym tier?", value: "open-gym-included"}
+              - {label: "How does the $999 Personal Training tier work?", value: "pt-tier"}
+              - {label: "Is there a contract or initiation fee?", value: "contract"}
+              - {label: "Can I freeze my membership?", value: "freeze"}
+              - {label: "Do you offer military, first responder, or student discounts?", value: "discounts"}
+              - {label: "How do I cancel?", value: "cancel"}
+              - {label: "What payment methods do you accept?", value: "payment-methods"}
+              - {label: "Can I buy a membership online without talking to anyone?", value: "buy-online"}
+              - {label: "How does Alpine's pricing compare to other gyms?", value: "price-comparison"}
+              - {label: "Can I drop in to a class?", value: "can-i-drop-in"}
+              - {label: "Do I need to book a drop-in in advance?", value: "drop-in-advance"}
+              - {label: "Is my first class free if I train at another affiliate?", value: "first-class-free"}
+              - {label: "Does a drop-in include the wellness center?", value: "drop-in-wellness"}
+              - {label: "I've never done CrossFit. Should I drop in?", value: "new-should-i-drop-in"}
+              - {label: "What's in the wellness center?", value: "wellness-included"}
+              - {label: "How does peptide therapy work?", value: "peptide-therapy"}
+              - {label: "When is the wellness center open?", value: "wellness-hours"}
+              - {label: "What is Prime Vitality?", value: "prime-vitality"}
+              - {label: "Where can I train for HYROX near Denver?", value: "hyrox-where"}
+              - {label: "What are the 8 stations in a HYROX race?", value: "hyrox-stations"}
+              - {label: "How much does HYROX training cost?", value: "hyrox-cost"}
+              - {label: "How is HYROX different from CrossFit?", value: "hyrox-vs-crossfit"}
+              - {label: "How does personal training work?", value: "personal-training"}
+              - {label: "Where is Alpine located?", value: "where-located"}
+              - {label: "What are your hours?", value: "hours"}
+              - {label: "Is there free parking?", value: "parking"}
+              - {label: "What is 24/7 member access?", value: "24-7-access"}
+              - {label: "Who coaches the classes?", value: "who-coaches"}
+              - {label: "Do the owners coach the classes?", value: "owners-coach"}
+              - {label: "How long has Alpine been in Wheat Ridge?", value: "how-long-in-wheat-ridge"}
+              - {label: "What if I have an injury?", value: "injury"}
+              - {label: "I can't do a pull-up. Is that a problem?", value: "pull-up"}
+              - {label: "What does scaling actually mean?", value: "scaling"}
+              - {label: "How old do you have to be to train at Alpine?", value: "age-minimum"}
+              - {label: "Can I use the wellness center without doing CrossFit?", value: "wellness-without-crossfit"}
+              - {label: "What's the difference between personal training and group classes?", value: "pt-vs-classes"}
+              - {label: "Can I do personal training for injury recovery?", value: "pt-injury-recovery"}
+              - {label: "Is this kind of training safe over 55?", value: "prime-vitality-safe"}
+              - {label: "Can I join Prime Vitality if I've never lifted weights?", value: "prime-vitality-never-lifted"}
+              - {label: "How is Prime Vitality different from SilverSneakers?", value: "prime-vitality-vs-silversneakers"}
+              - {label: "When is HYROX Denver 2026?", value: "race-when"}
+              - {label: "How do I register for HYROX Denver 2026?", value: "race-register"}
+              - {label: "Do I need CrossFit experience to race HYROX?", value: "race-experience-needed"}
+              - {label: "How early should I start training for a HYROX race?", value: "race-how-long-to-train"}
+              - {label: "How long does a HYROX race take?", value: "race-duration"}
+              - {label: "Do you offer childcare?", value: "no-childcare"}
+              - {label: "Do you have a CrossFit Kids program?", value: "no-kids-program"}
+              - {label: "Do you offer yoga, breath work, or meditation?", value: "no-yoga"}
+              - {label: "Are there weekend afternoon classes?", value: "no-weekend-afternoons"}
+          - {label: "Extra schemas", name: "extraSchemas", widget: "hidden"}
+          - label: "Final CTA"
+            name: "finalCta"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Body", name: "body", widget: "text", required: false}
+              - label: "Buttons"
+                name: "ctas"
+                widget: "list"
+                required: false
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Link", name: "href", widget: "string"}
+                  - {label: "Inline style", name: "inlineStyle", widget: "string", required: false}
+          - {label: "Schema types", name: "schemaTypes", widget: "hidden"}
           - {label: "Browser title", name: "title", widget: "string"}
           - {label: "Search snippet", name: "description", widget: "text"}
           - {label: "Hero eyebrow", name: "eyebrow", widget: "string"}
@@ -720,6 +1079,95 @@ collections:
           - {label: "Canonical", name: "canonical", widget: "hidden"}
           - {label: "Extra schemas", name: "extraSchemas", widget: "hidden"}
 
+          - {label: "FAQ block: small text above the heading", name: "faqEyebrow", widget: "string", required: false}
+          - {label: "FAQ block: heading", name: "faqHeading", widget: "string", required: false}
+          - label: "FAQ block: which questions to show"
+            name: "faqIds"
+            widget: "select"
+            multiple: true
+            required: false
+            hint: "Pick from the canonical question set. The answers live in _data/faqs.js — each one is written once and reused, and this page's Google FAQ markup is generated from exactly this list, so the two can never disagree. Keep page FAQs short and topical; /faq/ carries the full set."
+            options:
+              - {label: "Do I need to be in shape before I start?", value: "in-shape-first"}
+              - {label: "How do I get started at Alpine?", value: "how-to-start"}
+              - {label: "What is the No Sweat Intro?", value: "no-sweat-intro"}
+              - {label: "What is the Foundations program?", value: "foundations"}
+              - {label: "How long does Foundations take?", value: "foundations-length"}
+              - {label: "Is Alpine good for beginners?", value: "good-for-beginners"}
+              - {label: "How long until I see results?", value: "how-long-results"}
+              - {label: "Do I need an appointment?", value: "need-appointment"}
+              - {label: "What should I bring?", value: "what-to-bring"}
+              - {label: "What happens in my first class?", value: "first-class"}
+              - {label: "Can I watch a class before I join?", value: "watch-a-class"}
+              - {label: "What if I'm brand new to CrossFit?", value: "brand-new"}
+              - {label: "What is CrossFit?", value: "what-is-crossfit"}
+              - {label: "Is CrossFit safe?", value: "is-crossfit-safe"}
+              - {label: "Is CrossFit good for weight loss?", value: "crossfit-weight-loss"}
+              - {label: "Is CrossFit good for women?", value: "crossfit-for-women"}
+              - {label: "What's the difference between CrossFit and a regular gym?", value: "crossfit-vs-gym"}
+              - {label: "How long is a class?", value: "class-length"}
+              - {label: "How many people are in a class?", value: "class-size"}
+              - {label: "How often should I come per week?", value: "how-often"}
+              - {label: "Who writes the workouts?", value: "who-programs"}
+              - {label: "Do you follow cycles in your programming?", value: "programming-cycles"}
+              - {label: "Do I need experience to take a class?", value: "need-experience"}
+              - {label: "Do you have Sunday classes?", value: "sunday-classes"}
+              - {label: "How much does Alpine cost?", value: "how-much"}
+              - {label: "Which membership should I pick?", value: "which-membership"}
+              - {label: "Is Unlimited worth it at $199 a month?", value: "unlimited-worth-it"}
+              - {label: "What's included in the $69 Open Gym tier?", value: "open-gym-included"}
+              - {label: "How does the $999 Personal Training tier work?", value: "pt-tier"}
+              - {label: "Is there a contract or initiation fee?", value: "contract"}
+              - {label: "Can I freeze my membership?", value: "freeze"}
+              - {label: "Do you offer military, first responder, or student discounts?", value: "discounts"}
+              - {label: "How do I cancel?", value: "cancel"}
+              - {label: "What payment methods do you accept?", value: "payment-methods"}
+              - {label: "Can I buy a membership online without talking to anyone?", value: "buy-online"}
+              - {label: "How does Alpine's pricing compare to other gyms?", value: "price-comparison"}
+              - {label: "Can I drop in to a class?", value: "can-i-drop-in"}
+              - {label: "Do I need to book a drop-in in advance?", value: "drop-in-advance"}
+              - {label: "Is my first class free if I train at another affiliate?", value: "first-class-free"}
+              - {label: "Does a drop-in include the wellness center?", value: "drop-in-wellness"}
+              - {label: "I've never done CrossFit. Should I drop in?", value: "new-should-i-drop-in"}
+              - {label: "What's in the wellness center?", value: "wellness-included"}
+              - {label: "How does peptide therapy work?", value: "peptide-therapy"}
+              - {label: "When is the wellness center open?", value: "wellness-hours"}
+              - {label: "What is Prime Vitality?", value: "prime-vitality"}
+              - {label: "Where can I train for HYROX near Denver?", value: "hyrox-where"}
+              - {label: "What are the 8 stations in a HYROX race?", value: "hyrox-stations"}
+              - {label: "How much does HYROX training cost?", value: "hyrox-cost"}
+              - {label: "How is HYROX different from CrossFit?", value: "hyrox-vs-crossfit"}
+              - {label: "How does personal training work?", value: "personal-training"}
+              - {label: "Where is Alpine located?", value: "where-located"}
+              - {label: "What are your hours?", value: "hours"}
+              - {label: "Is there free parking?", value: "parking"}
+              - {label: "What is 24/7 member access?", value: "24-7-access"}
+              - {label: "Who coaches the classes?", value: "who-coaches"}
+              - {label: "Do the owners coach the classes?", value: "owners-coach"}
+              - {label: "How long has Alpine been in Wheat Ridge?", value: "how-long-in-wheat-ridge"}
+              - {label: "What if I have an injury?", value: "injury"}
+              - {label: "I can't do a pull-up. Is that a problem?", value: "pull-up"}
+              - {label: "What does scaling actually mean?", value: "scaling"}
+              - {label: "How old do you have to be to train at Alpine?", value: "age-minimum"}
+              - {label: "Can I use the wellness center without doing CrossFit?", value: "wellness-without-crossfit"}
+              - {label: "What's the difference between personal training and group classes?", value: "pt-vs-classes"}
+              - {label: "Can I do personal training for injury recovery?", value: "pt-injury-recovery"}
+              - {label: "Is this kind of training safe over 55?", value: "prime-vitality-safe"}
+              - {label: "Can I join Prime Vitality if I've never lifted weights?", value: "prime-vitality-never-lifted"}
+              - {label: "How is Prime Vitality different from SilverSneakers?", value: "prime-vitality-vs-silversneakers"}
+              - {label: "When is HYROX Denver 2026?", value: "race-when"}
+              - {label: "How do I register for HYROX Denver 2026?", value: "race-register"}
+              - {label: "Do I need CrossFit experience to race HYROX?", value: "race-experience-needed"}
+              - {label: "How early should I start training for a HYROX race?", value: "race-how-long-to-train"}
+              - {label: "How long does a HYROX race take?", value: "race-duration"}
+              - {label: "Do you offer childcare?", value: "no-childcare"}
+              - {label: "Do you have a CrossFit Kids program?", value: "no-kids-program"}
+              - {label: "Do you offer yoga, breath work, or meditation?", value: "no-yoga"}
+              - {label: "Are there weekend afternoon classes?", value: "no-weekend-afternoons"}
+          - {label: "Schema types", name: "schemaTypes", widget: "hidden"}
+
+          - {label: "Sitemap priority", name: "priority", widget: "hidden"}
+          - {label: "Sitemap change frequency", name: "changefreq", widget: "hidden"}
       - file: "content/pages/hyrox.md"
         name: "hyrox"
         label: "HYROX service page"
@@ -740,9 +1188,14 @@ collections:
         label: "Prime Vitality (55+) service page"
         fields: *service_page_fields
 
-      - file: "content/pages/beginners.md"
-        name: "beginners"
-        label: "Beginners / Foundations service page"
+      - file: "content/pages/hyrox-prep.md"
+        name: "hyrox-prep"
+        label: "HYROX 12-week prep plan (lead capture)"
+        fields: *service_page_fields
+
+      - file: "content/pages/hyrox-denver-2026.md"
+        name: "hyrox-denver-2026"
+        label: "HYROX Denver 2026 race page"
         fields: *service_page_fields
 
       # ----- Intro funnel pages -----
@@ -750,6 +1203,9 @@ collections:
         name: "intro"
         label: "Intro scheduling page (/intro/)"
         fields:
+          - {label: "Social share image", name: "ogImage", widget: "hidden"}
+          - {label: "Hide from search engines", name: "noindex", widget: "hidden"}
+          - {label: "Schema types", name: "schemaTypes", widget: "hidden"}
           - {label: "Browser title", name: "title", widget: "string"}
           - {label: "Search snippet", name: "description", widget: "text"}
           - {label: "Hero eyebrow", name: "eyebrow", widget: "string"}

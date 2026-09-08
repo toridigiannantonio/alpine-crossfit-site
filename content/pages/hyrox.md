@@ -8,23 +8,9 @@ eyebrow: "HYROX"
 heading: "HYROX training in <span class=\"accent\">Wheat Ridge</span>, near Denver."
 dek: "Alpine CrossFit is an official HYROX Training Center in Wheat Ridge, Colorado — coached, race-specific programming and Friday run clubs for athletes across the northwest Denver metro prepping for a HYROX event."
 heroCtas:
-  - { label: "Not sure where to start?", href: "/free-intro/", style: "btn-primary btn-lg" }
-  - { label: "Drop-In", href: "/drop-in/", style: "btn-secondary btn-lg" }
-  - { label: "See membership pricing", href: "/pricing/", style: "btn-secondary btn-lg" }
+  - { label: "Book a free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
 trustStrip: "<span>Official HYROX affiliate</span><span class=\"sep\">·</span><span>Coached programming</span><span class=\"sep\">·</span><span>Friday run clubs</span>"
 extraSchemas:
-  - {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "Where can I train for HYROX near Denver?", "acceptedAnswer": { "@type": "Answer", "text": "Alpine CrossFit in Wheat Ridge is an official HYROX Training Center, serving the northwest Denver metro — Wheat Ridge, Arvada, Lakewood, Applewood, and Golden. Alpine offers coached, race-specific HYROX programming and Friday run clubs focused on the 8-kilometer race format." } },
-        { "@type": "Question", "name": "Is Alpine CrossFit an official HYROX affiliate?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Alpine CrossFit is an official HYROX Training Center. That means its coaching staff and programming are set up specifically to prepare athletes for HYROX competition, not just general fitness." } },
-        { "@type": "Question", "name": "What are the 8 stations in a HYROX race?", "acceptedAnswer": { "@type": "Answer", "text": "A HYROX race is eight 1-kilometer runs, each followed by a workout station: 1000m SkiErg, 50m sled push, 50m sled pull, 80m burpee broad jumps, 1000m row, 200m farmers carry, 100m sandbag lunges, and 100 wall balls. Alpine programs every one of these movements into its HYROX training." } },
-        { "@type": "Question", "name": "Do I need CrossFit experience to train for HYROX at Alpine?", "acceptedAnswer": { "@type": "Answer", "text": "No. HYROX training at Alpine is coached and scaled to your level. Every movement — running, sled work, rowing, lunges, wall balls — adjusts to your current fitness, so first-time racers and experienced athletes train in the same program." } },
-        { "@type": "Question", "name": "How much does HYROX training cost at Alpine CrossFit?", "acceptedAnswer": { "@type": "Answer", "text": "HYROX training is part of Alpine's coached programming, included in the $199/month Unlimited membership along with CrossFit classes, the wellness center, and 24/7 facility access. Memberships are month-to-month with no contract." } },
-        { "@type": "Question", "name": "How is HYROX different from CrossFit?", "acceptedAnswer": { "@type": "Answer", "text": "CrossFit is constantly varied strength-and-conditioning across many movements. HYROX is a fixed-format race — the same eight runs and eight stations every time — so training rewards pacing, running endurance, and station efficiency. Alpine sits between the two: a strength-and-conditioning base with race-specific running and station practice layered on top." } }
-      ]
-    }
   - {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
@@ -50,21 +36,52 @@ finalCta:
   heading: "Ready to train for HYROX?"
   body: "Book a free No Sweat Intro — 30 minutes with a coach to talk through your race goal and the right starting point."
   ctas:
-    - { label: "Not sure where to start?", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
-    - { label: "Drop-In", href: "/drop-in/", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
-    - { label: "Or text (720) 964-1505", href: "sms:+17209641505", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+    - { label: "Book a free intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+schemaTypes: ["healthclub", "faq"]
+faqEyebrow: "Common questions"
+faqHeading: "HYROX training questions."
+faqIds:
+  - hyrox-where
+  - hyrox-vs-crossfit
+  - hyrox-stations
+  - hyrox-cost
+  - race-experience-needed
 ---
 
 <section class="section">
   <div class="container container-narrow">
     <span class="eyebrow">Where to train</span>
     <h2>Where can you train for HYROX near Denver?</h2>
-    <p>Alpine CrossFit is an official HYROX Training Center in Wheat Ridge, Colorado — a practical home base for HYROX athletes across the northwest Denver metro, including Arvada, Lakewood, Applewood, and Golden. We're at 12090 West 50th Place, just off I-70.</p>
+    <p>Alpine CrossFit is an official HYROX Training Center in Wheat Ridge, Colorado — a practical home base for HYROX athletes across the northwest Denver metro, including Arvada, Lakewood, Applewood, and Golden. We're at {{ site.address.street }}, just off I-70.</p>
     <p>HYROX training here is coached, race-specific, and scaled to every level — from someone eyeing their first race to an athlete chasing a qualifying time.</p>
   </div>
 </section>
 
-<section class="section section-dark">
+{# /hyrox/ is the HYROX hub. Both of these pages were live, indexed and
+   doing a real job, but had zero inbound links from anywhere on the site —
+   /hyrox-prep/ is a separate lead-capture form for the 12-week plan, and
+   /hyrox-denver-2026/ is the race landing page. They are linked from here
+   now so they are reachable by a human, not only by a search engine. #}
+<section class="section section-dark" id="hub">
+  <div class="container">
+    <span class="eyebrow">Start here</span>
+    <h2 class="section-heading">Racing, or thinking about it?</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>HYROX Denver 2026</h3>
+        <p>Denver's first regional HYROX lands November 12–15, 2026 at the Colorado Convention Center — 12 minutes from the gym. Race format, divisions, timings, and how to register.</p>
+        <a href="/hyrox-denver-2026/">Race details →</a>
+      </div>
+      <div class="card card-featured">
+        <h3>Free 12-week prep plan</h3>
+        <p>A complete 12-week plan to take you from CrossFit-fit to race-ready, written by a 2× CrossFit Games Semifinalist. Compromised running, station work, race-pace targets, taper.</p>
+        <a href="/hyrox-prep/">Get the plan →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
   <div class="container container-narrow">
     <span class="eyebrow">What is HYROX</span>
     <h2>A fixed-format fitness race.</h2>
@@ -73,7 +90,7 @@ finalCta:
   </div>
 </section>
 
-<section class="section">
+<section class="section section-dark">
   <div class="container container-narrow">
     <span class="eyebrow">The race</span>
     <h2>The 8 HYROX stations.</h2>
@@ -91,7 +108,7 @@ finalCta:
   </div>
 </section>
 
-<section class="section section-dark">
+<section class="section">
   <div class="container container-narrow">
     <span class="eyebrow">At Alpine</span>
     <h2>How we train for HYROX.</h2>
@@ -105,7 +122,7 @@ finalCta:
   </div>
 </section>
 
-<section class="section">
+<section class="section section-dark">
   <div class="container container-narrow">
     <span class="eyebrow">Friday run clubs</span>
     <h2>Every Friday at Alpine.</h2>
@@ -116,12 +133,6 @@ finalCta:
 
 <section class="section section-dark">
   <div class="container container-narrow">
-    <span class="eyebrow">Common questions</span>
-    <h2>HYROX training questions.</h2>
-    <details class="faq-item"><summary>Where can I train for HYROX near Denver?</summary><div class="faq-answer">Alpine CrossFit in Wheat Ridge is an official HYROX Training Center, serving the northwest Denver metro — Wheat Ridge, Arvada, Lakewood, Applewood, and Golden — with coached, race-specific programming and Friday run clubs.</div></details>
-    <details class="faq-item"><summary>Is Alpine an official HYROX affiliate?</summary><div class="faq-answer">Yes. Alpine CrossFit is an official HYROX Training Center, with coaching and programming set up specifically to prepare athletes for HYROX competition.</div></details>
-    <details class="faq-item"><summary>Do I need CrossFit experience to train for HYROX here?</summary><div class="faq-answer">No. HYROX training at Alpine is coached and scaled — running, sleds, rowing, lunges, and wall balls all adjust to your current fitness, so first-time racers and experienced athletes train in the same program.</div></details>
-    <details class="faq-item"><summary>How much does HYROX training cost?</summary><div class="faq-answer">It's part of Alpine's coached programming, included in the $199/month Unlimited membership along with CrossFit classes, the wellness center, and 24/7 facility access. Month-to-month, no contract.</div></details>
-    <details class="faq-item"><summary>How is HYROX different from CrossFit?</summary><div class="faq-answer">CrossFit is constantly varied. HYROX is a fixed race format, so training rewards pacing, running endurance, and station efficiency. Alpine builds a strength-and-conditioning base, then layers race-specific running and station work on top.</div></details>
+    {% include "partials/faq-list.njk" %}
   </div>
 </section>
