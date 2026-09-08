@@ -137,6 +137,12 @@ export default {
     visitOptions: gym.visitOptions,
   },
 
+  // The free first class for visiting affiliate athletes. Deliberately NOT
+  // part of pricing.visitOptions: rendered beside the $30 drop-in it just
+  // replaced the sale, so it lives on /about/ where the reader is evaluating
+  // the gym rather than buying a session.
+  affiliateVisit: gym.affiliateVisit,
+
   // ------------------------------------------------------------------
   // Wellness center — included in every tier. One list, many pages.
   // ------------------------------------------------------------------

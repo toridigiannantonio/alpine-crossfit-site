@@ -291,7 +291,7 @@ export const items = [
     id: "first-class-free",
     group: "visiting",
     q: "Is my first class free if I train at another affiliate?",
-    a: `Yes. Experienced CrossFitters trying Alpine for the first time get one free class, limited to one use per person. After that, drop-ins are ${DROP_IN} per class.`,
+    a: `Yes. Experienced CrossFitters trying Alpine for the first time get one free class, limited to one use per person. After that, drop-ins are ${DROP_IN} per class. <a href="/about/#from-another-gym">More on visiting from another gym →</a>`,
   },
   {
     id: "drop-in-wellness",

@@ -145,6 +145,23 @@ finalCta:
   </div>
 </section>
 
+{# Free first class for visiting affiliate athletes. It lives here rather than
+   on /pricing/ on purpose: beside the $30 drop-in it was taking the sale
+   instead of adding one. Here the reader is deciding whether this is their
+   gym, which is the question the free class actually answers. #}
+<section class="section" id="from-another-gym">
+  <div class="container container-narrow">
+    <span class="eyebrow">Coming from another affiliate</span>
+    <h2>Already train? Your first class is on us.</h2>
+    <p>Moving to the area, your old box closed, or you're just not getting what you need where you are — either way, you already know what a good gym feels like from the inside. Reading a page about one only tells you so much.</p>
+    <p>So come take a class. If you train at another CrossFit affiliate and haven't trained at Alpine before, <strong>your first class is free</strong> — one per person, no sales pitch waiting for you afterwards. Get on the floor, meet whoever's coaching, do the workout, and judge the room yourself.</p>
+    <p class="text-muted">After that, drop-ins are {{ site.pricing.visitOptions[1].price }} or {{ site.pricing.visitOptions[2].price }} for the week if you want to keep looking around before committing to anything.</p>
+    <div class="mt-6">
+      <a class="btn btn-primary" href="{{ site.affiliateVisit.ctaHref }}" target="_blank" rel="noopener">{{ site.affiliateVisit.ctaLabel }}</a>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container container-narrow">
     {% include "partials/faq-list.njk" %}
