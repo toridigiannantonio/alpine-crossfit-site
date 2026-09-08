@@ -43,10 +43,10 @@ extraSchemas:
     }
 finalCta:
   heading: "Start training for HYROX Denver."
-  body: "Get the free 12-week prep plan, or come do a sim with us."
+  body: "Get the free 12-week prep plan, or come do a HYROX-prep class with us — {{ site.pricing.visitOptions[1].price }} for a single class, no membership needed."
   ctas:
     - { label: "Get the Free Plan", href: "/hyrox-prep/", inlineStyle: "background:#000;color:#fff;" }
-    - { label: "Book a free intro", href: "/free-intro/", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+    - { label: "Drop in — {{ site.pricing.visitOptions[1].price }}", href: "{{ site.pricing.visitOptions[1].ctaHref }}", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
 schemaTypes: ["healthclub", "faq"]
 faqEyebrow: "Race questions"
 faqHeading: "Race-day and training questions."

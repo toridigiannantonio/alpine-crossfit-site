@@ -145,10 +145,16 @@ finalCta:
     <span class="eyebrow">After you have the plan</span>
     <h2>Want to train with people who've done this?</h2>
     <p>The plan works on its own. It works better with a room full of people doing the same workout, a coach who's raced HYROX, and a sled in front of you instead of in a YouTube video.</p>
-    <p>Come do one HYROX-prep class at Alpine. First class is free if you have CrossFit experience.</p>
+    <p>Come do one HYROX-prep class at Alpine.</p>
+    {# The free first class used to be the primary button here, with the paid
+       drop-in third in the same row — so it took the sale instead of adding
+       one. It is a text link now, and it points at /about/#from-another-gym
+       rather than straight at the booking form, so the offer is read in the
+       context of who it is actually for. #}
     <div class="hero-cta">
-      <a class="btn btn-primary btn-lg" href="https://app.chalkitpro.com/dropIns/754/11814/x" target="_blank" rel="noopener">Free Trial Class</a>
-      <a class="btn btn-secondary btn-lg" href="/free-intro/">Book a free intro</a> <a class="btn btn-secondary btn-lg" href="/pricing/#visiting">Drop-In</a>
+      <a class="btn btn-primary btn-lg" href="{{ site.pricing.visitOptions[1].ctaHref }}" target="_blank" rel="noopener">Drop in — {{ site.pricing.visitOptions[1].price }}</a>
+      <a class="btn btn-secondary btn-lg" href="/free-intro/">New to CrossFit? Book a free intro</a>
     </div>
+    <p class="text-muted mt-4" style="font-size:0.9rem;">Already training at another CrossFit affiliate? <a href="/about/#from-another-gym">Your first class is on us.</a></p>
   </div>
 </section>

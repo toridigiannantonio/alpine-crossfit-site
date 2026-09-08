@@ -133,6 +133,28 @@ export default function (eleventyConfig) {
   // first name from the full name. Some Nunjucks builds don't ship it.
   eleventyConfig.addFilter("split", (value, sep) => String(value).split(sep));
 
+  // ----- Build guard: no unrendered template syntax in the output -----
+  // Eleventy 3 dropped `dataTemplateEngine`, so a {{ site.x }} written in front
+  // matter is emitted to the browser verbatim rather than resolved. That
+  // shipped once — the /pricing/ meta description and the /visit/ and
+  // /wellness/ hero paragraphs went live reading "{{ site.address.street }}".
+  // content/pages/pages.11tydata.js resolves those now; this fails the build
+  // if any ever slips through again, on any page, from any source.
+  eleventyConfig.on("eleventy.after", async ({ results }) => {
+    const leaks = [];
+    for (const r of results) {
+      if (!r.outputPath || !r.outputPath.endsWith(".html")) continue;
+      const found = String(r.content).match(/\{\{[^}]{0,120}\}\}|\{%[^%]{0,120}%\}/g);
+      if (found) leaks.push(`${r.outputPath}: ${[...new Set(found)].join(" ")}`);
+    }
+    if (leaks.length) {
+      throw new Error(
+        "Unrendered template syntax reached the built output:\n  " +
+          leaks.join("\n  ")
+      );
+    }
+  });
+
   // ----- Directory layout -----
   return {
     dir: {

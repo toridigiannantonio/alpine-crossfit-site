@@ -127,19 +127,16 @@
       "ctaLabel": "Buy Week Pass",
       "ctaHref": "https://app.chalkitpro.com/gymProductLink/754/prod_TmRiaLLHwsRPig/13441/",
       "ctaExternal": true
-    },
-    {
-      "name": "First Class Free",
-      "price": "Free",
-      "amount": "0",
-      "unit": "/one-time",
-      "featured": false,
-      "bestFor": "Visiting from another CrossFit affiliate and training at Alpine for the first time. One class on us — one use per person.",
-      "ctaLabel": "Book Free Class",
-      "ctaHref": "https://app.chalkitpro.com/dropIns/754/11814/x",
-      "ctaExternal": true
     }
   ],
+  "affiliateVisit": {
+    "_comment": "Free first class for experienced CrossFitters visiting from another affiliate. Rendered on /about/, NOT next to the paid drop-in on /pricing/ — beside a $30 option it simply replaced the sale.",
+    "name": "First class free",
+    "audience": "Experienced CrossFitters visiting from another affiliate",
+    "ctaLabel": "Book Free Class",
+    "ctaHref": "https://app.chalkitpro.com/dropIns/754/11814/x",
+    "ctaExternal": true
+  },
   "areas": [
     {
       "city": "Wheat Ridge",
