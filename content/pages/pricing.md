@@ -9,6 +9,7 @@ heading: "What it costs to train at Alpine."
 dek: "Three tiers, month-to-month, no contracts and no initiation fees. Every tier includes the wellness center and 24/7 facility access."
 heroCtas:
   - { label: "Book a free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Drop in — {{ site.pricing.visitOptions[1].price }}", href: "{{ site.pricing.visitOptions[1].ctaHref }}", style: "btn-primary btn-lg" }
 trustStrip: "<span>Month-to-month</span><span class=\"sep\">·</span><span>No contracts</span><span class=\"sep\">·</span><span>No initiation fees</span>"
 faqEyebrow: "Pricing FAQ"
 faqHeading: "Pricing questions."

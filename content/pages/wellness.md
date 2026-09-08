@@ -9,6 +9,7 @@ heading: "Sauna, cold plunge, and recovery in <span class=\"accent\">Wheat Ridge
 dek: "Alpine's wellness center brings {{ site.wellness.prose }} together under one roof — in Wheat Ridge, serving Lakewood, Arvada, Applewood, and Golden. Included with every membership, starting at {{ site.pricing.tiers[0].price }}/month."
 heroCtas:
   - { label: "Book a free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Drop in — {{ site.pricing.visitOptions[1].price }}", href: "{{ site.pricing.visitOptions[1].ctaHref }}", style: "btn-primary btn-lg" }
   - { label: "See membership pricing", href: "/pricing/", style: "btn-secondary btn-lg" }
 trustStrip: "<span>Steam sauna</span><span class=\"sep\">·</span><span>Cold plunges</span><span class=\"sep\">·</span><span>From {{ site.pricing.tiers[0].price }}/month</span>"
 extraSchemas:

@@ -9,6 +9,7 @@ heading: "Coach-led CrossFit classes in <span class=\"accent\">Wheat Ridge</span
 dek: "Every class is led by a CF-L2 certified coach, capped at 15 athletes, and programmed in-house. Beginners and lifelong athletes train the same workout, scaled to their version of hard."
 heroCtas:
   - { label: "Book a free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Drop in — {{ site.pricing.visitOptions[1].price }}", href: "{{ site.pricing.visitOptions[1].ctaHref }}", style: "btn-primary btn-lg" }
 trustStrip: "<span>Every class CF-L2 coached</span><span class=\"sep\">·</span><span>Capped at 15 athletes</span><span class=\"sep\">·</span><span>Scaled to every level</span>"
 faqEyebrow: "Common questions"
 faqHeading: "CrossFit and beginner questions."

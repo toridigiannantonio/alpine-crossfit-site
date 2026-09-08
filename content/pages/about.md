@@ -10,6 +10,7 @@ heading: "About Alpine CrossFit."
 dek: "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, owned by April and Tori DiGiannantonio. April has owned CrossFit gyms on and off since 2013 and spent five-plus years as a Division I Director of Sports Performance; Tori brings a career in mental performance coaching (LCSW, CMPC) and endurance sport. Programming remains in-house, led by Megan Markee (CSCS) in collaboration with April."
 heroCtas:
   - { label: "Book a free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Drop in — {{ site.pricing.visitOptions[1].price }}", href: "{{ site.pricing.visitOptions[1].ctaHref }}", style: "btn-primary btn-lg" }
 faqEyebrow: "Common questions"
 faqHeading: "About Alpine."
 faqIds:

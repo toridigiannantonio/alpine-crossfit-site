@@ -13,9 +13,9 @@ heroCtas:
   - label: "Book a free intro"
     href: /free-intro/
     style: btn-primary btn-lg
-  - label: "Drop-In"
-    href: /pricing/#visiting
-    style: btn-secondary btn-lg
+  - label: "Drop in — {{ site.pricing.visitOptions[1].price }}"
+    href: "{{ site.pricing.visitOptions[1].ctaHref }}"
+    style: btn-primary btn-lg
 layout: layouts/page.njk
 permalink: /coaches/
 canonical: https://alpinecrossfit.com/coaches/
