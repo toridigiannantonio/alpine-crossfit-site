@@ -31,7 +31,7 @@ extraSchemas:
       "@type": "AboutPage",
       "url": "https://alpinecrossfit.com/about/",
       "name": "About Alpine CrossFit",
-      "description": "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, owned by April DiGiannantonio (CSCS, SCCC, CrossFit Trainer, former Director of Sports Performance for a Division I program) and Tori DiGiannantonio (LCSW, CMPC, yoga instructor, ultrarunner). Programming is in-house, led by head programmer Megan Markee (CSCS, CF-L2, 2× CrossFit Games Semifinalist) in collaboration with April. Group classes are coached by three CF-L2 professionals.",
+      "description": "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, owned by April DiGiannantonio (CSCS, SCCC, CrossFit Trainer, former Director of Sports Performance for a Division I program) and Tori DiGiannantonio (LCSW, CMPC, yoga instructor, ultrarunner). Programming is in-house, led by head programmer Megan Markee (CSCS, CF-L1) in collaboration with April. Group classes are coached by three CF-L2 professionals.",
       "mainEntity": {"@id": "https://alpinecrossfit.com/#healthclub"}
     }
   - {
@@ -76,30 +76,11 @@ finalCta:
 </section>
 
 <section class="section section-dark">
-  <div class="container">
+  <div class="container container-narrow">
     <span class="eyebrow">Our coaches</span>
-    <h2 class="section-heading">Three professional coaches. That's every class, every time.</h2>
-    <p class="hero-dek">Most gyms in the Denver metro rotate shift workers through a class schedule. Alpine doesn't. Every class is led by a CF-L2 certified professional coach. All three of our coaches are active CrossFit athletes. Lisa has qualified for the CrossFit Masters Semifinals.</p>
-    <div class="grid grid-3 mt-8">
-      <div class="card">
-        <h3>Lisa Arcangel</h3>
-        <p class="text-muted">Coach · CF-L2 · 15+ years coaching · 2026 Masters Quarterfinals qualifier</p>
-        <a href="/coaches/lisa-arcangel/">Learn about Lisa →</a>
-      </div>
-      <div class="card">
-        <h3>Dean Weeks</h3>
-        <p class="text-muted">Coach · CF-L2 · Known for empathy and motivation</p>
-        <a href="/coaches/dean-weeks/">Learn about Dean →</a>
-      </div>
-      <div class="card">
-        <h3>Liz Kushner</h3>
-        <p class="text-muted">Coach · CF-L2 · 10+ years coaching · Strength &amp; barbell focus</p>
-        <a href="/coaches/liz-kushner/">Learn about Liz →</a>
-      </div>
-    </div>
-    <div class="mt-8 text-center">
-      <a class="btn btn-secondary" href="/coaches/">Meet the team →</a>
-    </div>
+    <h2>Every class, a certified professional.</h2>
+    <p>Most gyms in the Denver metro rotate shift workers through a class schedule. Alpine doesn't. Lisa Arcangel, Dean Weeks, and Liz Kushner each hold the CF-L2 and have 10 to 15+ years of coaching behind them, and all three still compete. Behind the floor, two CSCS-certified professionals write what everyone trains.</p>
+    <p class="mt-6"><a class="btn btn-secondary" href="/coaches/">Meet the whole team →</a></p>
   </div>
 </section>
 
@@ -114,11 +95,11 @@ finalCta:
       </div>
       <div class="card">
         <h3>In-house programming.</h3>
-        <p>Every workout at Alpine is written by head programmer Megan Markee (2× CrossFit Games Semifinalist) in collaboration with owner April DiGiannantonio (CSCS, SCCC, former D1 Director of Sports Performance). No franchise templates. No random WOD generators.</p>
+        <p>Every workout at Alpine is written by head programmer Megan Markee (CSCS) in collaboration with owner April DiGiannantonio (CSCS, SCCC, former D1 Director of Sports Performance). No franchise templates. No random WOD generators.</p>
       </div>
       <div class="card">
-        <h3>All professional coaches.</h3>
-        <p>Three CF-L2 trainers, several of them Semifinalists and Quarterfinalists. Alpine is the only gym in Wheat Ridge that can say that about its full coaching staff.</p>
+        <h3>Credentials, not just certifications.</h3>
+        <p>Two CSCS-certified professionals on staff — head programmer Megan Markee and owner April DiGiannantonio, who also holds the SCCC and spent five-plus years as a Division I Director of Sports Performance. Add three CF-L2 trainers running the floor and a Certified Mental Performance Coach in the building.</p>
       </div>
       <div class="card">
         <h3>A community that spans every age.</h3>
@@ -138,13 +119,11 @@ finalCta:
 </section>
 
 <section class="section">
-  <div class="container">
+  <div class="container container-narrow">
     <span class="eyebrow">Where we are</span>
-    <h2 class="section-heading">Wheat Ridge — minutes from Applewood, Arvada, Lakewood, and Golden.</h2>
-    <div class="split">
-      {% include "partials/location-card.njk" %}
-      {% include "partials/map-embed.njk" %}
-    </div>
+    <h2>Wheat Ridge, just off I-70.</h2>
+    <p>{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postalCode }} — about 5 minutes from Applewood and south Arvada, 10 from Belmar, 12 from downtown Golden. Free on-site parking.</p>
+    <p class="mt-6"><a class="btn btn-secondary" href="/visit/">Directions, hours &amp; map →</a></p>
   </div>
 </section>
 

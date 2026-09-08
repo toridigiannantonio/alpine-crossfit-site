@@ -1306,3 +1306,28 @@ td:first-child, th:first-child { color: var(--color-text); font-weight: 500; }
   .note-meta { font-size: 0.72rem; }
   .archive-article h3 { font-size: 1.15rem; }
 }
+
+/* Credential grid on the homepage — four short claims, two up on desktop. */
+.cred-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6) var(--space-8);
+  margin-top: var(--space-6);
+}
+
+.cred h3 {
+  font-size: 1.05rem;
+  margin: 0 0 var(--space-2);
+  color: var(--color-alpine-green);
+}
+
+.cred p { margin: 0; color: var(--color-text-muted); font-size: 0.95rem; }
+
+.visit-line { font-size: 1.05rem; margin-bottom: var(--space-2); }
+
+@media (max-width: 760px) {
+  .cred-grid { grid-template-columns: 1fr; gap: var(--space-5, 1.25rem); }
+  .cred h3 { font-size: 1rem; }
+  .cred p { font-size: 0.9rem; }
+  .visit-line { font-size: 0.95rem; }
+}

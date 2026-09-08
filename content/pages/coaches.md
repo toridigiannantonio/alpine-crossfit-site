@@ -1,14 +1,14 @@
 ---
 title: Meet the Coaches & Owners — Alpine CrossFit Wheat Ridge
-description: Alpine is owned by April & Tori DiGiannantonio. Three CF-L2
-  coaches. Head programmer Megan Markee, a 2× CrossFit Games Semifinalist.
+description: Alpine is owned by April DiGiannantonio (CSCS, SCCC, former
+  Division I Director of Sports Performance) and Tori DiGiannantonio (LCSW,
+  CMPC). Programming by head programmer Megan Markee (CSCS). Three CF-L2
+  coaches run every class.
 eyebrow: Coaches &amp; Owners
-heading: Two new <span class="accent">owners</span>. Three CF-L2 coaches. One
-  standard.
-dek: Every class at Alpine is led by one of three CF-L2 certified coaches.
-  Alpine is owned by April and Tori DiGiannantonio, who took over in 2026.
-  Programming stays in-house — written by head programmer Megan Markee (CSCS,
-  2× CrossFit Games Semifinalist) in collaboration with April.
+heading: The people <span class="accent">actually coaching</span> you.
+dek: Two CSCS-certified professionals write the programming, a former
+  Division I Director of Sports Performance owns the gym, and a CF-L2 coach
+  runs every class. Here's the whole staff.
 heroCtas:
   - label: "Book a free intro"
     href: /free-intro/
@@ -90,7 +90,7 @@ extraSchemas:
 <section class="section">
   <div class="container">
     <span class="eyebrow">The coaches</span>
-    <h2 class="section-heading">Three CF-L2 trainers. Every class, every time.</h2>
+    <h2 class="section-heading">A CF-L2 trainer in every class, every time.</h2>
     <div class="grid grid-3">
       <div class="card">
         <h3>Lisa Arcangel</h3>

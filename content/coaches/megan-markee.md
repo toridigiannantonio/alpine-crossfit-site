@@ -10,7 +10,8 @@ bio: "Megan Markee, CSCS, CF-L1, is Alpine's head programmer, collaborating
   does it herself. She has received additional certifications in CF
   Programming, CF Running, and CF Nutrition."
 credentials:
-  - CrossFit Level 2 Trainer (CF-L2)
+  - Certified Strength and Conditioning Specialist (CSCS, NSCA)
+  - CrossFit Level 1 Trainer (CF-L1)
   - Alpine's head programmer
   - 4 × CrossFit Games Semifinalist
 athlete:
@@ -55,7 +56,10 @@ personSchema:
   hasCredential:
     - "@type": EducationalOccupationalCredential
       credentialCategory: certification
-      name: CrossFit Level 2 Trainer (CF-L2)
+      name: Certified Strength and Conditioning Specialist (CSCS, NSCA)
+    - "@type": EducationalOccupationalCredential
+      credentialCategory: certification
+      name: CrossFit Level 1 Trainer (CF-L1)
   sameAs:
     - https://www.instagram.com/megan_markee/
     - https://games.crossfit.com/athlete/244983

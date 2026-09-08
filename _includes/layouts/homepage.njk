@@ -4,15 +4,17 @@ schemaTypes: ["website", "organization", "healthclub"]
 loadImagesScript: true
 speakable: true
 ---
-{# Homepage layout — rebuilt in the 2026 simplification.
-   Eleven sections became six. Nothing was deleted from the SITE; the
-   duplicated blocks were removed from the HOMEPAGE and now live only on the
-   page that owns them:
+{# Homepage layout.
+   The homepage is a routing layer, not a summary of the site. Every block
+   here answers one question and hands off to the page that owns the detail.
+   Nothing has been deleted from the SITE — these blocks were duplicates:
 
      - the full pricing table  -> /pricing/  (here: a one-line price strip)
      - the full class schedule -> /schedule/ (here: a link)
      - the FAQ accordion       -> /faq/      (here: a link)
-     - "Who Alpine is for" and "Getting started" merged into one section
+     - "Who Alpine is for"     -> /about/    (word-for-word the same section)
+     - the "getting started" steps -> /crossfit/#beginners (same three steps)
+     - the location card       -> /visit/    (here: one line)
      - services became compact link tiles instead of six full cards
      - two of three testimonials dropped; one featured review + the stat row
 
@@ -20,7 +22,7 @@ speakable: true
      - hero: { eyebrow, heading, dek, cta{label,href}, links[{label,href}],
                image{src,alt,slot}, trustItems[] }
      - affiliations: [ { image, alt, label } ]
-     - intro: { eyebrow, heading, body[], cards[{heading, body}], steps[{heading, body}] }
+     - credentials: { eyebrow, heading, intro, items[{ heading, body }], link{label,href} }
      - services: { eyebrow, heading, items[{ heading, note, link }] }
      - pricing: { eyebrow, heading, note, moreLink{label,href} }
      - proof: { eyebrow, heading, featured{quote, attribution}, stats[{value,label}] }
@@ -86,37 +88,28 @@ speakable: true
 </section>
 {% endif %}
 
-{% if intro %}
-<!-- 2. WHO IT'S FOR + HOW TO START, merged into one section -->
+{% if credentials %}
+{# Who's coaching you. This block exists because "three CF-L2 coaches" was
+   the site's headline claim, and it undersold the room: the owner holds a
+   CSCS and an SCCC and spent five years as a Division I Director of Sports
+   Performance, and the person writing the programming holds a CSCS too.
+   That is the actual differentiator against a typical affiliate. #}
 <section class="section">
   <div class="container">
-    <span class="eyebrow">{{ intro.eyebrow }}</span>
-    <h2 class="section-heading">{{ intro.heading }}</h2>
-    <div class="split">
-      <div>
-        {%- for para in intro.body %}
-        <p>{{ para | safe }}</p>
-        {%- endfor %}
-        {% if intro.cards %}
-        <ul class="feature-list mt-6">
-        {%- for c in intro.cards %}
-          <li><strong>{{ c.heading }}</strong> — {{ c.body | safe }}</li>
-        {%- endfor %}
-        </ul>
-        {% endif %}
+    <span class="eyebrow">{{ credentials.eyebrow }}</span>
+    <h2 class="section-heading">{{ credentials.heading }}</h2>
+    {% if credentials.intro %}<p class="hero-dek">{{ credentials.intro | safe }}</p>{% endif %}
+    <div class="cred-grid">
+    {%- for c in credentials.items %}
+      <div class="cred">
+        <h3>{{ c.heading }}</h3>
+        <p>{{ c.body | safe }}</p>
       </div>
-      <div>
-        <h3>{{ intro.stepsHeading or 'Getting started' }}</h3>
-        <ol class="feature-list" style="list-style-type: decimal;">
-        {%- for s in intro.steps %}
-          <li><strong>{{ s.heading }}</strong> {{ s.body | safe }}</li>
-        {%- endfor %}
-        </ol>
-        <div class="mt-6">
-          <a class="btn btn-primary" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a>
-        </div>
-      </div>
+    {%- endfor %}
     </div>
+    {% if credentials.link %}
+    <p class="mt-6"><a href="{{ credentials.link.href }}">{{ credentials.link.label }}</a></p>
+    {% endif %}
   </div>
 </section>
 {% endif %}
@@ -186,25 +179,23 @@ speakable: true
 {% endif %}
 
 {% if visit %}
-<!-- 6. VISIT — the shared location card plus links. The full schedule grid
-     lives on /schedule/. -->
+{# Practical details in one strip. The address card, hours table and full
+   schedule live on /visit/ and /schedule/ — this is a signpost, not a copy. #}
 <section class="section" id="visit">
   <div class="container">
     <span class="eyebrow">{{ visit.eyebrow }}</span>
     <h2 class="section-heading">{{ visit.heading }}</h2>
-    <div class="split">
-      {% include "partials/location-card.njk" %}
-      <div>
-        {% if visit.body %}<p>{{ visit.body | safe }}</p>{% endif %}
-        <div class="hero-links" style="margin-top:var(--space-4);">
-          <a href="/schedule/">See the class schedule</a>
-          <a href="/visit/">Directions &amp; areas we serve</a>
-          <a href="/faq/">All {{ faqs.items.length }} FAQs</a>
-        </div>
-        <div class="mt-6">
-          <a class="btn btn-primary" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a>
-        </div>
-      </div>
+    <p class="visit-line">
+      <strong>{{ site.address.street }}, {{ site.address.city }}</strong> ·
+      {{ site.hoursDisplay[0].days }} {{ site.hoursDisplay[0].time }} ·
+      {{ site.parking }} parking
+    </p>
+    {% if visit.body %}<p class="text-muted">{{ visit.body | safe }}</p>{% endif %}
+    <div class="hero-links">
+      <a href="/visit/">Directions &amp; hours</a>
+      <a href="/schedule/">Class schedule</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/faq/">FAQ</a>
     </div>
   </div>
 </section>
