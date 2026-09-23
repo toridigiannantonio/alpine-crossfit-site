@@ -1,16 +1,16 @@
 ---
 layout: layouts/page.njk
 permalink: /personal-training/
-title: "Personal Training in Wheat Ridge — 1-on-1 with CF-L2 Coaches at Alpine CrossFit"
-description: "One-on-one personal training in Wheat Ridge with CF-L2 certified coaches. Injury recovery, sports performance, strength goals. 12 sessions/month included. Serving Arvada, Lakewood, Applewood, and Golden."
+title: "Personal Training in Wheat Ridge — 1-on-1 with Experienced Coaches at Alpine CrossFit"
+description: "One-on-one personal training in Wheat Ridge with experienced coaches. Injury recovery, sports performance, strength goals. 12 sessions/month included. Serving Arvada, Lakewood, Applewood, and Golden."
 canonical: "https://alpinecrossfit.com/personal-training/"
 eyebrow: "Personal Training"
 heading: "1-on-1 personal training in <span class=\"accent\">Wheat Ridge</span>."
-dek: "Work one-on-one with a CF-L2 certified coach on your specific goals — injury recovery, sports performance, or measurable strength. Programming designed for your body. 12 sessions a month, included with the Personal Training tier."
+dek: "Work one-on-one with an experienced coach on your specific goals — injury recovery, sports performance, or measurable strength. Programming designed for your body. 12 sessions a month, included with the Personal Training tier."
 heroCtas:
   - { label: "Book a consultation", href: "/free-intro/", style: "btn-primary btn-lg" }
   - { label: "See membership pricing", href: "/pricing/", style: "btn-secondary btn-lg" }
-trustStrip: "<span>12 sessions/month included</span><span class=\"sep\">·</span><span>Individualized programming</span><span class=\"sep\">·</span><span>CF-L2 coached</span>"
+trustStrip: "<span>12 sessions/month included</span><span class=\"sep\">·</span><span>Individualized programming</span><span class=\"sep\">·</span><span>Experienced coaches</span>"
 extraSchemas:
   - {
       "@context": "https://schema.org",
