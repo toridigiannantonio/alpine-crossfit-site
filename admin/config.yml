@@ -100,6 +100,21 @@ collections:
               - {label: "Secondary link label", name: "altCtaLabel", widget: "string", required: false}
               - {label: "Secondary link", name: "altCtaHref", widget: "string", required: false}
 
+          - label: "8x / 12x monthly plans"
+            name: "classPlans"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.price}}"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Price (as displayed)", name: "price", widget: "string"}
+              - {label: "Price (digits only, for Google)", name: "amount", widget: "string"}
+              - {label: "Per", name: "unit", widget: "string", default: "/month"}
+              - {label: "Sign-ins line", name: "visits", widget: "string", hint: "e.g. 8 sign-ins a month"}
+              - {label: "Best for", name: "bestFor", widget: "text"}
+              - {label: "Button label", name: "ctaLabel", widget: "string"}
+              - {label: "Button link", name: "ctaHref", widget: "string"}
+              - {label: "Opens in a new tab?", name: "ctaExternal", widget: "boolean", default: false, required: false}
+
           - label: "Visit options (drop-in, week pass, free intro)"
             name: "visitOptions"
             widget: "list"
@@ -464,7 +479,7 @@ collections:
               - {label: "How much does Alpine cost?", value: "how-much"}
               - {label: "Which membership should I pick?", value: "which-membership"}
               - {label: "Is Unlimited worth it at $199 a month?", value: "unlimited-worth-it"}
-              - {label: "What's included in the $69 Open Gym tier?", value: "open-gym-included"}
+              - {label: "What's included in the $99 Open Gym tier?", value: "open-gym-included"}
               - {label: "How does the $999 Personal Training tier work?", value: "pt-tier"}
               - {label: "Is there a contract or initiation fee?", value: "contract"}
               - {label: "Can I freeze my membership?", value: "freeze"}
@@ -599,7 +614,7 @@ collections:
               - {label: "How much does Alpine cost?", value: "how-much"}
               - {label: "Which membership should I pick?", value: "which-membership"}
               - {label: "Is Unlimited worth it at $199 a month?", value: "unlimited-worth-it"}
-              - {label: "What's included in the $69 Open Gym tier?", value: "open-gym-included"}
+              - {label: "What's included in the $99 Open Gym tier?", value: "open-gym-included"}
               - {label: "How does the $999 Personal Training tier work?", value: "pt-tier"}
               - {label: "Is there a contract or initiation fee?", value: "contract"}
               - {label: "Can I freeze my membership?", value: "freeze"}
@@ -805,7 +820,7 @@ collections:
               - {label: "How much does Alpine cost?", value: "how-much"}
               - {label: "Which membership should I pick?", value: "which-membership"}
               - {label: "Is Unlimited worth it at $199 a month?", value: "unlimited-worth-it"}
-              - {label: "What's included in the $69 Open Gym tier?", value: "open-gym-included"}
+              - {label: "What's included in the $99 Open Gym tier?", value: "open-gym-included"}
               - {label: "How does the $999 Personal Training tier work?", value: "pt-tier"}
               - {label: "Is there a contract or initiation fee?", value: "contract"}
               - {label: "Can I freeze my membership?", value: "freeze"}
@@ -931,7 +946,7 @@ collections:
               - {label: "How much does Alpine cost?", value: "how-much"}
               - {label: "Which membership should I pick?", value: "which-membership"}
               - {label: "Is Unlimited worth it at $199 a month?", value: "unlimited-worth-it"}
-              - {label: "What's included in the $69 Open Gym tier?", value: "open-gym-included"}
+              - {label: "What's included in the $99 Open Gym tier?", value: "open-gym-included"}
               - {label: "How does the $999 Personal Training tier work?", value: "pt-tier"}
               - {label: "Is there a contract or initiation fee?", value: "contract"}
               - {label: "Can I freeze my membership?", value: "freeze"}
@@ -1115,7 +1130,7 @@ collections:
               - {label: "How much does Alpine cost?", value: "how-much"}
               - {label: "Which membership should I pick?", value: "which-membership"}
               - {label: "Is Unlimited worth it at $199 a month?", value: "unlimited-worth-it"}
-              - {label: "What's included in the $69 Open Gym tier?", value: "open-gym-included"}
+              - {label: "What's included in the $99 Open Gym tier?", value: "open-gym-included"}
               - {label: "How does the $999 Personal Training tier work?", value: "pt-tier"}
               - {label: "Is there a contract or initiation fee?", value: "contract"}
               - {label: "Can I freeze my membership?", value: "freeze"}
