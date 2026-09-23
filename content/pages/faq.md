@@ -14,7 +14,7 @@ finalCta:
   heading: "Didn't find your question?"
   body: "Text us and a coach will answer, usually in under five minutes during gym hours."
   ctas:
-    - { label: "Book a free intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Book a free intro", href: "/free-intro/", inlineStyle: "background:var(--color-grit-deep);color:var(--color-glacier);" }
 extraSchemas:
   - {
       "@context": "https://schema.org",

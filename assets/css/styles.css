@@ -1,51 +1,88 @@
 /* ========================================================================
-   Alpine CrossFit — design system
-   Brand: Alpine 2026 refresh (April & Tori DiGiannantonio)
-   Primary palette: Tan (#c19a6b), Forest (#365211), Brick (#9d3e3e), Slate (#403d3d), Haze (#f3f4f4)
-   Headline font: Barlow Condensed (italic) — substitute for Antique Olive Compact Italic
-   Body font: Archivo — substitute for Noka
+   Alpine — design system, rebuilt from the ALPINE PLAYBOOK // 2026
+   Palette: Grit #403d3d · Dune #c19a6b · Ponderosa #365211 · Ironwood #9d3e3e · Glacier #f3f4f4
+   Headline: Antique Olive Compact Italic -> stand-in Anybody (900, 112% wide, italic)
+   Body/subhead: Noka -> stand-in Outfit
+   Fonts are self-hosted from /assets/fonts (SIL OFL). If you license the
+   real Antique Olive Compact + Noka web fonts, drop the .woff2 files in
+   /assets/fonts and swap the two @font-face blocks below.
+
+   Section rhythm (matches the playbook's colour blocking):
+     .hero / .section-dark  -> Grit (dark)
+     .section               -> Glacier (light)
+     .section-forest        -> Ponderosa
+     .section-green         -> Ironwood CTA band (the name is historical)
+   Dune is used sparingly: the logo and the one accent word in each hero.
+   Every colour below is a token; light sections re-point the tokens, so
+   components never need a light/dark variant of their own.
    ======================================================================== */
 
+@font-face {
+  font-family: "Alpine Display";
+  src: url("/assets/fonts/anybody-latin-standard-italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 100 900;
+  font-stretch: 50% 150%;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alpine Sans";
+  src: url("/assets/fonts/outfit-latin-wght-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 :root {
-  /* Primary brand — Alpine 2026 palette (Pantone refs in parens) */
-  --color-black: #000000;
-  --color-tan: #c19a6b;              /* Pantone 4655 C — primary brand */
-  --color-tan-dark: #a08258;         /* Darker tan (derived) */
-  --color-tan-light: #d0b085;        /* Lighter tan for hover (derived) */
-  --color-forest: #365211;           /* Pantone 5743 C — secondary */
-  --color-forest-dark: #253809;      /* Darker forest (derived) */
-  --color-brick: #9d3e3e;            /* Pantone 7622 C — alert / emphasis */
-  --color-slate: #403d3d;            /* Pantone 19-0000 TCX — dark neutral */
-  --color-haze: #f3f4f4;             /* Pantone 11-3900 TCX — off-white */
+  /* Brand palette — the five playbook colours */
+  --color-grit: #403d3d;             /* PMS 19-0000 TCX */
+  --color-dune: #c19a6b;             /* PMS 4655 C */
+  --color-ponderosa: #365211;        /* PMS 5743 C */
+  --color-ironwood: #9d3e3e;         /* PMS 7622 C */
+  --color-glacier: #f3f4f4;          /* PMS 11-3900 TCX */
 
-  /* Aliases to old brand names — kept so downstream files auto-update */
-  --color-alpine-green: var(--color-tan);
-  --color-alpine-green-dark: var(--color-tan-dark);
-  --color-american-basin: var(--color-forest);
-  --color-rubble: var(--color-slate);
+  /* Derived tints — only where a palette colour fails contrast as text */
+  --color-grit-deep: #2b2929;        /* header, footer, text on Dune */
+  --color-grit-raised: #4a4646;      /* cards on Grit */
+  --color-dune-light: #d0b085;       /* Dune as small text on Grit (5.2:1) */
+  --color-dune-pale: #dcc5a2;        /* Dune as small text on Ponderosa (5.3:1) */
+  --color-ironwood-light: #e8a5a5;   /* Ironwood as small text on Grit (5.3:1) */
+  --color-ponderosa-light: #b5cf8c;  /* Ponderosa as text on Grit (6.3:1) */
+  --color-ponderosa-pale: #c3d6a3;   /* Ponderosa tint on Ponderosa (5.7:1) */
 
-  /* Legacy accents from prior playbook (not in new palette — kept for compat) */
-  --color-icicle: #b8dde5;
-  --color-hops: #e4ea59;
-  --color-heliotrope: #8f82ff;
-  --color-clementine: #fa803d;
+  /* Legacy names — kept so older inline styles still resolve */
+  --color-black: var(--color-grit-deep);
+  --color-tan: var(--color-dune);
+  --color-tan-light: var(--color-dune-light);
+  --color-forest: var(--color-ponderosa);
+  --color-brick: var(--color-ironwood);
+  --color-slate: var(--color-grit);
+  --color-haze: var(--color-glacier);
+  --color-alpine-green: var(--color-dune);
+  --color-american-basin: var(--color-ponderosa);
 
-  /* Semantic UI tokens */
-  --color-bg: #000000;
-  --color-surface: #121212;
-  --color-surface-2: #1c1c1c;
-  --color-text: #ffffff;
-  --color-text-muted: #a8a8a3;
-  --color-border: #2a2a28;
-  --color-accent: var(--color-tan);
-  --color-accent-hover: var(--color-tan-light);
-  --color-secondary: var(--color-forest);
-  --color-gold: var(--color-hops);
-  --color-success: var(--color-forest);
+  /* Semantic tokens — dark (Grit) scheme is the default */
+  --color-bg: var(--color-grit);
+  --color-surface: var(--color-grit-raised);
+  --color-surface-2: #555151;
+  --color-text: var(--color-glacier);
+  --color-text-muted: #cfcbc6;
+  --color-border: #5a5656;
+  --color-link: var(--color-ponderosa-light);
+  --color-link-hover: var(--color-glacier);
+  --color-accent-text: var(--color-ironwood-light); /* eyebrows, small labels */
+  --color-accent-display: var(--color-glacier);     /* big numbers */
+  --color-hero-accent: var(--color-dune);           /* the one accent word in a hero */
+  --color-star: var(--color-ironwood-light);
+  --color-accent: var(--color-glacier);             /* fills: buttons */
+  --color-accent-hover: #ffffff;
+  --color-rule: var(--color-ironwood-light);        /* list dashes, card edges */
+  --color-on-accent: var(--color-grit-deep);
+  --color-btn-outline: var(--color-glacier);
 
   /* Type */
-  --font-sans: "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-display: "Barlow Condensed", "Archivo", -apple-system, sans-serif;
+  --font-sans: "Alpine Sans", "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "Alpine Display", "Alpine Sans", -apple-system, sans-serif;
 
   /* Layout */
   --max-width: 1200px;
@@ -56,12 +93,66 @@
   --space-2: 0.5rem;
   --space-3: 0.75rem;
   --space-4: 1rem;
+  --space-5: 1.25rem;
   --space-6: 1.5rem;
   --space-8: 2rem;
   --space-12: 3rem;
   --space-16: 4rem;
   --space-24: 6rem;
   --transition: 200ms ease;
+}
+
+/* Light (Glacier) scheme. A plain .section is light; the modifiers opt out. */
+.section:not(.section-dark):not(.section-green):not(.section-forest):not(.section-blue),
+.scheme-light {
+  --color-bg: var(--color-glacier);
+  --color-surface: #ffffff;
+  --color-surface-2: #e8e9e9;
+  --color-text: var(--color-grit);
+  --color-text-muted: #5e5a5a;
+  --color-border: #d6d7d7;
+  --color-link: var(--color-ponderosa);
+  --color-link-hover: var(--color-ironwood);
+  --color-accent-text: var(--color-ironwood);
+  --color-accent-display: var(--color-ponderosa);
+  --color-star: var(--color-ironwood);
+  --color-accent: var(--color-ponderosa);
+  --color-accent-hover: #2a410c;
+  --color-on-accent: var(--color-glacier);
+  --color-rule: var(--color-ironwood);
+  --color-btn-outline: var(--color-grit);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Ponderosa scheme */
+.section-forest {
+  --color-bg: var(--color-ponderosa);
+  --color-surface: #2c440d;
+  --color-text: var(--color-glacier);
+  --color-text-muted: #dfe3d8;
+  --color-border: #4d6a2a;
+  --color-link: var(--color-ponderosa-pale);
+  --color-accent-text: var(--color-ponderosa-pale);
+  --color-accent-display: var(--color-glacier);
+  --color-star: var(--color-glacier);
+  --color-rule: var(--color-ponderosa-pale);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Ironwood CTA band (class name is historical) */
+.section-green {
+  --color-bg: var(--color-ironwood);
+  --color-text: var(--color-glacier);
+  --color-text-muted: var(--color-glacier);
+  --color-border: rgba(243,244,244,0.3);
+  --color-link: var(--color-glacier);
+  --color-accent-text: var(--color-glacier);
+  --color-accent: var(--color-glacier);
+  --color-accent-hover: #ffffff;
+  --color-on-accent: var(--color-grit-deep);
+  --color-btn-outline: var(--color-glacier);
 }
 
 * { box-sizing: border-box; }
@@ -116,12 +207,12 @@ h4 {
 p { margin: 0 0 var(--space-4) 0; }
 
 a {
-  color: var(--color-alpine-green);
+  color: var(--color-link);
   text-decoration: none;
   transition: color var(--transition);
   font-weight: 500;
 }
-a:hover { color: var(--color-american-basin); }
+a:hover { color: var(--color-link-hover); }
 
 strong { font-weight: 700; color: var(--color-text); }
 
@@ -154,16 +245,16 @@ strong { font-weight: 700; color: var(--color-text); }
   transition: all var(--transition);
   min-height: 48px;
   text-align: center;
-  color: var(--color-black);
+  color: var(--color-on-accent);
 }
 
 .btn-primary {
-  background: var(--color-alpine-green);
-  color: var(--color-black);
+  background: var(--color-accent);
+  color: var(--color-on-accent);
 }
 .btn-primary:hover {
   background: var(--color-accent-hover);
-  color: var(--color-black);
+  color: var(--color-on-accent);
 }
 
 .btn-secondary {
@@ -173,7 +264,7 @@ strong { font-weight: 700; color: var(--color-text); }
 }
 .btn-secondary:hover {
   background: var(--color-text);
-  color: var(--color-black);
+  color: var(--color-on-accent);
 }
 
 .btn-lg {
@@ -248,7 +339,7 @@ strong { font-weight: 700; color: var(--color-text); }
   text-transform: uppercase;
   letter-spacing: 0.12em;
 }
-.nav-links a:hover { color: var(--color-alpine-green); }
+.nav-links a:hover { color: var(--color-accent-text); }
 
 .nav-cta {
   display: flex;
@@ -300,7 +391,7 @@ strong { font-weight: 700; color: var(--color-text); }
 /* Hero */
 .hero {
   padding: var(--space-24) 0 var(--space-16);
-  border-bottom: 2px solid var(--color-alpine-green);
+  border-bottom: 2px solid var(--color-accent);
   position: relative;
 }
 
@@ -365,7 +456,7 @@ strong { font-weight: 700; color: var(--color-text); }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  color: var(--color-alpine-green);
+  color: var(--color-accent-text);
   margin-bottom: var(--space-6);
 }
 
@@ -375,7 +466,7 @@ strong { font-weight: 700; color: var(--color-text); }
 }
 
 .hero h1 .accent {
-  color: var(--color-alpine-green);
+  color: var(--color-accent-display);
 }
 
 .hero-dek {
@@ -409,7 +500,7 @@ strong { font-weight: 700; color: var(--color-text); }
 
 .trust-strip span { color: var(--color-text-muted); }
 .trust-strip .sep { opacity: 0.4; }
-.trust-strip .stars { color: var(--color-hops); letter-spacing: 0.1em; font-size: 0.9rem; }
+.trust-strip .stars { color: var(--color-star); letter-spacing: 0.1em; font-size: 0.9rem; }
 
 /* Sections */
 .section {
@@ -418,9 +509,7 @@ strong { font-weight: 700; color: var(--color-text); }
 }
 
 .section-dark { background: var(--color-surface); }
-.section-green { background: var(--color-alpine-green); color: var(--color-black); }
-.section-green h1, .section-green h2, .section-green h3 { color: var(--color-black); }
-.section-green p, .section-green .hero-dek { color: rgba(0,0,0,0.85); }
+.section-green { background: var(--color-bg); color: var(--color-text); }
 
 .section-blue { background: var(--color-american-basin); color: var(--color-text); }
 
@@ -435,12 +524,11 @@ strong { font-weight: 700; color: var(--color-text); }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  color: var(--color-alpine-green);
+  color: var(--color-accent-text);
   margin-bottom: var(--space-3);
   display: block;
 }
 
-.section-green .eyebrow { color: var(--color-black); }
 
 /* Grids */
 .grid {
@@ -462,7 +550,7 @@ strong { font-weight: 700; color: var(--color-text); }
 }
 
 .card:hover {
-  border-color: var(--color-alpine-green);
+  border-color: var(--color-accent);
   transform: translateY(-2px);
 }
 
@@ -477,9 +565,9 @@ strong { font-weight: 700; color: var(--color-text); }
 }
 
 .card-featured {
-  border-color: var(--color-alpine-green);
+  border-color: var(--color-accent);
   border-width: 2px;
-  background: linear-gradient(180deg, rgba(113,176,53,0.1) 0%, var(--color-surface) 100%);
+  background: linear-gradient(180deg, rgba(193,154,107,0.14) 0%, var(--color-surface) 100%);
   position: relative;
 }
 
@@ -489,8 +577,8 @@ strong { font-weight: 700; color: var(--color-text); }
   top: -12px;
   left: var(--space-6);
   display: inline-block;
-  background: var(--color-alpine-green);
-  color: var(--color-black);
+  background: var(--color-accent);
+  color: var(--color-on-accent);
   font-size: 0.7rem;
   font-weight: 700;
   padding: 0.25rem 0.75rem;
@@ -544,7 +632,7 @@ strong { font-weight: 700; color: var(--color-text); }
   top: 0.55em;
   width: 16px;
   height: 2px;
-  background: var(--color-alpine-green);
+  background: var(--color-accent);
 }
 
 .feature-list li.muted {
@@ -571,7 +659,7 @@ strong { font-weight: 700; color: var(--color-text); }
   font-style: italic;
   font-size: 3rem;
   font-weight: 700;
-  color: var(--color-alpine-green);
+  color: var(--color-accent-display);
   line-height: 1;
   margin-bottom: var(--space-2);
 }
@@ -610,7 +698,7 @@ strong { font-weight: 700; color: var(--color-text); }
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 1.75rem;
-  color: var(--color-alpine-green);
+  color: var(--color-accent-text);
   transition: transform var(--transition);
   line-height: 1;
 }
@@ -629,7 +717,7 @@ strong { font-weight: 700; color: var(--color-text); }
 .testimonial {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-left: 3px solid var(--color-alpine-green);
+  border-left: 3px solid var(--color-accent);
   border-radius: var(--radius-lg);
   padding: var(--space-6);
 }
@@ -650,7 +738,7 @@ strong { font-weight: 700; color: var(--color-text); }
 }
 
 .testimonial-stars {
-  color: var(--color-hops);
+  color: var(--color-star);
   letter-spacing: 0.15em;
   font-size: 0.9rem;
   margin-bottom: var(--space-3);
@@ -685,7 +773,7 @@ strong { font-weight: 700; color: var(--color-text); }
 }
 
 .location-card dt {
-  color: var(--color-alpine-green);
+  color: var(--color-accent-text);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -787,7 +875,7 @@ strong { font-weight: 700; color: var(--color-text); }
   right: 0;
   z-index: 90;
   background: var(--color-black);
-  border-top: 2px solid var(--color-alpine-green);
+  border-top: 2px solid var(--color-accent);
   padding: var(--space-3) var(--space-4);
 }
 
@@ -841,7 +929,7 @@ strong { font-weight: 700; color: var(--color-text); }
   text-underline-offset: 3px;
 }
 
-.sticky-cta-alt:hover { color: var(--color-alpine-green); }
+.sticky-cta-alt:hover { color: var(--color-accent-text); }
 
 /* Fallback offset for the always-on sticky bar. main.js replaces this with
    the bar's measured height, which matters at narrow widths where the two
@@ -872,7 +960,7 @@ body { padding-bottom: 92px; }
 }
 
 .footer-grid h4 {
-  color: var(--color-alpine-green);
+  color: var(--color-accent-text);
   margin-bottom: var(--space-4);
 }
 
@@ -889,7 +977,7 @@ body { padding-bottom: 92px; }
   color: var(--color-text-muted);
   font-weight: 400;
 }
-.footer-grid ul a:hover { color: var(--color-alpine-green); }
+.footer-grid ul a:hover { color: var(--color-accent-text); }
 
 .footer-bottom {
   padding-top: var(--space-6);
@@ -928,7 +1016,7 @@ th, td {
 th {
   font-family: var(--font-sans);
   font-weight: 700;
-  color: var(--color-alpine-green);
+  color: var(--color-accent-text);
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -965,7 +1053,7 @@ td:first-child, th:first-child { color: var(--color-text); font-weight: 500; }
   transition: border-color var(--transition), transform var(--transition);
 }
 
-.tile:hover { border-color: var(--color-alpine-green); transform: translateY(-2px); }
+.tile:hover { border-color: var(--color-accent); transform: translateY(-2px); }
 
 .tile-title {
   display: block;
@@ -1005,7 +1093,7 @@ td:first-child, th:first-child { color: var(--color-text); font-weight: 500; }
   font-style: italic;
   font-weight: 700;
   font-size: 1.6rem;
-  color: var(--color-alpine-green);
+  color: var(--color-accent-display);
   line-height: 1;
 }
 
@@ -1042,7 +1130,7 @@ td:first-child, th:first-child { color: var(--color-text); font-weight: 500; }
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--color-alpine-green);
+  color: var(--color-accent-text);
 }
 
 .area-body { color: var(--color-text-muted); font-size: 0.95rem; }
@@ -1167,7 +1255,7 @@ td:first-child, th:first-child { color: var(--color-text); font-weight: 500; }
 .archive-article:first-of-type { padding-top: 0; }
 .archive-article h3 { margin: 0 0 var(--space-2); font-size: 1.35rem; }
 .archive-article h3 a { color: var(--color-text); }
-.archive-article h3 a:hover { color: var(--color-alpine-green); }
+.archive-article h3 a:hover { color: var(--color-accent-text); }
 .archive-article p { color: var(--color-text-muted); margin: 0 0 var(--space-3); }
 
 .archive-date {
@@ -1179,7 +1267,7 @@ td:first-child, th:first-child { color: var(--color-text); font-weight: 500; }
   margin: 0 0 var(--space-2);
 }
 
-.archive-more { color: var(--color-alpine-green); font-weight: 700; }
+.archive-more { color: var(--color-accent-text); font-weight: 700; }
 
 /* --- search box --- */
 .archive-controls { margin: var(--space-6) 0 var(--space-4); }
@@ -1191,7 +1279,7 @@ td:first-child, th:first-child { color: var(--color-text); font-weight: 500; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--color-alpine-green);
+  color: var(--color-accent-text);
   margin-bottom: var(--space-2);
 }
 
@@ -1209,9 +1297,9 @@ td:first-child, th:first-child { color: var(--color-text); font-weight: 500; }
 }
 .archive-search::placeholder { color: var(--color-text-muted); }
 .archive-search:focus {
-  outline: 2px solid var(--color-alpine-green);
+  outline: 2px solid var(--color-accent);
   outline-offset: 2px;
-  border-color: var(--color-alpine-green);
+  border-color: var(--color-accent);
 }
 
 .archive-status {
@@ -1239,9 +1327,9 @@ td:first-child, th:first-child { color: var(--color-text); font-weight: 500; }
   font-weight: 700;
 }
 .archive-group > summary::-webkit-details-marker { display: none; }
-.archive-group > summary:hover .archive-group-title { color: var(--color-alpine-green); }
+.archive-group > summary:hover .archive-group-title { color: var(--color-accent-text); }
 .archive-group > summary:focus-visible {
-  outline: 2px solid var(--color-alpine-green);
+  outline: 2px solid var(--color-accent);
   outline-offset: 2px;
 }
 
@@ -1259,8 +1347,8 @@ td:first-child, th:first-child { color: var(--color-text); font-weight: 500; }
   top: 50%;
   width: 7px;
   height: 7px;
-  border-right: 2px solid var(--color-alpine-green);
-  border-bottom: 2px solid var(--color-alpine-green);
+  border-right: 2px solid var(--color-accent);
+  border-bottom: 2px solid var(--color-accent);
   transform: translateY(-70%) rotate(-45deg);
   transition: transform var(--transition);
 }
@@ -1308,7 +1396,7 @@ td:first-child, th:first-child { color: var(--color-text); font-weight: 500; }
 .note-item[hidden] { display: none; }
 .note-item:last-child { border-bottom: 0; }
 .note-item > a { color: var(--color-text); font-weight: 500; }
-.note-item > a:hover { color: var(--color-alpine-green); }
+.note-item > a:hover { color: var(--color-accent-text); }
 
 .note-meta {
   flex: none;
@@ -1346,7 +1434,7 @@ td:first-child, th:first-child { color: var(--color-text); font-weight: 500; }
 .cred h3 {
   font-size: 1.05rem;
   margin: 0 0 var(--space-2);
-  color: var(--color-alpine-green);
+  color: var(--color-accent-text);
 }
 
 .cred p { margin: 0; color: var(--color-text-muted); font-size: 0.95rem; }
@@ -1373,3 +1461,213 @@ td:first-child, th:first-child { color: var(--color-text); font-weight: 500; }
   .nav-cta .btn { font-size: 0.68rem; padding: var(--space-2) var(--space-3); }
   .nav-links { gap: var(--space-5, 1.25rem); }
 }
+
+
+/* ==========================================================================
+   BRAND REFRESH 2026 — ALPINE PLAYBOOK
+   Everything below layers the playbook's look over the components above:
+   Grit / Glacier / Ponderosa / Dune colour blocking, the heavy italic
+   headline, triangle markers from the badge, and the American Basin mural.
+   ========================================================================== */
+
+body { font-weight: 400; letter-spacing: 0.005em; }
+
+/* Headlines: Antique Olive Compact Italic stand-in — heavy, slightly wide, tight. */
+h1, h2, .display {
+  font-weight: 900;
+  font-stretch: 112%;
+  letter-spacing: -0.025em;
+  line-height: 0.95;
+}
+h1 { font-size: clamp(2.5rem, 6.4vw, 4.75rem); }
+h2 { font-size: clamp(1.9rem, 4.4vw, 3.25rem); }
+h3 { font-weight: 700; }
+.price, .stat-value, .price-strip-amount {
+  font-weight: 900;
+  font-stretch: 112%;
+  letter-spacing: -0.02em;
+}
+
+/* Triangle marker, lifted from the Alpine badge. */
+.eyebrow::before,
+.hero-eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 0.85em;
+  height: 0.75em;
+  margin-right: 0.55em;
+  background: currentColor;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  vertical-align: -0.02em;
+}
+.eyebrow, .hero-eyebrow { color: var(--color-accent-text); }
+
+/* Buttons */
+.btn { color: var(--color-on-accent); }
+.btn-primary { background: var(--color-accent); color: var(--color-on-accent); }
+.btn-primary:hover { background: var(--color-accent-hover); color: var(--color-on-accent); }
+.btn-secondary { color: var(--color-btn-outline); border-color: var(--color-btn-outline); }
+.btn-secondary:hover { background: var(--color-btn-outline); color: var(--color-bg); }
+.btn:focus-visible, a:focus-visible { outline: 2px solid var(--color-accent-text); outline-offset: 3px; }
+
+/* Header: deep Grit bar with the primary mountain logo in Dune. */
+.site-header {
+  background: rgba(43, 41, 41, 0.94);
+  border-bottom: 1px solid rgba(193, 154, 107, 0.25);
+}
+.nav { padding-top: var(--space-3); padding-bottom: var(--space-3); }
+.nav-brand { color: var(--color-dune); }
+.nav-brand:hover { color: var(--color-dune-light); }
+.nav-logo { display: block; height: 42px; width: auto; }
+.nav-links a { color: var(--color-glacier); }
+.nav-links a:hover { color: #ffffff; text-decoration: underline; text-decoration-color: var(--color-ironwood-light); text-underline-offset: 6px; text-decoration-thickness: 2px; }
+.nav-toggle { color: var(--color-glacier); }
+@media (max-width: 860px) {
+  .nav-logo { height: 34px; }
+  .nav-links.open { background: var(--color-grit-deep); }
+}
+
+/* Hero: Grit field with the mural line art riding along the bottom edge. */
+.hero {
+  background: var(--color-grit);
+  border-bottom: 0;
+  overflow: hidden;
+  isolation: isolate;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 100%;
+  background: url("/assets/img/brand/mural-line-glacier.svg") no-repeat right -40px bottom / min(1100px, 95%) auto;
+  opacity: 0.16;
+  pointer-events: none;
+  z-index: -1;
+}
+.hero-image {
+  border: 0;
+  border-radius: var(--radius-lg);
+  box-shadow: 14px 14px 0 0 var(--color-ponderosa);
+  filter: none;
+}
+.trust-strip .stars { color: var(--color-star); }
+.hero-links a { color: var(--color-link); }
+
+/* Sections */
+.section { border-bottom: 0; }
+.section-dark { background: var(--color-grit); }
+.section-heading { max-width: 22ch; }
+.section-forest .section-heading, .section-forest h2 { color: var(--color-glacier); }
+
+/* Dune CTA band: topo badge watermark, Grit buttons. */
+.section-green { position: relative; overflow: hidden; isolation: isolate; }
+.section-green::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  right: -90px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url("/assets/img/brand/badge-topo-grit.svg") no-repeat center / contain;
+  opacity: 0.18;
+  z-index: -1;
+  pointer-events: none;
+}
+.section-green h2 { color: var(--color-glacier); }
+
+/* Cards and tiles */
+.card, .tile, .location-card, .price-strip, .testimonial {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+}
+.section:not(.section-dark):not(.section-green):not(.section-forest) :is(.card, .tile, .location-card, .price-strip, .testimonial) {
+  box-shadow: 0 1px 2px rgba(64, 61, 61, 0.08);
+}
+.card:hover, .tile:hover { border-color: var(--color-rule); }
+.card-featured {
+  border-color: var(--color-ponderosa-light);
+  background: linear-gradient(180deg, rgba(54, 82, 17, 0.45) 0%, var(--color-surface) 70%);
+}
+.card-featured::before {
+  background: var(--color-ironwood);
+  color: var(--color-glacier);
+}
+.feature-list li::before { background: var(--color-rule); }
+.tile-title { color: var(--color-text); }
+.tile { border-left: 3px solid var(--color-rule); }
+
+.testimonial { border-left-color: var(--color-rule); }
+.section-forest .testimonial { background: rgba(0, 0, 0, 0.18); border-color: rgba(243, 244, 244, 0.18); border-left-color: var(--color-rule); }
+.section-forest .stat-label { color: var(--color-text-muted); }
+
+/* Tables */
+th { color: var(--color-accent-text); }
+
+/* Affiliations band */
+.affiliations {
+  background: var(--color-grit-deep);
+  border-bottom: 0;
+  border-top: 1px solid rgba(193, 154, 107, 0.2);
+}
+
+/* Sticky CTA bar */
+.sticky-cta {
+  background: var(--color-grit-deep);
+  border-top: 2px solid var(--color-ironwood);
+}
+
+/* Footer: deep Grit, mural along the top, badge above the address. */
+.site-footer {
+  position: relative;
+  background: var(--color-grit-deep);
+  color: var(--color-text-muted);
+  padding-top: 0;
+}
+.footer-mural {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-12) var(--space-6) var(--space-8);
+  opacity: 0.3;
+}
+.footer-mural img { width: min(720px, 100%); height: auto; display: block; }
+.footer-brand { display: inline-block; color: var(--color-glacier); margin-bottom: var(--space-4); }
+.footer-badge { display: block; width: 72px; height: auto; }
+.footer-grid h4 { color: var(--color-glacier); }
+.footer-grid ul a { color: var(--color-text-muted); }
+.footer-grid ul a:hover { color: var(--color-glacier); }
+.footer-bottom { border-top-color: var(--color-border); }
+.footer-bottom-right { display: inline-flex; align-items: center; gap: var(--space-4); }
+.footer-co { width: 28px; height: auto; opacity: 0.9; }
+
+/* Blog/archive inputs follow the scheme */
+.archive-search { background: var(--color-surface); }
+.note-item { border-bottom-color: var(--color-border); }
+
+@media (max-width: 760px) {
+  .hero-image { box-shadow: 8px 8px 0 0 var(--color-ponderosa); }
+  .hero::after { background-size: 160% auto; background-position: 30% bottom; opacity: 0.12; }
+  .section-green::before { width: 260px; height: 260px; right: -80px; }
+  .footer-mural { padding: var(--space-8) var(--space-4) var(--space-6); }
+  .footer-badge { width: 56px; }
+}
+
+/* Refinements after first review */
+body { background: var(--color-grit-deep); }
+.hero { background: var(--color-grit-deep); }
+.hero::after { opacity: 0.07; }
+.affiliations { background: var(--color-grit); border-top: 0; }
+.hero-logo { display: block; width: min(340px, 80%); height: auto; margin-bottom: var(--space-6); }
+main img { max-width: 100%; height: auto; }
+.team-photo img { display: block; width: 100%; max-height: 640px; object-fit: cover; object-position: center 30%; }
+.hero-eyebrow:has(a)::before, .eyebrow:has(a)::before { display: none; }
+
+/* Dune kept to the logo and one hero accent word (playbook: use sparingly). */
+.hero h1 .accent { color: var(--color-hero-accent); }
+.card-featured::before { background: var(--color-ironwood); color: var(--color-glacier); }
+.section:not(.section-dark):not(.section-green):not(.section-forest) .card-featured { border-color: var(--color-ponderosa); background: linear-gradient(180deg, rgba(54, 82, 17, 0.08) 0%, var(--color-surface) 70%); }
+.announcement-banner { background: var(--color-ponderosa) !important; color: var(--color-glacier) !important; }
+.announcement-banner a, .announcement-banner strong { color: var(--color-glacier) !important; }
+.site-header { border-bottom-color: rgba(243, 244, 244, 0.12); }

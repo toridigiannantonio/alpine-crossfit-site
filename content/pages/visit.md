@@ -33,7 +33,7 @@ extraSchemas:
 finalCta:
   heading: "Come see the gym."
   ctas:
-    - { label: "Book a free intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Book a free intro", href: "/free-intro/", inlineStyle: "background:var(--color-grit-deep);color:var(--color-glacier);" }
 ---
 
 <section class="section">

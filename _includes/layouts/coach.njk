@@ -16,9 +16,9 @@ schemaTypes: ["person", "healthclub"]
 #}
 <section class="hero">
   <div class="container">
-    <p class="hero-eyebrow"><a href="/coaches/" style="color:var(--color-alpine-green);">← All coaches &amp; owners</a></p>
+    <p class="hero-eyebrow"><a href="/coaches/" style="color:var(--color-accent-text);">← All coaches &amp; owners</a></p>
     <h1>{{ name }}.</h1>
-    {% if credentialsLine %}<p class="text-muted" style="text-transform:uppercase;letter-spacing:0.1em;font-weight:700;font-size:0.9rem;margin-bottom:var(--space-6);color:var(--color-alpine-green);">{{ credentialsLine }}</p>{% endif %}
+    {% if credentialsLine %}<p class="text-muted" style="text-transform:uppercase;letter-spacing:0.1em;font-weight:700;font-size:0.9rem;margin-bottom:var(--space-6);color:var(--color-accent-text);">{{ credentialsLine }}</p>{% endif %}
     {% if bio %}<p class="hero-dek">{{ bio | safe }}</p>{% endif %}
   </div>
 </section>
@@ -78,7 +78,7 @@ schemaTypes: ["person", "healthclub"]
   <div class="container text-center">
     <h2>{{ finalCtaHeading or ('Train where ' + (name | split(' ') | first) + ' trains.') }}</h2>
     <div class="hero-cta" style="justify-content:center;">
-      <a class="btn btn-lg" style="background:#000;color:#fff;" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a>
+      <a class="btn btn-lg" style="background:var(--color-grit-deep);color:var(--color-glacier);" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a>
     </div>
   </div>
 </section>

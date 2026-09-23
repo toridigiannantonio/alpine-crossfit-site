@@ -47,7 +47,7 @@ finalCta:
   heading: "Come see the gym."
   body: "The best way to understand Alpine is to walk in. Your free No Sweat Intro is 30 minutes with a coach — tour, conversation, and a recommendation. No pressure, no cost."
   ctas:
-    - { label: "Book a free intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Book a free intro", href: "/free-intro/", inlineStyle: "background:var(--color-grit-deep);color:var(--color-glacier);" }
 ---
 
 <section class="affiliations">

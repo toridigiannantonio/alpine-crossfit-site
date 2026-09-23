@@ -5,6 +5,7 @@ title: "Sauna & Cold Plunge in Wheat Ridge — Alpine CrossFit Wellness Center"
 description: "Steam sauna, cold plunges, compression boots, and peptide therapy in Wheat Ridge. Included with every Alpine membership from {{ site.pricing.tiers[0].price }}/month — no CrossFit required."
 canonical: "https://alpinecrossfit.com/wellness/"
 eyebrow: "Wellness Center"
+heroLogo: { src: "/assets/img/brand/wordmark-wellness-dark.svg", alt: "Alpine Wellness Center" }
 heading: "Sauna, cold plunge, and recovery in <span class=\"accent\">Wheat Ridge</span>."
 dek: "Alpine's wellness center brings {{ site.wellness.prose }} together under one roof — in Wheat Ridge, serving Lakewood, Arvada, Applewood, and Golden. Included with every membership, starting at {{ site.pricing.tiers[0].price }}/month."
 heroCtas:
@@ -25,7 +26,7 @@ finalCta:
   heading: "Ready to recover better?"
   body: "Book a free No Sweat Intro — a 30-minute visit with a coach. Tour the wellness center, see the sauna and cold plunges, and find the membership that fits."
   ctas:
-    - { label: "Book a free intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Book a free intro", href: "/free-intro/", inlineStyle: "background:var(--color-grit-deep);color:var(--color-glacier);" }
 schemaTypes: ["healthclub", "faq"]
 faqEyebrow: "Wellness center"
 faqHeading: "Wellness questions."
@@ -48,8 +49,8 @@ faqIds:
       <li><strong>Compression boots</strong> — sequential pneumatic compression that speeds lactate clearance and blood flow after hard training.</li>
       <li><strong>Peptide therapy</strong> — peptide-based recovery support for athletes focused on performance optimization.</li>
     </ul>
-    <div style="margin-top:var(--space-8);padding:var(--space-6);border-left:3px solid var(--color-alpine-green);background:rgba(113,176,53,0.06);border-radius:var(--radius);">
-      <p style="font-weight:700;text-transform:uppercase;letter-spacing:0.1em;font-size:0.75rem;color:var(--color-alpine-green);margin-bottom:var(--space-3);">Peptide therapy notice</p>
+    <div style="margin-top:var(--space-8);padding:var(--space-6);border-left:3px solid var(--color-ironwood);background:var(--color-surface-2);border-radius:var(--radius);">
+      <p style="font-weight:700;text-transform:uppercase;letter-spacing:0.1em;font-size:0.75rem;color:var(--color-accent-text);margin-bottom:var(--space-3);">Peptide therapy notice</p>
       <p style="font-size:0.9rem;margin-bottom:var(--space-2);">Peptide therapy at Alpine is administered under qualified medical supervision. Every protocol is preceded by a screening consultation that reviews your health history, current medications, training goals, and eligibility.</p>
       <p style="font-size:0.9rem;margin-bottom:0;color:var(--color-text-muted);">Peptide therapy is not a substitute for medical advice or treatment of medical conditions. Consult your healthcare provider before starting any new therapy. Not all members are candidates — eligibility is determined during your consultation.</p>
     </div>
@@ -71,7 +72,7 @@ faqIds:
     <h2 class="section-heading">Alpine wellness vs standalone Denver studios.</h2>
     <p class="short-answer" style="max-width:70ch;">In the Denver metro, sauna, cold plunge, and compression are usually spread across three separate businesses at $149–$249/month each. Alpine bundles all three — plus peptide therapy and a full strength-and-conditioning gym — into one flat membership starting at {{ site.pricing.tiers[0].price }}/month.</p>
 
-    <div style="overflow-x:auto; margin-top:var(--space-6); border-radius:var(--radius); background:#0e0e0e; padding:var(--space-4);">
+    <div style="overflow-x:auto; margin-top:var(--space-6); border-radius:var(--radius); background:var(--color-surface);border:1px solid var(--color-border); padding:var(--space-4);">
       <table style="min-width:640px;">
         <thead>
           <tr>

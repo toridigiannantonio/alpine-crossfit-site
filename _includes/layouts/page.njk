@@ -15,6 +15,7 @@ schemaTypes: ["healthclub"]
 <section class="hero">
   <div class="container{% if heroWithImage %} hero-with-image{% endif %}">
     {% if heroWithImage %}<div class="hero-text">{% endif %}
+    {% if heroLogo %}<img class="hero-logo" src="{{ heroLogo.src }}" alt="{{ heroLogo.alt }}" width="{{ heroLogo.width or 377 }}" height="{{ heroLogo.height or 46 }}">{% endif %}
     {% if eyebrow %}<div class="hero-eyebrow">{{ eyebrow }}</div>{% endif %}
     <h1>{{ heading | safe }}</h1>
     {% if dek %}<p class="hero-dek">{{ dek | safe }}</p>{% endif %}
@@ -49,11 +50,11 @@ schemaTypes: ["healthclub"]
 <section class="section section-green">
   <div class="container text-center">
     <h2>{{ finalCta.heading }}</h2>
-    {% if finalCta.body %}<p class="hero-dek" style="margin-left:auto;margin-right:auto;color:rgba(0,0,0,0.8);">{{ finalCta.body | safe }}</p>{% endif %}
+    {% if finalCta.body %}<p class="hero-dek" style="margin-left:auto;margin-right:auto;">{{ finalCta.body | safe }}</p>{% endif %}
     <div class="hero-cta hero-cta-center" style="justify-content:center;">
       {%- for cta in finalCta.ctas %}
       <div class="cta-stack">
-        <a class="btn btn-lg" style="{{ cta.inlineStyle or 'background:#000;color:#fff;' }}" href="{{ cta.href }}">{{ cta.label }}</a>
+        <a class="btn btn-lg" style="{{ cta.inlineStyle or 'background:var(--color-grit-deep);color:var(--color-glacier);' }}" href="{{ cta.href }}">{{ cta.label }}</a>
       </div>
       {%- endfor %}
     </div>
