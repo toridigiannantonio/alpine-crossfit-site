@@ -1,0 +1,13 @@
+{# 8x / 12x monthly plans, rendered from site.pricing.classPlans.
+   Each sign-in = one class, open gym session, or wellness visit. #}
+<div class="grid grid-2">
+{%- for c in site.pricing.classPlans %}
+  <div class="card">
+    <h3>{{ c.name }}</h3>
+    <div class="price">{{ c.price }}<span class="price-unit">{{ c.unit }}</span></div>
+    <p class="eyebrow" style="margin-top:var(--space-4);margin-bottom:var(--space-2);">{{ c.visits }}</p>
+    <p>{{ c.bestFor }}</p>
+    <a class="btn btn-secondary" href="{{ c.ctaHref }}"{% if c.ctaExternal %} target="_blank" rel="noopener"{% endif %}>{{ c.ctaLabel }}</a>
+  </div>
+{%- endfor %}
+</div>

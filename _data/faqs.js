@@ -22,7 +22,7 @@
 import site from "./site.js";
 
 const p = Object.fromEntries(site.pricing.tiers.map((t) => [t.name, t.price]));
-const OPEN_GYM = p["Open Gym"]; // $69
+const OPEN_GYM = p["Open Gym"]; // $99
 const UNLIMITED = p["Unlimited"]; // $199
 const PT = p["Personal Training"]; // $999
 const DROP_IN = site.pricing.visitOptions.find((o) => o.name === "Drop-In Class").price; // $30
@@ -205,13 +205,13 @@ export const items = [
     id: "how-much",
     group: "pricing",
     q: "How much does Alpine cost?",
-    a: `Memberships range from ${OPEN_GYM} to ${PT} per month. Open Gym is ${OPEN_GYM}/month (facility access, wellness center, 24/7 entry). Unlimited is ${UNLIMITED}/month (everything in Open Gym plus unlimited CrossFit classes and Prime Vitality). Personal Training is ${PT}/month (everything in Unlimited plus 12 one-on-one sessions). All month-to-month, no contracts. <a href="/pricing/">See full pricing →</a>`,
+    a: `Memberships range from ${OPEN_GYM} to ${PT} per month. Open Gym is ${OPEN_GYM}/month (facility access, 2 classes a month, wellness center, 24/7 entry). For a set number of visits, ${site.pricing.classPlans.map((c) => `${c.name} is ${c.price}/month`).join(" and ")}, where each sign-in is one class, open gym session, or wellness visit (no 24/7 access). Unlimited is ${UNLIMITED}/month (everything in Open Gym plus unlimited CrossFit classes and Prime Vitality). Personal Training is ${PT}/month (everything in Unlimited plus 12 one-on-one sessions). All month-to-month, no contracts. <a href="/pricing/">See full pricing →</a>`,
   },
   {
     id: "which-membership",
     group: "pricing",
     q: "Which membership should I pick?",
-    a: `Pick by how you'll actually train. Facility and wellness center without coached classes: Open Gym, ${OPEN_GYM}/month. Training 3+ times a week in coached classes: Unlimited, ${UNLIMITED}/month — roughly two-thirds of members pick this. A specific performance goal: Personal Training, ${PT}/month. Traveling or trying us out: a drop-in (${DROP_IN}) or week pass (${WEEK}). Everything is month-to-month, so upgrading later takes about 30 seconds.`,
+    a: `Pick by how you'll actually train. Mostly training on your own, with a class now and then: Open Gym, ${OPEN_GYM}/month, includes 2 classes a month. Training 3+ times a week in coached classes: Unlimited, ${UNLIMITED}/month — roughly two-thirds of members pick this. A specific performance goal: Personal Training, ${PT}/month. Traveling or trying us out: a drop-in (${DROP_IN}) or week pass (${WEEK}). Everything is month-to-month, so upgrading later takes about 30 seconds.`,
   },
   {
     id: "unlimited-worth-it",
@@ -223,7 +223,7 @@ export const items = [
     id: "open-gym-included",
     group: "pricing",
     q: `What's included in the ${OPEN_GYM} Open Gym tier?`,
-    a: `Facility access, the wellness center (${WELLNESS}), and 24/7 entry. CrossFit classes and Prime Vitality are not included at this tier — those start at Unlimited.`,
+    a: `Facility access, 2 classes a month (CrossFit, Hybrid, Strong AF, Downshift, and more), the wellness center (${WELLNESS}), and 24/7 entry. Unlimited classes and Prime Vitality start at Unlimited.`,
   },
   {
     id: "pt-tier",
@@ -441,7 +441,7 @@ export const items = [
     id: "wellness-without-crossfit",
     group: "wellness",
     q: "Can I use the wellness center without doing CrossFit?",
-    a: `Yes. The ${OPEN_GYM}/month Open Gym tier is exactly that — facility access and the wellness center, no coached classes. Add classes whenever you want.`,
+    a: `Yes. The ${OPEN_GYM}/month Open Gym tier is exactly that — facility access and the wellness center, plus 2 classes a month if you want them.`,
   },
   {
     id: "pt-vs-classes",

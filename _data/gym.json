@@ -35,18 +35,19 @@
   "tiers": [
     {
       "name": "Open Gym",
-      "price": "$69",
-      "amount": "69",
+      "price": "$99",
+      "amount": "99",
       "unit": "/month",
       "featured": false,
-      "summary": "Facility + wellness center, train on your own.",
+      "summary": "Facility + wellness center, plus 2 classes a month.",
       "features": [
         "Facility access",
+        "2 classes/month (CrossFit, Hybrid, Strong AF, Downshift & more)",
         "Wellness center",
         "24/7 facility access"
       ],
       "excluded": [
-        "CrossFit classes",
+        "Unlimited classes",
         "Prime Vitality (55+)",
         "Personal training"
       ],
@@ -91,6 +92,28 @@
         "24/7 facility access"
       ],
       "excluded": [],
+      "ctaLabel": "Book a free intro",
+      "ctaHref": "/free-intro/"
+    }
+  ],
+  "classPlans": [
+    {
+      "name": "8x a Month",
+      "price": "$160",
+      "amount": "160",
+      "unit": "/month",
+      "visits": "8 sign-ins a month",
+      "bestFor": "Training about twice a week. Each sign-in covers one class, one open gym session, or one wellness center visit. Recurring monthly. No 24/7 access.",
+      "ctaLabel": "Book a free intro",
+      "ctaHref": "/free-intro/"
+    },
+    {
+      "name": "12x a Month",
+      "price": "$180",
+      "amount": "180",
+      "unit": "/month",
+      "visits": "12 sign-ins a month",
+      "bestFor": "Training about three times a week. Each sign-in covers one class, one open gym session, or one wellness center visit. Recurring monthly. No 24/7 access.",
       "ctaLabel": "Book a free intro",
       "ctaHref": "/free-intro/"
     }

@@ -60,7 +60,7 @@ faqIds:
   <div class="container container-narrow">
     <span class="eyebrow">No CrossFit required</span>
     <h2>Can you use the wellness center without doing CrossFit?</h2>
-    <p>Yes. The wellness center is included with <em>every</em> Alpine membership — and that starts with the <a href="/pricing/">{{ site.pricing.tiers[0].price }}/month Open Gym tier</a>, which covers facility access, the wellness center, and 24/7 entry. You never have to take a CrossFit class to use the sauna, cold plunges, or compression boots.</p>
+    <p>Yes. The wellness center is included with <em>every</em> Alpine membership — and that starts with the <a href="/pricing/">{{ site.pricing.tiers[0].price }}/month Open Gym tier</a>, which covers facility access, the wellness center, 24/7 entry, and 2 classes a month. You never have to take a CrossFit class to use the sauna, cold plunges, or compression boots.</p>
     <p>That makes Alpine one of the few places in Wheat Ridge where sauna and cold plunge come bundled into a single flat monthly membership — no per-session booking, no per-visit fee.</p>
   </div>
 </section>
@@ -87,7 +87,7 @@ faqIds:
           <tr><td>Cold plunge</td><td>✓</td><td>✓</td><td>—</td><td>Sometimes</td></tr>
           <tr><td>Compression boots</td><td>✓</td><td>✓</td><td>—</td><td>Sometimes (add-on)</td></tr>
           <tr><td>Peptide therapy</td><td>✓ (screened)</td><td>✓ (screened)</td><td>—</td><td>Sometimes (add-on)</td></tr>
-          <tr><td>CrossFit + coached classes</td><td>—</td><td>✓ unlimited</td><td>—</td><td>—</td></tr>
+          <tr><td>CrossFit + coached classes</td><td>2/month</td><td>✓ unlimited</td><td>—</td><td>—</td></tr>
           <tr><td>24/7 facility access</td><td>✓</td><td>✓</td><td>—</td><td>—</td></tr>
           <tr><td>Per-visit booking</td><td>Not required</td><td>Not required</td><td>Usually required</td><td>Usually required</td></tr>
           <tr><td>Month-to-month, no contract</td><td>✓</td><td>✓</td><td>Varies</td><td>Varies</td></tr>

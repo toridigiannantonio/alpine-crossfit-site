@@ -132,6 +132,11 @@ export default {
     range: `${gym.tiers[0].price}–${gym.tiers[gym.tiers.length - 1].price}/month`,
     tiers: gym.tiers,
 
+    // 8x and 12x monthly plans. Each sign-in = one class, open gym session,
+    // or wellness visit. No 24/7 access, so they're kept out of `tiers`
+    // (tiers promise wellness + 24/7). Rendered by class-plans.njk.
+    classPlans: gym.classPlans,
+
     // Ways in that aren't a monthly membership. Rendered by the
     // visit-options partial on /pricing/#visiting.
     visitOptions: gym.visitOptions,
