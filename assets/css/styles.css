@@ -113,7 +113,7 @@
   --color-border: #d6d7d7;
   --color-link: var(--color-ponderosa);
   --color-link-hover: var(--color-ironwood);
-  --color-accent-text: var(--color-ironwood);
+  --color-accent-text: var(--color-ponderosa);
   --color-accent-display: var(--color-ponderosa);
   --color-star: var(--color-ironwood);
   --color-accent: var(--color-ponderosa);
@@ -1671,3 +1671,47 @@ main img { max-width: 100%; height: auto; }
 .announcement-banner { background: var(--color-ponderosa) !important; color: var(--color-glacier) !important; }
 .announcement-banner a, .announcement-banner strong { color: var(--color-glacier) !important; }
 .site-header { border-bottom-color: rgba(243, 244, 244, 0.12); }
+
+/* More Ponderosa: primary buttons, footer headings and card edges on dark
+   sections lead with the brand green; Ironwood stays for small labels,
+   the "most popular" tag and the CTA band. */
+:root {
+  --color-accent: var(--color-ponderosa);
+  --color-accent-hover: #44661a;
+  --color-on-accent: var(--color-glacier);
+  --color-rule: var(--color-ponderosa-light);
+  --color-link: var(--color-ponderosa-light);
+}
+.btn-primary { border-color: rgba(181, 207, 139, 0.45); }
+.btn-primary:hover { border-color: var(--color-ponderosa-light); }
+.section-forest {
+  --color-accent: var(--color-glacier);
+  --color-accent-hover: #ffffff;
+  --color-on-accent: var(--color-ponderosa);
+}
+.section-forest .tile { background: rgba(0, 0, 0, 0.18); border-color: rgba(243, 244, 244, 0.18); border-left-color: var(--color-ponderosa-pale); }
+.section-forest .tile-note { color: var(--color-text-muted); }
+.section-green .btn-primary, .section:not(.section-dark):not(.section-green):not(.section-forest) .btn-primary { border-color: transparent; }
+.footer-grid h4 { color: var(--color-ponderosa-light); }
+.sticky-cta { border-top-color: var(--color-ponderosa-light); }
+.hero-eyebrow { color: var(--color-ponderosa-light); }
+
+/* Accent swap: the headline accent word goes green; small labels and card
+   edges go Dune. Buttons and the big bands stay Ponderosa. */
+:root {
+  --color-hero-accent: var(--color-ponderosa-light);  /* 8.5:1 on the hero */
+  --color-accent-text: var(--color-dune-light);       /* 5.2:1 on Grit */
+  --color-rule: var(--color-dune);
+  --color-dune-deep: #7d5f38;                          /* Dune as text on Glacier (5.3:1) */
+}
+.section:not(.section-dark):not(.section-green):not(.section-forest):not(.section-blue),
+.scheme-light {
+  --color-accent-text: var(--color-dune-deep);
+  --color-rule: var(--color-dune);
+}
+.section-forest {
+  --color-accent-text: var(--color-dune-pale);         /* 5.3:1 on Ponderosa */
+  --color-rule: var(--color-dune);
+}
+.hero-eyebrow { color: var(--color-dune-light); }
+.section-forest .tile { border-left-color: var(--color-dune); }
