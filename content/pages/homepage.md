@@ -10,6 +10,8 @@ ogImage: "https://alpinecrossfit.com/assets/img/hero-alpine-wall.jpg"
 ogType: "website"
 loadImagesScript: true
 schemaTypes: ["website", "organization", "healthclub"]
+announcement:
+  text: "New Class Offerings Coming Soon, Check Back Late October!"
 hero:
   eyebrow: "Wheat Ridge, CO"
   heading: "CrossFit for <span class=\"accent\">every body</span> in Wheat Ridge."
