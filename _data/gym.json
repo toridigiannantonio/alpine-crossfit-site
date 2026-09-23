@@ -73,8 +73,10 @@
       "excluded": [
         "Personal training"
       ],
-      "ctaLabel": "Book a free intro",
-      "ctaHref": "/free-intro/"
+      "ctaLabel": "Contact us to join",
+      "ctaHref": "/pricing/#contact",
+      "altCtaLabel": "Or start with a free intro →",
+      "altCtaHref": "/free-intro/"
     },
     {
       "name": "Personal Training",
@@ -92,8 +94,10 @@
         "24/7 facility access"
       ],
       "excluded": [],
-      "ctaLabel": "Book a free intro",
-      "ctaHref": "/free-intro/"
+      "ctaLabel": "Contact us to join",
+      "ctaHref": "/pricing/#contact",
+      "altCtaLabel": "Or start with a free intro →",
+      "altCtaHref": "/free-intro/"
     }
   ],
   "classPlans": [
@@ -104,8 +108,8 @@
       "unit": "/month",
       "visits": "8 sign-ins a month",
       "bestFor": "Training about twice a week. Each sign-in covers one class, one open gym session, or one wellness center visit. Recurring monthly. No 24/7 access.",
-      "ctaLabel": "Book a free intro",
-      "ctaHref": "/free-intro/"
+      "ctaLabel": "Contact us to join",
+      "ctaHref": "/pricing/#contact"
     },
     {
       "name": "12x a Month",
@@ -114,8 +118,8 @@
       "unit": "/month",
       "visits": "12 sign-ins a month",
       "bestFor": "Training about three times a week. Each sign-in covers one class, one open gym session, or one wellness center visit. Recurring monthly. No 24/7 access.",
-      "ctaLabel": "Book a free intro",
-      "ctaHref": "/free-intro/"
+      "ctaLabel": "Contact us to join",
+      "ctaHref": "/pricing/#contact"
     }
   ],
   "visitOptions": [
