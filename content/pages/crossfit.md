@@ -2,15 +2,15 @@
 layout: layouts/page.njk
 permalink: /crossfit/
 title: "CrossFit Classes in Wheat Ridge — Alpine CrossFit"
-description: "Coach-led CrossFit classes in Wheat Ridge — every class led by a CF-L2 professional, capped at 15, programmed in-house by a 2× CrossFit Games Semifinalist. New to CrossFit? Start with Foundations. Free intro."
+description: "Coach-led CrossFit classes in Wheat Ridge — led by experienced coaches, capped at 15, programmed in-house by a 2× CrossFit Games Semifinalist. New to CrossFit? Start with Foundations. Free intro."
 canonical: "https://alpinecrossfit.com/crossfit/"
 eyebrow: "CrossFit"
 heading: "Coach-led CrossFit classes in <span class=\"accent\">Wheat Ridge</span>."
-dek: "Every class is led by a CF-L2 certified coach, capped at 15 athletes, and programmed in-house. Beginners and lifelong athletes train the same workout, scaled to their version of hard."
+dek: "Every class is led by an experienced coach, capped at 15 athletes, and programmed in-house. Beginners and lifelong athletes train the same workout, scaled to their version of hard."
 heroCtas:
   - { label: "Book a free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
   - { label: "Drop in — {{ site.pricing.visitOptions[1].price }}", href: "{{ site.pricing.visitOptions[1].ctaHref }}", style: "btn-primary btn-lg" }
-trustStrip: "<span>Every class CF-L2 coached</span><span class=\"sep\">·</span><span>Capped at 15 athletes</span><span class=\"sep\">·</span><span>Scaled to every level</span>"
+trustStrip: "<span>Experienced coaches</span><span class=\"sep\">·</span><span>Capped at 15 athletes</span><span class=\"sep\">·</span><span>Scaled to every level</span>"
 faqEyebrow: "Common questions"
 faqHeading: "CrossFit and beginner questions."
 faqIds:
@@ -51,7 +51,7 @@ finalCta:
       <li><strong>Workout of the Day (20 min):</strong> Timed or scored metabolic conditioning.</li>
       <li><strong>Cool-down (10 min):</strong> Recovery breathing, mobility, and accessory work.</li>
     </ul>
-    <p>A CF-L2 certified coach is on the floor the entire hour, and every class is capped at <strong>15 athletes</strong>. Scaling — load, range of motion, complexity — happens in real time. Beginners aren't held back and advanced athletes aren't held back; everyone trains the same workout, scaled to their version of hard.</p>
+    <p>A coach is on the floor the entire hour, and every class is capped at <strong>15 athletes</strong>. Scaling — load, range of motion, complexity — happens in real time. Beginners aren't held back and advanced athletes aren't held back; everyone trains the same workout, scaled to their version of hard.</p>
   </div>
 </section>
 
@@ -74,7 +74,7 @@ finalCta:
     <ol class="feature-list" style="list-style-type: decimal;">
       <li><strong>Free No Sweat Intro.</strong> Thirty minutes with a coach. Tour the gym, talk through your goals, leave with a recommendation. No workout, no cost, no pressure.</li>
       <li><strong>Foundations on-ramp.</strong> Private one-on-one sessions teaching the core movements — squat, deadlift, press, pull, carry — before you join a group class. Typically three to five sessions; your coach calls it based on movement quality, not a calendar.</li>
-      <li><strong>Group classes.</strong> Join the regular schedule, with a CF-L2 coach in every class.</li>
+      <li><strong>Group classes.</strong> Join the regular schedule, led by an experienced coach.</li>
     </ol>
     <p class="text-muted mt-6">Group classes work better when you already know the basics: you move with confidence, you understand the coach's cues, and you spend your energy on effort instead of on "what am I doing?"</p>
   </div>
@@ -86,7 +86,7 @@ finalCta:
     <span class="eyebrow">Your first visit</span>
     <h2>What to expect when you walk in.</h2>
     <p>Which visit you're booking changes what the day looks like, so it's worth knowing the difference before you arrive.</p>
-    <p>A <strong>free No Sweat Intro</strong> is a conversation, not a class. Thirty minutes with a CF-L2 coach: you'll tour the gym, talk through your goals and training history, and leave with a recommendation. You won't work out, so there's nothing to bring and nothing to be nervous about. It also includes time to sit and watch a class in progress if you'd like.</p>
+    <p>A <strong>free No Sweat Intro</strong> is a conversation, not a class. Thirty minutes with one of our coaches: you'll tour the gym, talk through your goals and training history, and leave with a recommendation. You won't work out, so there's nothing to bring and nothing to be nervous about. It also includes time to sit and watch a class in progress if you'd like.</p>
     <p>A <strong>drop-in</strong> is a real class. You'll train alongside members in a coached session, scaled to whatever you can do that day. Drop-ins are {{ site.pricing.visitOptions[1].price }} and you can <a href="/pricing/#visiting">book and pay online</a> before you arrive.</p>
     <p>Either way: workout clothes, athletic shoes, a water bottle. We provide everything else — towels, sanitizing spray, movement modifications, and coaching.</p>
     <p class="text-muted mt-6">Address, hours, parking, and drive times are on the <a href="/visit/">Location &amp; Hours</a> page.</p>
