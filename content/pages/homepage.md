@@ -12,6 +12,8 @@ loadImagesScript: true
 schemaTypes: ["website", "organization", "healthclub"]
 announcement:
   text: "New Class Offerings Coming Soon, Check Back Late October!"
+  href: "/blog/whats-new-at-alpine-fall-2026/"
+  linkLabel: "See what's new →"
 hero:
   eyebrow: "Wheat Ridge, CO"
   heading: "CrossFit for <span class=\"accent\">every body</span> in Wheat Ridge."
