@@ -106,7 +106,7 @@ export default {
         "<strong>Saturday:</strong> 8:00, 9:00 AM",
         "<strong>Sunday:</strong> 9:00 AM",
       ],
-      note: "Every class is capped at 15 athletes and coached by a CF-L2 certified professional.",
+      note: "Every class is capped at 15 athletes and led by an experienced coach.",
     },
     {
       heading: "Prime Vitality (55+)",
