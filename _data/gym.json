@@ -73,8 +73,9 @@
       "excluded": [
         "Personal training"
       ],
-      "ctaLabel": "Contact us to join",
-      "ctaHref": "/pricing/#contact",
+      "ctaLabel": "Buy Unlimited",
+      "ctaHref": "https://app.chalkitpro.com/gymProductLink/754/prod_Rppv33nN4MD3eP/8592/",
+      "ctaExternal": true,
       "altCtaLabel": "Or start with a free intro →",
       "altCtaHref": "/free-intro/"
     },
@@ -108,8 +109,9 @@
       "unit": "/month",
       "visits": "8 sign-ins a month",
       "bestFor": "Training about twice a week. Each sign-in covers one class, one open gym session, or one wellness center visit. Recurring monthly. No 24/7 access.",
-      "ctaLabel": "Contact us to join",
-      "ctaHref": "/pricing/#contact"
+      "ctaLabel": "Buy 8x a Month",
+      "ctaHref": "https://app.chalkitpro.com/gymProductLink/754/prod_Rpq6SJsfLmOyhE/8596/",
+      "ctaExternal": true
     },
     {
       "name": "12x a Month",
@@ -118,8 +120,9 @@
       "unit": "/month",
       "visits": "12 sign-ins a month",
       "bestFor": "Training about three times a week. Each sign-in covers one class, one open gym session, or one wellness center visit. Recurring monthly. No 24/7 access.",
-      "ctaLabel": "Contact us to join",
-      "ctaHref": "/pricing/#contact"
+      "ctaLabel": "Buy 12x a Month",
+      "ctaHref": "https://app.chalkitpro.com/gymProductLink/754/prod_Rpq7ZHIClwi4Xe/8597/",
+      "ctaExternal": true
     }
   ],
   "visitOptions": [
