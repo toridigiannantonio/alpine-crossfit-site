@@ -114,7 +114,7 @@ faqIds:
   <div class="container container-narrow">
     <span class="eyebrow">At Alpine</span>
     <h2>How we train for HYROX.</h2>
-    <p>HYROX training at Alpine combines four elements, coached by CF-L2 trainers and scaled to your level:</p>
+    <p>HYROX training at Alpine combines four elements, coached by experienced endurance and strength athletes and scaled to your level:</p>
     <ul class="feature-list">
       <li><strong>Strength work</strong> — the barbell base and movement prep that powers the sleds, carries, and lunges.</li>
       <li><strong>Conditioning</strong> — high-intensity metabolic work that builds the engine for back-to-back runs and stations.</li>
