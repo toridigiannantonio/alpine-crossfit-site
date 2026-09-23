@@ -95,10 +95,8 @@
         "24/7 facility access"
       ],
       "excluded": [],
-      "ctaLabel": "Contact us to join",
-      "ctaHref": "/pricing/#contact",
-      "altCtaLabel": "Or start with a free intro →",
-      "altCtaHref": "/free-intro/"
+      "ctaLabel": "Contact Us",
+      "ctaHref": "/free-intro/"
     }
   ],
   "classPlans": [
