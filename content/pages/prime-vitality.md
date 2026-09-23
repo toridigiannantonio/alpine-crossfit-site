@@ -10,7 +10,7 @@ dek: "Prime Vitality is Alpine's Monday, Wednesday, Friday 10 AM class — barbe
 heroCtas:
   - { label: "Book a free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
   - { label: "See membership pricing", href: "/pricing/", style: "btn-secondary btn-lg" }
-trustStrip: "<span>Mon · Wed · Fri at 10 AM</span><span class=\"sep\">·</span><span>CF-L2 coached</span><span class=\"sep\">·</span><span>Included with Unlimited</span>"
+trustStrip: "<span>Mon · Wed · Fri at 10 AM</span><span class=\"sep\">·</span><span>Coach-led</span><span class=\"sep\">·</span><span>Included with Unlimited</span>"
 extraSchemas:
   - {
       "@context": "https://schema.org",
