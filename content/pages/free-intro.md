@@ -2,14 +2,14 @@
 layout: layouts/page.njk
 permalink: /free-intro/
 title: "Free No Sweat Intro — Alpine CrossFit in Wheat Ridge"
-description: "Your free 30-minute intro with a CF-L2 coach at Alpine CrossFit, Wheat Ridge. Tour, conversation, recommendation. Zero cost, zero pressure."
+description: "Your free 30-minute intro with an Alpine coach in Wheat Ridge. Tour, conversation, recommendation. Zero cost, zero pressure."
 canonical: "https://alpinecrossfit.com/free-intro/"
 eyebrow: "Free · 30 Minutes · No Pressure"
 heading: "Your free No Sweat Intro."
-dek: "A free 30-minute conversation with a CF-L2 coach at Alpine CrossFit in Wheat Ridge, Colorado. You'll tour the gym, talk through your goals, and leave with a clear recommendation — no class, no pressure, and no cost."
+dek: "A free 30-minute conversation with an Alpine CrossFit coach in Wheat Ridge, Colorado. You'll tour the gym, talk through your goals, and leave with a clear recommendation — no class, no pressure, and no cost."
 heroCtas:
   - { label: "Book a free intro", href: "#book-form", id: "open-popup", style: "btn-primary btn-lg" }
-trustStrip: "<span class=\"stars\">★★★★★</span><span>5.0 from 180 Google reviews</span><span class=\"sep\">·</span><span>3 CF-L2 coaches</span><span class=\"sep\">·</span><span>Free, and you don't have to join</span>"
+trustStrip: "<span class=\"stars\">★★★★★</span><span>5.0 from 180 Google reviews</span><span class=\"sep\">·</span><span>10 to 15+ years coaching</span><span class=\"sep\">·</span><span>Free, and you don't have to join</span>"
 extraSchemas:
   - {
       "@context": "https://schema.org",
@@ -26,7 +26,7 @@ extraSchemas:
       "name": "Free No Sweat Intro",
       "alternateName": "Free CrossFit consultation and gym tour",
       "serviceType": "Fitness consultation",
-      "description": "A free 30-minute conversation with a CF-L2 coach at Alpine CrossFit in Wheat Ridge. Includes a gym tour, discussion of goals and training history, and a personalized recommendation for your best starting point. No workout, no pressure, no cost.",
+      "description": "A free 30-minute conversation with an Alpine CrossFit coach in Wheat Ridge. Includes a gym tour, discussion of goals and training history, and a personalized recommendation for your best starting point. No workout, no pressure, no cost.",
       "provider": { "@id": "https://alpinecrossfit.com/#healthclub" },
       "areaServed": [
         { "@type": "City", "name": "Wheat Ridge" },
@@ -59,7 +59,7 @@ finalCta:
   <div class="container container-narrow">
     <span class="eyebrow">What it is</span>
     <h2>A conversation. Not a class.</h2>
-    <p>The No Sweat Intro is exactly what it sounds like — no workout, no physical assessment, no jumping into a class you don't yet know the rules of. It's 30 minutes of conversation with one of our CF-L2 coaches, in the gym, at a time that works for you.</p>
+    <p>The No Sweat Intro is exactly what it sounds like — no workout, no physical assessment, no jumping into a class you don't yet know the rules of. It's 30 minutes of conversation with one of our coaches, in the gym, at a time that works for you.</p>
     <p>You walk in. You get shown around. You sit down and talk through:</p>
     <ul class="feature-list">
       <li>What you're looking to change about your fitness, your body, or your routine</li>
