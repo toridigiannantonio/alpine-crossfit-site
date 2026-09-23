@@ -1,8 +1,8 @@
 ---
 title: CrossFit Coaches in Wheat Ridge, CO | Alpine CrossFit
 description: Meet Alpine CrossFit's coaches in Wheat Ridge, near Denver.
-  Collaborative in-house programming, CSCS and CF-L2 certified staff, Division I
-  strength and conditioning experience, and former collegiate athletes.
+  Collaborative in-house programming, coaching rooted in years of CrossFit,
+  Division I coaching, Division I athletes, yoga, and clinical expertise.
 eyebrow: Coaches & Owners
 heading: The people <span class="accent">actually coaching</span> you.
 dek: Experienced coaches who build the programming together, hold
@@ -96,12 +96,12 @@ extraSchemas:
         <p>Every workout at our Wheat Ridge gym is written in-house by coaches who compete, coach, and train on the floor with you. No franchise feed, no subscription template. It gets built, tested, and refined as a team.</p>
       </div>
       <div class="card">
-        <h3>Certified past the minimum.</h3>
-        <p>A CrossFit Level 1 is the entry ticket to coach. Our staff goes further, with advanced CrossFit credentials and nationally recognized strength and conditioning certifications on top.</p>
+        <h3>Experience first.</h3>
+        <p>Our coaches have spent years inside CrossFit as athletes, coaches, and gym owners, from the Open to Regionals, Semifinals, and Quarterfinals. That experience shapes every class and every program.</p>
       </div>
       <div class="card">
-        <h3>Collegiate coaching roots.</h3>
-        <p>Our staff includes Division I strength and conditioning experience across more than a dozen sports, and former collegiate athletes in rugby, basketball, and softball.</p>
+        <h3>Beyond CrossFit.</h3>
+        <p>Division I strength and conditioning across more than a dozen sports, former Division I and collegiate athletes, registered yoga teachers, and licensed clinicians. People who stay active in and outside the gym.</p>
       </div>
     </div>
   </div>
@@ -110,28 +110,29 @@ extraSchemas:
 <section class="section section-dark">
   <div class="container">
     <span class="eyebrow">Across the staff</span>
-    <h2 class="section-heading">Certifications and experience behind every class.</h2>
+    <h2 class="section-heading">The experience behind the coaching.</h2>
     <div class="grid grid-2 mt-8">
+      <div class="card">
+        <h3>Coaching and competition</h3>
+        <ul>
+          <li>5+ years as a Division I strength and conditioning director: softball, soccer, basketball, track &amp; field, volleyball, and more</li>
+          <li>Division I basketball, plus collegiate softball and rugby</li>
+          <li>Ultrarunners, endurance athletes, and lifelong multi-sport competitors</li>
+          <li>CrossFit Games Regionals, Semifinals, and Quarterfinals qualifiers</li>
+          <li>Masters Semifinalist and Legends Masters gold medalist</li>
+          <li>10 to 15+ years of coaching per coach on the floor</li>
+        </ul>
+      </div>
       <div class="card">
         <h3>Certifications</h3>
         <ul>
           <li>Certified Strength and Conditioning Specialist (CSCS, NSCA)</li>
           <li>Strength and Conditioning Coach Certified (SCCC, CSCCa)</li>
-          <li>CrossFit Level 2 Trainer (CF-L2)</li>
+          <li>Advanced CrossFit trainer credentials</li>
           <li>CrossFit Programming, Running, and Nutrition courses</li>
           <li>Certified Mental Performance Consultant (CMPC)</li>
           <li>Licensed Clinical Social Worker (LCSW)</li>
           <li>Registered Yoga Teacher (RYT, Yoga Alliance)</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Coaching and competition</h3>
-        <ul>
-          <li>5+ years directing Division I sports performance: softball, soccer, basketball, track &amp; field, volleyball, and more</li>
-          <li>Collegiate athletes in rugby, basketball, and softball</li>
-          <li>CrossFit Games Regionals, Semifinals, and Quarterfinals qualifiers</li>
-          <li>Masters Semifinalist and Legends Masters gold medalist</li>
-          <li>10 to 15+ years of coaching per coach on the floor</li>
         </ul>
       </div>
     </div>
@@ -141,7 +142,7 @@ extraSchemas:
 <section class="section">
   <div class="container">
     <span class="eyebrow">The coaches</span>
-    <h2 class="section-heading">Experienced CrossFit coaches in every class.</h2>
+    <h2 class="section-heading">Experienced CrossFit coaches.</h2>
     <div class="grid grid-3">
       <div class="card">
         <h3>Lisa Arcangel</h3>
