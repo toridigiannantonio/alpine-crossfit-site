@@ -24,7 +24,7 @@ finalCta:
   heading: "Ready to get stronger?"
   body: "Book a free No Sweat Intro — 30 minutes with a coach to talk through your goals, see the gym, and find the right way in."
   ctas:
-    - { label: "Book a free intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Book a free intro", href: "/free-intro/", inlineStyle: "background:var(--color-grit-deep);color:var(--color-glacier);" }
 schemaTypes: ["healthclub", "faq"]
 faqEyebrow: "Common questions"
 faqHeading: "Prime Vitality questions."

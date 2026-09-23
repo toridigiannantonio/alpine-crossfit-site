@@ -24,7 +24,7 @@ finalCta:
   heading: "Ready to start?"
   body: "Book a free consultation — 30 minutes with a coach to talk through your goals and see if personal training is the right fit."
   ctas:
-    - { label: "Schedule a consultation", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Schedule a consultation", href: "/free-intro/", inlineStyle: "background:var(--color-grit-deep);color:var(--color-glacier);" }
 schemaTypes: ["healthclub", "faq"]
 faqEyebrow: "Common questions"
 faqHeading: "Personal training questions."

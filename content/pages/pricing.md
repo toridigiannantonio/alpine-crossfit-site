@@ -40,7 +40,7 @@ finalCta:
   heading: "Still have questions?"
   body: "The fastest way to figure out if Alpine fits is to come meet a coach. Free, 30 minutes, no pressure."
   ctas:
-    - { label: "Book a free intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Book a free intro", href: "/free-intro/", inlineStyle: "background:var(--color-grit-deep);color:var(--color-glacier);" }
 ---
 
 <section class="section section-dark">

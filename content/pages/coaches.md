@@ -4,7 +4,7 @@ description: Alpine is owned by April DiGiannantonio (CSCS, SCCC, former
   Division I Director of Sports Performance) and Tori DiGiannantonio (LCSW,
   CMPC). Programming by Megan Markee (CSCS). Three CF-L2
   coaches run every class.
-eyebrow: Coaches &amp; Owners
+eyebrow: Coaches & Owners
 heading: The people <span class="accent">actually coaching</span> you.
 dek: Two CSCS-certified professionals write the programming, a former
   Division I Director of Sports Performance owns the gym, and a CF-L2 coach
@@ -94,19 +94,19 @@ extraSchemas:
     <div class="grid grid-3">
       <div class="card">
         <h3>Lisa Arcangel</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-alpine-green);">Coach · CF-L2 · 15+ years coaching</p>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · CF-L2 · 15+ years coaching</p>
         <p>CrossFit Games Masters Semifinalist. A lifelong athlete who has competed in the CrossFit Open every year since 2012. Former collegiate basketball and softball player.</p>
         <a href="/coaches/lisa-arcangel/">Learn about Lisa →</a>
       </div>
       <div class="card">
         <h3>Dean Weeks</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-alpine-green);">Coach · CF-L2 · 10+ years training</p>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · CF-L2 · 10+ years training</p>
         <p>A decade of CrossFit training and active competition. Known at Alpine for empathy and an unparalleled ability to motivate athletes at every experience level.</p>
         <a href="/coaches/dean-weeks/">Learn about Dean →</a>
       </div>
       <div class="card">
         <h3>Liz Kushner</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-alpine-green);">Coach · CF-L2 · 10+ years coaching</p>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · CF-L2 · 10+ years coaching</p>
         <p>Decade of coaching with a strength-and-barbell focus. 2026 Quarterfinals qualifier. Alpine's resident class clown — the coach who makes every class memorable.</p>
         <a href="/coaches/liz-kushner/">Learn about Liz →</a>
       </div>
@@ -122,13 +122,13 @@ extraSchemas:
     <div class="grid grid-2 mt-8">
       <div class="card">
         <h3>April DiGiannantonio</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-alpine-green);">Owner · CSCS · SCCC · Former D1 Director of Sports Performance</p>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Owner · CSCS · SCCC · Former D1 Director of Sports Performance</p>
         <p>Ten-plus years in fitness and sports performance. Has owned CrossFit gyms on and off since 2013 and competed at CrossFit Games Regionals, individually and on a team. Spent over five years coaching Division I athletes across a dozen sports. Programs Alpine's in-house training alongside Megan Markee.</p>
         <a href="/coaches/april-digiannantonio/">Learn about April →</a>
       </div>
       <div class="card">
         <h3>Tori DiGiannantonio</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-alpine-green);">Owner · LCSW · CMPC · Ultrarunner · Yoga Instructor</p>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Owner · LCSW · CMPC · Ultrarunner · Yoga Instructor</p>
         <p>Therapist and mental performance coach. Lifelong athlete and ultrarunner. Former firefighter and paramedic. Brings yoga, mental performance work, and sound baths to Alpine's programming.</p>
         <a href="/coaches/tori-digiannantonio/">Learn about Tori →</a>
       </div>
@@ -143,7 +143,7 @@ extraSchemas:
     <div class="grid grid-2 mt-8">
       <div class="card">
         <h3>Megan Markee</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-alpine-green);">Programming · CSCS · CF-L1 · 2× Semifinalist · 2× Regionals</p>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Programming · CSCS · CF-L1 · 2× Semifinalist · 2× Regionals</p>
         <p>Designs every workout Alpine members follow, in collaboration with owner April. Twice qualified for the CrossFit Games Semifinals, and twice for CrossFit Games Regionals on a team. Started CrossFit in 2011.</p>
         <a href="/coaches/megan-markee/">Learn about Megan →</a>
       </div>
@@ -151,13 +151,15 @@ extraSchemas:
   </div>
 </section>
 
+<section class="team-photo" aria-label="The Alpine coaching team">
+  <img src="/assets/img/uploads/498337266_18500679697049950_2919730149552376595_n.jpg" alt="The Alpine coaching team" loading="lazy">
+</section>
+
 <section class="section section-green">
   <div class="container text-center">
     <h2>Come train here.</h2>
     <div class="hero-cta" style="justify-content:center;">
-      <a class="btn btn-lg" style="background:#000;color:#fff;" href="/free-intro/">Book a free intro</a> <a class="btn btn-lg" style="background:transparent;color:#000;border-color:#000;" href="/pricing/#visiting">Drop-In</a>
+      <a class="btn btn-lg" style="background:var(--color-grit-deep);color:var(--color-glacier);" href="/free-intro/">Book a free intro</a> <a class="btn btn-lg" style="background:transparent;color:var(--color-grit-deep);border-color:var(--color-grit-deep);" href="/pricing/#visiting">Drop-In</a>
     </div>
   </div>
 </section>
-
-![](/assets/img/uploads/498337266_18500679697049950_2919730149552376595_n.jpg)

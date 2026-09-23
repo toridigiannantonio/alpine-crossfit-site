@@ -37,8 +37,8 @@ finalCta:
   heading: "Ready to train for HYROX?"
   body: "Come do a HYROX-prep class. It's {{ site.pricing.visitOptions[1].price }} for a single class — no membership, no commitment. New to CrossFit entirely? Start with a free No Sweat Intro instead."
   ctas:
-    - { label: "Drop in — {{ site.pricing.visitOptions[1].price }}", href: "{{ site.pricing.visitOptions[1].ctaHref }}", inlineStyle: "background:#000;color:#fff;" }
-    - { label: "Book a free intro", href: "/free-intro/", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+    - { label: "Drop in — {{ site.pricing.visitOptions[1].price }}", href: "{{ site.pricing.visitOptions[1].ctaHref }}", inlineStyle: "background:var(--color-grit-deep);color:var(--color-glacier);" }
+    - { label: "Book a free intro", href: "/free-intro/", inlineStyle: "background:transparent;color:var(--color-grit-deep);border-color:var(--color-grit-deep);" }
 schemaTypes: ["healthclub", "faq"]
 faqEyebrow: "Common questions"
 faqHeading: "HYROX training questions."

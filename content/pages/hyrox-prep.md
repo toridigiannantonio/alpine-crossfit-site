@@ -81,7 +81,7 @@ finalCta:
   heading: "HYROX Denver is coming."
   body: "12 weeks of structured prep starts now."
   ctas:
-    - { label: "Get the Free Plan", href: "#get-plan", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Get the Free Plan", href: "#get-plan", inlineStyle: "background:var(--color-grit-deep);color:var(--color-glacier);" }
 ---
 
 <section class="section">

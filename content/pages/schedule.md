@@ -29,10 +29,10 @@ finalCta:
   ctas:
     - label: "Book a free intro"
       href: /free-intro/
-      inlineStyle: background:#000;color:#fff;
+      inlineStyle: background:var(--color-grit-deep);color:var(--color-glacier);
     - label: "Drop-In"
       href: /pricing/#visiting
-      inlineStyle: background:transparent;color:#000;border-color:#000;
+      inlineStyle: background:transparent;color:var(--color-grit-deep);border-color:var(--color-grit-deep);
 schemaTypes: ["healthclub", "faq"]
 faqEyebrow: "Questions"
 faqHeading: "Schedule questions."
