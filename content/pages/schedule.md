@@ -4,7 +4,7 @@ description: Alpine CrossFit's weekly class schedule — CrossFit, Prime Vitalit
   (55+), and wellness center hours. 10+ classes a day in Wheat Ridge, CO.
 eyebrow: Schedule
 heading: 10+ classes a day, seven days a week.
-dek: Drop in anytime. Every class is coached by a CF-L2 certified professional.
+dek: Drop in anytime. Every class is led by an experienced coach.
 heroCtas:
   - label: "Book a free intro"
     href: /free-intro/
@@ -51,7 +51,7 @@ faqIds:
     <p><strong>Monday–Friday:</strong> 5:30, 6:30, 8:00 AM · 12:00, 3:30, 4:30, 5:30 PM</p>
     <p><strong>Saturday:</strong> 8:00, 9:00 AM</p>
     <p><strong>Sunday:</strong> 9:00 AM</p>
-    <p style="margin-top: var(--space-4); font-size: 0.95rem; color: var(--color-text-muted);">Every class is capped at 15 athletes and coached by a CF-L2 certified professional.</p>
+    <p style="margin-top: var(--space-4); font-size: 0.95rem; color: var(--color-text-muted);">Every class is capped at 15 athletes and led by an experienced coach.</p>
   </div>
 </section>
 
