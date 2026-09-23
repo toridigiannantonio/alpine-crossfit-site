@@ -46,9 +46,9 @@
   <meta property="og:description" content="{{ ogDescription or description }}">
   <meta property="og:type" content="{{ ogType or 'website' }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Barlow+Condensed:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="preload" href="/assets/fonts/anybody-latin-standard-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/outfit-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <meta name="theme-color" content="#403d3d">
   <link rel="stylesheet" href="/assets/css/styles.css?v={{ site.cssVersion }}">
   {% include "partials/schema-org.njk" %}
   {% if extraHead %}{{ extraHead | safe }}{% endif %}

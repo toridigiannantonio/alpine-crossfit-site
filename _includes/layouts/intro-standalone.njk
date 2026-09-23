@@ -6,33 +6,34 @@
 <title>{{ title }}</title>
 <meta name="description" content="{{ description }}">
 <meta name="robots" content="noindex,nofollow">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Barlow+Condensed:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
 <style>
+  @font-face { font-family: "Alpine Display"; src: url("/assets/fonts/anybody-latin-standard-italic.woff2") format("woff2"); font-style: italic; font-weight: 100 900; font-stretch: 50% 150%; font-display: swap; }
+  @font-face { font-family: "Alpine Sans"; src: url("/assets/fonts/outfit-latin-wght-normal.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
   :root {
-    --green: #c19a6b;              /* Renamed from old alpine-green — now the tan brand primary */
+    /* ALPINE PLAYBOOK // 2026 palette */
+    --green: #c19a6b;              /* Dune (name is historical) */
     --green-hover: #d0b085;
-    --black: #000000;
-    --surface: #121212;
-    --text: #ffffff;
-    --muted: #a8a8a3;
-    --border: #2a2a28;
+    --black: #2b2929;              /* deep Grit */
+    --surface: #403d3d;            /* Grit */
+    --text: #f3f4f4;               /* Glacier */
+    --muted: #cfcbc6;
+    --border: #5a5656;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    background: var(--black);
+    background: var(--surface);
     color: var(--text);
-    font-family: "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: "Alpine Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-size: 17px;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
   .container { max-width: 820px; margin: 0 auto; padding: 0 1.5rem; }
   h1 {
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 700;
+    font-family: "Alpine Display", sans-serif;
+    font-weight: 900;
+    font-stretch: 112%;
     font-style: italic;
     text-transform: uppercase;
     font-size: clamp(2.5rem, 7vw, 4rem);
@@ -42,8 +43,9 @@
   }
   h1 .accent { color: var(--green); }
   h2 {
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 700;
+    font-family: "Alpine Display", sans-serif;
+    font-weight: 900;
+    font-stretch: 112%;
     font-style: italic;
     text-transform: uppercase;
     font-size: clamp(1.75rem, 4vw, 2.5rem);
@@ -70,14 +72,14 @@
   .dek { font-size: 1.15rem; color: var(--muted); margin-bottom: 2rem; line-height: 1.55; }
   .hero { padding: 4rem 0 3rem; border-bottom: 2px solid var(--green); }
   .section { padding: 3rem 0; border-bottom: 1px solid var(--border); }
-  .section-dark { background: var(--surface); }
+  .section-dark { background: var(--black); }
   .section-green {
     background: var(--green);
     color: var(--black);
     text-align: center;
   }
   .section-green h2 { color: var(--black); }
-  .section-green .dek { color: rgba(0,0,0,0.8); }
+  .section-green .dek { color: var(--black); }
   .form-wrap {
     background: #fff;
     border-radius: 6px;
@@ -110,8 +112,8 @@
     transition: all 200ms ease;
     min-height: 48px;
   }
-  .btn-dark { background: var(--black); color: #fff; }
-  .btn-dark:hover { background: #222; color: #fff; }
+  .btn-dark { background: var(--black); color: var(--text); }
+  .btn-dark:hover { background: var(--surface); color: var(--text); }
   ol { line-height: 1.8; color: var(--muted); }
   ol strong { color: var(--text); }
   .muted { color: var(--muted); font-size: 0.9rem; }

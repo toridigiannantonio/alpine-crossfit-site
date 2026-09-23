@@ -39,10 +39,10 @@ speakable: true
 <section class="section section-green">
   <div class="container text-center">
     <h2>{{ finalCta.heading }}</h2>
-    {% if finalCta.body %}<p class="hero-dek" style="margin-left:auto;margin-right:auto;color:rgba(0,0,0,0.8);">{{ finalCta.body | safe }}</p>{% endif %}
+    {% if finalCta.body %}<p class="hero-dek" style="margin-left:auto;margin-right:auto;">{{ finalCta.body | safe }}</p>{% endif %}
     <div class="hero-cta" style="justify-content:center;">
       {%- for cta in finalCta.ctas %}
-      <a class="btn btn-lg" style="{{ cta.inlineStyle or 'background:#000;color:#fff;' }}" href="{{ cta.href }}">{{ cta.label }}</a>
+      <a class="btn btn-lg" style="{{ cta.inlineStyle or 'background:var(--color-grit-deep);color:var(--color-glacier);' }}" href="{{ cta.href }}">{{ cta.label }}</a>
       {%- endfor %}
     </div>
   </div>

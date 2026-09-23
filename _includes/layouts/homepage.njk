@@ -161,7 +161,7 @@ speakable: true
 
 {% if proof %}
 <!-- 5. PROOF — one featured review plus the stat row (was three testimonials) -->
-<section class="section section-dark">
+<section class="section section-forest">
   <div class="container">
     <span class="eyebrow">{{ proof.eyebrow }}</span>
     <h2 class="section-heading">{{ proof.heading }}</h2>
@@ -211,10 +211,10 @@ speakable: true
 <section class="section section-green">
   <div class="container text-center">
     <h2>{{ finalCta.heading }}</h2>
-    {% if finalCta.body %}<p class="hero-dek" style="margin-left:auto;margin-right:auto;color:rgba(0,0,0,0.8);">{{ finalCta.body | safe }}</p>{% endif %}
+    {% if finalCta.body %}<p class="hero-dek" style="margin-left:auto;margin-right:auto;">{{ finalCta.body | safe }}</p>{% endif %}
     <div class="hero-cta hero-cta-center" style="justify-content:center;">
-      <a class="btn btn-lg" style="background:#000;color:#fff;" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a>
-      <a class="btn btn-lg" style="background:#000;color:#fff;" href="{{ site.pricing.visitOptions[1].ctaHref }}" target="_blank" rel="noopener">Drop in — {{ site.pricing.visitOptions[1].price }}</a>
+      <a class="btn btn-lg" style="background:var(--color-grit-deep);color:var(--color-glacier);" href="{{ site.primaryCta.url }}">{{ site.primaryCta.label }}</a>
+      <a class="btn btn-lg" style="background:var(--color-grit-deep);color:var(--color-glacier);" href="{{ site.pricing.visitOptions[1].ctaHref }}" target="_blank" rel="noopener">Drop in — {{ site.pricing.visitOptions[1].price }}</a>
     </div>
   </div>
 </section>
