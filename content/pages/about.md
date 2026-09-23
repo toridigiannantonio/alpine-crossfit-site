@@ -32,7 +32,7 @@ extraSchemas:
       "@type": "AboutPage",
       "url": "https://alpinecrossfit.com/about/",
       "name": "About Alpine CrossFit",
-      "description": "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, owned by April DiGiannantonio (CSCS, SCCC, CrossFit Trainer, former Director of Sports Performance for a Division I program) and Tori DiGiannantonio (LCSW, CMPC, yoga instructor, ultrarunner). Programming is in-house, led by Megan Markee (CSCS, CF-L1) in collaboration with April. Group classes are coached by three CF-L2 professionals.",
+      "description": "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, owned by April DiGiannantonio (CSCS, SCCC, CrossFit Trainer, former Director of Sports Performance for a Division I program) and Tori DiGiannantonio (LCSW, CMPC, yoga instructor, ultrarunner). Programming is in-house, led by Megan Markee (CSCS, CF-L1) in collaboration with April. Group classes are led by coaches with 10 to 15+ years of experience.",
       "mainEntity": {"@id": "https://alpinecrossfit.com/#healthclub"}
     }
   - {
@@ -79,8 +79,8 @@ finalCta:
 <section class="section section-dark">
   <div class="container container-narrow">
     <span class="eyebrow">Our coaches</span>
-    <h2>Every class, a certified professional.</h2>
-    <p>Most gyms in the Denver metro rotate shift workers through a class schedule. Alpine doesn't. Lisa Arcangel, Dean Weeks, and Liz Kushner each hold the CF-L2 and have 10 to 15+ years of coaching behind them, and all three still compete. Behind the floor, two CSCS-certified professionals write what everyone trains.</p>
+    <h2>Experience you can feel in every class.</h2>
+    <p>Most gyms in the Denver metro rotate shift workers through a class schedule. Alpine doesn't. Lisa Arcangel, Dean Weeks, and Liz Kushner have 10 to 15+ years of coaching behind them, and all three still compete. The programming comes from coaches with Division I strength and conditioning and Games-level competition experience.</p>
     <p class="mt-6"><a class="btn btn-secondary" href="/coaches/">Meet the whole team →</a></p>
   </div>
 </section>
@@ -100,7 +100,7 @@ finalCta:
       </div>
       <div class="card">
         <h3>Credentials, not just certifications.</h3>
-        <p>Two CSCS-certified professionals on staff — Megan Markee and owner April DiGiannantonio, who also holds the SCCC and spent five-plus years as a Division I Director of Sports Performance. Add three CF-L2 trainers running the floor and a Certified Mental Performance Coach in the building.</p>
+        <p>Two CSCS-certified professionals on staff — Megan Markee and owner April DiGiannantonio, who also holds the SCCC and spent five-plus years as a Division I Director of Sports Performance. Add coaches with 10 to 15+ years on the floor, a Registered Yoga Teacher, and a licensed clinician and mental performance consultant in the building.</p>
       </div>
       <div class="card">
         <h3>A community that spans every age.</h3>
