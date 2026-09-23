@@ -80,18 +80,6 @@ finalCta:
   </div>
 </section>
 
-<section class="section section-green" id="contact">
-  <div class="container container-narrow text-center">
-    <span class="eyebrow">Ready to join?</span>
-    <h2>Contact us and we'll get you set up.</h2>
-    <p>Text or call and a coach will get your membership started, usually within a few minutes during gym hours.</p>
-    <div class="hero-cta" style="justify-content:center;">
-      <a class="btn btn-lg" style="background:var(--color-grit-deep);color:var(--color-glacier);" href="sms:{{ site.phoneSms }}">Text {{ site.phoneDisplay }}</a>
-      <a class="btn btn-lg" style="background:var(--color-glacier);color:var(--color-grit-deep);border-color:var(--color-glacier);" href="tel:{{ site.phone }}">Call us</a>
-    </div>
-  </div>
-</section>
-
 <section class="section">
   <div class="container container-narrow">
     <span class="eyebrow">Included with every membership</span>
