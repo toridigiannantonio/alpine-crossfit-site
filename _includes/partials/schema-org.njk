@@ -93,6 +93,9 @@
     {%- for t in site.pricing.tiers %}
     { "@type": "Offer", "name": {{ t.name | jsonStringify | safe }}, "price": "{{ t.amount }}", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
     {%- endfor %}
+    {%- for c in site.pricing.classPlans %}
+    { "@type": "Offer", "name": {{ c.name | jsonStringify | safe }}, "price": "{{ c.amount }}", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
+    {%- endfor %}
     {%- for o in site.pricing.visitOptions %}
     { "@type": "Offer", "name": {{ o.name | jsonStringify | safe }}, "price": "{{ o.amount }}", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }{% if not loop.last %},{% endif %}
     {%- endfor %}
