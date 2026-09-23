@@ -59,7 +59,7 @@ export const items = [
     id: "how-to-start",
     group: "getting-started",
     q: "How do I get started at Alpine?",
-    a: 'Three steps. First, a free No Sweat Intro — 30 minutes with a CF-L2 coach, no workout. Second, the Foundations on-ramp, private one-on-one sessions that teach the core movements. Third, group classes. <a href="/free-intro/">Book the intro →</a>',
+    a: 'Three steps. First, a free No Sweat Intro — 30 minutes with one of our coaches, no workout. Second, the Foundations on-ramp, private one-on-one sessions that teach the core movements. Third, group classes. <a href="/free-intro/">Book the intro →</a>',
   },
   {
     id: "no-sweat-intro",
@@ -71,7 +71,7 @@ export const items = [
     id: "foundations",
     group: "getting-started",
     q: "What is the Foundations program?",
-    a: "Alpine's on-ramp for new members: private one-on-one sessions where a CF-L2 coach teaches the core CrossFit movements — squat, deadlift, press, pull, carry — in a low-pressure setting before you join group classes. You graduate when your coach is confident you can execute the movements safely in a group class.",
+    a: "Alpine's on-ramp for new members: private one-on-one sessions where a coach teaches the core CrossFit movements — squat, deadlift, press, pull, carry — in a low-pressure setting before you join group classes. You graduate when your coach is confident you can execute the movements safely in a group class.",
   },
   {
     id: "foundations-length",
@@ -83,7 +83,7 @@ export const items = [
     id: "good-for-beginners",
     group: "getting-started",
     q: "Is Alpine good for beginners?",
-    a: "Yes. Most Alpine members started with zero CrossFit experience and many had not stepped into a gym in years. Every class is led by a CF-L2 certified coach who scales movements to your body in real time. Nobody is thrown into something they can't handle.",
+    a: "Yes. Most Alpine members started with zero CrossFit experience and many had not stepped into a gym in years. Every class is led by an experienced coach who scales movements to your body in real time. Nobody is thrown into something they can't handle.",
   },
   {
     id: "how-long-results",
@@ -109,7 +109,7 @@ export const items = [
     id: "first-class",
     group: "first-visit",
     q: "What happens in my first class?",
-    a: "A 60-minute coached class in five parts: introduction (the coach explains the workout and scaling options), general warm-up, a strength or skill segment, the Workout of the Day, and a cool-down with mobility work. A CF-L2 coach is on the floor the entire hour.",
+    a: "A 60-minute coached class in five parts: introduction (the coach explains the workout and scaling options), general warm-up, a strength or skill segment, the Workout of the Day, and a cool-down with mobility work. A coach is on the floor the entire hour.",
   },
   {
     id: "watch-a-class",
@@ -135,7 +135,7 @@ export const items = [
     id: "is-crossfit-safe",
     group: "crossfit",
     q: "Is CrossFit safe?",
-    a: "CrossFit is as safe as any sport when coached well. Injury rates in coached CrossFit environments are comparable to general weightlifting and lower than contact sports or running. Every Alpine class is led by a CF-L2 coach watching the room, scaling movements, and cueing technique in real time.",
+    a: "CrossFit is as safe as any sport when coached well. Injury rates in coached CrossFit environments are comparable to general weightlifting and lower than contact sports or running. Every Alpine class is led by an experienced coach watching the room, scaling movements, and cueing technique in real time.",
   },
   {
     id: "crossfit-weight-loss",
@@ -395,13 +395,13 @@ export const items = [
     id: "who-coaches",
     group: "coaches",
     q: "Who coaches the classes?",
-    a: 'Three CF-L2 certified professionals run every class: Lisa Arcangel, Liz Kushner, and Dean Weeks. Behind them, programming is written by Megan Markee (CSCS) with owner April DiGiannantonio, who holds the CSCS and SCCC and spent five-plus years as a Division I Director of Sports Performance. <a href="/coaches/">Meet the team →</a>',
+    a: 'Lisa Arcangel, Liz Kushner, and Dean Weeks lead classes, with 10 to 15+ years of coaching apiece. Programming is built collaboratively by Megan Markee and owner April DiGiannantonio, drawing on Games-level competition and five-plus years as a Division I Director of Sports Performance. <a href="/coaches/">Meet the team →</a>',
   },
   {
     id: "owners-coach",
     group: "coaches",
     q: "Do the owners coach the classes?",
-    a: "Group classes are coached by the three CF-L2 professionals. Owners April and Tori DiGiannantonio train at the gym alongside members — April holds the CSCS and SCCC and was a Division I Director of Sports Performance for five-plus years. Megan Markee (CSCS) writes every workout members follow, in collaboration with April.",
+    a: "Group classes are led by Lisa, Liz, and Dean, with 10 to 15+ years of coaching apiece. Owners April and Tori DiGiannantonio train at the gym alongside members — April holds the CSCS and SCCC and was a Division I Director of Sports Performance for five-plus years. Megan Markee (CSCS) writes every workout members follow, in collaboration with April.",
   },
   {
     id: "how-long-in-wheat-ridge",
@@ -433,7 +433,7 @@ export const items = [
     id: "age-minimum",
     group: "safety",
     q: "How old do you have to be to train at Alpine?",
-    a: "13 and up. Teens train in the regular coached classes alongside adults, scaled appropriately, with a CF-L2 coach watching every movement.",
+    a: "13 and up. Teens train in the regular coached classes alongside adults, scaled appropriately, with a coach watching every movement.",
   },
 
   // ---------------- Wellness / programs, page-specific ----------------
@@ -459,7 +459,7 @@ export const items = [
     id: "prime-vitality-safe",
     group: "programs",
     q: "Is this kind of training safe over 55?",
-    a: "Yes, and progressive strength training is one of the best-evidenced interventions for maintaining bone density, muscle mass, and balance with age. Prime Vitality is coached by a CF-L2 professional and every movement is scaled. Coach Lisa Arcangel has qualified for the CrossFit Masters Semifinals.",
+    a: "Yes, and progressive strength training is one of the best-evidenced interventions for maintaining bone density, muscle mass, and balance with age. Prime Vitality is led by an experienced coach and every movement is scaled. Coach Lisa Arcangel has qualified for the CrossFit Masters Semifinals.",
   },
   {
     id: "prime-vitality-never-lifted",
