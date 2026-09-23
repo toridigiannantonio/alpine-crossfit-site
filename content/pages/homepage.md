@@ -2,10 +2,10 @@
 layout: layouts/homepage.njk
 permalink: /
 title: "Alpine CrossFit — CrossFit Gym in Wheat Ridge, CO"
-description: "Locally-owned CrossFit gym in Wheat Ridge. Programming written by two CSCS-certified coaches, CF-L2 coaching in every class, wellness center, 24/7 access."
+description: "Locally-owned CrossFit gym in Wheat Ridge. Coaching and programming built on decades of CrossFit, Division I coaching, and Division I athletics. Wellness center, 24/7 access."
 canonical: "https://alpinecrossfit.com/"
 ogTitle: "Alpine CrossFit — Wheat Ridge, CO"
-ogDescription: "Locally-owned CrossFit gym in Wheat Ridge. In-house programming written by two CSCS-certified coaches, CF-L2 coaching in every class, wellness center, 24/7 member access."
+ogDescription: "Locally-owned CrossFit gym in Wheat Ridge. In-house programming and coaching built on decades of CrossFit, Division I coaching, and Division I athletics. Wellness center, 24/7 member access."
 ogImage: "https://alpinecrossfit.com/assets/img/hero-alpine-wall.jpg"
 ogType: "website"
 loadImagesScript: true
@@ -34,17 +34,17 @@ affiliations:
   - { image: "/assets/img/badge-hyrox.png", alt: "Official HYROX Training Center", label: "Official HYROX<br>Training Center" }
 credentials:
   eyebrow: "Who's coaching you"
-  heading: "Credentials most affiliates don't have."
-  intro: "Plenty of gyms are run by people with a weekend certification. Alpine isn't one of them."
+  heading: "Experience most affiliates don't have."
+  intro: "Our coaching and programming are built on years inside CrossFit and well beyond it."
   items:
-    - heading: "Programming written by two CSCS."
-      body: "Every workout comes from Megan Markee and owner April DiGiannantonio, together — no franchise template, no subscription feed. April adds the SCCC and five-plus years as a Division I Director of Sports Performance; Megan has known this community for a decade. Both compete in CrossFit, and both came up in other sports first."
-    - heading: "A CF-L2 coach in every class."
-      body: "Lisa Arcangel, Dean Weeks, and Liz Kushner — 10 to 15+ years coaching apiece, and all three still compete."
-    - heading: "Mental performance on staff."
-      body: "Co-owner Tori DiGiannantonio is an LCSW and Certified Mental Performance Coach. Few gyms have that in the building."
-    - heading: "Owner-operators, not absentees."
-      body: "April and Tori train at Alpine alongside members. April has owned and run CrossFit gyms on and off since 2013, with a stretch in the collegiate world in between."
+    - heading: "Programming built together."
+      body: "Every workout is written in-house by our coaches, together. No franchise template, no subscription feed. It draws on Games-level competition and Division I strength and conditioning."
+    - heading: "Deep CrossFit experience."
+      body: "10 to 15+ years of coaching apiece. Our coaches have competed from the Open to Regionals, Semifinals, and Quarterfinals, and they still compete."
+    - heading: "Division I roots."
+      body: "Division I strength and conditioning across more than a dozen sports, plus former Division I and collegiate athletes on the floor."
+    - heading: "Beyond the barbell."
+      body: "Registered yoga teachers, licensed clinicians, and mental performance coaching, from people who stay active in and outside the gym."
   link: { label: "Meet the coaches and owners →", href: "/coaches/" }
 services:
   eyebrow: "What we offer"
