@@ -2,7 +2,7 @@
 layout: layouts/page.njk
 permalink: /pricing/
 title: "CrossFit Pricing in Wheat Ridge — Alpine CrossFit"
-description: "Alpine CrossFit memberships: Open Gym {{ site.pricing.tiers[0].price }}/mo, Unlimited {{ site.pricing.tiers[1].price }}/mo, Personal Training {{ site.pricing.tiers[2].price }}/mo. Every tier includes the wellness center and 24/7 access. Drop-ins {{ site.pricing.visitOptions[1].price }}, week pass {{ site.pricing.visitOptions[2].price }}. Free No Sweat Intro."
+description: "Alpine CrossFit memberships: Open Gym {{ site.pricing.tiers[0].price }}/mo, Unlimited {{ site.pricing.tiers[1].price }}/mo, Personal Training {{ site.pricing.tiers[2].price }}/mo. 8x a month {{ site.pricing.classPlans[0].price }}/mo, 12x a month {{ site.pricing.classPlans[1].price }}/mo. Every tier includes the wellness center and 24/7 access. Drop-ins {{ site.pricing.visitOptions[1].price }}, week pass {{ site.pricing.visitOptions[2].price }}. Free No Sweat Intro."
 canonical: "https://alpinecrossfit.com/pricing/"
 eyebrow: "Pricing"
 heading: "What it costs to train at Alpine."
@@ -49,6 +49,14 @@ finalCta:
     <h2 class="section-heading">Three tiers. Month-to-month.</h2>
     {% set pricingNote = "Unlimited is our most popular membership — coached classes, recovery, and 24/7 access bundled into one price." %}
     {% include "partials/pricing-tiers.njk" %}
+
+    <div id="class-plans" class="mt-8">
+      <span class="eyebrow">Set number of visits</span>
+      <h3 class="section-heading">Or pick how often you come in.</h3>
+      <p class="hero-dek">Monthly plans. Each sign-in covers one class, one open gym session, or one wellness center visit.</p>
+      {% include "partials/class-plans.njk" %}
+      <p class="text-center text-muted mt-8" style="font-size:0.9rem;">Coming in three times a week? Unlimited is {{ site.pricing.tiers[1].price }}, just ${{ site.pricing.tiers[1].amount - site.pricing.classPlans[1].amount }} more than 12x a month, and adds unlimited classes, Prime Vitality, and 24/7 access.</p>
+    </div>
   </div>
 </section>
 
@@ -57,7 +65,7 @@ finalCta:
     <span class="eyebrow">Why we publish it</span>
     <h2>No sales call required.</h2>
     <p>Most boutique gyms hide pricing behind a lead form. If you're trying to work out whether a gym fits your budget, you shouldn't need a phone call to find out. Every membership above is month-to-month: no annual contract, no initiation fee, cancel anytime with 30 days notice.</p>
-    <p><strong>Not sure which tier?</strong> Pick by how you'll actually train. Facility and wellness center without coached classes, {{ site.pricing.tiers[0].price }}. Training three or more times a week in coached classes, {{ site.pricing.tiers[1].price }} — what roughly two-thirds of members choose. A specific performance goal like a HYROX race or a return to sport, {{ site.pricing.tiers[2].price }}. If you're between two, start with the cheaper one; upgrading later takes about 30 seconds.</p>
+    <p><strong>Not sure which tier?</strong> Pick by how you'll actually train. Mostly training on your own, with 2 classes a month, {{ site.pricing.tiers[0].price }}. Training three or more times a week in coached classes, {{ site.pricing.tiers[1].price }} — what roughly two-thirds of members choose. A specific performance goal like a HYROX race or a return to sport, {{ site.pricing.tiers[2].price }}. If you're between two, start with the cheaper one; upgrading later takes about 30 seconds.</p>
   </div>
 </section>
 
