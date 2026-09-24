@@ -1,28 +1,30 @@
 ---
 layout: layouts/coach.njk
 permalink: /coaches/tori-digiannantonio/
-title: "Tori DiGiannantonio — Owner · Alpine CrossFit"
-description: "Tori DiGiannantonio is co-owner of Alpine CrossFit. A licensed clinical social worker (LCSW), Certified Mental Performance Coach (CMPC), lifelong athlete and ultrarunner, former firefighter and paramedic, and yoga instructor."
+title: "Tori DiGiannantonio — Co-Owner · Alpine CrossFit"
+description: "Tori DiGiannantonio is co-owner of Alpine CrossFit. A licensed clinical social worker (LCSW), Certified Mental Performance Consultant (CMPC), former firefighter and paramedic, ultrarunner, and yoga instructor who works with athletes and first responders."
 canonical: "https://alpinecrossfit.com/coaches/tori-digiannantonio/"
 order: 2
 name: "Tori DiGiannantonio"
-credentialsLine: "Owner · LCSW · CMPC · Ultrarunner · Yoga Instructor"
-bio: "Tori DiGiannantonio is co-owner of Alpine CrossFit. She comes at fitness from a different angle — a lifelong athlete and ultrarunner, a former firefighter and paramedic, and now a therapist (LCSW) and mental performance coach (CMPC) working primarily with first responders. She teaches yoga with an athlete's flair and can put on a real nice sound bath whenever you'd like. Her work lives at the intersection of physical capacity and mental resilience, which is really what this sport is about."
+credentialsLine: "Assistant to the Owner (Co-Owner) · LCSW · CMPC · Ultrarunner · Yoga Instructor"
+bio: "Tori DiGiannantonio is co-owner of Alpine CrossFit. She spent years as a firefighter and paramedic, started CrossFit in 2011, and is a lifelong athlete and ultrarunner. Today she is a therapist (LCSW) and Certified Mental Performance Consultant (CMPC) who works with athletes and first responders. She also owns <a href=\"https://grounded-ascent.com\" target=\"_blank\" rel=\"noopener\">Grounded Ascent Performance</a>."
 credentials:
   - "Licensed Clinical Social Worker (LCSW)"
-  - "Certified Mental Performance Coach (CMPC)"
-  - "Registered Yoga Teacher"
+  - "Certified Mental Performance Consultant (CMPC, AASP)"
+  - "Registered Yoga Teacher (RYT, Yoga Alliance)"
   - "Former firefighter and paramedic"
+  - "CrossFit athlete since 2011"
   - "Ultrarunner"
+  - "Owner, Grounded Ascent Performance"
 athlete:
-  heading: "As an athlete & coach"
-  body: "<p>Tori's background as an ultrarunner and first responder shapes how she thinks about training: capacity, resilience, and long-haul sustainability. Her clinical work with first responders — where the mental side of performance is not optional — brings a perspective to Alpine that most gyms don't have on staff. Members can expect her to bring yoga, sound baths, and mental performance work into the mix as Alpine adds new programming.</p>"
+  heading: "As an athlete, coach & owner"
+  body: "<p>Tori brings clinical training, time on the job, and years of her own training into one approach. She knows what it takes to perform under pressure and keep going over the long haul. She coaches the same way: build capacity, protect recovery, and train the mind like you train the body. At Alpine, that means yoga, recovery work, sound baths, and mindset training that carry over into the rest of your life.</p>"
 finalCtaHeading: "Meet Tori in person."
 personSchema:
   "@context": "https://schema.org"
   "@type": "Person"
   "name": "Tori DiGiannantonio"
-  "jobTitle": "Owner"
+  "jobTitle": "Co-Owner"
   "worksFor": {"@id": "https://alpinecrossfit.com/#organization"}
   "hasCredential":
     - {
@@ -33,7 +35,12 @@ personSchema:
     - {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "certification",
-        "name": "Certified Mental Performance Coach (CMPC)"
+        "name": "Certified Mental Performance Consultant (CMPC, AASP)"
+      }
+    - {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "certification",
+        "name": "Registered Yoga Teacher (RYT, Yoga Alliance)"
       }
   "knowsAbout": ["Mental performance", "Yoga", "Endurance training", "Trauma-informed coaching", "First responder wellness"]
   "url": "https://alpinecrossfit.com/coaches/tori-digiannantonio/"
