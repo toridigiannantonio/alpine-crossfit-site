@@ -604,8 +604,13 @@ strong { font-weight: 700; color: var(--color-text); }
   font-size: 0.9rem;
   margin: var(--space-3) 0 0;
 }
-@media (max-width: 760px) {
-  /* Cards stack here, so nothing to line up with. */
+@media (max-width: 879px) {
+  /* Below 880px three cards can't fit in a row, so auto-fit left one card
+     alone on a second row. Tiers stack full width instead; the visit cards
+     go two-up with the last one spanning the row. */
+  .pricing-grid.grid-3 { grid-template-columns: 1fr; }
+  .plan-grid.grid-3:not(.pricing-grid) > .card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  /* Tiers are stacked here, so nothing to line up with. */
   .plan-grid .card-cta-alt-spacer { display: none; }
 }
 
