@@ -587,6 +587,28 @@ strong { font-weight: 700; color: var(--color-text); }
   letter-spacing: 0.12em;
 }
 
+/* Plan cards (pricing tiers, class plans, visit options): the button sits
+   at the bottom of every card so a row of buttons lines up, and fills the
+   card width so it reads centered at every screen size. */
+.plan-grid > .card {
+  display: flex;
+  flex-direction: column;
+}
+.plan-grid .card-cta {
+  margin-top: auto;
+  padding-top: var(--space-4);
+}
+.plan-grid .card-cta .btn { width: 100%; }
+.plan-grid .card-cta-alt {
+  text-align: center;
+  font-size: 0.9rem;
+  margin: var(--space-3) 0 0;
+}
+@media (max-width: 760px) {
+  /* Cards stack here, so nothing to line up with. */
+  .plan-grid .card-cta-alt-spacer { display: none; }
+}
+
 /* Pricing */
 .price {
   font-family: var(--font-display);
