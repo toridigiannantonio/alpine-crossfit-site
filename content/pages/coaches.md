@@ -50,7 +50,7 @@ extraSchemas:
         item:
           "@type": Person
           name: Tori DiGiannantonio
-          jobTitle: Owner
+          jobTitle: Co-Owner
           url: https://alpinecrossfit.com/coaches/tori-digiannantonio/
           worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
       - "@type": ListItem
@@ -180,8 +180,8 @@ extraSchemas:
       </div>
       <div class="card">
         <h3>Tori DiGiannantonio</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Owner · Mental performance · Ultrarunner · Yoga</p>
-        <p>Therapist and mental performance coach. Lifelong athlete and ultrarunner. Brings yoga, mental performance work, and sound baths to Alpine's programming.</p>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Assistant to the Owner (Co-Owner) · Mental performance · Ultrarunner · Yoga</p>
+        <p>Former firefighter and paramedic. CrossFit athlete since 2011. Therapist and mental performance coach for athletes and first responders, and owner of Grounded Ascent Performance. Brings yoga, recovery, and mindset work to Alpine.</p>
         <a href="/coaches/tori-digiannantonio/">Learn about Tori →</a>
       </div>
     </div>
