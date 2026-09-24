@@ -3,8 +3,11 @@
    price strip, and the schema Offers all follow.
 
    Optional variables:
-     pricingNote — a muted line under the grid #}
-<div class="grid grid-3">
+     pricingNote — a muted line under the grid
+
+   A tier with no alt link gets an invisible spacer line so its button
+   stays level with the buttons that do have one. #}
+<div class="grid grid-3 pricing-grid plan-grid">
 {%- for t in site.pricing.tiers %}
   <div class="card{% if t.featured %} card-featured{% endif %}">
     <h3>{{ t.name }}</h3>
@@ -17,10 +20,14 @@
       <li class="muted">{{ f }}</li>
     {%- endfor %}
     </ul>
-    <a class="btn {% if t.featured %}btn-primary{% else %}btn-secondary{% endif %}" href="{{ t.ctaHref }}"{% if t.ctaExternal %} target="_blank" rel="noopener"{% endif %}>{{ t.ctaLabel }}</a>
-    {%- if t.altCtaLabel %}
-    <p class="text-center mt-3" style="font-size:0.9rem;"><a href="{{ t.altCtaHref }}">{{ t.altCtaLabel }}</a></p>
-    {%- endif %}
+    <div class="card-cta">
+      <a class="btn {% if t.featured %}btn-primary{% else %}btn-secondary{% endif %}" href="{{ t.ctaHref }}"{% if t.ctaExternal %} target="_blank" rel="noopener"{% endif %}>{{ t.ctaLabel }}</a>
+      {%- if t.altCtaLabel %}
+      <p class="card-cta-alt"><a href="{{ t.altCtaHref }}">{{ t.altCtaLabel }}</a></p>
+      {%- else %}
+      <p class="card-cta-alt card-cta-alt-spacer" aria-hidden="true">&nbsp;</p>
+      {%- endif %}
+    </div>
   </div>
 {%- endfor %}
 </div>
