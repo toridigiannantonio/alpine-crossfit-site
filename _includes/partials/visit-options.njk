@@ -5,14 +5,14 @@
    The free first class for visiting affiliate athletes is deliberately NOT
    here. Next to a $30 drop-in it was taking the sale instead of adding one;
    it lives on /about/, aimed at someone choosing a gym. #}
-<div class="grid grid-3">
+<div class="grid grid-3 plan-grid">
 {%- for o in site.pricing.visitOptions %}
   <div class="card{% if o.featured %} card-featured{% endif %}">
     <h3>{{ o.name }}</h3>
     <div class="price">{{ o.price }}<span class="price-unit">{{ o.unit }}</span></div>
     <p class="eyebrow" style="margin-top:var(--space-4);margin-bottom:var(--space-2);">Best for</p>
     <p>{{ o.bestFor }}</p>
-    <a class="btn btn-primary" href="{{ o.ctaHref }}"{% if o.ctaExternal %} target="_blank" rel="noopener"{% endif %}>{{ o.ctaLabel }}</a>
+    <div class="card-cta"><a class="btn btn-primary" href="{{ o.ctaHref }}"{% if o.ctaExternal %} target="_blank" rel="noopener"{% endif %}>{{ o.ctaLabel }}</a></div>
   </div>
 {%- endfor %}
 </div>
