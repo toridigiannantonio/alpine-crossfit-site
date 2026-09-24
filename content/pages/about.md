@@ -25,7 +25,7 @@ heroImage:
   alt: "Alpine CrossFit members training during a coached class"
   slot: "about_hero"
 heroWithImage: true
-trustStrip: '<span>Founded 2010</span><span class="sep">·</span><span>Under current ownership since 2026</span><span class="sep">·</span><span class="stars">★★★★★</span><span>5.0 from 180 reviews</span>'
+trustStrip: '<span>Founded 2010</span><span class="sep">·</span><span class="stars">★★★★★</span><span>5.0 from 180 reviews</span>'
 extraSchemas:
   - {
       "@context": "https://schema.org",
