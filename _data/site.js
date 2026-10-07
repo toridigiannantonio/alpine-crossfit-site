@@ -186,8 +186,9 @@ export default {
   footerColumns: {
     train: [
       { label: "CrossFit", url: "/crossfit/" },
-      { label: "HYROX", url: "/hyrox/" },
-      { label: "Strong AF · Hybrid · Downshift", url: "/schedule/#specialty" },
+      { label: "Hybrid / HYROX", url: "/hyrox/" },
+      { label: "Strong AF", url: "/schedule/#strong-af" },
+      { label: "Downshift", url: "/schedule/#downshift" },
       { label: "Wellness Center", url: "/wellness/" },
       { label: "Prime Vitality (55+)", url: "/prime-vitality/" },
     ],
