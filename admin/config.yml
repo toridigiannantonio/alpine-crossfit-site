@@ -282,12 +282,13 @@ collections:
             widget: "object"
             hint: "These used to be two separate sections. They are one now."
             fields:
-              - {label: "Small text above the headline", name: "eyebrow", widget: "string"}
-              - {label: "Section headline", name: "heading", widget: "string"}
-              - {label: "Paragraphs", name: "body", widget: "list", field: {label: "Paragraph", name: "para", widget: "text"}}
+              - {label: "Small text above the headline", name: "eyebrow", widget: "string", required: false}
+              - {label: "Section headline", name: "heading", widget: "string", required: false}
+              - {label: "Paragraphs", name: "body", widget: "list", required: false, field: {label: "Paragraph", name: "para", widget: "text"}}
               - label: "Short bullet points"
                 name: "cards"
                 widget: "list"
+                required: false
                 summary: "{{fields.heading}}"
                 fields:
                   - {label: "Bold lead-in", name: "heading", widget: "string"}
