@@ -71,6 +71,20 @@ faqIds:
   </div>
 </section>
 
+<section class="section" id="co-work">
+  <div class="container container-narrow">
+    <span class="eyebrow">CoWork space</span>
+    <h2>Work before or after you train.</h2>
+    <p>Alpine has a CoWork area so you can get work done without leaving the gym.</p>
+    <ul class="feature-list">
+      <li><strong>Day lockers</strong> for your bag and gear.</li>
+      <li><strong>Tables and chairs</strong> to set up and work.</li>
+      <li><strong>Coffee bar.</strong></li>
+      <li><strong>TVs.</strong></li>
+    </ul>
+  </div>
+</section>
+
 <section class="section section-dark">
   <div class="container container-narrow">
     <span class="eyebrow">No CrossFit required</span>

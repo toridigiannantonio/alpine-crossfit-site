@@ -3,7 +3,7 @@ title: Coaches in Wheat Ridge, CO | Alpine CrossFit
 description: Meet Alpine CrossFit's coaches in Wheat Ridge, near Denver.
   Collaborative in-house programming, coaching rooted in years of CrossFit,
   Division I coaching, Division I athletes, yoga, and clinical expertise.
-eyebrow: Coaches & Owners
+eyebrow: Coaches
 heading: The people <span class="accent">actually coaching</span> you.
 dek: Experienced coaches who build the programming together, hold
   certifications well past the minimum, and learned the craft in collegiate
@@ -162,31 +162,40 @@ extraSchemas:
         <p>Decade of coaching with a strength-and-barbell focus. 2026 Quarterfinals qualifier. Alpine's resident class clown — the coach who makes every class memorable.</p>
         <a href="/coaches/liz-kushner/">Learn about Liz →</a>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="section section-dark">
-  <div class="container">
-    <span class="eyebrow">The owners</span>
-    <h2 class="section-heading">Meet April &amp; Tori.</h2>
-    <p class="hero-dek">Alpine is owned by April and Tori DiGiannantonio, who took over in 2026 with a mandate to protect what's been built and add the pieces they think Alpine has been missing.</p>
-    <div class="grid grid-2 mt-8">
       <div class="card">
         <h3>April DiGiannantonio</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Owner · Former D1 Director of Sports Performance</p>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · Former D1 Director of Sports Performance</p>
         <p>Ten-plus years in fitness and sports performance. Has owned CrossFit gyms on and off since 2013 and competed at CrossFit Games Regionals, individually and on a team. Spent over five years coaching Division I athletes across a dozen sports. Programs Alpine's in-house training alongside Megan Markee.</p>
         <a href="/coaches/april-digiannantonio/">Learn about April →</a>
       </div>
       <div class="card">
         <h3>Tori DiGiannantonio</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Assistant to the Owner (Co-Owner) · Mental performance · Ultrarunner · Yoga</p>
-        <p>Former firefighter and paramedic. CrossFit athlete since 2011. Therapist and mental performance coach for athletes and first responders, and owner of Grounded Ascent Performance. Brings yoga, recovery, and mindset work to Alpine.</p>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Assistant to the Owner (Co-Owner) · Downshift Lead · Mental performance · Ultrarunner · Yoga</p>
+        <p>Former firefighter and paramedic. CrossFit athlete since 2011. Therapist and mental performance coach for athletes and first responders, and owner of Grounded Ascent Performance. Leads Downshift, our yoga and recovery class, and coaches the occasional Hybrid class.</p>
         <a href="/coaches/tori-digiannantonio/">Learn about Tori →</a>
+      </div>
+      <div class="card">
+        <h3>Maddy Portlock</h3>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach</p>
+        <p>Full bio coming soon.</p>
+        <a href="/coaches/maddy-portlock/">Learn about Maddy →</a>
+      </div>
+      <div class="card">
+        <h3>Mike Reynolds</h3>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach</p>
+        <p>Full bio coming soon.</p>
+        <a href="/coaches/mike-reynolds/">Learn about Mike →</a>
+      </div>
+      <div class="card">
+        <h3>Kelley Williams</h3>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach</p>
+        <p>Full bio coming soon.</p>
+        <a href="/coaches/kelley-williams/">Learn about Kelley →</a>
       </div>
     </div>
   </div>
 </section>
+
 
 <section class="section">
   <div class="container">

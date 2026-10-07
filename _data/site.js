@@ -182,6 +182,7 @@ export default {
     { label: "Schedule", url: "/schedule/" },
     { label: "Pricing", url: "/pricing/" },
     { label: "Coaches", url: "/coaches/" },
+    { label: "Wellness + CoWork", url: "/wellness/" },
     { label: "Visit", url: "/visit/" },
   ],
 
@@ -194,7 +195,8 @@ export default {
       { label: "Hybrid / HYROX", url: "/classes/#hybrid" },
       { label: "Strong AF", url: "/classes/#strong-af" },
       { label: "Downshift", url: "/classes/#downshift" },
-      { label: "Wellness Center", url: "/wellness/" },
+      { label: "Wellness + CoWork", url: "/wellness/" },
+      { label: "Flow State PT (Dr. Juliana Merighi)", url: "https://flowstaterehab.com/" },
       { label: "Prime Vitality (55+)", url: "/classes/#prime-vitality" },
     ],
     visit: [
