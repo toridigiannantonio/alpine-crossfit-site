@@ -131,6 +131,10 @@ export default {
     range: `${gym.tiers[0].price}–${gym.tiers[gym.tiers.length - 1].price}/month`,
     tiers: gym.tiers,
 
+    // New-member on-ramp: 4 private sessions + 1 month Unlimited.
+    // Rendered by foundations-card.njk on /pricing/ and /classes/.
+    foundations: gym.foundations,
+
     // 8x and 12x monthly plans. Each sign-in = one class, open gym session,
     // or wellness visit. No 24/7 access, so they're kept out of `tiers`
     // (tiers promise wellness + 24/7). Rendered by class-plans.njk.

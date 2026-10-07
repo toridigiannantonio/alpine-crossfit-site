@@ -32,6 +32,23 @@
     "compression boots",
     "peptide therapy"
   ],
+  "foundations": {
+    "name": "Foundations",
+    "audience": "New to CrossFit",
+    "price": "$249",
+    "amount": "249",
+    "unit": "/one-time",
+    "summary": "4 one-on-one sessions (1 hour each) plus 1 month of Unlimited.",
+    "features": [
+      "4 private 1-hour sessions with a coach",
+      "Learn the core movements: squat, deadlift, press, pull, carry",
+      "1 month of Unlimited classes",
+      "Wellness center and 24/7 access during your Unlimited month"
+    ],
+    "ctaLabel": "Buy Foundations",
+    "ctaHref": "https://app.chalkitpro.com/gymProductLink/754/99d5cab8-67e1-4e99-9dd7-caaf5ea82d09/16742/",
+    "ctaExternal": true
+  },
   "tiers": [
     {
       "name": "Open Gym",

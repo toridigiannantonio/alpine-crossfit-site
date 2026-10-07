@@ -77,7 +77,7 @@ export const items = [
     id: "foundations-length",
     group: "getting-started",
     q: "How long does Foundations take?",
-    a: "Typically three to five private sessions, depending on your background. Your coach makes the call based on movement quality, not a fixed timeline.",
+    a: `Four private one-hour sessions with a coach, plus one month of Unlimited classes. It's ${site.pricing.foundations.price}, one-time. <a href="/pricing/#foundations">See Foundations →</a>`,
   },
   {
     id: "good-for-beginners",
