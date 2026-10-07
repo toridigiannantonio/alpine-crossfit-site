@@ -81,6 +81,21 @@ collections:
             field: {label: "Amenity", name: "amenity", widget: "string"}
             hint: "Lowercase, e.g. 'cold plunges'. These are joined into a sentence automatically wherever the wellness center is described."
 
+          - label: "Foundations (new to CrossFit)"
+            name: "foundations"
+            widget: "object"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Small label above name", name: "audience", widget: "string"}
+              - {label: "Price (as displayed)", name: "price", widget: "string"}
+              - {label: "Price (digits only, for Google)", name: "amount", widget: "string"}
+              - {label: "Per", name: "unit", widget: "string"}
+              - {label: "One-line summary", name: "summary", widget: "string"}
+              - {label: "What's included", name: "features", widget: "list", field: {label: "Item", name: "item", widget: "string"}}
+              - {label: "Button label", name: "ctaLabel", widget: "string"}
+              - {label: "Button link", name: "ctaHref", widget: "string"}
+              - {label: "Opens in a new tab?", name: "ctaExternal", widget: "boolean", default: true, required: false}
+
           - label: "Membership tiers"
             name: "tiers"
             widget: "list"
