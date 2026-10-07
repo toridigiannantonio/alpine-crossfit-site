@@ -1742,3 +1742,46 @@ main img { max-width: 100%; height: auto; }
 }
 .hero-eyebrow { color: var(--color-dune-light); }
 .section-forest .tile { border-left-color: var(--color-dune); }
+
+/* ------------------------------------------------------------------------
+   Oct 2026: light green retired. Ponderosa carries the big surfaces
+   (bands, buttons, frames); Dune/tan carries text accents on dark, since
+   Ponderosa itself is too dark to read as text on Grit.
+   ------------------------------------------------------------------------ */
+:root {
+  --color-hero-accent: var(--color-dune);              /* 6.0:1 on the hero */
+  --color-link: var(--color-dune-light);               /* 5.2:1 on Grit */
+  --color-link-hover: var(--color-glacier);
+  --color-rule: var(--color-dune);
+}
+.section-forest {
+  --color-link: var(--color-dune-pale);                /* 5.3:1 on Ponderosa */
+  --color-link-hover: var(--color-glacier);
+  --color-rule: var(--color-dune);
+}
+.section-forest .tile { border-left-color: var(--color-dune); }
+.hero h1 .accent { color: var(--color-dune); }
+.hero-eyebrow { color: var(--color-dune-light); }
+
+/* Buttons: Ponderosa fill, tan edge. */
+.btn-primary { border-color: rgba(193, 154, 107, 0.55); }
+.btn-primary:hover { border-color: var(--color-dune); }
+.section-green .btn-primary, .section:not(.section-dark):not(.section-green):not(.section-forest) .btn-primary { border-color: transparent; }
+
+/* Featured card on dark: Ponderosa wash, tan edge. */
+.card-featured { border-color: var(--color-dune); }
+
+/* More Ponderosa across the frame of the site. */
+.site-header { border-bottom: 3px solid var(--color-ponderosa); }
+.affiliations { background: var(--color-ponderosa); }
+.hero-image { box-shadow: 12px 12px 0 0 var(--color-ponderosa); }
+.sticky-cta { border-top-color: var(--color-ponderosa); }
+.site-footer { border-top: 4px solid var(--color-ponderosa); }
+.footer-grid h4 { color: var(--color-dune-light); }
+.section-dark .eyebrow, .hero .eyebrow { color: var(--color-dune-light); }
+
+/* Specialty classes block on /schedule/. */
+.class-block { margin-top: var(--space-8); padding-left: var(--space-4); border-left: 3px solid var(--color-dune); }
+.class-block h3 { margin-bottom: var(--space-2); }
+.class-tag { display: inline-block; margin-left: var(--space-2); padding: 2px 8px; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; vertical-align: middle; background: var(--color-dune); color: var(--color-grit-deep); border-radius: var(--radius); }
+@media (max-width: 760px) { .hero-image { box-shadow: 8px 8px 0 0 var(--color-ponderosa); } }
