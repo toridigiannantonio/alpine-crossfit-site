@@ -42,6 +42,15 @@ finalCta:
     - { label: "Book a free intro", href: "/free-intro/", inlineStyle: "background:var(--color-grit-deep);color:var(--color-glacier);" }
 ---
 
+<section class="section" id="foundations">
+  <div class="container">
+    <span class="eyebrow">New to CrossFit</span>
+    <h2 class="section-heading">Start with Foundations.</h2>
+    <p class="hero-dek">Four one-on-one sessions to learn the movements, then a full month of Unlimited to put them to work.</p>
+    {% include "partials/foundations-card.njk" %}
+  </div>
+</section>
+
 <section class="section section-dark">
   <div class="container">
     <span class="eyebrow">Memberships</span>

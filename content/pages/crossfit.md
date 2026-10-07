@@ -73,7 +73,7 @@ finalCta:
     <p>The path from "I've never done this" to "I'm in a group class with a coach who knows my name":</p>
     <ol class="feature-list" style="list-style-type: decimal;">
       <li><strong>Free No Sweat Intro.</strong> Thirty minutes with a coach. Tour the gym, talk through your goals, leave with a recommendation. No workout, no cost, no pressure.</li>
-      <li><strong>Foundations on-ramp.</strong> Private one-on-one sessions teaching the core movements — squat, deadlift, press, pull, carry — before you join a group class. Typically three to five sessions; your coach calls it based on movement quality, not a calendar.</li>
+      <li><strong>Foundations on-ramp.</strong> Private one-on-one sessions teaching the core movements — squat, deadlift, press, pull, carry — before you join a group class. Four private one-hour sessions plus a month of Unlimited, {{ site.pricing.foundations.price }}. <a href="/pricing/#foundations">See Foundations →</a></li>
       <li><strong>Group classes.</strong> Join the regular schedule, led by an experienced coach.</li>
     </ol>
     <p class="text-muted mt-6">Group classes work better when you already know the basics: you move with confidence, you understand the coach's cues, and you spend your energy on effort instead of on "what am I doing?"</p>

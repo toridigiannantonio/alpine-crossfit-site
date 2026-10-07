@@ -42,10 +42,11 @@ finalCta:
     <span class="eyebrow">Start here</span>
     <h2>Foundations.</h2>
     <p>Foundations is how most people start at Alpine. It's private, one-on-one coaching that teaches the core movements before you join a group class: squat, deadlift, press, pull, and carry.</p>
-    <p>You don't need to get in shape first. Every movement scales down as far as it needs to. Most people take three to five sessions. Your coach decides when you're ready based on how you move, not a calendar.</p>
+    <p>You don't need to get in shape first. Every movement scales down as far as it needs to. Foundations is four private one-hour sessions, plus a month of Unlimited so you can start classes right away.</p>
     <p><strong>Good for:</strong> anyone new to this style of training, or coming back after time off.</p>
     <p><strong>When:</strong> scheduled one-on-one with your coach.</p>
-    <p class="class-links"><a class="btn btn-primary" href="/free-intro/">Book a free intro</a> <a href="/crossfit/#beginners">More about getting started →</a></p>
+    <p><strong>Cost:</strong> {{ site.pricing.foundations.price }} one-time, including your first month of Unlimited.</p>
+    <p class="class-links"><a class="btn btn-primary" href="{{ site.pricing.foundations.ctaHref }}" target="_blank" rel="noopener">Buy Foundations</a> <a href="/free-intro/">Or book a free intro first →</a></p>
   </div>
 </section>
 
