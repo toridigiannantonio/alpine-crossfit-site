@@ -139,8 +139,7 @@ finalCta:
     <ul class="feature-list">
       <li><strong>No childcare.</strong> Our class schedule is built around school drop-off and pickup windows, which works for many Alpine parents, but it isn't childcare. If on-site childcare is a hard requirement, a big-box gym will fit better.</li>
       <li><strong>No CrossFit Kids program.</strong> Alpine welcomes athletes 13 and up — teens train in the regular coached classes alongside adults, scaled appropriately. If you want a dedicated kids-only program, this isn't it.</li>
-      <li><strong>No yoga, breath work, or meditation classes.</strong> Alpine focuses on strength and conditioning. Mobility work happens inside class warm-ups and cool-downs, but there's nothing standalone on the schedule.</li>
-      <li><strong>No weekend afternoon classes.</strong> Saturday runs 8:00–10:00 AM and Sunday runs 9:00–10:00 AM. If a weekend afternoon class is essential, we're not it.</li>
+      <li><strong>No weekend afternoon classes.</strong> Saturday runs 7:00–10:00 AM and Sunday runs 8:00–10:30 AM. If a weekend afternoon class is essential, we're not it.</li>
     </ul>
     <p>If none of those are deal-breakers, Alpine is probably a great fit. If one of them is, we can usually point you to a local gym that does that thing well.</p>
   </div>

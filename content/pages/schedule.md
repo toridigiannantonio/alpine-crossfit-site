@@ -52,7 +52,6 @@ faqIds:
     <h2>Group classes.</h2>
     <p><strong>Monday–Friday:</strong> 5:30, 6:30, 8:00 AM · 12:00, 3:30, 4:30, 5:30 PM</p>
     <p><strong>Saturday:</strong> 8:00, 9:00 AM</p>
-    <p><strong>Sunday:</strong> 9:00 AM</p>
     <p style="margin-top: var(--space-4); font-size: 0.95rem; color: var(--color-text-muted);">Every class is capped at 15 athletes and led by an experienced coach.</p>
   </div>
 </section>
@@ -72,14 +71,14 @@ faqIds:
     <div class="class-block">
       <h3>Hybrid <span class="class-tag">HYROX-style</span></h3>
       <p>Running, stations, and strength-endurance built for HYROX and hybrid athletes.</p>
-      <p><strong>Tuesday:</strong> every class runs as Hybrid (Strong AF at 6:30 and 7:30 AM)<br>
+      <p><strong>Tuesday:</strong> all day, alongside the regular CrossFit classes<br>
       <strong>Wednesday:</strong> 7:00 AM, 4:30 PM<br>
       <strong>Sunday:</strong> 8:00 – 9:30 AM</p>
     </div>
     <div class="class-block">
       <h3>Downshift <span class="class-tag">Yoga &amp; recovery</span></h3>
-      <p>A 45-minute yoga and recovery class to close out the week. Twice a month.</p>
-      <p><strong>Sunday:</strong> 9:45 – 10:30 AM, two Sundays a month</p>
+      <p>A 45-minute yoga and recovery class to close out the week. Twice a month, starting November 1.</p>
+      <p><strong>Sunday:</strong> 9:45 – 10:30 AM, two Sundays a month starting November 1</p>
     </div>
     <p style="margin-top: var(--space-4); font-size: 0.95rem;">All three are included with Unlimited. On Open Gym, class plans, and punch cards, each class counts as one sign-in.</p>
   </div>
