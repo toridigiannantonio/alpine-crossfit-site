@@ -6,7 +6,7 @@ description: "Train for HYROX at Alpine CrossFit in Wheat Ridge — an official 
 canonical: "https://alpinecrossfit.com/hyrox/"
 eyebrow: "HYROX"
 heading: "HYROX training in <span class=\"accent\">Wheat Ridge</span>, near Denver."
-dek: "Alpine CrossFit is an official HYROX Training Center in Wheat Ridge, Colorado — coached, race-specific programming and Friday run clubs for athletes across the northwest Denver metro prepping for a HYROX event."
+dek: "Alpine CrossFit is an official HYROX Training Center in Wheat Ridge, Colorado — Hybrid classes, coached race-specific programming, and Friday run clubs for athletes across the northwest Denver metro prepping for a HYROX event."
 heroCtas:
   - { label: "Book a free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
   - { label: "Drop in — {{ site.pricing.visitOptions[1].price }}", href: "{{ site.pricing.visitOptions[1].ctaHref }}", style: "btn-primary btn-lg" }
@@ -121,6 +121,18 @@ faqIds:
       <li><strong>Running</strong> — Friday run clubs focused on race-specific pacing and running on tired legs.</li>
       <li><strong>Station practice</strong> — drills on the SkiErg, row, sled, and wall ball so race-day movements feel automatic.</li>
     </ul>
+  </div>
+</section>
+
+<section class="section section-forest" id="hybrid">
+  <div class="container container-narrow">
+    <span class="eyebrow">Hybrid classes</span>
+    <h2>Hybrid: our HYROX-style class.</h2>
+    <p>Hybrid is where HYROX training happens week to week. Running, stations, and strength-endurance, coached and scaled to your level. You don't need a race on the calendar to join.</p>
+    <p><strong>Tuesday:</strong> all day, alongside the regular CrossFit classes<br>
+    <strong>Wednesday:</strong> 7:00 AM, 4:30 PM<br>
+    <strong>Sunday:</strong> 8:00 – 9:30 AM</p>
+    <p>Included with Unlimited. Counts as one sign-in on Open Gym, class plans, and punch cards. <a href="/schedule/#hybrid">Full schedule →</a></p>
   </div>
 </section>
 

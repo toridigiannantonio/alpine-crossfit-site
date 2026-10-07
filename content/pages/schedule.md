@@ -60,7 +60,7 @@ faqIds:
   <div class="container container-narrow">
     <span class="eyebrow">Specialty classes</span>
     <h2>Strong AF, Hybrid, and Downshift.</h2>
-    <div class="class-block">
+    <div class="class-block" id="strong-af">
       <h3>Strong AF <span class="class-tag">Strength</span></h3>
       <p>Coached strength work: barbell lifts, accessory work, and steady progression you can track.</p>
       <p><strong>Monday:</strong> 4:30, 5:30 PM<br>
@@ -68,14 +68,14 @@ faqIds:
       <strong>Wednesday:</strong> 5:30 PM<br>
       <strong>Saturday:</strong> 7:00 AM</p>
     </div>
-    <div class="class-block">
+    <div class="class-block" id="hybrid">
       <h3>Hybrid <span class="class-tag">HYROX-style</span></h3>
       <p>Running, stations, and strength-endurance built for HYROX and hybrid athletes.</p>
       <p><strong>Tuesday:</strong> all day, alongside the regular CrossFit classes<br>
       <strong>Wednesday:</strong> 7:00 AM, 4:30 PM<br>
       <strong>Sunday:</strong> 8:00 – 9:30 AM</p>
     </div>
-    <div class="class-block">
+    <div class="class-block" id="downshift">
       <h3>Downshift <span class="class-tag">Yoga &amp; recovery</span></h3>
       <p>A 45-minute yoga and recovery class to close out the week. Twice a month, starting November 1.</p>
       <p><strong>Sunday:</strong> 9:45 – 10:30 AM, two Sundays a month starting November 1</p>
