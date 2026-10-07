@@ -57,6 +57,20 @@ faqIds:
   </div>
 </section>
 
+<section class="section" id="physical-therapy">
+  <div class="container container-narrow">
+    <span class="eyebrow">In-house physical therapy</span>
+    <h2>Flow State Physical Therapy.</h2>
+    <p>Dr. Juliana Merighi runs Flow State right here at Alpine. She's a Doctor of Physical Therapy and board certified as both an Orthopedic Clinical Specialist and a Strength and Conditioning Specialist. Her approach is simple: you shouldn't have to stop doing what you love to get better.</p>
+    <ul class="feature-list">
+      <li><strong>Orthopedic and pelvic health PT</strong>, in person at Alpine or virtually.</li>
+      <li><strong>Pregnancy and postpartum coaching</strong> to stay strong and get back to your sport.</li>
+      <li><strong>Training for climbers and outdoor athletes</strong>, whether you're coming back from injury or chasing a goal.</li>
+    </ul>
+    <p><a class="btn btn-primary" href="https://flowstaterehab.com/" target="_blank" rel="noopener">Book with Flow State</a></p>
+  </div>
+</section>
+
 <section class="section section-dark">
   <div class="container container-narrow">
     <span class="eyebrow">No CrossFit required</span>
