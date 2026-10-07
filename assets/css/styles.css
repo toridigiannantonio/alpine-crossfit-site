@@ -1836,15 +1836,15 @@ main img { max-width: 100%; height: auto; }
 .section:not(.section-dark):not(.section-green):not(.section-forest) .card-featured .price { color: var(--color-dune-deep); }
 
 /* Coach cards: headline, one-line bio, certifications, favorites. */
-.coach-label {
+.card .coach-label {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.7rem;
   font-weight: 700;
-  color: var(--color-text);
+  color: var(--color-accent-text);
   margin: var(--space-4) 0 var(--space-1);
 }
 .coach-certs { font-size: 0.9rem; color: var(--color-text-muted); margin: 0; }
 .coach-favs { display: grid; grid-template-columns: auto 1fr; gap: var(--space-1) var(--space-3); margin: 0 0 var(--space-4); font-size: 0.9rem; }
-.coach-favs dt { font-weight: 600; color: var(--color-text); }
+.coach-favs dt { font-weight: 600; color: var(--color-accent-text); }
 .coach-favs dd { margin: 0; color: var(--color-text-muted); }
