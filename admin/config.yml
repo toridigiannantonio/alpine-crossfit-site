@@ -540,7 +540,7 @@ collections:
               - {label: "How long does a HYROX race take?", value: "race-duration"}
               - {label: "Do you offer childcare?", value: "no-childcare"}
               - {label: "Do you have a CrossFit Kids program?", value: "no-kids-program"}
-              - {label: "Do you offer yoga, breath work, or meditation?", value: "no-yoga"}
+              - {label: "Do you offer yoga or recovery classes?", value: "no-yoga"}
               - {label: "Are there weekend afternoon classes?", value: "no-weekend-afternoons"}
           - {label: "Schema types", name: "schemaTypes", widget: "hidden"}
           - {label: "Browser title", name: "title", widget: "string"}
@@ -673,7 +673,7 @@ collections:
               - {label: "How long does a HYROX race take?", value: "race-duration"}
               - {label: "Do you offer childcare?", value: "no-childcare"}
               - {label: "Do you have a CrossFit Kids program?", value: "no-kids-program"}
-              - {label: "Do you offer yoga, breath work, or meditation?", value: "no-yoga"}
+              - {label: "Do you offer yoga or recovery classes?", value: "no-yoga"}
               - {label: "Are there weekend afternoon classes?", value: "no-weekend-afternoons"}
           - {label: "Schema types", name: "schemaTypes", widget: "hidden"}
           - {label: "Browser title", name: "title", widget: "string"}
@@ -877,7 +877,7 @@ collections:
               - {label: "How long does a HYROX race take?", value: "race-duration"}
               - {label: "Do you offer childcare?", value: "no-childcare"}
               - {label: "Do you have a CrossFit Kids program?", value: "no-kids-program"}
-              - {label: "Do you offer yoga, breath work, or meditation?", value: "no-yoga"}
+              - {label: "Do you offer yoga or recovery classes?", value: "no-yoga"}
               - {label: "Are there weekend afternoon classes?", value: "no-weekend-afternoons"}
           - {label: "Trust strip (HTML)", name: "trustStrip", widget: "string", required: false}
           - {label: "Schema types", name: "schemaTypes", widget: "hidden"}
@@ -1001,7 +1001,7 @@ collections:
               - {label: "How long does a HYROX race take?", value: "race-duration"}
               - {label: "Do you offer childcare?", value: "no-childcare"}
               - {label: "Do you have a CrossFit Kids program?", value: "no-kids-program"}
-              - {label: "Do you offer yoga, breath work, or meditation?", value: "no-yoga"}
+              - {label: "Do you offer yoga or recovery classes?", value: "no-yoga"}
               - {label: "Are there weekend afternoon classes?", value: "no-weekend-afternoons"}
           - {label: "Extra schemas", name: "extraSchemas", widget: "hidden"}
           - label: "Final CTA"
@@ -1183,7 +1183,7 @@ collections:
               - {label: "How long does a HYROX race take?", value: "race-duration"}
               - {label: "Do you offer childcare?", value: "no-childcare"}
               - {label: "Do you have a CrossFit Kids program?", value: "no-kids-program"}
-              - {label: "Do you offer yoga, breath work, or meditation?", value: "no-yoga"}
+              - {label: "Do you offer yoga or recovery classes?", value: "no-yoga"}
               - {label: "Are there weekend afternoon classes?", value: "no-weekend-afternoons"}
           - {label: "Schema types", name: "schemaTypes", widget: "hidden"}
 
