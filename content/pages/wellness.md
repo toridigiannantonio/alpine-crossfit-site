@@ -1,13 +1,13 @@
 ---
 layout: layouts/page.njk
 permalink: /wellness/
-title: "Sauna & Cold Plunge in Wheat Ridge — Alpine CrossFit Wellness Center"
-description: "Steam sauna, cold plunges, compression boots, and peptide therapy in Wheat Ridge. Included with every Alpine membership from {{ site.pricing.tiers[0].price }}/month — no CrossFit required."
+title: "Sauna, Cold Plunge & CoWork in Wheat Ridge — Alpine CrossFit Wellness + CoWork"
+description: "Steam sauna, cold plunges, compression boots, peptide therapy, and a CoWork space in Wheat Ridge. Included with every Alpine membership from {{ site.pricing.tiers[0].price }}/month — no CrossFit required."
 canonical: "https://alpinecrossfit.com/wellness/"
-eyebrow: "Wellness Center"
+eyebrow: "Wellness + CoWork"
 heroLogo: { src: "/assets/img/brand/wordmark-wellness-dark.svg", alt: "Alpine Wellness Center" }
-heading: "Sauna, cold plunge, and recovery in <span class=\"accent\">Wheat Ridge</span>."
-dek: "Alpine's wellness center brings {{ site.wellness.prose }} together under one roof — in Wheat Ridge, serving Lakewood, Arvada, Applewood, and Golden. Included with every membership, starting at {{ site.pricing.tiers[0].price }}/month."
+heading: "Sauna, cold plunge, recovery, and CoWork in <span class=\"accent\">Wheat Ridge</span>."
+dek: "Alpine's wellness center brings {{ site.wellness.prose }} together under one roof, plus a CoWork space, in Wheat Ridge, serving Lakewood, Arvada, Applewood, and Golden. Included with every membership, starting at {{ site.pricing.tiers[0].price }}/month."
 heroCtas:
   - { label: "Book a free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
   - { label: "Drop in — {{ site.pricing.visitOptions[1].price }}", href: "{{ site.pricing.visitOptions[1].ctaHref }}", style: "btn-primary btn-lg" }
@@ -41,13 +41,14 @@ faqIds:
 <section class="section">
   <div class="container container-narrow">
     <span class="eyebrow">What's inside</span>
-    <h2>Four recovery tools, one membership.</h2>
-    <p>Alpine's wellness center brings together the recovery and performance tools usually scattered across separate clinics and studios — all on-site in Wheat Ridge, and included with your membership.</p>
+    <h2>Recovery tools and CoWork, one membership.</h2>
+    <p>Alpine's wellness center brings together the recovery and performance tools usually scattered across separate clinics and studios — all on-site in Wheat Ridge, and included with your membership. Plus a CoWork space so you can get work done before or after you train.</p>
     <ul class="feature-list">
       <li><strong>Steam sauna</strong> — a traditional steam sauna, not an infrared panel: enveloping, humid heat for circulation, recovery, and deep relaxation.</li>
       <li><strong>Cold plunges</strong> — ice-cold water immersion for recovery and cardiovascular stress adaptation.</li>
       <li><strong>Compression boots</strong> — sequential pneumatic compression that speeds lactate clearance and blood flow after hard training.</li>
       <li><strong>Peptide therapy</strong> — peptide-based recovery support for athletes focused on performance optimization.</li>
+      <li id="co-work"><strong>CoWork space</strong>: day lockers, tables and chairs, a coffee bar, and TVs.</li>
     </ul>
     <div style="margin-top:var(--space-8);padding:var(--space-6);border-left:3px solid var(--color-ironwood);background:var(--color-surface-2);border-radius:var(--radius);">
       <p style="font-weight:700;text-transform:uppercase;letter-spacing:0.1em;font-size:0.75rem;color:var(--color-accent-text);margin-bottom:var(--space-3);">Peptide therapy notice</p>
@@ -68,20 +69,6 @@ faqIds:
       <li><strong>Training for climbers and outdoor athletes</strong>, whether you're coming back from injury or chasing a goal.</li>
     </ul>
     <p><a class="btn btn-primary" href="https://flowstaterehab.com/" target="_blank" rel="noopener">Book with Flow State</a></p>
-  </div>
-</section>
-
-<section class="section" id="co-work">
-  <div class="container container-narrow">
-    <span class="eyebrow">CoWork space</span>
-    <h2>Work before or after you train.</h2>
-    <p>Alpine has a CoWork area so you can get work done without leaving the gym.</p>
-    <ul class="feature-list">
-      <li><strong>Day lockers</strong> for your bag and gear.</li>
-      <li><strong>Tables and chairs</strong> to set up and work.</li>
-      <li><strong>Coffee bar.</strong></li>
-      <li><strong>TVs.</strong></li>
-    </ul>
   </div>
 </section>
 
