@@ -67,7 +67,6 @@ extraSchemas:
           "@type": "Person",
           "name": "Megan Markee",
           "jobTitle": "Programmer",
-          "url": "https://alpinecrossfit.com/coaches/megan-markee/",
           "worksFor": {"@id": "https://alpinecrossfit.com/#organization"}
         }
       },
