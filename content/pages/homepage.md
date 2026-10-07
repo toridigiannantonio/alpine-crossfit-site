@@ -54,12 +54,12 @@ services:
   eyebrow: "What we offer"
   heading: "Training built around you."
   items:
-    - { heading: "CrossFit", note: "Coach-led classes, capped at 15. New? Start with Foundations.", link: "/crossfit/" }
-    - { heading: "Hybrid / HYROX", note: "HYROX-style classes, race prep, and run clubs.", link: "/hyrox/" }
-    - { heading: "Strong AF", note: "Coached strength work you can track. 5 days a week.", link: "/schedule/#strong-af" }
-    - { heading: "Downshift", note: "Yoga and recovery, Sunday mornings. Starts Nov 1.", link: "/schedule/#downshift" }
+    - { heading: "CrossFit", note: "Coach-led classes, capped at 15. New? Start with Foundations.", link: "/classes/#crossfit" }
+    - { heading: "Hybrid / HYROX", note: "HYROX-style classes, race prep, and run clubs.", link: "/classes/#hybrid" }
+    - { heading: "Strong AF", note: "Coached strength work you can track. 5 days a week.", link: "/classes/#strong-af" }
+    - { heading: "Downshift", note: "Yoga and recovery, Sunday mornings. Starts Nov 1.", link: "/classes/#downshift" }
     - { heading: "Wellness Center", note: "Sauna, cold plunge, compression, peptides.", link: "/wellness/" }
-    - { heading: "Prime Vitality (55+)", note: "Real strength work. Mon/Wed/Fri, 10 AM.", link: "/prime-vitality/" }
+    - { heading: "Prime Vitality (55+)", note: "Real strength work. Mon/Wed/Fri, 10 AM.", link: "/classes/#prime-vitality" }
 pricing:
   eyebrow: "Pricing"
   heading: "Published, so you don't need a sales call."
