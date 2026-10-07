@@ -38,3 +38,15 @@
 # Personal Training tier retired (2026-10). Send old links to pricing.
 /personal-training      /pricing/   301
 /personal-training/     /pricing/   301
+
+# Individual coach bio pages turned off (Oct 2026). The Coaches page now
+# carries short bios only.
+/coaches/april-digiannantonio/    /coaches/                     301
+/coaches/tori-digiannantonio/     /coaches/                     301
+/coaches/megan-markee/            /coaches/                     301
+/coaches/lisa-arcangel/           /coaches/                     301
+/coaches/dean-weeks/              /coaches/                     301
+/coaches/liz-kushner/             /coaches/                     301
+/coaches/maddy-portlock/          /coaches/                     301
+/coaches/mike-reynolds/           /coaches/                     301
+/coaches/kelley-williams/         /coaches/                     301
