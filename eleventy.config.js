@@ -20,6 +20,9 @@ export default function (eleventyConfig) {
   eleventyConfig.ignores.add("HANDOFF.md");
   eleventyConfig.ignores.add("_backup/**");
   eleventyConfig.ignores.add("README.md");
+  // Individual coach bio pages are turned off. The Coaches page carries
+  // short bios only. Old URLs 301 to /coaches/ (see _redirects).
+  eleventyConfig.ignores.add("content/coaches/**");
 
   // ----- Passthrough copy: assets and CMS files served as-is -----
   eleventyConfig.addPassthroughCopy("assets");
