@@ -43,7 +43,6 @@ extraSchemas:
           "@type": Person
           name: April DiGiannantonio
           jobTitle: Owner
-          url: https://alpinecrossfit.com/coaches/april-digiannantonio/
           worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
       - "@type": ListItem
         position: 2
@@ -51,7 +50,6 @@ extraSchemas:
           "@type": Person
           name: Tori DiGiannantonio
           jobTitle: Co-Owner
-          url: https://alpinecrossfit.com/coaches/tori-digiannantonio/
           worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
       - "@type": ListItem
         position: 3
@@ -59,7 +57,6 @@ extraSchemas:
           "@type": Person
           name: Megan Markee
           jobTitle: Programmer
-          url: https://alpinecrossfit.com/coaches/megan-markee/
           worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
       - "@type": ListItem
         position: 4
@@ -67,7 +64,6 @@ extraSchemas:
           "@type": Person
           name: Lisa Arcangel
           jobTitle: Coach
-          url: https://alpinecrossfit.com/coaches/lisa-arcangel/
           worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
       - "@type": ListItem
         position: 5
@@ -75,7 +71,6 @@ extraSchemas:
           "@type": Person
           name: Dean Weeks
           jobTitle: Coach
-          url: https://alpinecrossfit.com/coaches/dean-weeks/
           worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
       - "@type": ListItem
         position: 6
@@ -83,7 +78,6 @@ extraSchemas:
           "@type": Person
           name: Liz Kushner
           jobTitle: Coach
-          url: https://alpinecrossfit.com/coaches/liz-kushner/
           worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
 ---
 <section class="section">
@@ -157,7 +151,6 @@ extraSchemas:
           <dt>Workout</dt><dd></dd>
           <dt>Quote</dt><dd></dd>
         </dl>
-        <a href="/coaches/lisa-arcangel/">Learn about Lisa →</a>
       </div>
       <div class="card">
         <h3>Dean Weeks</h3>
@@ -172,7 +165,6 @@ extraSchemas:
           <dt>Workout</dt><dd></dd>
           <dt>Quote</dt><dd></dd>
         </dl>
-        <a href="/coaches/dean-weeks/">Learn about Dean →</a>
       </div>
       <div class="card">
         <h3>Liz Kushner</h3>
@@ -187,7 +179,6 @@ extraSchemas:
           <dt>Workout</dt><dd></dd>
           <dt>Quote</dt><dd></dd>
         </dl>
-        <a href="/coaches/liz-kushner/">Learn about Liz →</a>
       </div>
       <div class="card">
         <h3>April DiGiannantonio</h3>
@@ -202,7 +193,6 @@ extraSchemas:
           <dt>Workout</dt><dd></dd>
           <dt>Quote</dt><dd></dd>
         </dl>
-        <a href="/coaches/april-digiannantonio/">Learn about April →</a>
       </div>
       <div class="card">
         <h3>Tori DiGiannantonio</h3>
@@ -217,7 +207,6 @@ extraSchemas:
           <dt>Workout</dt><dd>Trail running</dd>
           <dt>Quote</dt><dd>&ldquo;Suffer well.&rdquo;</dd>
         </dl>
-        <a href="/coaches/tori-digiannantonio/">Learn about Tori →</a>
       </div>
       <div class="card">
         <h3>Megan Markee</h3>
@@ -232,12 +221,10 @@ extraSchemas:
           <dt>Workout</dt><dd></dd>
           <dt>Quote</dt><dd></dd>
         </dl>
-        <a href="/coaches/megan-markee/">Learn about Megan →</a>
       </div>
       <div class="card">
         <h3>Maddy Portlock</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach</p>
-        <p>Full bio coming soon.</p>
         <p class="coach-label">Certifications</p>
         <p class="coach-certs"></p>
         <p class="coach-label">Favorites</p>
@@ -247,12 +234,10 @@ extraSchemas:
           <dt>Workout</dt><dd></dd>
           <dt>Quote</dt><dd></dd>
         </dl>
-        <a href="/coaches/maddy-portlock/">Learn about Maddy →</a>
       </div>
       <div class="card">
         <h3>Mike Reynolds</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach</p>
-        <p>Full bio coming soon.</p>
         <p class="coach-label">Certifications</p>
         <p class="coach-certs"></p>
         <p class="coach-label">Favorites</p>
@@ -262,12 +247,10 @@ extraSchemas:
           <dt>Workout</dt><dd></dd>
           <dt>Quote</dt><dd></dd>
         </dl>
-        <a href="/coaches/mike-reynolds/">Learn about Mike →</a>
       </div>
       <div class="card">
         <h3>Kelley Williams</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach</p>
-        <p>Full bio coming soon.</p>
         <p class="coach-label">Certifications</p>
         <p class="coach-certs"></p>
         <p class="coach-label">Favorites</p>
@@ -277,7 +260,6 @@ extraSchemas:
           <dt>Workout</dt><dd></dd>
           <dt>Quote</dt><dd></dd>
         </dl>
-        <a href="/coaches/kelley-williams/">Learn about Kelley →</a>
       </div>
     </div>
   </div>
