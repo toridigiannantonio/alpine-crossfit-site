@@ -148,24 +148,60 @@ extraSchemas:
         <h3>Lisa Arcangel</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · 15+ years coaching · Masters Semifinalist</p>
         <p>CrossFit Games Masters Semifinalist. A lifelong athlete who has competed in the CrossFit Open every year since 2012. Former collegiate basketball and softball player.</p>
+        <p class="coach-label">Certifications</p>
+        <p class="coach-certs">Coming soon</p>
+        <p class="coach-label">Favorites</p>
+        <dl class="coach-favs">
+          <dt>Food</dt><dd>Coming soon</dd>
+          <dt>Drink</dt><dd>Coming soon</dd>
+          <dt>Workout</dt><dd>Coming soon</dd>
+          <dt>Quote</dt><dd>Coming soon</dd>
+        </dl>
         <a href="/coaches/lisa-arcangel/">Learn about Lisa →</a>
       </div>
       <div class="card">
         <h3>Dean Weeks</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · 10+ years training · Active competitor</p>
         <p>A decade of CrossFit training and active competition. Known at Alpine for empathy and an unparalleled ability to motivate athletes at every experience level.</p>
+        <p class="coach-label">Certifications</p>
+        <p class="coach-certs">Coming soon</p>
+        <p class="coach-label">Favorites</p>
+        <dl class="coach-favs">
+          <dt>Food</dt><dd>Coming soon</dd>
+          <dt>Drink</dt><dd>Coming soon</dd>
+          <dt>Workout</dt><dd>Coming soon</dd>
+          <dt>Quote</dt><dd>Coming soon</dd>
+        </dl>
         <a href="/coaches/dean-weeks/">Learn about Dean →</a>
       </div>
       <div class="card">
         <h3>Liz Kushner</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · 10+ years coaching · 2026 Quarterfinalist</p>
         <p>Decade of coaching with a strength-and-barbell focus. 2026 Quarterfinals qualifier. Alpine's resident class clown — the coach who makes every class memorable.</p>
+        <p class="coach-label">Certifications</p>
+        <p class="coach-certs">Coming soon</p>
+        <p class="coach-label">Favorites</p>
+        <dl class="coach-favs">
+          <dt>Food</dt><dd>Coming soon</dd>
+          <dt>Drink</dt><dd>Coming soon</dd>
+          <dt>Workout</dt><dd>Coming soon</dd>
+          <dt>Quote</dt><dd>Coming soon</dd>
+        </dl>
         <a href="/coaches/liz-kushner/">Learn about Liz →</a>
       </div>
       <div class="card">
         <h3>April DiGiannantonio</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Owner · Former D1 Director of Sports Performance</p>
         <p>Ten-plus years in fitness and sports performance. Has owned CrossFit gyms on and off since 2013 and competed at CrossFit Games Regionals, individually and on a team. Spent over five years coaching Division I athletes across a dozen sports. Programs Alpine's in-house training alongside Megan Markee.</p>
+        <p class="coach-label">Certifications</p>
+        <p class="coach-certs">Coming soon</p>
+        <p class="coach-label">Favorites</p>
+        <dl class="coach-favs">
+          <dt>Food</dt><dd>Coming soon</dd>
+          <dt>Drink</dt><dd>Coming soon</dd>
+          <dt>Workout</dt><dd>Coming soon</dd>
+          <dt>Quote</dt><dd>Coming soon</dd>
+        </dl>
         <a href="/coaches/april-digiannantonio/">Learn about April →</a>
       </div>
       <div class="card">
@@ -187,24 +223,60 @@ extraSchemas:
         <h3>Megan Markee</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Programmer · 2× Semifinalist · 2× Regionals</p>
         <p>Designs every workout Alpine members follow, in collaboration with owner April. Twice qualified for the CrossFit Games Semifinals, and twice for CrossFit Games Regionals on a team. Started CrossFit in 2011.</p>
+        <p class="coach-label">Certifications</p>
+        <p class="coach-certs">Coming soon</p>
+        <p class="coach-label">Favorites</p>
+        <dl class="coach-favs">
+          <dt>Food</dt><dd>Coming soon</dd>
+          <dt>Drink</dt><dd>Coming soon</dd>
+          <dt>Workout</dt><dd>Coming soon</dd>
+          <dt>Quote</dt><dd>Coming soon</dd>
+        </dl>
         <a href="/coaches/megan-markee/">Learn about Megan →</a>
       </div>
       <div class="card">
         <h3>Maddy Portlock</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach</p>
         <p>Full bio coming soon.</p>
+        <p class="coach-label">Certifications</p>
+        <p class="coach-certs">Coming soon</p>
+        <p class="coach-label">Favorites</p>
+        <dl class="coach-favs">
+          <dt>Food</dt><dd>Coming soon</dd>
+          <dt>Drink</dt><dd>Coming soon</dd>
+          <dt>Workout</dt><dd>Coming soon</dd>
+          <dt>Quote</dt><dd>Coming soon</dd>
+        </dl>
         <a href="/coaches/maddy-portlock/">Learn about Maddy →</a>
       </div>
       <div class="card">
         <h3>Mike Reynolds</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach</p>
         <p>Full bio coming soon.</p>
+        <p class="coach-label">Certifications</p>
+        <p class="coach-certs">Coming soon</p>
+        <p class="coach-label">Favorites</p>
+        <dl class="coach-favs">
+          <dt>Food</dt><dd>Coming soon</dd>
+          <dt>Drink</dt><dd>Coming soon</dd>
+          <dt>Workout</dt><dd>Coming soon</dd>
+          <dt>Quote</dt><dd>Coming soon</dd>
+        </dl>
         <a href="/coaches/mike-reynolds/">Learn about Mike →</a>
       </div>
       <div class="card">
         <h3>Kelley Williams</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach</p>
         <p>Full bio coming soon.</p>
+        <p class="coach-label">Certifications</p>
+        <p class="coach-certs">Coming soon</p>
+        <p class="coach-label">Favorites</p>
+        <dl class="coach-favs">
+          <dt>Food</dt><dd>Coming soon</dd>
+          <dt>Drink</dt><dd>Coming soon</dd>
+          <dt>Workout</dt><dd>Coming soon</dd>
+          <dt>Quote</dt><dd>Coming soon</dd>
+        </dl>
         <a href="/coaches/kelley-williams/">Learn about Kelley →</a>
       </div>
     </div>
