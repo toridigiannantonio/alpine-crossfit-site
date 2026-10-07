@@ -1,13 +1,13 @@
 ---
 layout: layouts/page.njk
 permalink: /about/
-title: "About Alpine CrossFit — Wheat Ridge's Community CrossFit Gym"
+title: "About Alpine CrossFit — Wheat Ridge's Community Gym"
 description: "Alpine CrossFit is a Wheat Ridge, CO gym co-owned by two CrossFit Games competitors who program every workout and train in the classes alongside members. Three professional coaches. In-house programming."
 canonical: "https://alpinecrossfit.com/about/"
 loadImagesScript: true
 eyebrow: "About"
 heading: "About Alpine CrossFit."
-dek: "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, owned by April and Tori DiGiannantonio. April has owned CrossFit gyms on and off since 2013 and spent five-plus years as a Division I Director of Sports Performance; Tori brings a career in mental performance coaching (LCSW, CMPC) and endurance sport. Programming remains in-house, led by Megan Markee (CSCS) in collaboration with April."
+dek: "Alpine CrossFit is a community-focused gym in Wheat Ridge, Colorado, with coached CrossFit, strength, HYROX-style, and yoga classes, owned by April and Tori DiGiannantonio. April has owned CrossFit gyms on and off since 2013 and spent five-plus years as a Division I Director of Sports Performance; Tori brings a career in mental performance coaching (LCSW, CMPC) and endurance sport. Programming remains in-house, led by Megan Markee (CSCS) in collaboration with April."
 heroCtas:
   - { label: "Book a free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
   - { label: "Drop in — {{ site.pricing.visitOptions[1].price }}", href: "{{ site.pricing.visitOptions[1].ctaHref }}", style: "btn-primary btn-lg" }
@@ -32,7 +32,7 @@ extraSchemas:
       "@type": "AboutPage",
       "url": "https://alpinecrossfit.com/about/",
       "name": "About Alpine CrossFit",
-      "description": "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, owned by April DiGiannantonio (CSCS, SCCC, CrossFit Trainer, former Director of Sports Performance for a Division I program) and Tori DiGiannantonio (LCSW, CMPC, yoga instructor, ultrarunner). Programming is in-house, led by Megan Markee (CSCS, CF-L1) in collaboration with April. Group classes are led by coaches with 10 to 15+ years of experience.",
+      "description": "Alpine CrossFit is a community-focused gym in Wheat Ridge, Colorado, offering coached CrossFit, strength, HYROX-style, and yoga classes. It is owned by April DiGiannantonio (CSCS, SCCC, CrossFit Trainer, former Director of Sports Performance for a Division I program) and Tori DiGiannantonio (LCSW, CMPC, yoga instructor, ultrarunner). Programming is in-house, led by Megan Markee (CSCS, CF-L1) in collaboration with April. Group classes are led by coaches with 10 to 15+ years of experience.",
       "mainEntity": {"@id": "https://alpinecrossfit.com/#healthclub"}
     }
   - {

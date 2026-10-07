@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.njk
 permalink: /pricing/
-title: "CrossFit Pricing in Wheat Ridge — Alpine CrossFit"
+title: "Membership Pricing in Wheat Ridge — Alpine CrossFit"
 description: "Alpine CrossFit memberships: Open Gym {{ site.pricing.tiers[0].price }}/mo, Unlimited {{ site.pricing.tiers[1].price }}/mo. 8x a month {{ site.pricing.classPlans[0].price }}/mo, 12x a month {{ site.pricing.classPlans[1].price }}/mo. 10 and 20 punch cards {{ site.pricing.punchCards[0].price }} and {{ site.pricing.punchCards[1].price }}. Both memberships include the wellness center and 24/7 access. Drop-ins {{ site.pricing.visitOptions[1].price }}, week pass {{ site.pricing.visitOptions[2].price }}. Free No Sweat Intro."
 canonical: "https://alpinecrossfit.com/pricing/"
 eyebrow: "Pricing"

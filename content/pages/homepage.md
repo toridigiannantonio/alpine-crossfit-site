@@ -1,11 +1,11 @@
 ---
 layout: layouts/homepage.njk
 permalink: /
-title: "Alpine CrossFit — CrossFit Gym in Wheat Ridge, CO"
-description: "Locally-owned CrossFit gym in Wheat Ridge. Coaching and programming built on decades of CrossFit, Division I coaching, and Division I athletics. Wellness center, 24/7 access."
+title: "Alpine CrossFit — Training for Every Body in Wheat Ridge, CO"
+description: "Locally-owned gym in Wheat Ridge with coached CrossFit, strength, HYROX-style, and yoga classes. Coaching built on decades of CrossFit, Division I coaching, and Division I athletics. Wellness center, 24/7 access."
 canonical: "https://alpinecrossfit.com/"
 ogTitle: "Alpine CrossFit — Wheat Ridge, CO"
-ogDescription: "Locally-owned CrossFit gym in Wheat Ridge. In-house programming and coaching built on decades of CrossFit, Division I coaching, and Division I athletics. Wellness center, 24/7 member access."
+ogDescription: "Locally-owned gym in Wheat Ridge with coached CrossFit, strength, HYROX-style, and yoga classes. In-house programming built on decades of CrossFit, Division I coaching, and Division I athletics. Wellness center, 24/7 member access."
 ogImage: "https://alpinecrossfit.com/assets/img/hero-alpine-wall.jpg"
 ogType: "website"
 loadImagesScript: true
@@ -16,8 +16,8 @@ announcement:
   linkLabel: "See what's new →"
 hero:
   eyebrow: "Wheat Ridge, CO"
-  heading: "CrossFit for <span class=\"accent\">every body</span> in Wheat Ridge."
-  dek: "Coached classes, programming written in-house by two CSCS-certified coaches, and a wellness center — in one month-to-month membership."
+  heading: "Training for <span class=\"accent\">every body</span> in Wheat Ridge."
+  dek: "CrossFit, strength, HYROX-style, and yoga classes, programming written in-house by two CSCS-certified coaches, and a wellness center — in one month-to-month membership."
   secondaryCta:
     label: "Drop in — {{ site.pricing.visitOptions[1].price }}"
     href: "{{ site.pricing.visitOptions[1].ctaHref }}"

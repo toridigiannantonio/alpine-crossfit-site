@@ -1,5 +1,5 @@
 ---
-title: CrossFit Coaches in Wheat Ridge, CO | Alpine CrossFit
+title: Coaches in Wheat Ridge, CO | Alpine CrossFit
 description: Meet Alpine CrossFit's coaches in Wheat Ridge, near Denver.
   Collaborative in-house programming, coaching rooted in years of CrossFit,
   Division I coaching, Division I athletes, yoga, and clinical expertise.
