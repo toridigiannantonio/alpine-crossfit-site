@@ -42,7 +42,7 @@ export default {
 
   name: "Alpine CrossFit",
   url: "https://alpinecrossfit.com",
-  tagline: "CrossFit gym in Wheat Ridge, CO",
+  tagline: "Gym in Wheat Ridge, CO: CrossFit, strength, HYROX, and recovery",
 
   // Contact / location — used in footer, schema.org, and headers
   address: gym.address,
