@@ -104,7 +104,6 @@ export default {
       lines: [
         "<strong>Mon–Fri:</strong> 5:30, 6:30, 8:00 AM · 12:00, 3:30, 4:30, 5:30 PM",
         "<strong>Saturday:</strong> 8:00, 9:00 AM",
-        "<strong>Sunday:</strong> 9:00 AM",
       ],
       note: "Every class is capped at 15 athletes and led by an experienced coach.",
     },
