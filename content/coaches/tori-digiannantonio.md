@@ -6,8 +6,8 @@ description: "Tori DiGiannantonio is co-owner of Alpine CrossFit. A licensed cli
 canonical: "https://alpinecrossfit.com/coaches/tori-digiannantonio/"
 order: 2
 name: "Tori DiGiannantonio"
-credentialsLine: "Assistant to the Owner (Co-Owner) · LCSW · CMPC · Ultrarunner · Yoga Instructor"
-bio: "Tori DiGiannantonio is co-owner of Alpine CrossFit. She spent years as a firefighter and paramedic, started CrossFit in 2011, and is a lifelong athlete and ultrarunner. Today she is a therapist (LCSW) and Certified Mental Performance Consultant (CMPC) who works with athletes and first responders. She also owns <a href=\"https://grounded-ascent.com\" target=\"_blank\" rel=\"noopener\">Grounded Ascent Performance</a>."
+credentialsLine: "Assistant to the Owner (Co-Owner) · Downshift Lead · LCSW · CMPC · Ultrarunner · Yoga Instructor"
+bio: "Tori DiGiannantonio is co-owner of Alpine CrossFit. She leads Downshift, our yoga and recovery class, and coaches the occasional Hybrid class. She spent years as a firefighter and paramedic, started CrossFit in 2011, and runs ultras. She is a therapist (LCSW) and Certified Mental Performance Consultant (CMPC) who works with athletes and first responders, and she owns <a href=\"https://grounded-ascent.com\" target=\"_blank\" rel=\"noopener\">Grounded Ascent Performance</a>. Mental performance and therapy services at Alpine are coming soon."
 credentials:
   - "Licensed Clinical Social Worker (LCSW)"
   - "Certified Mental Performance Consultant (CMPC, AASP)"
