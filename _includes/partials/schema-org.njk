@@ -96,6 +96,7 @@
     {%- for c in site.pricing.classPlans %}
     { "@type": "Offer", "name": {{ c.name | jsonStringify | safe }}, "price": "{{ c.amount }}", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
     {%- endfor %}
+    { "@type": "Offer", "name": {{ site.pricing.foundations.name | jsonStringify | safe }}, "price": "{{ site.pricing.foundations.amount }}", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
     {%- for c in site.pricing.punchCards %}
     { "@type": "Offer", "name": {{ c.name | jsonStringify | safe }}, "price": "{{ c.amount }}", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
     {%- endfor %}

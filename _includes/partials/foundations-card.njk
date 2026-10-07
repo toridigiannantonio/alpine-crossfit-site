@@ -1,0 +1,19 @@
+{# Foundations on-ramp offer, rendered from site.pricing.foundations. #}
+{%- set f = site.pricing.foundations %}
+<div class="foundations-offer">
+  <div class="card card-featured foundations-card">
+    <p class="eyebrow" style="margin-bottom:var(--space-2);">{{ f.audience }}</p>
+    <h3>{{ f.name }}</h3>
+    <div class="price">{{ f.price }}<span class="price-unit"> one-time</span></div>
+    <p>{{ f.summary }}</p>
+    <ul class="feature-list">
+    {%- for x in f.features %}
+      <li>{{ x }}</li>
+    {%- endfor %}
+    </ul>
+    <div class="card-cta">
+      <a class="btn btn-primary" href="{{ f.ctaHref }}"{% if f.ctaExternal %} target="_blank" rel="noopener"{% endif %}>{{ f.ctaLabel }}</a>
+      <p class="card-cta-alt"><a href="/free-intro/">Not sure yet? Book a free intro →</a></p>
+    </div>
+  </div>
+</div>
