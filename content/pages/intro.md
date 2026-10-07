@@ -4,7 +4,7 @@ permalink: /intro/
 title: "Schedule your No Sweat Intro — Alpine CrossFit"
 description: "Pick a time for your free No Sweat Intro at Alpine CrossFit in Wheat Ridge. 30 minutes, no workout, no pressure."
 canonical: "https://alpinecrossfit.com/intro/"
-ogImage: "https://alpinecrossfit.com/assets/img/hero-alpine-wall.jpg"
+ogImage: "https://alpinecrossfit.com/assets/img/og-alpine-2026.jpg"
 noindex: true
 schemaTypes: []
 eyebrow: "You're in"

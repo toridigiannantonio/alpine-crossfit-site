@@ -6,7 +6,7 @@ description: "Locally-owned gym in Wheat Ridge with coached CrossFit, strength, 
 canonical: "https://alpinecrossfit.com/"
 ogTitle: "Alpine CrossFit — Wheat Ridge, CO"
 ogDescription: "Locally-owned gym in Wheat Ridge with coached CrossFit, strength, HYROX-style, and yoga classes. In-house programming built on decades of CrossFit, Division I coaching, and Division I athletics. Wellness center, 24/7 member access."
-ogImage: "https://alpinecrossfit.com/assets/img/hero-alpine-wall.jpg"
+ogImage: "https://alpinecrossfit.com/assets/img/og-alpine-2026.jpg"
 ogType: "website"
 loadImagesScript: true
 schemaTypes: ["website", "organization", "healthclub"]

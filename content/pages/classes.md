@@ -46,7 +46,7 @@ finalCta:
     <p><strong>Good for:</strong> anyone new to this style of training, or coming back after time off.</p>
     <p><strong>When:</strong> scheduled one-on-one with your coach.</p>
     <p><strong>Cost:</strong> {{ site.pricing.foundations.price }} one-time, including your first month of Unlimited.</p>
-    <p class="class-links"><a class="btn btn-primary" href="{{ site.pricing.foundations.ctaHref }}" target="_blank" rel="noopener">Buy Foundations</a> <a href="/free-intro/">Or book a free intro first →</a></p>
+    <p class="class-links"><a class="btn btn-primary" href="{{ site.pricing.foundations.ctaHref }}" target="_blank" rel="noopener">Book Foundations</a> <a href="/free-intro/">Or book a free intro first →</a></p>
   </div>
 </section>
 
