@@ -34,3 +34,7 @@
 
 # 2026 ownership transition — removed coach page redirects to the coaches index
 /coaches/annie-brunner/           /coaches/                     301
+
+# Personal Training tier retired (2026-10). Send old links to pricing.
+/personal-training      /pricing/   301
+/personal-training/     /pricing/   301
