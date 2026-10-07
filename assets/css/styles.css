@@ -1820,3 +1820,6 @@ main img { max-width: 100%; height: auto; }
 .site-footer { border-top-color: var(--color-dune); }
 .sticky-cta { border-top-color: var(--color-dune); }
 @media (max-width: 760px) { .hero-image { box-shadow: 8px 8px 0 0 var(--color-dune); } }
+
+/* Anchored class blocks clear the sticky header when linked from tiles. */
+.class-block[id], section[id] { scroll-margin-top: 96px; }
