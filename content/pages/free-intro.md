@@ -96,8 +96,8 @@ finalCta:
         <p>If you already have CrossFit experience or a strong training background, you may be ready to start in classes.</p>
       </div>
       <div class="card">
-        <h3>3. Personal training</h3>
-        <p>If you have a specific injury, sport, or performance goal, one-on-one coaching may be the best path.</p>
+        <h3>3. A specialty class</h3>
+        <p>If your goal is getting stronger, racing HYROX, or recovering better, Strong AF, Hybrid, or Downshift may be the best place to start.</p>
       </div>
       <div class="card">
         <h3>4. None of the above</h3>

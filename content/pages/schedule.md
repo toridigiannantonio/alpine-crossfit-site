@@ -1,7 +1,8 @@
 ---
 title: Class Schedule — Alpine CrossFit Wheat Ridge
-description: Alpine CrossFit's weekly class schedule — CrossFit, Prime Vitality
-  (55+), and wellness center hours. 10+ classes a day in Wheat Ridge, CO.
+description: Alpine CrossFit's weekly class schedule — CrossFit, Strong AF
+  strength, Hybrid (HYROX-style), Downshift yoga, Prime Vitality (55+), and
+  wellness center hours. 10+ classes a day in Wheat Ridge, CO.
 eyebrow: Schedule
 heading: 10+ classes a day, seven days a week.
 dek: Drop in anytime. Every class is led by an experienced coach.
@@ -40,6 +41,7 @@ faqIds:
   - how-often
   - class-length
   - class-size
+  - specialty-classes
   - sunday-classes
   - can-i-drop-in
 ---
@@ -52,6 +54,34 @@ faqIds:
     <p><strong>Saturday:</strong> 8:00, 9:00 AM</p>
     <p><strong>Sunday:</strong> 9:00 AM</p>
     <p style="margin-top: var(--space-4); font-size: 0.95rem; color: var(--color-text-muted);">Every class is capped at 15 athletes and led by an experienced coach.</p>
+  </div>
+</section>
+
+<section class="section section-forest" id="specialty">
+  <div class="container container-narrow">
+    <span class="eyebrow">Specialty classes</span>
+    <h2>Strong AF, Hybrid, and Downshift.</h2>
+    <div class="class-block">
+      <h3>Strong AF <span class="class-tag">Strength</span></h3>
+      <p>Coached strength work: barbell lifts, accessory work, and steady progression you can track.</p>
+      <p><strong>Monday:</strong> 4:30, 5:30 PM<br>
+      <strong>Tuesday &amp; Thursday:</strong> 6:30, 7:30 AM<br>
+      <strong>Wednesday:</strong> 5:30 PM<br>
+      <strong>Saturday:</strong> 7:00 AM</p>
+    </div>
+    <div class="class-block">
+      <h3>Hybrid <span class="class-tag">HYROX-style</span></h3>
+      <p>Running, stations, and strength-endurance built for HYROX and hybrid athletes.</p>
+      <p><strong>Tuesday:</strong> every class runs as Hybrid (Strong AF at 6:30 and 7:30 AM)<br>
+      <strong>Wednesday:</strong> 7:00 AM, 4:30 PM<br>
+      <strong>Sunday:</strong> 8:00 – 9:30 AM</p>
+    </div>
+    <div class="class-block">
+      <h3>Downshift <span class="class-tag">Yoga &amp; recovery</span></h3>
+      <p>A 45-minute yoga and recovery class to close out the week. Twice a month.</p>
+      <p><strong>Sunday:</strong> 9:45 – 10:30 AM, two Sundays a month</p>
+    </div>
+    <p style="margin-top: var(--space-4); font-size: 0.95rem;">All three are included with Unlimited. On Open Gym, class plans, and punch cards, each class counts as one sign-in.</p>
   </div>
 </section>
 
@@ -71,7 +101,7 @@ faqIds:
     <p><strong>Mon–Fri:</strong> 5:30 AM – 6:30 PM</p>
     <p><strong>Sat:</strong> 8:00 – 10:00 AM</p>
     <p><strong>Sun:</strong> 8:00 – 9:00 AM</p>
-    <p style="margin-top: var(--space-4);">Sauna, cold plunges, compression boots, peptide therapy. Included with every membership tier.</p>
+    <p style="margin-top: var(--space-4);">Sauna, cold plunges, compression boots, peptide therapy. Included with every membership.</p>
     <p class="text-muted" style="margin-top: var(--space-4); font-size: 0.9rem;">Unlimited members also have 24/7 facility access.</p>
   </div>
 </section>

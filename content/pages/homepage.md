@@ -56,14 +56,14 @@ services:
   items:
     - { heading: "CrossFit", note: "Coach-led group classes, capped at 15.", link: "/crossfit/" }
     - { heading: "HYROX", note: "Official training center. Race prep + run clubs.", link: "/hyrox/" }
-    - { heading: "Personal Training", note: "One-on-one coaching for specific goals.", link: "/personal-training/" }
+    - { heading: "Strong AF, Hybrid & Downshift", note: "Strength, HYROX-style, and yoga classes.", link: "/schedule/#specialty" }
     - { heading: "Wellness Center", note: "Sauna, cold plunge, compression, peptides.", link: "/wellness/" }
     - { heading: "Prime Vitality (55+)", note: "Real strength work. Mon/Wed/Fri, 10 AM.", link: "/prime-vitality/" }
     - { heading: "New to CrossFit", note: "The Foundations on-ramp, step by step.", link: "/crossfit/#beginners" }
 pricing:
   eyebrow: "Pricing"
   heading: "Published, so you don't need a sales call."
-  note: "Every tier includes the wellness center and 24/7 facility access. Month-to-month, no contracts, no initiation fees."
+  note: "Both memberships include the wellness center and 24/7 facility access. Month-to-month, no contracts, no initiation fees."
   moreLink: { label: "See what's in each tier →", href: "/pricing/" }
 proof:
   eyebrow: "Member voices"
