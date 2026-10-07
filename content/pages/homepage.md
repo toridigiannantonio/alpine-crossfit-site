@@ -16,7 +16,7 @@ announcement:
   linkLabel: "See what's new →"
 hero:
   eyebrow: "Wheat Ridge, CO"
-  heading: "Training for <span class=\"accent\">every body</span> in Wheat Ridge."
+  heading: "Training for <span class=\"accent\">every body</span>."
   dek: "CrossFit, strength, HYROX-style, and yoga classes, programming written in-house by two CSCS-certified coaches, and a wellness center — in one month-to-month membership."
   secondaryCta:
     label: "Drop in — {{ site.pricing.visitOptions[1].price }}"
