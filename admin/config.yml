@@ -1189,6 +1189,11 @@ collections:
 
           - {label: "Sitemap priority", name: "priority", widget: "hidden"}
           - {label: "Sitemap change frequency", name: "changefreq", widget: "hidden"}
+      - file: "content/pages/classes.md"
+        name: "classes"
+        label: "Classes overview page"
+        fields: *service_page_fields
+
       - file: "content/pages/hyrox.md"
         name: "hyrox"
         label: "HYROX service page"
