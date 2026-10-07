@@ -1785,3 +1785,38 @@ main img { max-width: 100%; height: auto; }
 .class-block h3 { margin-bottom: var(--space-2); }
 .class-tag { display: inline-block; margin-left: var(--space-2); padding: 2px 8px; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; vertical-align: middle; background: var(--color-dune); color: var(--color-grit-deep); border-radius: var(--radius); }
 @media (max-width: 760px) { .hero-image { box-shadow: 8px 8px 0 0 var(--color-ponderosa); } }
+
+/* ------------------------------------------------------------------------
+   Oct 2026, pass 2: no green on green, a little more tan.
+   Anything sitting on a Ponderosa band is charcoal or tan, never a darker
+   green. Ponderosa buttons never sit on a Ponderosa-tinted card.
+   ------------------------------------------------------------------------ */
+
+/* Cards, tiles and quotes on Ponderosa bands: charcoal with a tan edge. */
+.section-forest .tile,
+.section-forest .card,
+.section-forest .testimonial {
+  background: rgba(43, 41, 41, 0.88);
+  border-color: rgba(193, 154, 107, 0.35);
+  border-left-color: var(--color-dune);
+}
+.section-forest .class-block { border-left-color: var(--color-dune); }
+
+/* Big numbers and stars on Ponderosa go tan. */
+.section-forest .stat-value { color: var(--color-dune-pale); }
+.section-forest .testimonial-stars { color: var(--color-dune-pale); }
+
+/* Featured cards on charcoal: no green wash. A faint tan glow and tan edge,
+   so the Ponderosa button inside is the only green in the card. */
+.card-featured {
+  border-color: var(--color-dune);
+  background: linear-gradient(180deg, rgba(193, 154, 107, 0.16) 0%, var(--color-surface) 70%);
+}
+.card-featured .price { color: var(--color-dune-light); }
+
+/* Lines that touch a green band switch to tan so green never meets green. */
+.site-header { border-bottom-color: var(--color-dune); }
+.hero-image { box-shadow: 12px 12px 0 0 var(--color-dune); }
+.site-footer { border-top-color: var(--color-dune); }
+.sticky-cta { border-top-color: var(--color-dune); }
+@media (max-width: 760px) { .hero-image { box-shadow: 8px 8px 0 0 var(--color-dune); } }
