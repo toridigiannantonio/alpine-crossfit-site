@@ -45,8 +45,8 @@
       "1 month of Unlimited classes",
       "Wellness center and 24/7 access during your Unlimited month"
     ],
-    "ctaLabel": "Buy Foundations",
-    "ctaHref": "https://app.chalkitpro.com/gymProductLink/754/99d5cab8-67e1-4e99-9dd7-caaf5ea82d09/16742/",
+    "ctaLabel": "Book Foundations",
+    "ctaHref": "https://link.gymntx.com/widget/booking/zsKZS4bpf3wV6m2thcFB",
     "ctaExternal": true
   },
   "tiers": [
@@ -67,8 +67,8 @@
         "Unlimited classes",
         "Prime Vitality (55+)"
       ],
-      "ctaLabel": "Buy Open Gym",
-      "ctaHref": "https://app.chalkitpro.com/gymProductLink/754/0cfb205d-d904-4d15-9e8b-4f97aa524ab4/17012/",
+      "ctaLabel": "Talk to us about membership",
+      "ctaHref": "https://link.gymntx.com/widget/booking/D3oYgyrlF9AzrBhpaP60",
       "ctaExternal": true,
       "altCtaLabel": "Or start with a free intro →",
       "altCtaHref": "/free-intro/"
@@ -87,8 +87,8 @@
         "24/7 facility access"
       ],
       "excluded": [],
-      "ctaLabel": "Buy Unlimited",
-      "ctaHref": "https://app.chalkitpro.com/gymProductLink/754/prod_Rppv33nN4MD3eP/8592/",
+      "ctaLabel": "Talk to us about membership",
+      "ctaHref": "https://link.gymntx.com/widget/booking/D3oYgyrlF9AzrBhpaP60",
       "ctaExternal": true,
       "altCtaLabel": "Or start with a free intro →",
       "altCtaHref": "/free-intro/"
@@ -102,8 +102,8 @@
       "unit": "/month",
       "visits": "8 sign-ins a month",
       "bestFor": "Training about twice a week. Each sign-in covers one class, one open gym session, or one wellness center visit. Recurring monthly. No 24/7 access.",
-      "ctaLabel": "Buy 8x a Month",
-      "ctaHref": "https://app.chalkitpro.com/gymProductLink/754/prod_Rpq6SJsfLmOyhE/8596/",
+      "ctaLabel": "Talk to us about membership",
+      "ctaHref": "https://link.gymntx.com/widget/booking/D3oYgyrlF9AzrBhpaP60",
       "ctaExternal": true
     },
     {
@@ -113,8 +113,8 @@
       "unit": "/month",
       "visits": "12 sign-ins a month",
       "bestFor": "Training about three times a week. Each sign-in covers one class, one open gym session, or one wellness center visit. Recurring monthly. No 24/7 access.",
-      "ctaLabel": "Buy 12x a Month",
-      "ctaHref": "https://app.chalkitpro.com/gymProductLink/754/prod_Rpq7ZHIClwi4Xe/8597/",
+      "ctaLabel": "Talk to us about membership",
+      "ctaHref": "https://link.gymntx.com/widget/booking/D3oYgyrlF9AzrBhpaP60",
       "ctaExternal": true
     }
   ],
@@ -126,8 +126,8 @@
       "unit": "/10 sign-ins",
       "visits": "10 sign-ins",
       "bestFor": "One-time purchase. Each sign-in covers one class, one open gym session, or one wellness center visit. No 24/7 access.",
-      "ctaLabel": "Buy 10 Punch Card",
-      "ctaHref": "https://app.chalkitpro.com/gymProductLink/754/prod_RlOVYMKHxyckp5/8349/",
+      "ctaLabel": "Talk to us about membership",
+      "ctaHref": "https://link.gymntx.com/widget/booking/D3oYgyrlF9AzrBhpaP60",
       "ctaExternal": true
     },
     {
@@ -137,8 +137,8 @@
       "unit": "/20 sign-ins",
       "visits": "20 sign-ins",
       "bestFor": "One-time purchase. Each sign-in covers one class, one open gym session, or one wellness center visit. No 24/7 access.",
-      "ctaLabel": "Buy 20 Punch Card",
-      "ctaHref": "https://app.chalkitpro.com/gymProductLink/754/prod_RlOX7hlyfGZuNP/8350/",
+      "ctaLabel": "Talk to us about membership",
+      "ctaHref": "https://link.gymntx.com/widget/booking/D3oYgyrlF9AzrBhpaP60",
       "ctaExternal": true
     }
   ],
@@ -180,8 +180,8 @@
     "_comment": "Free first class for experienced CrossFitters visiting from another affiliate. Rendered on /about/, NOT next to the paid drop-in on /pricing/ — beside a $30 option it simply replaced the sale.",
     "name": "First class free",
     "audience": "Experienced CrossFitters visiting from another affiliate",
-    "ctaLabel": "Book Free Class",
-    "ctaHref": "https://app.chalkitpro.com/dropIns/754/11814/x",
+    "ctaLabel": "Reach out to book your free class",
+    "ctaHref": "https://link.gymntx.com/widget/booking/D3oYgyrlF9AzrBhpaP60",
     "ctaExternal": true
   },
   "areas": [
