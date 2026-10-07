@@ -174,7 +174,7 @@ export default {
   // Primary nav — what people actually arrive looking for.
   // About and Blog moved to the footer.
   primaryNav: [
-    { label: "Classes", url: "/crossfit/" },
+    { label: "Classes", url: "/classes/" },
     { label: "Schedule", url: "/schedule/" },
     { label: "Pricing", url: "/pricing/" },
     { label: "Coaches", url: "/coaches/" },
@@ -185,12 +185,13 @@ export default {
   // the city pages.
   footerColumns: {
     train: [
-      { label: "CrossFit", url: "/crossfit/" },
-      { label: "Hybrid / HYROX", url: "/hyrox/" },
-      { label: "Strong AF", url: "/schedule/#strong-af" },
-      { label: "Downshift", url: "/schedule/#downshift" },
+      { label: "All classes", url: "/classes/" },
+      { label: "CrossFit", url: "/classes/#crossfit" },
+      { label: "Hybrid / HYROX", url: "/classes/#hybrid" },
+      { label: "Strong AF", url: "/classes/#strong-af" },
+      { label: "Downshift", url: "/classes/#downshift" },
       { label: "Wellness Center", url: "/wellness/" },
-      { label: "Prime Vitality (55+)", url: "/prime-vitality/" },
+      { label: "Prime Vitality (55+)", url: "/classes/#prime-vitality" },
     ],
     visit: [
       { label: "Schedule", url: "/schedule/" },
