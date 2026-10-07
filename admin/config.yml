@@ -87,8 +87,8 @@ collections:
             summary: "{{fields.name}} — {{fields.price}}"
             fields:
               - {label: "Tier name", name: "name", widget: "string"}
-              - {label: "Price (as displayed)", name: "price", widget: "string", hint: "e.g. $199"}
-              - {label: "Price (digits only, for Google)", name: "amount", widget: "string", hint: "e.g. 199 — no dollar sign"}
+              - {label: "Price (as displayed)", name: "price", widget: "string", hint: "e.g. $205"}
+              - {label: "Price (digits only, for Google)", name: "amount", widget: "string", hint: "e.g. 205 — no dollar sign"}
               - {label: "Per", name: "unit", widget: "string", default: "/month"}
               - {label: "Highlight as most popular?", name: "featured", widget: "boolean", default: false}
               - {label: "One-line summary", name: "summary", widget: "string", required: false}
@@ -110,6 +110,22 @@ collections:
               - {label: "Price (digits only, for Google)", name: "amount", widget: "string"}
               - {label: "Per", name: "unit", widget: "string", default: "/month"}
               - {label: "Sign-ins line", name: "visits", widget: "string", hint: "e.g. 8 sign-ins a month"}
+              - {label: "Best for", name: "bestFor", widget: "text"}
+              - {label: "Button label", name: "ctaLabel", widget: "string"}
+              - {label: "Button link", name: "ctaHref", widget: "string"}
+              - {label: "Opens in a new tab?", name: "ctaExternal", widget: "boolean", default: false, required: false}
+
+          - label: "Punch cards (10 / 20)"
+            name: "punchCards"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.price}}"
+            hint: "One-time purchases. Paste the Chalkit checkout link into Button link when it's ready."
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Price (as displayed)", name: "price", widget: "string"}
+              - {label: "Price (digits only, for Google)", name: "amount", widget: "string"}
+              - {label: "Per", name: "unit", widget: "string"}
+              - {label: "Sign-ins line", name: "visits", widget: "string", hint: "e.g. 10 sign-ins"}
               - {label: "Best for", name: "bestFor", widget: "text"}
               - {label: "Button label", name: "ctaLabel", widget: "string"}
               - {label: "Button link", name: "ctaHref", widget: "string"}
@@ -478,9 +494,10 @@ collections:
               - {label: "Do you have Sunday classes?", value: "sunday-classes"}
               - {label: "How much does Alpine cost?", value: "how-much"}
               - {label: "Which membership should I pick?", value: "which-membership"}
-              - {label: "Is Unlimited worth it at $199 a month?", value: "unlimited-worth-it"}
+              - {label: "Is Unlimited worth it at $205 a month?", value: "unlimited-worth-it"}
               - {label: "What's included in the $99 Open Gym tier?", value: "open-gym-included"}
-              - {label: "How does the $999 Personal Training tier work?", value: "pt-tier"}
+              - {label: "Do you have punch cards?", value: "punch-cards"}
+              - {label: "What are Strong AF, Hybrid, and Downshift?", value: "specialty-classes"}
               - {label: "Is there a contract or initiation fee?", value: "contract"}
               - {label: "Can I freeze my membership?", value: "freeze"}
               - {label: "Do you offer military, first responder, or student discounts?", value: "discounts"}
@@ -501,7 +518,6 @@ collections:
               - {label: "What are the 8 stations in a HYROX race?", value: "hyrox-stations"}
               - {label: "How much does HYROX training cost?", value: "hyrox-cost"}
               - {label: "How is HYROX different from CrossFit?", value: "hyrox-vs-crossfit"}
-              - {label: "How does personal training work?", value: "personal-training"}
               - {label: "Where is Alpine located?", value: "where-located"}
               - {label: "What are your hours?", value: "hours"}
               - {label: "Is there free parking?", value: "parking"}
@@ -514,8 +530,6 @@ collections:
               - {label: "What does scaling actually mean?", value: "scaling"}
               - {label: "How old do you have to be to train at Alpine?", value: "age-minimum"}
               - {label: "Can I use the wellness center without doing CrossFit?", value: "wellness-without-crossfit"}
-              - {label: "What's the difference between personal training and group classes?", value: "pt-vs-classes"}
-              - {label: "Can I do personal training for injury recovery?", value: "pt-injury-recovery"}
               - {label: "Is this kind of training safe over 55?", value: "prime-vitality-safe"}
               - {label: "Can I join Prime Vitality if I've never lifted weights?", value: "prime-vitality-never-lifted"}
               - {label: "How is Prime Vitality different from SilverSneakers?", value: "prime-vitality-vs-silversneakers"}
@@ -613,9 +627,10 @@ collections:
               - {label: "Do you have Sunday classes?", value: "sunday-classes"}
               - {label: "How much does Alpine cost?", value: "how-much"}
               - {label: "Which membership should I pick?", value: "which-membership"}
-              - {label: "Is Unlimited worth it at $199 a month?", value: "unlimited-worth-it"}
+              - {label: "Is Unlimited worth it at $205 a month?", value: "unlimited-worth-it"}
               - {label: "What's included in the $99 Open Gym tier?", value: "open-gym-included"}
-              - {label: "How does the $999 Personal Training tier work?", value: "pt-tier"}
+              - {label: "Do you have punch cards?", value: "punch-cards"}
+              - {label: "What are Strong AF, Hybrid, and Downshift?", value: "specialty-classes"}
               - {label: "Is there a contract or initiation fee?", value: "contract"}
               - {label: "Can I freeze my membership?", value: "freeze"}
               - {label: "Do you offer military, first responder, or student discounts?", value: "discounts"}
@@ -636,7 +651,6 @@ collections:
               - {label: "What are the 8 stations in a HYROX race?", value: "hyrox-stations"}
               - {label: "How much does HYROX training cost?", value: "hyrox-cost"}
               - {label: "How is HYROX different from CrossFit?", value: "hyrox-vs-crossfit"}
-              - {label: "How does personal training work?", value: "personal-training"}
               - {label: "Where is Alpine located?", value: "where-located"}
               - {label: "What are your hours?", value: "hours"}
               - {label: "Is there free parking?", value: "parking"}
@@ -649,8 +663,6 @@ collections:
               - {label: "What does scaling actually mean?", value: "scaling"}
               - {label: "How old do you have to be to train at Alpine?", value: "age-minimum"}
               - {label: "Can I use the wellness center without doing CrossFit?", value: "wellness-without-crossfit"}
-              - {label: "What's the difference between personal training and group classes?", value: "pt-vs-classes"}
-              - {label: "Can I do personal training for injury recovery?", value: "pt-injury-recovery"}
               - {label: "Is this kind of training safe over 55?", value: "prime-vitality-safe"}
               - {label: "Can I join Prime Vitality if I've never lifted weights?", value: "prime-vitality-never-lifted"}
               - {label: "How is Prime Vitality different from SilverSneakers?", value: "prime-vitality-vs-silversneakers"}
@@ -819,9 +831,10 @@ collections:
               - {label: "Do you have Sunday classes?", value: "sunday-classes"}
               - {label: "How much does Alpine cost?", value: "how-much"}
               - {label: "Which membership should I pick?", value: "which-membership"}
-              - {label: "Is Unlimited worth it at $199 a month?", value: "unlimited-worth-it"}
+              - {label: "Is Unlimited worth it at $205 a month?", value: "unlimited-worth-it"}
               - {label: "What's included in the $99 Open Gym tier?", value: "open-gym-included"}
-              - {label: "How does the $999 Personal Training tier work?", value: "pt-tier"}
+              - {label: "Do you have punch cards?", value: "punch-cards"}
+              - {label: "What are Strong AF, Hybrid, and Downshift?", value: "specialty-classes"}
               - {label: "Is there a contract or initiation fee?", value: "contract"}
               - {label: "Can I freeze my membership?", value: "freeze"}
               - {label: "Do you offer military, first responder, or student discounts?", value: "discounts"}
@@ -842,7 +855,6 @@ collections:
               - {label: "What are the 8 stations in a HYROX race?", value: "hyrox-stations"}
               - {label: "How much does HYROX training cost?", value: "hyrox-cost"}
               - {label: "How is HYROX different from CrossFit?", value: "hyrox-vs-crossfit"}
-              - {label: "How does personal training work?", value: "personal-training"}
               - {label: "Where is Alpine located?", value: "where-located"}
               - {label: "What are your hours?", value: "hours"}
               - {label: "Is there free parking?", value: "parking"}
@@ -855,8 +867,6 @@ collections:
               - {label: "What does scaling actually mean?", value: "scaling"}
               - {label: "How old do you have to be to train at Alpine?", value: "age-minimum"}
               - {label: "Can I use the wellness center without doing CrossFit?", value: "wellness-without-crossfit"}
-              - {label: "What's the difference between personal training and group classes?", value: "pt-vs-classes"}
-              - {label: "Can I do personal training for injury recovery?", value: "pt-injury-recovery"}
               - {label: "Is this kind of training safe over 55?", value: "prime-vitality-safe"}
               - {label: "Can I join Prime Vitality if I've never lifted weights?", value: "prime-vitality-never-lifted"}
               - {label: "How is Prime Vitality different from SilverSneakers?", value: "prime-vitality-vs-silversneakers"}
@@ -945,9 +955,10 @@ collections:
               - {label: "Do you have Sunday classes?", value: "sunday-classes"}
               - {label: "How much does Alpine cost?", value: "how-much"}
               - {label: "Which membership should I pick?", value: "which-membership"}
-              - {label: "Is Unlimited worth it at $199 a month?", value: "unlimited-worth-it"}
+              - {label: "Is Unlimited worth it at $205 a month?", value: "unlimited-worth-it"}
               - {label: "What's included in the $99 Open Gym tier?", value: "open-gym-included"}
-              - {label: "How does the $999 Personal Training tier work?", value: "pt-tier"}
+              - {label: "Do you have punch cards?", value: "punch-cards"}
+              - {label: "What are Strong AF, Hybrid, and Downshift?", value: "specialty-classes"}
               - {label: "Is there a contract or initiation fee?", value: "contract"}
               - {label: "Can I freeze my membership?", value: "freeze"}
               - {label: "Do you offer military, first responder, or student discounts?", value: "discounts"}
@@ -968,7 +979,6 @@ collections:
               - {label: "What are the 8 stations in a HYROX race?", value: "hyrox-stations"}
               - {label: "How much does HYROX training cost?", value: "hyrox-cost"}
               - {label: "How is HYROX different from CrossFit?", value: "hyrox-vs-crossfit"}
-              - {label: "How does personal training work?", value: "personal-training"}
               - {label: "Where is Alpine located?", value: "where-located"}
               - {label: "What are your hours?", value: "hours"}
               - {label: "Is there free parking?", value: "parking"}
@@ -981,8 +991,6 @@ collections:
               - {label: "What does scaling actually mean?", value: "scaling"}
               - {label: "How old do you have to be to train at Alpine?", value: "age-minimum"}
               - {label: "Can I use the wellness center without doing CrossFit?", value: "wellness-without-crossfit"}
-              - {label: "What's the difference between personal training and group classes?", value: "pt-vs-classes"}
-              - {label: "Can I do personal training for injury recovery?", value: "pt-injury-recovery"}
               - {label: "Is this kind of training safe over 55?", value: "prime-vitality-safe"}
               - {label: "Can I join Prime Vitality if I've never lifted weights?", value: "prime-vitality-never-lifted"}
               - {label: "How is Prime Vitality different from SilverSneakers?", value: "prime-vitality-vs-silversneakers"}
@@ -1129,9 +1137,10 @@ collections:
               - {label: "Do you have Sunday classes?", value: "sunday-classes"}
               - {label: "How much does Alpine cost?", value: "how-much"}
               - {label: "Which membership should I pick?", value: "which-membership"}
-              - {label: "Is Unlimited worth it at $199 a month?", value: "unlimited-worth-it"}
+              - {label: "Is Unlimited worth it at $205 a month?", value: "unlimited-worth-it"}
               - {label: "What's included in the $99 Open Gym tier?", value: "open-gym-included"}
-              - {label: "How does the $999 Personal Training tier work?", value: "pt-tier"}
+              - {label: "Do you have punch cards?", value: "punch-cards"}
+              - {label: "What are Strong AF, Hybrid, and Downshift?", value: "specialty-classes"}
               - {label: "Is there a contract or initiation fee?", value: "contract"}
               - {label: "Can I freeze my membership?", value: "freeze"}
               - {label: "Do you offer military, first responder, or student discounts?", value: "discounts"}
@@ -1152,7 +1161,6 @@ collections:
               - {label: "What are the 8 stations in a HYROX race?", value: "hyrox-stations"}
               - {label: "How much does HYROX training cost?", value: "hyrox-cost"}
               - {label: "How is HYROX different from CrossFit?", value: "hyrox-vs-crossfit"}
-              - {label: "How does personal training work?", value: "personal-training"}
               - {label: "Where is Alpine located?", value: "where-located"}
               - {label: "What are your hours?", value: "hours"}
               - {label: "Is there free parking?", value: "parking"}
@@ -1165,8 +1173,6 @@ collections:
               - {label: "What does scaling actually mean?", value: "scaling"}
               - {label: "How old do you have to be to train at Alpine?", value: "age-minimum"}
               - {label: "Can I use the wellness center without doing CrossFit?", value: "wellness-without-crossfit"}
-              - {label: "What's the difference between personal training and group classes?", value: "pt-vs-classes"}
-              - {label: "Can I do personal training for injury recovery?", value: "pt-injury-recovery"}
               - {label: "Is this kind of training safe over 55?", value: "prime-vitality-safe"}
               - {label: "Can I join Prime Vitality if I've never lifted weights?", value: "prime-vitality-never-lifted"}
               - {label: "How is Prime Vitality different from SilverSneakers?", value: "prime-vitality-vs-silversneakers"}
@@ -1186,11 +1192,6 @@ collections:
       - file: "content/pages/hyrox.md"
         name: "hyrox"
         label: "HYROX service page"
-        fields: *service_page_fields
-
-      - file: "content/pages/personal-training.md"
-        name: "personal-training"
-        label: "Personal Training service page"
         fields: *service_page_fields
 
       - file: "content/pages/wellness.md"
