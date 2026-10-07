@@ -6,7 +6,7 @@ description: "April DiGiannantonio is co-owner of Alpine CrossFit. Ten-plus year
 canonical: "https://alpinecrossfit.com/coaches/april-digiannantonio/"
 order: 1
 name: "April DiGiannantonio"
-credentialsLine: "Co-Owner · Coach · CSCS · SCCC · CrossFit Trainer · Former D1 Director of Sports Performance"
+credentialsLine: "Owner · Coach · CSCS · SCCC · CrossFit Trainer · Former D1 Director of Sports Performance"
 bio: "April DiGiannantonio is co-owner of Alpine CrossFit. For the past decade she has been in the fitness and sports performance industries, helping people chase down whatever they're after physically — whether that's a first pull-up, a podium finish, or just moving well for a long time. She opened her first CrossFit gym in Denver in 2013, grew it enough to expand into a larger location, and also owned and operated a CrossFit gym in the Conifer / Aspen Park area before selling both to pursue a full-time career in collegiate strength and conditioning. She spent over five years as a Director of Sports Performance for a Division I program, coaching softball, women's soccer, women's basketball, track & field, volleyball, and more. She was an athlete long before she was a coach — she played rugby at the collegiate level, along with softball and basketball, and has golfed and skied her whole life. She went on to compete at CrossFit Games Regionals both as an individual and on a team, out of her former affiliate in Denver. She now brings that education and experience back to a community setting at Alpine."
 credentials:
   - "Certified Strength and Conditioning Specialist (CSCS, NSCA)"

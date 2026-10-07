@@ -164,7 +164,7 @@ extraSchemas:
       </div>
       <div class="card">
         <h3>April DiGiannantonio</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · Former D1 Director of Sports Performance</p>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Owner · Former D1 Director of Sports Performance</p>
         <p>Ten-plus years in fitness and sports performance. Has owned CrossFit gyms on and off since 2013 and competed at CrossFit Games Regionals, individually and on a team. Spent over five years coaching Division I athletes across a dozen sports. Programs Alpine's in-house training alongside Megan Markee.</p>
         <a href="/coaches/april-digiannantonio/">Learn about April →</a>
       </div>
@@ -177,7 +177,7 @@ extraSchemas:
       <div class="card">
         <h3>Megan Markee</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Programmer · 2× Semifinalist · 2× Regionals</p>
-        <p>Designs every workout Alpine members follow, in collaboration with April. Twice qualified for the CrossFit Games Semifinals, and twice for CrossFit Games Regionals on a team. Started CrossFit in 2011.</p>
+        <p>Designs every workout Alpine members follow, in collaboration with owner April. Twice qualified for the CrossFit Games Semifinals, and twice for CrossFit Games Regionals on a team. Started CrossFit in 2011.</p>
         <a href="/coaches/megan-markee/">Learn about Megan →</a>
       </div>
       <div class="card">
