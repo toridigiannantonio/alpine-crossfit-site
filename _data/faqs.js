@@ -235,7 +235,7 @@ export const items = [
     id: "specialty-classes",
     group: "programs",
     q: "What are Strong AF, Hybrid, and Downshift?",
-    a: `Strong AF is our strength class, offered across the week. Hybrid is our HYROX-style class, running all day Tuesday alongside CrossFit, plus Wednesday and Sunday sessions. Downshift is a 45-minute yoga and recovery class on Sunday mornings, twice a month starting November 1. All three are included in Unlimited and count as one sign-in on other plans. <a href="/schedule/#specialty">See the schedule →</a>`,
+    a: `Strong AF is our strength class, offered across the week. Hybrid is our HYROX-style class, running all day Tuesday alongside CrossFit, plus Wednesday and Sunday sessions. Downshift is a 45-minute yoga and recovery class on Sunday mornings, twice a month starting November 1, and it will evolve based on feedback from regular attendees. All three are included in Unlimited and count as one sign-in on other plans. <a href="/schedule/#specialty">See the schedule →</a>`,
   },
   {
     id: "contract",
@@ -510,8 +510,8 @@ export const items = [
   {
     id: "no-yoga",
     group: "programs",
-    q: "Do you offer yoga, breath work, or meditation?",
-    a: `Yoga, yes. Downshift is a 45-minute yoga and recovery class on Sunday mornings, 9:45–10:30 AM, two Sundays a month starting November 1. There's no standalone breath-work or meditation class yet. <a href="/schedule/#specialty">See the schedule →</a>`,
+    q: "Do you offer yoga or recovery classes?",
+    a: `Yes. Downshift starts November 1. It's a 45-minute yoga and recovery class on Sunday mornings, 9:45–10:30 AM, two Sundays a month. Downshift will evolve based on feedback from the people who come regularly, including the style of class and whether to add breath work, meditation, or mindset work. <a href="/schedule/#specialty">See the schedule →</a>`,
   },
   {
     id: "no-weekend-afternoons",
