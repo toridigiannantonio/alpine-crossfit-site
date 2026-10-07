@@ -1,0 +1,14 @@
+{# 10 / 20 punch cards, rendered from site.pricing.punchCards.
+   One-time purchases. Each sign-in = one class, open gym session, or
+   wellness visit. #}
+<div class="grid grid-2 plan-grid">
+{%- for c in site.pricing.punchCards %}
+  <div class="card">
+    <h3>{{ c.name }}</h3>
+    <div class="price">{{ c.price }}<span class="price-unit"> one-time</span></div>
+    <p class="eyebrow" style="margin-top:var(--space-4);margin-bottom:var(--space-2);">{{ c.visits }}</p>
+    <p>{{ c.bestFor }}</p>
+    <div class="card-cta"><a class="btn btn-secondary" href="{{ c.ctaHref }}"{% if c.ctaExternal %} target="_blank" rel="noopener"{% endif %}>{{ c.ctaLabel }}</a></div>
+  </div>
+{%- endfor %}
+</div>

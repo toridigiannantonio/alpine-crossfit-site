@@ -7,7 +7,7 @@
 
    A tier with no alt link gets an invisible spacer line so its button
    stays level with the buttons that do have one. #}
-<div class="grid grid-3 pricing-grid plan-grid">
+<div class="grid {% if site.pricing.tiers | length == 2 %}grid-2{% else %}grid-3{% endif %} pricing-grid plan-grid">
 {%- for t in site.pricing.tiers %}
   <div class="card{% if t.featured %} card-featured{% endif %}">
     <h3>{{ t.name }}</h3>
