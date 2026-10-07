@@ -35,6 +35,8 @@ faqIds:
   - wellness-without-crossfit
   - wellness-hours
   - peptide-therapy
+  - cowork
+  - physical-therapy
   - where-located
 ---
 

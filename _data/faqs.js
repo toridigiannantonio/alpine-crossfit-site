@@ -38,7 +38,7 @@ export const groups = [
   { id: "classes", heading: "Classes & programming" },
   { id: "pricing", heading: "Pricing & membership" },
   { id: "visiting", heading: "Visiting & drop-ins" },
-  { id: "wellness", heading: "Wellness center" },
+  { id: "wellness", heading: "Wellness + CoWork" },
   { id: "programs", heading: "Specialty programs" },
   { id: "location", heading: "Location & hours" },
   { id: "coaches", heading: "Coaches & ownership" },
@@ -271,7 +271,7 @@ export const items = [
     id: "buy-online",
     group: "pricing",
     q: "Can I buy a membership online without talking to anyone?",
-    a: "Yes for Open Gym, drop-ins, and week passes — all available for direct online purchase. Unlimited funnels through a free No Sweat Intro first, so we can match you to the right program.",
+    a: `Drop-ins and week passes, yes. You can buy those online. For memberships, punch cards, and Foundations, book a quick call with us and we'll match you to the right option. <a href="https://link.gymntx.com/widget/booking/D3oYgyrlF9AzrBhpaP60" target="_blank" rel="noopener">Talk to us about membership →</a>`,
   },
   {
     id: "price-comparison",
@@ -297,7 +297,7 @@ export const items = [
     id: "first-class-free",
     group: "visiting",
     q: "Is my first class free if I train at another affiliate?",
-    a: `Yes. Experienced CrossFitters trying Alpine for the first time get one free class, limited to one use per person. After that, drop-ins are ${DROP_IN} per class. <a href="/about/#from-another-gym">More on visiting from another gym →</a>`,
+    a: `Yes. Experienced CrossFitters trying Alpine for the first time get one free class, limited to one use per person. After that, drop-ins are ${DROP_IN} per class. <a href="/about/#from-another-gym">More on visiting from another gym →</a> Reach out to book it: <a href="https://link.gymntx.com/widget/booking/D3oYgyrlF9AzrBhpaP60" target="_blank" rel="noopener">book your free class →</a>`,
   },
   {
     id: "drop-in-wellness",
@@ -330,6 +330,18 @@ export const items = [
     group: "wellness",
     q: "When is the wellness center open?",
     a: "Monday–Friday 5:30 AM – 6:30 PM, Saturday and Sunday 8:00–10:00 AM. Unlimited members have 24/7 facility access.",
+  },
+  {
+    id: "cowork",
+    group: "wellness",
+    q: "Is there a place to work at the gym?",
+    a: `Yes. Alpine has a CoWork space with day lockers, tables and chairs, a coffee bar, and TVs, so you can get work done before or after you train. <a href="/wellness/#co-work">See Wellness + CoWork →</a>`,
+  },
+  {
+    id: "physical-therapy",
+    group: "wellness",
+    q: "Do you have a physical therapist on site?",
+    a: `Yes. Dr. Juliana Merighi runs Flow State Physical Therapy at Alpine. She is a Doctor of Physical Therapy, board certified as an Orthopedic Clinical Specialist and a Strength and Conditioning Specialist. She treats orthopedic injuries and pelvic health, supports athletes through pregnancy and postpartum, and works in person or virtually. <a href="https://flowstaterehab.com/" target="_blank" rel="noopener">Book with Flow State →</a>`,
   },
 
   // ---------------- Specialty programs ----------------
@@ -395,13 +407,13 @@ export const items = [
     id: "who-coaches",
     group: "coaches",
     q: "Who coaches the classes?",
-    a: 'Lisa Arcangel, Liz Kushner, and Dean Weeks lead classes, with 10 to 15+ years of coaching apiece. Programming is built collaboratively by Megan Markee and owner April DiGiannantonio, drawing on Games-level competition and five-plus years as a Division I Director of Sports Performance. <a href="/coaches/">Meet the team →</a>',
+    a: 'Lisa Arcangel, Liz Kushner, Dean Weeks, April DiGiannantonio, and Tori DiGiannantonio coach classes, joined by Maddy Portlock, Mike Reynolds, and Kelley Williams. Tori leads Downshift, our yoga and recovery class. Programming is built collaboratively by Megan Markee and owner April DiGiannantonio, drawing on Games-level competition and five-plus years as a Division I Director of Sports Performance. <a href="/coaches/">Meet the team →</a>',
   },
   {
     id: "owners-coach",
     group: "coaches",
     q: "Do the owners coach the classes?",
-    a: "Group classes are led by Lisa, Liz, and Dean, with 10 to 15+ years of coaching apiece. Owners April and Tori DiGiannantonio train at the gym alongside members — April holds the CSCS and SCCC and was a Division I Director of Sports Performance for five-plus years. Megan Markee (CSCS) writes every workout members follow, in collaboration with April.",
+    a: `Yes. Owner April DiGiannantonio coaches classes. She holds the CSCS and SCCC and was a Division I Director of Sports Performance for five-plus years. Tori DiGiannantonio leads Downshift, our yoga and recovery class, and coaches the occasional Hybrid class. Lisa, Liz, and Dean lead group classes with 10 to 15+ years of coaching apiece, and Megan Markee (CSCS) writes every workout members follow, in collaboration with April.`,
   },
   {
     id: "how-long-in-wheat-ridge",
@@ -415,7 +427,7 @@ export const items = [
     id: "injury",
     group: "safety",
     q: "What if I have an injury?",
-    a: "Alpine coaches are experienced at coaching around injuries and limitations. Your coach will scale every movement to what your body can and cannot do, progress loads carefully, and coordinate with your PT or doctor if appropriate.",
+    a: "Alpine coaches are experienced at coaching around injuries and limitations. Your coach will scale every movement to what your body can and cannot do, progress loads carefully, and coordinate with your PT or doctor if appropriate. We also have in-house physical therapy: Dr. Juliana Merighi runs Flow State out of Alpine. <a href=\"/wellness/#physical-therapy\">More on Flow State →</a>",
   },
   {
     id: "pull-up",
