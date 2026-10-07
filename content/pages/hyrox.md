@@ -129,9 +129,9 @@ faqIds:
     <span class="eyebrow">Hybrid classes</span>
     <h2>Hybrid: our HYROX-style class.</h2>
     <p>Hybrid is where HYROX training happens week to week. Running, stations, and strength-endurance, coached and scaled to your level. You don't need a race on the calendar to join.</p>
-    <p><strong>Tuesday:</strong> all day, alongside the regular CrossFit classes<br>
-    <strong>Wednesday:</strong> 7:00 AM, 4:30 PM<br>
+    <p><strong>Wednesday:</strong> 7:00 AM, 4:30 PM<br>
     <strong>Sunday:</strong> 8:00 – 9:30 AM</p>
+    <p>Tuesday is endurance day. Every class that day is built around endurance, which makes it a great fit for hybrid athletes.</p>
     <p>Included with Unlimited. Counts as one sign-in on Open Gym, class plans, and punch cards. <a href="/schedule/#hybrid">Full schedule →</a></p>
   </div>
 </section>

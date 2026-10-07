@@ -71,9 +71,9 @@ faqIds:
     <div class="class-block" id="hybrid">
       <h3>Hybrid <span class="class-tag">HYROX-style</span></h3>
       <p>Running, stations, and strength-endurance built for HYROX and hybrid athletes.</p>
-      <p><strong>Tuesday:</strong> all day, alongside the regular CrossFit classes<br>
-      <strong>Wednesday:</strong> 7:00 AM, 4:30 PM<br>
+      <p><strong>Wednesday:</strong> 7:00 AM, 4:30 PM<br>
       <strong>Sunday:</strong> 8:00 – 9:30 AM</p>
+      <p>Tuesday is endurance day. Every class that day is built around endurance, which makes it a great fit for hybrid athletes.</p>
     </div>
     <div class="class-block" id="downshift">
       <h3>Downshift <span class="class-tag">Yoga &amp; recovery</span></h3>
