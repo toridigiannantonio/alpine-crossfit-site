@@ -170,8 +170,17 @@ extraSchemas:
       </div>
       <div class="card">
         <h3>Tori DiGiannantonio</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Assistant to the Owner (Co-Owner) · Downshift Lead · Mental performance · Ultrarunner · Yoga</p>
-        <p>Former firefighter and paramedic. CrossFit athlete since 2011. Therapist and mental performance coach for athletes and first responders, and owner of Grounded Ascent Performance. Leads Downshift, our yoga and recovery class, and coaches the occasional Hybrid class.</p>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Co-Owner · Yoga Instructor · Mental Performance Coach · Mental Health Therapist</p>
+        <p>Former firefighter and paramedic turned therapist and mental performance coach, Tori helps athletes and first responders train the mind the way they train the body.</p>
+        <p class="coach-label">Certifications</p>
+        <p class="coach-certs">LCSW · CMPC (Candidate) · RYT&nbsp;200 · CF&#8209;L1</p>
+        <p class="coach-label">Favorites</p>
+        <dl class="coach-favs">
+          <dt>Food</dt><dd>Battered French fries</dd>
+          <dt>Drink</dt><dd>Pinot Noir and lattes</dd>
+          <dt>Workout</dt><dd>Trail running</dd>
+          <dt>Quote</dt><dd>&ldquo;Suffer well.&rdquo;</dd>
+        </dl>
         <a href="/coaches/tori-digiannantonio/">Learn about Tori →</a>
       </div>
       <div class="card">
