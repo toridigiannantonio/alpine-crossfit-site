@@ -130,7 +130,7 @@ extraSchemas:
           <li>Strength and Conditioning Coach Certified (SCCC, CSCCa)</li>
           <li>Advanced CrossFit trainer credentials</li>
           <li>CrossFit Programming, Running, and Nutrition courses</li>
-          <li>Certified Mental Performance Consultant (CMPC)</li>
+          <li>Certified Mental Performance Consultant (CMPC) Candidate</li>
           <li>Licensed Clinical Social Worker (LCSW)</li>
           <li>Registered Yoga Teacher (RYT, Yoga Alliance)</li>
         </ul>
