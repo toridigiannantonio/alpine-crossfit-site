@@ -55,29 +55,29 @@ extraSchemas:
         position: 3
         item:
           "@type": Person
-          name: Megan Markee
-          jobTitle: Programmer
-          worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
-      - "@type": ListItem
-        position: 4
-        item:
-          "@type": Person
           name: Lisa Arcangel
           jobTitle: Coach
           worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
       - "@type": ListItem
-        position: 5
+        position: 4
         item:
           "@type": Person
           name: Dean Weeks
           jobTitle: Coach
           worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
       - "@type": ListItem
-        position: 6
+        position: 5
         item:
           "@type": Person
           name: Liz Kushner
           jobTitle: Coach
+          worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
+      - "@type": ListItem
+        position: 6
+        item:
+          "@type": Person
+          name: Megan Markee
+          jobTitle: Programmer
           worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
 ---
 <section class="section">
@@ -139,6 +139,34 @@ extraSchemas:
     <h2 class="section-heading">Experienced CrossFit coaches.</h2>
     <div class="grid grid-3">
       <div class="card">
+        <h3>April DiGiannantonio</h3>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Owner · Former D1 Director of Sports Performance</p>
+        <p>Ten-plus years in fitness and sports performance. Has owned CrossFit gyms on and off since 2013 and competed at CrossFit Games Regionals, individually and on a team. Spent over five years coaching Division I athletes across a dozen sports. Programs Alpine's in-house training alongside Megan Markee.</p>
+        <p class="coach-label">Certifications</p>
+        <p class="coach-certs"></p>
+        <p class="coach-label">Favorites</p>
+        <dl class="coach-favs">
+          <dt>Food</dt><dd></dd>
+          <dt>Drink</dt><dd></dd>
+          <dt>Workout</dt><dd></dd>
+          <dt>Quote</dt><dd></dd>
+        </dl>
+      </div>
+      <div class="card">
+        <h3>Tori DiGiannantonio</h3>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Co-Owner · Yoga Instructor · Mental Performance Coach · Mental Health Therapist</p>
+        <p>Former firefighter and paramedic turned therapist and mental performance coach, Tori helps athletes and first responders train the mind the way they train the body.</p>
+        <p class="coach-label">Certifications</p>
+        <p class="coach-certs">LCSW · CMPC (Candidate) · RYT&nbsp;200 · CF&#8209;L1</p>
+        <p class="coach-label">Favorites</p>
+        <dl class="coach-favs">
+          <dt>Food</dt><dd>Battered French fries</dd>
+          <dt>Drink</dt><dd>Pinot Noir and lattes</dd>
+          <dt>Workout</dt><dd>Trail running</dd>
+          <dt>Quote</dt><dd>&ldquo;Suffer well.&rdquo;</dd>
+        </dl>
+      </div>
+      <div class="card">
         <h3>Lisa Arcangel</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · 15+ years coaching · Masters Semifinalist</p>
         <p>CrossFit Games Masters Semifinalist. A lifelong athlete who has competed in the CrossFit Open every year since 2012. Former collegiate basketball and softball player.</p>
@@ -178,34 +206,6 @@ extraSchemas:
           <dt>Drink</dt><dd></dd>
           <dt>Workout</dt><dd></dd>
           <dt>Quote</dt><dd></dd>
-        </dl>
-      </div>
-      <div class="card">
-        <h3>April DiGiannantonio</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Owner · Former D1 Director of Sports Performance</p>
-        <p>Ten-plus years in fitness and sports performance. Has owned CrossFit gyms on and off since 2013 and competed at CrossFit Games Regionals, individually and on a team. Spent over five years coaching Division I athletes across a dozen sports. Programs Alpine's in-house training alongside Megan Markee.</p>
-        <p class="coach-label">Certifications</p>
-        <p class="coach-certs"></p>
-        <p class="coach-label">Favorites</p>
-        <dl class="coach-favs">
-          <dt>Food</dt><dd></dd>
-          <dt>Drink</dt><dd></dd>
-          <dt>Workout</dt><dd></dd>
-          <dt>Quote</dt><dd></dd>
-        </dl>
-      </div>
-      <div class="card">
-        <h3>Tori DiGiannantonio</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Co-Owner · Yoga Instructor · Mental Performance Coach · Mental Health Therapist</p>
-        <p>Former firefighter and paramedic turned therapist and mental performance coach, Tori helps athletes and first responders train the mind the way they train the body.</p>
-        <p class="coach-label">Certifications</p>
-        <p class="coach-certs">LCSW · CMPC (Candidate) · RYT&nbsp;200 · CF&#8209;L1</p>
-        <p class="coach-label">Favorites</p>
-        <dl class="coach-favs">
-          <dt>Food</dt><dd>Battered French fries</dd>
-          <dt>Drink</dt><dd>Pinot Noir and lattes</dd>
-          <dt>Workout</dt><dd>Trail running</dd>
-          <dt>Quote</dt><dd>&ldquo;Suffer well.&rdquo;</dd>
         </dl>
       </div>
       <div class="card">
