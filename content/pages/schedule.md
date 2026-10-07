@@ -66,12 +66,13 @@ faqIds:
       <p><strong>Monday:</strong> 4:30, 5:30 PM<br>
       <strong>Tuesday &amp; Thursday:</strong> 6:30, 7:30 AM<br>
       <strong>Wednesday:</strong> 5:30 PM<br>
-      <strong>Saturday:</strong> 7:00 AM</p>
+      <strong>Saturday:</strong> 7:00 AM<br>
+      Starts October 26.</p>
     </div>
     <div class="class-block" id="hybrid">
       <h3>Hybrid <span class="class-tag">HYROX-style</span></h3>
       <p>Running, stations, and strength-endurance. <a href="/classes/#hybrid">About Hybrid →</a></p>
-      <p><strong>Wednesday:</strong> 7:00 AM, 4:30 PM<br>
+      <p><strong>Wednesday:</strong> 7:00 AM, 4:30 PM, starting October 26<br>
       <strong>Sunday:</strong> 8:00 – 9:30 AM</p>
       <p>Tuesday is endurance day. Every class that day is built around endurance, which makes it a great fit for hybrid athletes.</p>
     </div>

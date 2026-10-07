@@ -68,7 +68,7 @@ finalCta:
     <p>Strong AF is our strength class. It's built around the big barbell lifts, plus accessory work that supports them. You build strength week to week and can track your progress over time.</p>
     <p>It's coached and scaled like every class at Alpine, so you don't need lifting experience to start. If you already lift, it gives you structure and a coach watching your form.</p>
     <p><strong>Good for:</strong> getting stronger, building muscle, and anyone who wants more lifting than a mixed class gives.</p>
-    <p><strong>When:</strong> Monday 4:30, 5:30 PM. Tuesday and Thursday 6:30, 7:30 AM. Wednesday 5:30 PM. Saturday 7:00 AM.</p>
+    <p><strong>When:</strong> Monday 4:30, 5:30 PM. Tuesday and Thursday 6:30, 7:30 AM. Wednesday 5:30 PM. Saturday 7:00 AM. Starts October 26.</p>
     <p class="class-links"><a class="btn btn-primary" href="/free-intro/">Book a free intro</a> <a href="/schedule/#strong-af">See Strong AF times →</a></p>
   </div>
 </section>
@@ -80,7 +80,7 @@ finalCta:
     <p>Hybrid mixes running, HYROX-style stations, and strength-endurance work. Think sleds, rowers, SkiErgs, carries, and wall balls between runs. Alpine is an Official HYROX Training Center, and Hybrid is where that training happens week to week.</p>
     <p>You don't need a race on the calendar to join. It's a great fit if you like to run and lift, or want a class that builds your engine.</p>
     <p><strong>Good for:</strong> HYROX racers, runners who want to get stronger, and hybrid athletes.</p>
-    <p><strong>When:</strong> Wednesday 7:00 AM, 4:30 PM. Sunday 8:00–9:30 AM. Tuesday is endurance day across every class, a great fit for hybrid athletes.</p>
+    <p><strong>When:</strong> Wednesday 7:00 AM, 4:30 PM, starting October 26. Sunday 8:00–9:30 AM. Tuesday is endurance day across every class, a great fit for hybrid athletes.</p>
     <p class="class-links"><a class="btn btn-primary" href="/hyrox/">More about Hybrid and HYROX</a> <a href="/schedule/#hybrid">See Hybrid times →</a></p>
   </div>
 </section>
