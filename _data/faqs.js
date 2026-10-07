@@ -23,8 +23,8 @@ import site from "./site.js";
 
 const p = Object.fromEntries(site.pricing.tiers.map((t) => [t.name, t.price]));
 const OPEN_GYM = p["Open Gym"]; // $99
-const UNLIMITED = p["Unlimited"]; // $199
-const PT = p["Personal Training"]; // $999
+const UNLIMITED = p["Unlimited"]; // $205
+const PUNCH = site.pricing.punchCards; // 10 and 20 punch cards
 const DROP_IN = site.pricing.visitOptions.find((o) => o.name === "Drop-In Class").price; // $30
 const WEEK = site.pricing.visitOptions.find((o) => o.name === "Week Pass").price; // $95
 const WELLNESS = site.wellness.prose;
@@ -205,19 +205,19 @@ export const items = [
     id: "how-much",
     group: "pricing",
     q: "How much does Alpine cost?",
-    a: `Memberships range from ${OPEN_GYM} to ${PT} per month. Open Gym is ${OPEN_GYM}/month (facility access, 2 classes a month, wellness center, 24/7 entry). For a set number of visits, ${site.pricing.classPlans.map((c) => `${c.name} is ${c.price}/month`).join(" and ")}, where each sign-in is one class, open gym session, or wellness visit (no 24/7 access). Unlimited is ${UNLIMITED}/month (everything in Open Gym plus unlimited CrossFit classes and Prime Vitality). Personal Training is ${PT}/month (everything in Unlimited plus 12 one-on-one sessions). All month-to-month, no contracts. <a href="/pricing/">See full pricing →</a>`,
+    a: `Memberships are ${OPEN_GYM} or ${UNLIMITED} per month. Open Gym is ${OPEN_GYM}/month (facility access, 2 classes a month, wellness center, 24/7 entry). For a set number of visits, ${site.pricing.classPlans.map((c) => `${c.name} is ${c.price}/month`).join(" and ")}, where each sign-in is one class, open gym session, or wellness visit (no 24/7 access). Punch cards are ${PUNCH.map((c) => `${c.price} for ${c.visits}`).join(" or ")}, one-time. Unlimited is ${UNLIMITED}/month (everything in Open Gym plus unlimited classes and Prime Vitality). All month-to-month, no contracts. <a href="/pricing/">See full pricing →</a>`,
   },
   {
     id: "which-membership",
     group: "pricing",
     q: "Which membership should I pick?",
-    a: `Pick by how you'll actually train. Mostly training on your own, with a class now and then: Open Gym, ${OPEN_GYM}/month, includes 2 classes a month. Training 3+ times a week in coached classes: Unlimited, ${UNLIMITED}/month — roughly two-thirds of members pick this. A specific performance goal: Personal Training, ${PT}/month. Traveling or trying us out: a drop-in (${DROP_IN}) or week pass (${WEEK}). Everything is month-to-month, so upgrading later takes about 30 seconds.`,
+    a: `Pick by how you'll actually train. Mostly training on your own, with a class now and then: Open Gym, ${OPEN_GYM}/month, includes 2 classes a month. Training 3+ times a week in coached classes: Unlimited, ${UNLIMITED}/month — roughly two-thirds of members pick this. Traveling or trying us out: a drop-in (${DROP_IN}) or week pass (${WEEK}). Everything is month-to-month, so upgrading later takes about 30 seconds.`,
   },
   {
     id: "unlimited-worth-it",
     group: "pricing",
     q: `Is Unlimited worth it at ${UNLIMITED} a month?`,
-    a: `It's our most popular membership. It includes unlimited CrossFit classes, Prime Vitality (55+), the wellness center (${WELLNESS}), and 24/7 facility access. Roughly two-thirds of members choose it, because the bundle costs less than the pieces and unlocks the recovery amenities.`,
+    a: `It's our most popular membership. It includes unlimited classes (CrossFit, Hybrid, Strong AF, and Downshift), Prime Vitality (55+), the wellness center (${WELLNESS}), and 24/7 facility access. Roughly two-thirds of members choose it, because the bundle costs less than the pieces and unlocks the recovery amenities.`,
   },
   {
     id: "open-gym-included",
@@ -226,10 +226,16 @@ export const items = [
     a: `Facility access, 2 classes a month (CrossFit, Hybrid, Strong AF, Downshift, and more), the wellness center (${WELLNESS}), and 24/7 entry. Unlimited classes and Prime Vitality start at Unlimited.`,
   },
   {
-    id: "pt-tier",
+    id: "punch-cards",
     group: "pricing",
-    q: `How does the ${PT} Personal Training tier work?`,
-    a: "12 one-on-one sessions per month (roughly three a week), individualized programming built around your goals, plus everything in Unlimited — CrossFit classes, Prime Vitality, wellness center, and 24/7 access.",
+    q: "Do you have punch cards?",
+    a: `Yes. ${PUNCH.map((c) => `${c.name}: ${c.price}`).join(". ")}. One-time purchases, no monthly billing. Each sign-in covers one class, one open gym session, or one wellness center visit. No 24/7 access. <a href="/pricing/#punch-cards">See punch cards →</a>`,
+  },
+  {
+    id: "specialty-classes",
+    group: "programs",
+    q: "What are Strong AF, Hybrid, and Downshift?",
+    a: `Strong AF is our strength class, offered across the week. Hybrid is our HYROX-style class, every Tuesday class plus Wednesday and Sunday sessions. Downshift is a 45-minute yoga and recovery class on Sunday mornings, twice a month. All three are included in Unlimited and count as one sign-in on other plans. <a href="/schedule/#specialty">See the schedule →</a>`,
   },
   {
     id: "contract",
@@ -265,7 +271,7 @@ export const items = [
     id: "buy-online",
     group: "pricing",
     q: "Can I buy a membership online without talking to anyone?",
-    a: "Yes for Open Gym, drop-ins, and week passes — all available for direct online purchase. Unlimited and Personal Training funnel through a free No Sweat Intro first, so we can match you to the right program.",
+    a: "Yes for Open Gym, drop-ins, and week passes — all available for direct online purchase. Unlimited funnels through a free No Sweat Intro first, so we can match you to the right program.",
   },
   {
     id: "price-comparison",
@@ -311,7 +317,7 @@ export const items = [
     id: "wellness-included",
     group: "wellness",
     q: "What's in the wellness center?",
-    a: `${site.wellness.prose.charAt(0).toUpperCase() + site.wellness.prose.slice(1)}. It's included in every membership tier — ${OPEN_GYM} Open Gym, ${UNLIMITED} Unlimited, and ${PT} Personal Training — and in drop-ins and week passes too.`,
+    a: `${site.wellness.prose.charAt(0).toUpperCase() + site.wellness.prose.slice(1)}. It's included in both memberships — ${OPEN_GYM} Open Gym and ${UNLIMITED} Unlimited — and in drop-ins and week passes too.`,
   },
   {
     id: "peptide-therapy",
@@ -356,12 +362,6 @@ export const items = [
     group: "programs",
     q: "How is HYROX different from CrossFit?",
     a: "CrossFit is constantly varied strength-and-conditioning across many movements. HYROX is a fixed-format race — the same eight runs and eight stations every time — so training rewards pacing, running endurance, and station efficiency. Alpine builds a strength-and-conditioning base, then layers race-specific running and station work on top.",
-  },
-  {
-    id: "personal-training",
-    group: "programs",
-    q: "How does personal training work?",
-    a: `One-on-one coaching for specific goals, injury recovery, or sports performance. The ${PT}/month tier includes 12 sessions a month plus everything in Unlimited. Scope it at a free No Sweat Intro. <a href="/personal-training/">Learn more →</a>`,
   },
 
   // ---------------- Location & hours ----------------
@@ -442,18 +442,6 @@ export const items = [
     group: "wellness",
     q: "Can I use the wellness center without doing CrossFit?",
     a: `Yes. The ${OPEN_GYM}/month Open Gym tier is exactly that — facility access and the wellness center, plus 2 classes a month if you want them.`,
-  },
-  {
-    id: "pt-vs-classes",
-    group: "programs",
-    q: "What's the difference between personal training and group classes?",
-    a: "Group classes run one workout for the room, scaled to each athlete by the coach. Personal training is programmed for you alone — your goals, your injury history, your schedule — with a coach's full attention for the session.",
-  },
-  {
-    id: "pt-injury-recovery",
-    group: "programs",
-    q: "Can I do personal training for injury recovery?",
-    a: "Yes. It's one of the most common reasons members start. Your coach will work around the limitation, progress loads carefully, and coordinate with your physical therapist or doctor when that helps.",
   },
   {
     id: "prime-vitality-safe",

@@ -48,8 +48,7 @@
       ],
       "excluded": [
         "Unlimited classes",
-        "Prime Vitality (55+)",
-        "Personal training"
+        "Prime Vitality (55+)"
       ],
       "ctaLabel": "Buy Open Gym",
       "ctaHref": "https://app.chalkitpro.com/gymProductLink/754/0cfb205d-d904-4d15-9e8b-4f97aa524ab4/17012/",
@@ -59,44 +58,23 @@
     },
     {
       "name": "Unlimited",
-      "price": "$199",
-      "amount": "199",
+      "price": "$205",
+      "amount": "205",
       "unit": "/month",
       "featured": true,
       "summary": "Unlimited coached classes. What most members pick.",
       "features": [
-        "Unlimited CrossFit classes",
-        "Prime Vitality (55+)",
-        "Wellness center",
-        "24/7 facility access"
-      ],
-      "excluded": [
-        "Personal training"
-      ],
-      "ctaLabel": "Buy Unlimited",
-      "ctaHref": "https://app.chalkitpro.com/gymProductLink/754/prod_Rppv33nN4MD3eP/8592/",
-      "ctaExternal": true,
-      "altCtaLabel": "Or start with a free intro →",
-      "altCtaHref": "/free-intro/"
-    },
-    {
-      "name": "Personal Training",
-      "price": "$999",
-      "amount": "999",
-      "unit": "/month",
-      "featured": false,
-      "summary": "12 one-on-one sessions plus everything in Unlimited.",
-      "features": [
-        "12 personal training sessions/month",
-        "Individualized programming",
-        "Unlimited CrossFit classes",
+        "Unlimited classes (CrossFit, Hybrid, Strong AF, Downshift)",
         "Prime Vitality (55+)",
         "Wellness center",
         "24/7 facility access"
       ],
       "excluded": [],
-      "ctaLabel": "Contact Us",
-      "ctaHref": "/free-intro/"
+      "ctaLabel": "Buy Unlimited",
+      "ctaHref": "https://app.chalkitpro.com/gymProductLink/754/prod_Rppv33nN4MD3eP/8592/",
+      "ctaExternal": true,
+      "altCtaLabel": "Or start with a free intro →",
+      "altCtaHref": "/free-intro/"
     }
   ],
   "classPlans": [
@@ -120,6 +98,30 @@
       "bestFor": "Training about three times a week. Each sign-in covers one class, one open gym session, or one wellness center visit. Recurring monthly. No 24/7 access.",
       "ctaLabel": "Buy 12x a Month",
       "ctaHref": "https://app.chalkitpro.com/gymProductLink/754/prod_Rpq7ZHIClwi4Xe/8597/",
+      "ctaExternal": true
+    }
+  ],
+  "punchCards": [
+    {
+      "name": "10 Punch Card",
+      "price": "$250",
+      "amount": "250",
+      "unit": "/10 sign-ins",
+      "visits": "10 sign-ins",
+      "bestFor": "One-time purchase. Each sign-in covers one class, one open gym session, or one wellness center visit. No 24/7 access.",
+      "ctaLabel": "Buy 10 Punch Card",
+      "ctaHref": "https://app.chalkitpro.com/gymProductLink/754/prod_RlOVYMKHxyckp5/8349/",
+      "ctaExternal": true
+    },
+    {
+      "name": "20 Punch Card",
+      "price": "$400",
+      "amount": "400",
+      "unit": "/20 sign-ins",
+      "visits": "20 sign-ins",
+      "bestFor": "One-time purchase. Each sign-in covers one class, one open gym session, or one wellness center visit. No 24/7 access.",
+      "ctaLabel": "Buy 20 Punch Card",
+      "ctaHref": "https://app.chalkitpro.com/gymProductLink/754/prod_RlOX7hlyfGZuNP/8350/",
       "ctaExternal": true
     }
   ],

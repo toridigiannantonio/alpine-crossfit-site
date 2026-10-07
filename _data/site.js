@@ -137,6 +137,10 @@ export default {
     // (tiers promise wellness + 24/7). Rendered by class-plans.njk.
     classPlans: gym.classPlans,
 
+    // 10 and 20 punch cards. One-time purchases, same sign-in rules as the
+    // class plans. Rendered by punch-cards.njk under the class plans.
+    punchCards: gym.punchCards,
+
     // Ways in that aren't a monthly membership. Rendered by the
     // visit-options partial on /pricing/#visiting.
     visitOptions: gym.visitOptions,
@@ -184,7 +188,7 @@ export default {
     train: [
       { label: "CrossFit", url: "/crossfit/" },
       { label: "HYROX", url: "/hyrox/" },
-      { label: "Personal Training", url: "/personal-training/" },
+      { label: "Strong AF · Hybrid · Downshift", url: "/schedule/#specialty" },
       { label: "Wellness Center", url: "/wellness/" },
       { label: "Prime Vitality (55+)", url: "/prime-vitality/" },
     ],
