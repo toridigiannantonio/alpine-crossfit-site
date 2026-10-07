@@ -235,7 +235,7 @@ export const items = [
     id: "specialty-classes",
     group: "programs",
     q: "What are Strong AF, Hybrid, and Downshift?",
-    a: `Strong AF is our strength class, offered across the week. Hybrid is our HYROX-style class, running all day Tuesday alongside CrossFit, plus Wednesday and Sunday sessions. Downshift is a 45-minute yoga and recovery class on Sunday mornings, twice a month starting November 1. Strong AF and Hybrid are set formats. Downshift is the one we'll keep shaping based on feedback from regular attendees. All three are included in Unlimited and count as one sign-in on other plans. <a href="/schedule/#specialty">See the schedule →</a>`,
+    a: `Strong AF is our strength class, offered across the week. Hybrid is our HYROX-style class on Wednesday and Sunday, and Tuesday is endurance day across every class, a great fit for hybrid athletes. Downshift is a 45-minute yoga and recovery class on Sunday mornings, twice a month starting November 1. Strong AF and Hybrid are set formats. Downshift is the one we'll keep shaping based on feedback from regular attendees. All three are included in Unlimited and count as one sign-in on other plans. <a href="/schedule/#specialty">See the schedule →</a>`,
   },
   {
     id: "contract",
