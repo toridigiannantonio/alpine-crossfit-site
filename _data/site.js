@@ -71,7 +71,7 @@ export default {
   ],
 
   // ------------------------------------------------------------------
-  // Nearby cities and REAL drive times to 12090 W 50th Pl.
+  // Nearby cities and REAL drive times to 12090 W Ridge Rd.
   //
   // These used to live on five near-duplicate /gym/<city>/ landing pages
   // (40–46% word-for-word identical to each other — a doorway-page pattern
@@ -94,7 +94,7 @@ export default {
 
   // Google Maps embed for the location partial.
   mapEmbed:
-    "https://www.google.com/maps?q=12090+West+50th+Pl,+Wheat+Ridge,+CO+80033&output=embed",
+    "https://www.google.com/maps?q=12090+West+Ridge+Rd,+Wheat+Ridge,+CO+80033&output=embed",
 
   // ------------------------------------------------------------------
   // Class schedule — single source for /schedule/ and the homepage strip.
