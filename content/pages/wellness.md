@@ -132,7 +132,7 @@ faqIds:
     <h2>When and where you can use it.</h2>
     <p><strong>Monday–Friday:</strong> 5:30 AM – 6:30 PM<br>
     <strong>Saturday:</strong> 8:00 – 10:00 AM<br>
-    <strong>Sunday:</strong> 8:00 – 9:00 AM</p>
+    <strong>Sunday:</strong> 8:00 – 9:30 AM</p>
     <p>Unlimited members have 24/7 facility access, including the wellness center.</p>
     <p>Alpine CrossFit is at {{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.postalCode }} — just off I-70, about five minutes from Arvada and Applewood, ten minutes from Lakewood, and twelve from downtown Golden.</p>
   </div>
