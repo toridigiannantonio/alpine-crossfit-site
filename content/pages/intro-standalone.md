@@ -26,4 +26,29 @@ footerText: "© 2026 Alpine CrossFit · 12090 W Ridge Rd, Wheat Ridge, CO 80033"
     </div>
 
     <p class="muted mt-6">
-      Wid
+      Widget slow to load? <a href="sms:{{ site.phoneSms }}">Text us {{ site.phoneDisplay }}</a> and we'll book it for you.
+    </p>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <span class="eyebrow">What to expect</span>
+    <h2>Your No Sweat Intro, minute by minute.</h2>
+    <ol>
+      <li><strong>Walk in.</strong> Arrive a few minutes early. Your coach will greet you at the door.</li>
+      <li><strong>Tour the gym.</strong> Main floor, equipment, wellness center, locker rooms.</li>
+      <li><strong>Conversation (about 20 min).</strong> Sit down and talk through goals, training history, any limitations, and what you want to change.</li>
+      <li><strong>Recommendation.</strong> Based on that conversation, the coach recommends the best starting point: Foundations, group classes, or personal training.</li>
+      <li><strong>No pressure.</strong> Leave with a clear path. Many members come back for a second visit before signing up, and that's fine.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section-green">
+  <div class="container">
+    <h2>See you soon.</h2>
+    <p class="dek">Couldn't find a time? Text us and we'll make it work.</p>
+    <a class="btn btn-dark" href="sms:{{ site.phoneSms }}">Text {{ site.phoneDisplay }}</a>
+  </div>
+</section>
