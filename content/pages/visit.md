@@ -63,12 +63,14 @@ finalCta:
     <span class="eyebrow">When we train</span>
     <h2>Class times.</h2>
     {%- for block in site.classSchedule %}
-    <h3{% if not loop.first %} class="mt-6"{% endif %}>{{ block.heading }}</h3>
+    <h3{% if not loop.first %} class="mt-6"{% endif %}>{{ block.heading | safe }}</h3>
     {%- for line in block.lines %}
     <p>{{ line | safe }}</p>
     {%- endfor %}
+    {%- if block.starts %}
+    <p class="text-muted" style="font-size:0.9rem;">{{ block.starts }}</p>
+    {%- endif %}
     {%- endfor %}
-    <p class="mt-6"><a class="btn btn-secondary" href="/schedule/">See the full schedule →</a></p>
   </div>
 </section>
 
