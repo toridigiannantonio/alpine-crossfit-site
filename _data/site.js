@@ -66,7 +66,8 @@ export default {
       opens: "05:30",
       closes: "18:30",
     },
-    { days: ["Saturday", "Sunday"], opens: "08:00", closes: "10:00" },
+    { days: ["Saturday"], opens: "08:00", closes: "10:00" },
+    { days: ["Sunday"], opens: "08:00", closes: "09:30" },
   ],
 
   // ------------------------------------------------------------------
@@ -138,7 +139,8 @@ export default {
       heading: "Wellness Center",
       lines: [
         "<strong>Mon–Fri:</strong> 5:30 AM – 6:30 PM",
-        "<strong>Sat &amp; Sun:</strong> 8:00 – 10:00 AM",
+        "<strong>Saturday:</strong> 8:00 – 10:00 AM",
+        "<strong>Sunday:</strong> 8:00 – 9:30 AM",
       ],
       note: "Included with every membership tier.",
     },
