@@ -329,7 +329,7 @@ export const items = [
     id: "wellness-hours",
     group: "wellness",
     q: "When is the wellness center open?",
-    a: "Monday–Friday 5:30 AM – 6:30 PM, Saturday and Sunday 8:00–10:00 AM. Unlimited members have 24/7 facility access.",
+    a: "Monday–Friday 5:30 AM – 6:30 PM, Saturday 8:00–10:00 AM, and Sunday 8:00–9:30 AM. Unlimited members have 24/7 facility access.",
   },
   {
     id: "cowork",
@@ -387,7 +387,7 @@ export const items = [
     id: "hours",
     group: "location",
     q: "What are your hours?",
-    a: "Staffed hours are Monday–Friday 5:30 AM – 6:30 PM, Saturday 8:00–10:00 AM, and Sunday 8:00–10:00 AM. Unlimited members have 24/7 facility access.",
+    a: "Staffed hours are Monday–Friday 5:30 AM – 6:30 PM, Saturday 8:00–10:00 AM, and Sunday 8:00–9:30 AM. Unlimited members have 24/7 facility access.",
   },
   {
     id: "parking",
