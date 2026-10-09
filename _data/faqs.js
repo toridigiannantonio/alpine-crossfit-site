@@ -393,7 +393,7 @@ export const items = [
     id: "parking",
     group: "location",
     q: "Is there free parking?",
-    a: "Yes. Free on-site parking for all members and guests. Pull into the lot at 12090 W 50th Pl — the Alpine entrance is on the front of the building.",
+    a: "Yes. Free on-site parking for all members and guests. Pull into the lot at 12090 W Ridge Rd — the Alpine entrance is on the front of the building.",
   },
   {
     id: "24-7-access",
