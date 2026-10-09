@@ -48,29 +48,29 @@ extraSchemas:
         position: 2
         item:
           "@type": Person
-          name: Lisa Arcangel
-          jobTitle: Coach
+          name: Tori DiGiannantonio
+          jobTitle: Co-Owner
           worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
       - "@type": ListItem
         position: 3
         item:
           "@type": Person
-          name: Dean Weeks
+          name: Lisa Arcangel
           jobTitle: Coach
           worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
       - "@type": ListItem
         position: 4
         item:
           "@type": Person
-          name: Liz Kushner
+          name: Dean Weeks
           jobTitle: Coach
           worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
       - "@type": ListItem
         position: 5
         item:
           "@type": Person
-          name: Tori DiGiannantonio
-          jobTitle: Co-Owner
+          name: Liz Kushner
+          jobTitle: Coach
           worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
       - "@type": ListItem
         position: 6
@@ -153,6 +153,20 @@ extraSchemas:
         </dl>
       </div>
       <div class="card">
+        <h3>Tori DiGiannantonio</h3>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Co-Owner · Yoga Instructor · Mental Performance Coach · Mental Health Therapist</p>
+        <p>Former firefighter and paramedic turned therapist and mental performance coach, Tori helps athletes and first responders train the mind the way they train the body.</p>
+        <p class="coach-label">Certifications</p>
+        <p class="coach-certs">LCSW · CMPC (Candidate) · RYT&nbsp;200 · CF&#8209;L1</p>
+        <p class="coach-label">Favorites</p>
+        <dl class="coach-favs">
+          <dt>Food</dt><dd>Battered French fries</dd>
+          <dt>Drink</dt><dd>Pinot Noir and lattes</dd>
+          <dt>Workout</dt><dd>Trail running</dd>
+          <dt>Quote</dt><dd>&ldquo;Suffer well.&rdquo;</dd>
+        </dl>
+      </div>
+      <div class="card">
         <h3>Lisa Arcangel</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · 15+ years coaching · Masters Semifinalist</p>
         <p>CrossFit Games Masters Semifinalist. A lifelong athlete who has competed in the CrossFit Open every year since 2012. Former collegiate basketball and softball player.</p>
@@ -192,20 +206,6 @@ extraSchemas:
           <dt>Drink</dt><dd>Coffee or sparkling water</dd>
           <dt>Workout</dt><dd>Anything with squat snatches</dd>
           <dt>Quote</dt><dd>&ldquo;Let go of the need to know how it will turn out. Trust that you&rsquo;ll handle whatever comes.&rdquo;</dd>
-        </dl>
-      </div>
-      <div class="card">
-        <h3>Tori DiGiannantonio</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Co-Owner · Yoga Instructor · Mental Performance Coach · Mental Health Therapist</p>
-        <p>Former firefighter and paramedic turned therapist and mental performance coach, Tori helps athletes and first responders train the mind the way they train the body.</p>
-        <p class="coach-label">Certifications</p>
-        <p class="coach-certs">LCSW · CMPC (Candidate) · RYT&nbsp;200 · CF&#8209;L1</p>
-        <p class="coach-label">Favorites</p>
-        <dl class="coach-favs">
-          <dt>Food</dt><dd>Battered French fries</dd>
-          <dt>Drink</dt><dd>Pinot Noir and lattes</dd>
-          <dt>Workout</dt><dd>Trail running</dd>
-          <dt>Quote</dt><dd>&ldquo;Suffer well.&rdquo;</dd>
         </dl>
       </div>
       <div class="card">
