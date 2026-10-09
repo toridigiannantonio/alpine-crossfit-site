@@ -100,7 +100,7 @@ faqIds:
     <h2>Recovery amenities.</h2>
     <p><strong>Mon–Fri:</strong> 5:30 AM – 6:30 PM</p>
     <p><strong>Sat:</strong> 8:00 – 10:00 AM</p>
-    <p><strong>Sun:</strong> 8:00 – 9:00 AM</p>
+    <p><strong>Sun:</strong> 8:00 – 9:30 AM</p>
     <p style="margin-top: var(--space-4);">Sauna, cold plunges, compression boots, peptide therapy. Included with every membership.</p>
     <p class="text-muted" style="margin-top: var(--space-4); font-size: 0.9rem;">Unlimited members also have 24/7 facility access.</p>
   </div>
