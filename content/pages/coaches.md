@@ -140,16 +140,16 @@ extraSchemas:
     <div class="grid grid-3">
       <div class="card">
         <h3>April DiGiannantonio</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Owner · Former D1 Director of Sports Performance</p>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Owner · Former DI Director of Sports Performance</p>
         <p>Ten-plus years in fitness and sports performance. Has owned CrossFit gyms on and off since 2013 and competed at CrossFit Games Regionals, individually and on a team. Spent over five years coaching Division I athletes across a dozen sports. Programs Alpine's in-house training alongside Megan Markee.</p>
         <p class="coach-label">Certifications</p>
-        <p class="coach-certs"></p>
+        <p class="coach-certs">MS · BS Exercise Science · CSCS · SCCC · Multiple CrossFit certifications</p>
         <p class="coach-label">Favorites</p>
         <dl class="coach-favs">
-          <dt>Food</dt><dd></dd>
-          <dt>Drink</dt><dd></dd>
-          <dt>Workout</dt><dd></dd>
-          <dt>Quote</dt><dd></dd>
+          <dt>Food</dt><dd>Pasta, pizza, and ice cream</dd>
+          <dt>Drink</dt><dd>A very cold beer</dd>
+          <dt>Workout</dt><dd>Anything outside</dd>
+          <dt>Quote</dt><dd>&ldquo;Today I will do what others won&rsquo;t, so tomorrow I can do what others can&rsquo;t.&rdquo;</dd>
         </dl>
       </div>
       <div class="card">
@@ -160,9 +160,9 @@ extraSchemas:
         <p class="coach-certs">LCSW · CMPC (Candidate) · RYT&nbsp;200 · CF&#8209;L1</p>
         <p class="coach-label">Favorites</p>
         <dl class="coach-favs">
-          <dt>Food</dt><dd>Battered French fries</dd>
-          <dt>Drink</dt><dd>Pinot Noir and lattes</dd>
-          <dt>Workout</dt><dd>Trail running</dd>
+          <dt>Food</dt><dd>Battered French fries, sushi, and wood-fired pizza</dd>
+          <dt>Drink</dt><dd>Pinot Noir, oat milk lattes, and a really cold beer after a long run</dd>
+          <dt>Workout</dt><dd>Distance running, Helen, or Eva</dd>
           <dt>Quote</dt><dd>&ldquo;Suffer well.&rdquo;</dd>
         </dl>
       </div>
