@@ -143,7 +143,7 @@ extraSchemas:
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Owner · Former DI Director of Sports Performance</p>
         <p>Ten-plus years in fitness and sports performance. Has owned CrossFit gyms on and off since 2013 and competed at CrossFit Games Regionals, individually and on a team. Spent over five years coaching Division I athletes across a dozen sports. Programs Alpine's in-house training alongside Megan Markee.</p>
         <p class="coach-label">Certifications</p>
-        <p class="coach-certs">MS · BS Exercise Science · CSCS · SCCC · Multiple CrossFit certifications</p>
+        <p class="coach-certs">BS Exercise Science · CSCS · SCCC · Multiple CrossFit certifications</p>
         <p class="coach-label">Favorites</p>
         <dl class="coach-favs">
           <dt>Food</dt><dd>Pasta, pizza, and ice cream</dd>
@@ -258,6 +258,7 @@ extraSchemas:
         <p class="coach-label">Favorites</p>
         <dl class="coach-favs">
           <dt>Food</dt><dd>Deep-dish pizza. She&rsquo;s from Chicago.</dd>
+          <dt>Drink</dt><dd>Coffee and a nice glass of wine</dd>
           <dt>Workout</dt><dd>DT: 5 rounds of 12 deadlifts, 9 hang power cleans, 6 shoulder-to-overhead</dd>
           <dt>Quote</dt><dd>&ldquo;Something is better than nothing!&rdquo;</dd>
         </dl>
