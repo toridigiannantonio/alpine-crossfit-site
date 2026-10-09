@@ -108,6 +108,28 @@ export default {
       note: "Every class is capped at 15 athletes and led by an experienced coach.",
     },
     {
+      heading: "Strong AF",
+      lines: [
+        "<strong>Monday:</strong> 4:30, 5:30 PM",
+        "<strong>Tue &amp; Thu:</strong> 6:30, 7:30 AM",
+        "<strong>Wednesday:</strong> 5:30 PM",
+        "<strong>Saturday:</strong> 7:00 AM",
+      ],
+      starts: "Starts October 26.",
+    },
+    {
+      heading: "Hybrid (HYROX-style)",
+      lines: [
+        "<strong>Wednesday:</strong> 7:00 AM, 4:30 PM (starts October 26)",
+        "<strong>Sunday:</strong> 8:00 – 9:30 AM",
+      ],
+    },
+    {
+      heading: "Downshift (yoga &amp; recovery)",
+      lines: ["<strong>Sunday:</strong> 9:45 – 10:30 AM, two Sundays a month"],
+      starts: "Starts November 1.",
+    },
+    {
       heading: "Prime Vitality (55+)",
       lines: ["<strong>Mon · Wed · Fri:</strong> 10:00 AM"],
       note: "Included with Unlimited. Strength work, barbell training, and functional movement scaled for the 55+ body.",
