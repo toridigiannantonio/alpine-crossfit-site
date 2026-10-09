@@ -7,7 +7,7 @@ sitemap: false
 eyebrow: "You're in"
 heading: "Now pick a <span class=\"accent\">time</span>."
 dek: "Thanks for your info. Choose a time below for your free No Sweat Intro — 30 minutes with a coach, no workout, no pressure. Most members are in and out in under an hour."
-footerText: "© 2026 Alpine CrossFit · 12090 W 50th Pl, Wheat Ridge, CO 80033"
+footerText: "© 2026 Alpine CrossFit · 12090 W Ridge Rd, Wheat Ridge, CO 80033"
 ---
 
 <section class="section">
