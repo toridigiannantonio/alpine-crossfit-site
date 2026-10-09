@@ -146,9 +146,9 @@ extraSchemas:
         <p class="coach-certs">BS Exercise Science · CSCS · SCCC · Multiple CrossFit certifications</p>
         <p class="coach-label">Favorites</p>
         <dl class="coach-favs">
-          <dt>Food</dt><dd>Pasta, pizza, and ice cream</dd>
+          <dt>Food</dt><dd>Wood-fired pizza and sushi</dd>
           <dt>Drink</dt><dd>A very cold beer</dd>
-          <dt>Workout</dt><dd>Anything outside</dd>
+          <dt>Workout</dt><dd>Anything outdoors, and Amanda</dd>
           <dt>Quote</dt><dd>&ldquo;Today I will do what others won&rsquo;t, so tomorrow I can do what others can&rsquo;t.&rdquo;</dd>
         </dl>
       </div>
