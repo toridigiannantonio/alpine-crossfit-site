@@ -183,13 +183,12 @@ extraSchemas:
       <div class="card">
         <h3>Liz Kushner</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · 10+ years coaching · 2026 Quarterfinalist</p>
-        <p>Decade of coaching with a strength-and-barbell focus. 2026 Quarterfinals qualifier. Alpine's resident class clown — the coach who makes every class memorable.</p>
-        <p>Born and raised in Littleton, Colorado, and the youngest of four with three older brothers, so she&rsquo;s always had a little competitive spirit. An indoor lady at heart who loves all things exercise. Outside the gym, you&rsquo;ll find her at home cooking, doing puzzles, or tending to her plant babies.</p>
+        <p>A decade of coaching with a strength-and-barbell focus, and a 2026 Quarterfinals qualifier. Alpine&rsquo;s resident class clown, the coach who makes every class memorable. Born and raised in Littleton as the youngest of four with three older brothers, so the competitive streak comes naturally. An indoor lady at heart: outside the gym, she&rsquo;s cooking, doing puzzles, or tending her plant babies.</p>
         <p class="coach-label">Certifications</p>
         <p class="coach-certs">CF&#8209;L2</p>
         <p class="coach-label">Favorites</p>
         <dl class="coach-favs">
-          <dt>Food</dt><dd>A LARGE steak and a baked potato</dd>
+          <dt>Food</dt><dd>A large steak (emphasis on large) and a baked potato</dd>
           <dt>Drink</dt><dd>Coffee or sparkling water</dd>
           <dt>Workout</dt><dd>Anything with squat snatches</dd>
           <dt>Quote</dt><dd>&ldquo;Let go of the need to know how it will turn out. Trust that you&rsquo;ll handle whatever comes.&rdquo;</dd>
@@ -239,7 +238,7 @@ extraSchemas:
       <div class="card">
         <h3>Mike Reynolds</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · 14 years coaching · Outdoorsman</p>
-        <p>CrossFit and fitness coach since 2012. To Mike, any fitness is good fitness. Very competitive, but never to the point it stops being fun. Outside the gym, you&rsquo;ll find him on the golf course or hitting jumps on his snowboard that he&rsquo;s too old for. Anything that keeps him outside!</p>
+        <p>Coaching CrossFit and fitness since 2012, Mike believes any fitness is good fitness. Very competitive, but never at the expense of fun. Outside the gym, you&rsquo;ll find him on the golf course or hitting snowboard jumps he admits he&rsquo;s too old for. If it&rsquo;s outside, he&rsquo;s in.</p>
         <p class="coach-label">Certifications</p>
         <p class="coach-certs">CF&#8209;L2 · CPR/AED · Fall Prevention</p>
         <p class="coach-label">Favorites</p>
@@ -253,12 +252,12 @@ extraSchemas:
       <div class="card">
         <h3>Kelley Williams</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · 10+ years coaching · Mom · Social worker</p>
-        <p>Leads the way through adolescent mental health by day and wrangles toddlers by night. Here for the fun and to help people reach their goals, whatever they may be. A lifelong average athlete, which has given her a wealth of knowledge in scaling options. Two babies in the last three years means personal experience in pregnancy and postpartum training.</p>
+        <p>Adolescent mental health by day, toddler wrangler by night. Kelley is here for the fun and to help you reach your goals, whatever they are. A self-described lifelong average athlete, she knows every scaling option in the book. Two babies in three years also gave her firsthand experience with pregnancy and postpartum training.</p>
         <p class="coach-label">Certifications</p>
         <p class="coach-certs">CF&#8209;L2 · LCSW</p>
         <p class="coach-label">Favorites</p>
         <dl class="coach-favs">
-          <dt>Food</dt><dd>Pizza. Deep dish, of course. She&rsquo;s from Chicago.</dd>
+          <dt>Food</dt><dd>Deep-dish pizza. She&rsquo;s from Chicago.</dd>
           <dt>Workout</dt><dd>DT: 5 rounds of 12 deadlifts, 9 hang power cleans, 6 shoulder-to-overhead</dd>
           <dt>Quote</dt><dd>&ldquo;Something is better than nothing!&rdquo;</dd>
         </dl>
