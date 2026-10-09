@@ -1,7 +1,7 @@
 {
   "_comment": "Business facts a non-developer may need to change: prices, hours, address, phone, wellness amenities, and drive times. This file is JSON so Decap CMS can edit it (admin/config.yml -> 'Gym details'). _data/site.js imports it and is still the ONE place templates read from — nothing else in the repo hard-codes a price or an address.",
   "address": {
-    "street": "12090 West 50th Place",
+    "street": "12090 West Ridge Road",
     "city": "Wheat Ridge",
     "region": "CO",
     "postalCode": "80033",
@@ -188,7 +188,7 @@
     {
       "city": "Wheat Ridge",
       "time": "Here",
-      "note": "12090 W 50th Place, just off I-70 near Kipling — minutes from the Wheat Ridge/Ward G Line light rail station and the 38th Avenue corridor."
+      "note": "12090 W Ridge Rd, just off I-70 near Kipling — minutes from the Wheat Ridge/Ward G Line light rail station and the 38th Avenue corridor."
     },
     {
       "city": "Applewood",
