@@ -182,16 +182,16 @@ extraSchemas:
       </div>
       <div class="card">
         <h3>Dean Weeks</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · 10+ years training · Active competitor</p>
-        <p>A decade of CrossFit training and active competition. Known at Alpine for empathy and an unparalleled ability to motivate athletes at every experience level.</p>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · 15+ years coaching · Active competitor</p>
+        <p>With 15+ years in CrossFit and strength and conditioning, Dean has coached athletes at every stage, from 7-year-olds and collegiate athletes to Olympic medalists and seniors over 80. Known at Alpine for his empathy and ability to motivate, he meets athletes where they are and helps them reach their full potential.</p>
         <p class="coach-label">Certifications</p>
-        <p class="coach-certs"></p>
+        <p class="coach-certs">CF&#8209;L2 · CrossFit Aging Athlete · CrossFit Programming · CrossFit Anatomy · BirdBox Gymnastics</p>
         <p class="coach-label">Favorites</p>
         <dl class="coach-favs">
-          <dt>Food</dt><dd></dd>
-          <dt>Drink</dt><dd></dd>
-          <dt>Workout</dt><dd></dd>
-          <dt>Quote</dt><dd></dd>
+          <dt>Food</dt><dd>Pizza. Keep your pineapple away from my pizza!</dd>
+          <dt>Drink</dt><dd>Wine or sparkling water</dd>
+          <dt>Workout</dt><dd>Anything with ski/row sprints and power cleans or snatches</dd>
+          <dt>Quote</dt><dd>&ldquo;Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me.&rdquo;</dd>
         </dl>
       </div>
       <div class="card">
@@ -224,15 +224,15 @@ extraSchemas:
       </div>
       <div class="card">
         <h3>Maddy Portlock</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach</p>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · Top 2% CrossFit Open · 2× Quarterfinalist</p>
+        <p>Mama, athlete, and coach, Maddy helps people become stronger, healthier humans. She&rsquo;s also a personal trainer, certified nutritionist, kids strength and conditioning coach, and former gymnastics coach. Outside the gym, you&rsquo;ll find her chasing her little boy, competing with her husband (yes, everything is a competition), baking way too much, cooking for her family, hunting for her next favorite coffee shop, or dragging everyone outside because they can&rsquo;t sit still for long.</p>
         <p class="coach-label">Certifications</p>
-        <p class="coach-certs"></p>
+        <p class="coach-certs">CF&#8209;L1 · CF&#8209;L2 · Certified Nutritionist</p>
         <p class="coach-label">Favorites</p>
         <dl class="coach-favs">
-          <dt>Food</dt><dd></dd>
-          <dt>Drink</dt><dd></dd>
-          <dt>Workout</dt><dd></dd>
-          <dt>Quote</dt><dd></dd>
+          <dt>Food</dt><dd>A good charcuterie board (the more meat, the better) and maple doughnuts</dd>
+          <dt>Drink</dt><dd>Cold brew with extra cream, or kombucha</dd>
+          <dt>Quote</dt><dd>&ldquo;If it doesn&rsquo;t challenge you, it doesn&rsquo;t change you.&rdquo;</dd>
         </dl>
       </div>
       <div class="card">
