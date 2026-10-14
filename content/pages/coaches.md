@@ -232,6 +232,7 @@ extraSchemas:
         <dl class="coach-favs">
           <dt>Food</dt><dd>A good charcuterie board (the more meat, the better) and maple doughnuts</dd>
           <dt>Drink</dt><dd>Cold brew with extra cream, or kombucha</dd>
+          <dt>Workout</dt><dd>Nasty Girls 2.0 and Diane</dd>
           <dt>Quote</dt><dd>&ldquo;If it doesn&rsquo;t challenge you, it doesn&rsquo;t change you.&rdquo;</dd>
         </dl>
       </div>
