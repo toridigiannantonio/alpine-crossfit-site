@@ -179,7 +179,7 @@ export const items = [
     id: "who-programs",
     group: "classes",
     q: "Who writes the workouts?",
-    a: "Every workout is programmed in-house by Megan Markee (CSCS) in collaboration with owner April DiGiannantonio (CSCS, SCCC, former Division I Director of Sports Performance). Two CSCS-certified professionals — not a franchise template, not a subscription service, not a random WOD generator.",
+    a: "Every workout is programmed in-house, led by owner April DiGiannantonio (CSCS, SCCC, former Division I Director of Sports Performance). Not a franchise template, not a subscription service, not a random WOD generator.",
   },
   {
     id: "programming-cycles",
@@ -407,19 +407,19 @@ export const items = [
     id: "who-coaches",
     group: "coaches",
     q: "Who coaches the classes?",
-    a: 'Lisa Arcangel, Liz Kushner, Dean Weeks, April DiGiannantonio, and Tori DiGiannantonio coach classes, joined by Maddy Portlock, Mike Reynolds, and Kelley Williams. Tori leads Downshift, our yoga and recovery class. Programming is built collaboratively by Megan Markee and owner April DiGiannantonio, drawing on Games-level competition and five-plus years as a Division I Director of Sports Performance. <a href="/coaches/">Meet the team →</a>',
+    a: 'Lisa Arcangel, Liz Kushner, Dean Weeks, April DiGiannantonio, and Tori DiGiannantonio coach classes, joined by Maddy Portlock, Mike Reynolds, and Kelley Williams. Tori leads Downshift, our yoga and recovery class. Programming is led by owner April DiGiannantonio, drawing on Games-level competition and five-plus years as a Division I Director of Sports Performance. <a href="/coaches/">Meet the team →</a>',
   },
   {
     id: "owners-coach",
     group: "coaches",
     q: "Do the owners coach the classes?",
-    a: `Yes. Owner April DiGiannantonio coaches classes. She holds the CSCS and SCCC and was a Division I Director of Sports Performance for five-plus years. Tori DiGiannantonio leads Downshift, our yoga and recovery class, and coaches the occasional Hybrid class. Lisa, Liz, and Dean lead group classes with 10 to 15+ years of coaching apiece, and Megan Markee (CSCS) writes every workout members follow, in collaboration with April.`,
+    a: `Yes. Owner April DiGiannantonio coaches classes. She holds the CSCS and SCCC and was a Division I Director of Sports Performance for five-plus years. Tori DiGiannantonio leads Downshift, our yoga and recovery class, and coaches the occasional Hybrid class. Lisa, Liz, and Dean lead group classes with 10 to 15+ years of coaching apiece.`,
   },
   {
     id: "how-long-in-wheat-ridge",
     group: "coaches",
     q: "How long has Alpine been in Wheat Ridge?",
-    a: "Founded in 2010, owned by Megan Markee and Annie Brunner from 2016 to 2026, and now owned by April and Tori DiGiannantonio. It's one of the longest-running CrossFit affiliates in the Wheat Ridge area.",
+    a: "Founded in 2010 and now owned by April and Tori DiGiannantonio. It's one of the longest-running CrossFit affiliates in the Wheat Ridge area.",
   },
 
   // ---------------- Safety, scaling & injuries ----------------
