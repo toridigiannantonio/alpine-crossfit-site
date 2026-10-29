@@ -72,13 +72,6 @@ extraSchemas:
           name: Liz Kushner
           jobTitle: Coach
           worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
-      - "@type": ListItem
-        position: 6
-        item:
-          "@type": Person
-          name: Megan Markee
-          jobTitle: Programmer
-          worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
 ---
 <section class="section">
   <div class="container">
@@ -206,20 +199,6 @@ extraSchemas:
           <dt>Drink</dt><dd>Coffee or sparkling water</dd>
           <dt>Workout</dt><dd>Anything with squat snatches</dd>
           <dt>Quote</dt><dd>&ldquo;Let go of the need to know how it will turn out. Trust that you&rsquo;ll handle whatever comes.&rdquo;</dd>
-        </dl>
-      </div>
-      <div class="card">
-        <h3>Megan Markee</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Programmer · 2× Semifinalist · 2× Regionals</p>
-        <p>Designs every workout Alpine members follow, in collaboration with owner April. Twice qualified for the CrossFit Games Semifinals, and twice for CrossFit Games Regionals on a team. Started CrossFit in 2011.</p>
-        <p class="coach-label">Certifications</p>
-        <p class="coach-certs"></p>
-        <p class="coach-label">Favorites</p>
-        <dl class="coach-favs">
-          <dt>Food</dt><dd></dd>
-          <dt>Drink</dt><dd></dd>
-          <dt>Workout</dt><dd></dd>
-          <dt>Quote</dt><dd></dd>
         </dl>
       </div>
       <div class="card">

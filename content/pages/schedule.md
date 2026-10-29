@@ -79,7 +79,7 @@ faqIds:
     <div class="class-block" id="downshift">
       <h3>Downshift <span class="class-tag">Yoga &amp; recovery</span></h3>
       <p>45-minute yoga and recovery. <a href="/classes/#downshift">About Downshift →</a></p>
-      <p><strong>Sunday:</strong> 9:45 – 10:30 AM, two Sundays a month starting November 1</p>
+      <p><strong>Sunday:</strong> 10:00 – 10:45 AM, every other Sunday starting November 1</p>
     </div>
     <p style="margin-top: var(--space-4); font-size: 0.95rem;">All three are included with Unlimited. On Open Gym, class plans, and punch cards, each class counts as one sign-in.</p>
   </div>

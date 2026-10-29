@@ -93,7 +93,7 @@ finalCta:
     <p>Downshift is a 45-minute yoga and recovery class on Sunday mornings. It's slower on purpose: mobility, breath, and time to reset.</p>
     <p>Downshift starts November 1. It will evolve based on feedback from the people who come regularly, including the style of class and whether to add breath work, meditation, or mindset work.</p>
     <p><strong>Good for:</strong> everyone. All levels and all bodies are welcome, and everyone benefits.</p>
-    <p><strong>When:</strong> Sunday 9:45–10:30 AM, two Sundays a month, starting November 1.</p>
+    <p><strong>When:</strong> Sunday 10:00–10:45 AM, every other Sunday, starting November 1.</p>
     <p class="class-links"><a class="btn btn-primary" href="/free-intro/">Book a free intro</a> <a href="/schedule/#downshift">See Downshift times →</a></p>
   </div>
 </section>
