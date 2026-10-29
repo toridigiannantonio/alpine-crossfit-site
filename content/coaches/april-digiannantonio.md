@@ -19,7 +19,7 @@ credentials:
   - "Softball and basketball; lifelong golfer and skier"
 athlete:
   heading: "As an athlete, coach & owner"
-  body: "<p>April programs Alpine's in-house training alongside Megan Markee. Her collegiate S&C background gives Alpine's members access to programming built by someone who has trained NCAA athletes across a dozen sports — and her CrossFit gym-owner history means she understands what makes a community-focused affiliate work at every level, from a first-time member to a seasoned competitor.</p>"
+  body: "<p>April leads Alpine's in-house programming. Her collegiate S&C background gives Alpine's members access to programming built by someone who has trained NCAA athletes across a dozen sports — and her CrossFit gym-owner history means she understands what makes a community-focused affiliate work at every level, from a first-time member to a seasoned competitor.</p>"
 finalCtaHeading: "Meet April in person."
 personSchema:
   "@context": "https://schema.org"
