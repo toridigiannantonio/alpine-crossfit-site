@@ -2,15 +2,14 @@
 layout: layouts/coach.njk
 permalink: /coaches/tori-digiannantonio/
 title: "Tori DiGiannantonio — Co-Owner · Alpine CrossFit"
-description: "Tori DiGiannantonio is co-owner of Alpine CrossFit. A licensed clinical social worker (LCSW), mental performance consultant and CMPC candidate, former firefighter and paramedic, ultrarunner, and yoga instructor who works with athletes and first responders."
+description: "Tori DiGiannantonio is co-owner of Alpine CrossFit. A licensed social worker (LSW), mental performance consultant, former firefighter and paramedic, ultrarunner, and yoga instructor who works with athletes and first responders."
 canonical: "https://alpinecrossfit.com/coaches/tori-digiannantonio/"
 order: 2
 name: "Tori DiGiannantonio"
 credentialsLine: "Co-Owner · Yoga Instructor · Mental Performance Coach · Mental Health Therapist"
-bio: "Tori DiGiannantonio is co-owner of Alpine CrossFit. She leads Downshift, our yoga and recovery class, and coaches the occasional Hybrid class. She spent years as a firefighter and paramedic, started CrossFit in 2011, and runs ultras. She is a therapist (LCSW) and mental performance consultant (CMPC candidate) who works with athletes and first responders, and she owns <a href=\"https://grounded-ascent.com\" target=\"_blank\" rel=\"noopener\">Grounded Ascent Performance</a>. Mental performance and therapy services at Alpine are coming soon."
+bio: "Tori DiGiannantonio is co-owner of Alpine CrossFit. She leads Downshift, our yoga and recovery class, and coaches the occasional Hybrid class. She spent years as a firefighter and paramedic, started CrossFit in 2011, and runs ultras. She is a therapist (LSW) and mental performance consultant who works with athletes and first responders, and she owns <a href=\"https://grounded-ascent.com\" target=\"_blank\" rel=\"noopener\">Grounded Ascent Performance</a>. Mental performance and therapy services at Alpine are coming soon."
 credentials:
-  - "Licensed Clinical Social Worker (LCSW)"
-  - "Certified Mental Performance Consultant (CMPC) Candidate, AASP"
+  - "Licensed Social Worker (LSW)"
   - "Registered Yoga Teacher (RYT 200, Yoga Alliance)"
   - "CrossFit Level 1 Trainer (CF-L1)"
   - "Former firefighter and paramedic"
@@ -31,7 +30,7 @@ personSchema:
     - {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "license",
-        "name": "Licensed Clinical Social Worker (LCSW)"
+        "name": "Licensed Social Worker (LSW)"
       }
     - {
         "@type": "EducationalOccupationalCredential",
