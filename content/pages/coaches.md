@@ -117,8 +117,7 @@ extraSchemas:
           <li>Strength and Conditioning Coach Certified (SCCC, CSCCa)</li>
           <li>Advanced CrossFit trainer credentials</li>
           <li>CrossFit Programming, Running, and Nutrition courses</li>
-          <li>Certified Mental Performance Consultant (CMPC) Candidate</li>
-          <li>Licensed Clinical Social Worker (LCSW)</li>
+          <li>Licensed Social Worker (LSW)</li>
           <li>Registered Yoga Teacher (RYT, Yoga Alliance)</li>
         </ul>
       </div>
@@ -150,7 +149,7 @@ extraSchemas:
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Co-Owner · Yoga Instructor · Mental Performance Coach · Mental Health Therapist</p>
         <p>Former firefighter and paramedic turned therapist and mental performance coach, Tori helps athletes and first responders train the mind the way they train the body.</p>
         <p class="coach-label">Certifications</p>
-        <p class="coach-certs">LCSW · CMPC (Candidate) · RYT&nbsp;200 · CF&#8209;L1</p>
+        <p class="coach-certs">LSW · RYT&nbsp;200 · CF&#8209;L1</p>
         <p class="coach-label">Favorites</p>
         <dl class="coach-favs">
           <dt>Food</dt><dd>Battered French fries, sushi, and wood-fired pizza</dd>
