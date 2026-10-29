@@ -63,12 +63,7 @@ extraSchemas:
         "@type": "CourseInstance",
         "courseMode": "Online",
         "courseWorkload": "P12W",
-        "instructor": {
-          "@type": "Person",
-          "name": "Megan Markee",
-          "jobTitle": "Programmer",
-          "worksFor": {"@id": "https://alpinecrossfit.com/#organization"}
-        }
+        "instructor": {"@id": "https://alpinecrossfit.com/#organization"}
       },
       "about": {
         "@type": "SportsEvent",
@@ -103,7 +98,7 @@ finalCta:
   <div class="container container-narrow">
     <span class="eyebrow">Why this plan</span>
     <h2>Written by people who've raced.</h2>
-    <p>Most free HYROX plans are generic. This one is written by Alpine's Megan Markee — a 2× CrossFit Games Semifinalist who's spent a decade programming for competitive athletes. The plan reflects how we train our own members for HYROX races.</p>
+    <p>Most free HYROX plans are generic. This one is written in-house at Alpine. The plan reflects how we train our own members for HYROX races.</p>
     <p>Alpine is an <strong>Official HYROX Training Center</strong>. We run HYROX-focused programming Tuesday, Thursday, and Sunday plus Friday run club. Our coaches Lisa (Masters Semifinalist), Liz (Quarterfinalist), and Dean (decade of training, active competitor) bring real race-day experience to the room.</p>
   </div>
 </section>
