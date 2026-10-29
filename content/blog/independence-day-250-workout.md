@@ -48,7 +48,7 @@ In case it looked random — it isn't.
 - **250-ft "tea tax" lunge** — the 250th.
 - **"Cargo boat" + "tea bag overboard"** — Boston Tea Party, naturally.
 
-Yes, Megan thought about it that hard.
+Yes, we thought about it that hard.
 
 ## Holiday weekend hours
 
