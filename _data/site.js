@@ -127,7 +127,7 @@ export default {
     },
     {
       heading: "Downshift (yoga &amp; recovery)",
-      lines: ["<strong>Sunday:</strong> 9:45 – 10:30 AM, two Sundays a month"],
+      lines: ["<strong>Sunday:</strong> 10:00 – 10:45 AM, every other Sunday"],
       starts: "Starts November 1.",
     },
     {

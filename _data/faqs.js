@@ -197,7 +197,7 @@ export const items = [
     id: "sunday-classes",
     group: "classes",
     q: "Do you have Sunday classes?",
-    a: "Yes. Hybrid runs Sunday 8:00–9:30 AM, and Downshift (yoga and recovery) runs 9:45–10:30 AM two Sundays a month, starting November 1. Most CrossFit gyms in the Denver metro close on Sundays. Unlimited members also have 24/7 facility access, so a Sunday open-gym session is always available.",
+    a: "Yes. Hybrid runs Sunday 8:00–9:30 AM, and Downshift (yoga and recovery) runs 10:00–10:45 AM every other Sunday, starting November 1. Most CrossFit gyms in the Denver metro close on Sundays. Unlimited members also have 24/7 facility access, so a Sunday open-gym session is always available.",
   },
 
   // ---------------- Pricing & membership ----------------
@@ -523,13 +523,13 @@ export const items = [
     id: "no-yoga",
     group: "programs",
     q: "Do you offer yoga or recovery classes?",
-    a: `Yes. Downshift starts November 1. It's a 45-minute yoga and recovery class on Sunday mornings, 9:45–10:30 AM, two Sundays a month. Downshift will evolve based on feedback from the people who come regularly, including the style of class and whether to add breath work, meditation, or mindset work. <a href="/schedule/#specialty">See the schedule →</a>`,
+    a: `Yes. Downshift starts November 1. It's a 45-minute yoga and recovery class on Sunday mornings, 10:00–10:45 AM, every other Sunday. Downshift will evolve based on feedback from the people who come regularly, including the style of class and whether to add breath work, meditation, or mindset work. <a href="/schedule/#specialty">See the schedule →</a>`,
   },
   {
     id: "no-weekend-afternoons",
     group: "not-offered",
     q: "Are there weekend afternoon classes?",
-    a: "No. Saturday classes run 7:00–10:00 AM and Sunday runs 8:00–10:30 AM. If a weekend afternoon class is essential, we're not the right fit.",
+    a: "No. Saturday classes run 7:00–10:00 AM and Sunday runs 8:00–10:45 AM. If a weekend afternoon class is essential, we're not the right fit.",
   },
 ];
 
