@@ -11,13 +11,13 @@ ogType: "website"
 loadImagesScript: true
 schemaTypes: ["website", "organization", "healthclub"]
 announcement:
-  text: "New Class Offerings Coming Soon, Check Back Late October!"
-  href: "/blog/whats-new-at-alpine-fall-2026/"
-  linkLabel: "See what's new →"
+  text: "New Classes are Live!"
+  href: "/schedule/"
+  linkLabel: "Check the Schedule →"
 hero:
   eyebrow: "Wheat Ridge, CO"
   heading: "Training for <span class=\"accent\">every body</span>."
-  dek: "CrossFit, strength, HYROX-style, and yoga classes, programming written in-house by two CSCS-certified coaches, and a wellness center — in one month-to-month membership."
+  dek: "CrossFit, strength, HYROX-style, and yoga classes, in-house programming led by a CSCS-certified coach, and a wellness center — in one month-to-month membership."
   secondaryCta:
     label: "Drop in — {{ site.pricing.visitOptions[1].price }}"
     href: "{{ site.pricing.visitOptions[1].ctaHref }}"
