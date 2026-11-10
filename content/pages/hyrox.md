@@ -122,6 +122,9 @@ faqIds:
       <li><strong>Station practice</strong> — drills on the SkiErg, row, sled, and wall ball so race-day movements feel automatic.</li>
     </ul>
   </div>
+  <div class="container">
+    <img class="section-photo" src="/assets/img/uploads/gym-photos/hyrox-tread.jpg" alt="An athlete running on a curved treadmill at Alpine, with SkiErgs lined up behind" loading="lazy" width="1600" height="1067">
+  </div>
 </section>
 
 <section class="section section-forest" id="hybrid">
