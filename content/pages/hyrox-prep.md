@@ -2,13 +2,13 @@
 layout: layouts/page.njk
 permalink: /hyrox-prep/
 title: "Free 12-Week HYROX Prep Plan | Alpine CrossFit Wheat Ridge"
-description: "The free 12-week HYROX prep plan from Alpine CrossFit, an Official HYROX Training Center. Written by a 2× CrossFit Games Semifinalist. For HYROX Denver 2026."
+description: "The free 12-week HYROX prep plan from Alpine CrossFit, an Official HYROX Training Center. Written in-house at Alpine. For HYROX Denver 2026."
 canonical: "https://alpinecrossfit.com/hyrox-prep/"
 priority: 0.9
 changefreq: monthly
 eyebrow: "Free · 12 Weeks · Built for HYROX Denver 2026"
 heading: "Get the free <span class=\"accent\">12-week HYROX</span> prep plan."
-dek: "A complete 12-week training plan to take you from CrossFit-fit to HYROX-race-ready. Built by a 2× CrossFit Games Semifinalist. Built for HYROX Denver 2026 on November 12-15."
+dek: "A complete 12-week training plan to take you from CrossFit-fit to HYROX-race-ready. Written in-house at Alpine. Built for HYROX Denver 2026 on November 12-15."
 extraSchemas:
   - {
       "@context": "https://schema.org",
@@ -24,7 +24,7 @@ extraSchemas:
       "@id": "https://alpinecrossfit.com/hyrox-prep/#course",
       "name": "12-Week HYROX Prep Plan",
       "alternateName": "Free 12-week HYROX training program",
-      "description": "A complete 12-week training plan built to prepare CrossFit-fit athletes for a HYROX race. Includes week-by-week programming, compromised running protocols, station-specific work (sled push, sled pull, sandbag lunge, wall ball, SkiErg, row, farmers carry, burpee broad jumps), race-pace targets for Open/Pro/Doubles divisions, three full-race simulation weeks, taper protocol, and race-day pacing strategy. Written by a 2× CrossFit Games Semifinalist for HYROX Denver 2026.",
+      "description": "A complete 12-week training plan built to prepare CrossFit-fit athletes for a HYROX race. Includes week-by-week programming, compromised running protocols, station-specific work (sled push, sled pull, sandbag lunge, wall ball, SkiErg, row, farmers carry, burpee broad jumps), race-pace targets for Open/Pro/Doubles divisions, three full-race simulation weeks, taper protocol, and race-day pacing strategy. Written in-house at Alpine for HYROX Denver 2026.",
       "provider": {
         "@type": "Organization",
         "@id": "https://alpinecrossfit.com/#organization",

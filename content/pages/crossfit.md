@@ -2,7 +2,7 @@
 layout: layouts/page.njk
 permalink: /crossfit/
 title: "CrossFit Classes in Wheat Ridge — Alpine CrossFit"
-description: "Coach-led CrossFit classes in Wheat Ridge — led by experienced coaches, capped at 15, programmed in-house by a 2× CrossFit Games Semifinalist. New to CrossFit? Start with Foundations. Free intro."
+description: "Coach-led CrossFit classes in Wheat Ridge — led by experienced coaches, capped at 15, programmed in-house. New to CrossFit? Start with Foundations. Free intro."
 canonical: "https://alpinecrossfit.com/crossfit/"
 eyebrow: "CrossFit"
 heading: "Coach-led CrossFit classes in <span class=\"accent\">Wheat Ridge</span>."

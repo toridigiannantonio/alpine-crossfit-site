@@ -76,7 +76,7 @@ faqIds:
       </div>
       <div class="card card-featured">
         <h3>Free 12-week prep plan</h3>
-        <p>A complete 12-week plan to take you from CrossFit-fit to race-ready, written by a 2× CrossFit Games Semifinalist. Compromised running, station work, race-pace targets, taper.</p>
+        <p>A complete 12-week plan to take you from CrossFit-fit to race-ready, written in-house at Alpine. Compromised running, station work, race-pace targets, taper.</p>
         <a href="/hyrox-prep/">Get the plan →</a>
       </div>
     </div>
@@ -129,7 +129,7 @@ faqIds:
     <span class="eyebrow">Hybrid classes</span>
     <h2>Hybrid: our HYROX-style class.</h2>
     <p>Hybrid is where HYROX training happens week to week. Running, stations, and strength-endurance, coached and scaled to your level. You don't need a race on the calendar to join.</p>
-    <p><strong>Wednesday:</strong> 7:00 AM, 4:30 PM, starting October 26<br>
+    <p><strong>Wednesday:</strong> 7:00 AM, 4:30 PM<br>
     <strong>Sunday:</strong> 8:00 – 9:30 AM</p>
     <p>Tuesday is endurance day. Every class that day is built around endurance, which makes it a great fit for hybrid athletes.</p>
     <p>Included with Unlimited. Counts as one sign-in on Open Gym, class plans, and punch cards. <a href="/schedule/#hybrid">Full schedule →</a></p>
