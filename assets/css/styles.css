@@ -1853,3 +1853,6 @@ main img { max-width: 100%; height: auto; }
 .coach-photo { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 20%; border-radius: var(--radius-lg); margin-bottom: var(--space-4); background: var(--color-surface-2); }
 .coach-photo--badge { display: flex; align-items: center; justify-content: center; background: var(--color-tan); }
 .coach-photo--badge img { width: 55%; height: auto; }
+
+/* In-section photo */
+.section-photo { display: block; width: 100%; height: auto; border-radius: var(--radius-lg); margin-top: var(--space-8); }
