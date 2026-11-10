@@ -425,7 +425,7 @@ strong { font-weight: 700; color: var(--color-text); }
     grid-template-columns: 1fr;
     gap: var(--space-8);
   }
-  .hero-image { aspect-ratio: 16/10; object-position: center 45%; }
+  .hero-image { aspect-ratio: 1 / 1; object-position: center 30%; }
 }
 
 /* Section imagery (full-bleed under section, or side-by-side) */
@@ -1866,3 +1866,6 @@ main img { max-width: 100%; height: auto; }
   .split--photo-left .inset-photo { order: 2; }
   .inset-photo { max-width: 420px; aspect-ratio: 1 / 1; object-position: center 15%; }
 }
+
+/* Homepage hero: landscape group photo, keep both sled lanes in frame */
+.hero-image[data-image-slot="homepage_hero"] { object-position: 45% 50%; }
