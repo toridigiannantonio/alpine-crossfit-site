@@ -131,6 +131,7 @@ extraSchemas:
     <h2 class="section-heading">Experienced CrossFit coaches.</h2>
     <div class="grid grid-3">
       <div class="card">
+        <img class="coach-photo" src="/assets/img/coaches/april.jpg" alt="April DiGiannantonio, Alpine coach" loading="lazy" width="800" height="1000">
         <h3>April DiGiannantonio</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Owner · Former DI Director of Sports Performance</p>
         <p>Ten-plus years in fitness and sports performance. Has owned CrossFit gyms on and off since 2013 and competed at CrossFit Games Regionals, individually and on a team. Spent over five years coaching Division I athletes across a dozen sports. Leads Alpine's in-house programming.</p>
@@ -145,6 +146,7 @@ extraSchemas:
         </dl>
       </div>
       <div class="card">
+        <img class="coach-photo" src="/assets/img/coaches/tori.jpg" alt="Tori DiGiannantonio, Alpine coach" loading="lazy" width="800" height="1000">
         <h3>Tori DiGiannantonio</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Co-Owner · Yoga Instructor · Mental Performance Coach · Mental Health Therapist</p>
         <p>Former firefighter and paramedic turned therapist and mental performance coach, Tori helps athletes and first responders train the mind the way they train the body.</p>
@@ -159,6 +161,7 @@ extraSchemas:
         </dl>
       </div>
       <div class="card">
+        <div class="coach-photo coach-photo--badge" role="img" aria-label="Lisa Arcangel, photo coming soon"><img src="/assets/img/brand/logo-badge.svg" alt=""></div>
         <h3>Lisa Arcangel</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · 15+ years coaching · Masters Semifinalist</p>
         <p>CrossFit Games Masters Semifinalist. A lifelong athlete who has competed in the CrossFit Open every year since 2012. Former collegiate basketball and softball player.</p>
@@ -173,6 +176,7 @@ extraSchemas:
         </dl>
       </div>
       <div class="card">
+        <img class="coach-photo" src="/assets/img/coaches/dean.jpg" alt="Dean Weeks, Alpine coach" loading="lazy" width="800" height="1000">
         <h3>Dean Weeks</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · 15+ years coaching · Active competitor</p>
         <p>With 15+ years in CrossFit and strength and conditioning, Dean has coached athletes at every stage, from 7-year-olds and collegiate athletes to Olympic medalists and seniors over 80. Known at Alpine for his empathy and ability to motivate, he meets athletes where they are and helps them reach their full potential.</p>
@@ -187,6 +191,7 @@ extraSchemas:
         </dl>
       </div>
       <div class="card">
+        <img class="coach-photo" src="/assets/img/coaches/liz.jpg" alt="Liz Kushner, Alpine coach" loading="lazy" width="800" height="1000">
         <h3>Liz Kushner</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · 10+ years coaching · 2026 Quarterfinalist</p>
         <p>A decade of coaching with a strength-and-barbell focus, and a 2026 Quarterfinals qualifier. Alpine&rsquo;s resident class clown, the coach who makes every class memorable. Born and raised in Littleton as the youngest of four with three older brothers, so the competitive streak comes naturally. An indoor lady at heart: outside the gym, she&rsquo;s cooking, doing puzzles, or tending her plant babies.</p>
@@ -201,6 +206,7 @@ extraSchemas:
         </dl>
       </div>
       <div class="card">
+        <img class="coach-photo" src="/assets/img/coaches/maddy.jpg" alt="Maddy Portlock, Alpine coach" loading="lazy" width="800" height="1000">
         <h3>Maddy Portlock</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · Top 2% CrossFit Open · 2× Quarterfinalist</p>
         <p>Mama, athlete, and coach, Maddy helps people become stronger, healthier humans. She&rsquo;s also a personal trainer, certified nutritionist, kids strength and conditioning coach, and former gymnastics coach. Outside the gym, you&rsquo;ll find her chasing her little boy, competing with her husband (yes, everything is a competition), baking way too much, cooking for her family, hunting for her next favorite coffee shop, or dragging everyone outside because they can&rsquo;t sit still for long.</p>
@@ -215,6 +221,7 @@ extraSchemas:
         </dl>
       </div>
       <div class="card">
+        <img class="coach-photo" src="/assets/img/coaches/mike.jpg" alt="Mike Reynolds, Alpine coach" loading="lazy" width="800" height="1000">
         <h3>Mike Reynolds</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · 14 years coaching · Outdoorsman</p>
         <p>Coaching CrossFit and fitness since 2012, Mike believes any fitness is good fitness. Very competitive, but never at the expense of fun. Outside the gym, you&rsquo;ll find him on the golf course or hitting snowboard jumps he admits he&rsquo;s too old for. If it&rsquo;s outside, he&rsquo;s in.</p>
@@ -229,6 +236,7 @@ extraSchemas:
         </dl>
       </div>
       <div class="card">
+        <div class="coach-photo coach-photo--badge" role="img" aria-label="Kelley Williams, photo coming soon"><img src="/assets/img/brand/logo-badge.svg" alt=""></div>
         <h3>Kelley Williams</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · 10+ years coaching · Mom · Social worker</p>
         <p>Adolescent mental health by day, toddler wrangler by night. Kelley is here for the fun and to help you reach your goals, whatever they are. A self-described lifelong average athlete, she knows every scaling option in the book. Two babies in three years also gave her firsthand experience with pregnancy and postpartum training.</p>
@@ -247,7 +255,7 @@ extraSchemas:
 </section>
 
 <section class="team-photo" aria-label="The Alpine coaching team">
-  <img src="/assets/img/uploads/498337266_18500679697049950_2919730149552376595_n.jpg" alt="The Alpine coaching team" loading="lazy">
+  <img src="/assets/img/coaches/team-group.jpg" alt="The Alpine coaching team" loading="lazy">
 </section>
 
 <section class="section section-green">
