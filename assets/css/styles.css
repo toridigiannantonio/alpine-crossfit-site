@@ -425,7 +425,7 @@ strong { font-weight: 700; color: var(--color-text); }
     grid-template-columns: 1fr;
     gap: var(--space-8);
   }
-  .hero-image { aspect-ratio: 16/10; }
+  .hero-image { aspect-ratio: 16/10; object-position: center 45%; }
 }
 
 /* Section imagery (full-bleed under section, or side-by-side) */
