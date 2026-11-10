@@ -56,7 +56,8 @@ finalCta:
 ---
 
 <section class="section">
-  <div class="container container-narrow">
+  <div class="container split">
+    <div>
     <span class="eyebrow">What it is</span>
     <h2>A conversation. Not a class.</h2>
     <p>The No Sweat Intro is exactly what it sounds like — no workout, no physical assessment, no jumping into a class you don't yet know the rules of. It's 30 minutes of conversation with one of our coaches, in the gym, at a time that works for you.</p>
@@ -68,6 +69,8 @@ finalCta:
       <li>Your schedule and how often you can realistically come in</li>
     </ul>
     <p>Your coach listens, asks follow-up questions, and recommends a starting point. That's it.</p>
+    </div>
+    <img class="inset-photo" src="/assets/img/uploads/gym-photos/intro-coached-lift.jpg" alt="An Alpine member pressing a barbell overhead while a coach watches" loading="lazy" width="800" height="1000">
   </div>
 </section>
 

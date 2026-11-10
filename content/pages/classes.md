@@ -51,7 +51,9 @@ finalCta:
 </section>
 
 <section class="section section-dark" id="crossfit">
-  <div class="container container-narrow">
+  <div class="container split split--photo-left">
+    <img class="inset-photo" src="/assets/img/uploads/gym-photos/classes-box-jump.jpg" alt="An Alpine member mid box jump in front of the mountain mural, with others training behind" loading="lazy" width="800" height="1000">
+    <div>
     <span class="eyebrow">Group classes</span>
     <h2>CrossFit.</h2>
     <p>Our core group class. Sixty minutes, coach-led, and capped at 15 athletes. Each class has an intro, a warm-up, strength or skill work, a workout of the day, and a cool-down.</p>
@@ -59,6 +61,7 @@ finalCta:
     <p><strong>Good for:</strong> well-rounded fitness, community, and variety.</p>
     <p><strong>When:</strong> Monday–Friday 5:30, 6:30, 8:00 AM · 12:00, 3:30, 4:30, 5:30 PM. Saturday 8:00, 9:00 AM. Tuesday is endurance day.</p>
     <p class="class-links"><a class="btn btn-primary" href="/crossfit/">More about CrossFit</a> <a href="/schedule/">Full schedule →</a></p>
+    </div>
   </div>
 </section>
 
