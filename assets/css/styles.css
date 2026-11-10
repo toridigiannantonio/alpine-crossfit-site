@@ -1688,7 +1688,7 @@ body { background: var(--color-grit-deep); }
 .affiliations { background: var(--color-grit); border-top: 0; }
 .hero-logo { display: block; width: min(340px, 80%); height: auto; margin-bottom: var(--space-6); }
 main img { max-width: 100%; height: auto; }
-.team-photo img { display: block; width: 100%; max-height: 640px; object-fit: cover; object-position: center 30%; }
+.team-photo img { display: block; width: 100%; max-height: 640px; object-fit: cover; object-position: center 5%; }
 .hero-eyebrow:has(a)::before, .eyebrow:has(a)::before { display: none; }
 
 /* Dune kept to the logo and one hero accent word (playbook: use sparingly). */
@@ -1848,3 +1848,8 @@ main img { max-width: 100%; height: auto; }
 .coach-favs { display: grid; grid-template-columns: auto 1fr; gap: var(--space-1) var(--space-3); margin: 0 0 var(--space-4); font-size: 0.9rem; }
 .coach-favs dt { font-weight: 600; color: var(--color-accent-text); }
 .coach-favs dd { margin: 0; color: var(--color-text-muted); }
+
+/* Coach card photos */
+.coach-photo { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 20%; border-radius: var(--radius-lg); margin-bottom: var(--space-4); background: var(--color-surface-2); }
+.coach-photo--badge { display: flex; align-items: center; justify-content: center; background: var(--color-tan); }
+.coach-photo--badge img { width: 55%; height: auto; }
