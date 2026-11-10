@@ -163,16 +163,16 @@ extraSchemas:
       <div class="card">
         <div class="coach-photo coach-photo--badge" role="img" aria-label="Lisa Arcangel, photo coming soon"><img src="/assets/img/brand/logo-badge.svg" alt=""></div>
         <h3>Lisa Arcangel</h3>
-        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · 15+ years coaching · Masters Semifinalist</p>
-        <p>CrossFit Games Masters Semifinalist. A lifelong athlete who has competed in the CrossFit Open every year since 2012. Former collegiate basketball and softball player.</p>
+        <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-accent-text);">Coach · 15+ years coaching · CrossFit Games Masters Semifinalist</p>
+        <p>A former D1 basketball player, Lisa found CrossFit in 2011 and has been coaching for more than 15 years. She has competed at CrossFit Games Regionals, Quarterfinals, and Masters Semifinals.</p>
         <p class="coach-label">Certifications</p>
-        <p class="coach-certs"></p>
+        <p class="coach-certs">CF&#8209;L2 · Multiple CrossFit specialty certifications</p>
         <p class="coach-label">Favorites</p>
         <dl class="coach-favs">
-          <dt>Food</dt><dd></dd>
-          <dt>Drink</dt><dd></dd>
-          <dt>Workout</dt><dd></dd>
-          <dt>Quote</dt><dd></dd>
+          <dt>Food</dt><dd>Pasta</dd>
+          <dt>Drink</dt><dd>Anything carbonated</dd>
+          <dt>Workout</dt><dd>Isabel</dd>
+          <dt>Quote</dt><dd>&ldquo;Perfect doesn&rsquo;t exist. Chasing it is how you get better.&rdquo;</dd>
         </dl>
       </div>
       <div class="card">
