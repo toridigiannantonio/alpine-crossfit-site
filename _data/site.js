@@ -116,19 +116,17 @@ export default {
         "<strong>Wednesday:</strong> 5:30 PM",
         "<strong>Saturday:</strong> 7:00 AM",
       ],
-      starts: "Starts October 26.",
     },
     {
       heading: "Hybrid (HYROX-style)",
       lines: [
-        "<strong>Wednesday:</strong> 7:00 AM, 4:30 PM (starts October 26)",
+        "<strong>Wednesday:</strong> 7:00 AM, 4:30 PM",
         "<strong>Sunday:</strong> 8:00 – 9:30 AM",
       ],
     },
     {
       heading: "Downshift (yoga &amp; recovery)",
-      lines: ["<strong>Sunday:</strong> 10:00 – 10:45 AM, every other Sunday"],
-      starts: "Starts November 1.",
+      lines: ["<strong>Sunday:</strong> 10:00 – 11:00 AM, every other Sunday"],
     },
     {
       heading: "Prime Vitality (55+)",
