@@ -30,8 +30,8 @@ hero:
     - { text: "5.0 from 180 Google reviews" }
     - { text: "Month-to-month" }
   image:
-    src: "/assets/img/hero-alpine-wall.jpg"
-    alt: "Alpine CrossFit member performing a front squat in front of the Alpine mountain wall mural"
+    src: "/assets/img/uploads/gym-photos/hero-every-body.jpg"
+    alt: "An Alpine member setting up a deadlift while another athlete trains in the background"
     slot: "homepage_hero"
 affiliations:
   - { image: "/assets/img/badge-crossfit.png", alt: "Official CrossFit Affiliate", label: "Official<br>CrossFit Affiliate" }
