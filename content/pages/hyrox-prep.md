@@ -99,7 +99,7 @@ finalCta:
     <span class="eyebrow">Why this plan</span>
     <h2>Written by people who've raced.</h2>
     <p>Most free HYROX plans are generic. This one is written in-house at Alpine. The plan reflects how we train our own members for HYROX races.</p>
-    <p>Alpine is an <strong>Official HYROX Training Center</strong>. We run HYROX-focused programming Tuesday, Thursday, and Sunday plus Friday run club. Our coaches Lisa (Masters Semifinalist), Liz (Quarterfinalist), and Dean (decade of training, active competitor) bring real race-day experience to the room.</p>
+    <p>Alpine is an <strong>Official HYROX Training Center</strong>. We run HYROX-focused programming Tuesday, Thursday, and Sunday. Our coaches Lisa (Masters Semifinalist), Liz (Quarterfinalist), and Dean (decade of training, active competitor) bring real race-day experience to the room.</p>
   </div>
 </section>
 

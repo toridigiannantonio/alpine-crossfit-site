@@ -2,15 +2,15 @@
 layout: layouts/page.njk
 permalink: /hyrox/
 title: "HYROX Training Near Denver — Alpine CrossFit, Wheat Ridge"
-description: "Train for HYROX at Alpine CrossFit in Wheat Ridge — an official HYROX affiliate serving the northwest Denver metro. Coached, race-specific programming and Friday run clubs. Free intro available."
+description: "Train for HYROX at Alpine CrossFit in Wheat Ridge — an official HYROX affiliate serving the northwest Denver metro. Coached, race-specific programming. Free intro available."
 canonical: "https://alpinecrossfit.com/hyrox/"
 eyebrow: "HYROX"
 heading: "HYROX training in <span class=\"accent\">Wheat Ridge</span>, near Denver."
-dek: "Alpine CrossFit is an official HYROX Training Center in Wheat Ridge, Colorado — Hybrid classes, coached race-specific programming, and Friday run clubs for athletes across the northwest Denver metro prepping for a HYROX event."
+dek: "Alpine CrossFit is an official HYROX Training Center in Wheat Ridge, Colorado — Hybrid classes and coached race-specific programming for athletes across the northwest Denver metro prepping for a HYROX event."
 heroCtas:
   - { label: "Book a free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
   - { label: "Drop in — {{ site.pricing.visitOptions[1].price }}", href: "{{ site.pricing.visitOptions[1].ctaHref }}", style: "btn-primary btn-lg" }
-trustStrip: "<span>Official HYROX affiliate</span><span class=\"sep\">·</span><span>Coached programming</span><span class=\"sep\">·</span><span>Friday run clubs</span>"
+trustStrip: "<span>Official HYROX affiliate</span><span class=\"sep\">·</span><span>Coached programming</span><span class=\"sep\">·</span><span>Hybrid classes</span>"
 extraSchemas:
   - {
       "@context": "https://schema.org",
@@ -118,7 +118,7 @@ faqIds:
     <ul class="feature-list">
       <li><strong>Strength work</strong> — the barbell base and movement prep that powers the sleds, carries, and lunges.</li>
       <li><strong>Conditioning</strong> — high-intensity metabolic work that builds the engine for back-to-back runs and stations.</li>
-      <li><strong>Running</strong> — Friday run clubs focused on race-specific pacing and running on tired legs.</li>
+      <li><strong>Running</strong> — race-specific pacing and running on tired legs.</li>
       <li><strong>Station practice</strong> — drills on the SkiErg, row, sled, and wall ball so race-day movements feel automatic.</li>
     </ul>
   </div>
@@ -136,15 +136,6 @@ faqIds:
     <strong>Sunday:</strong> 8:00 – 9:30 AM</p>
     <p>Tuesday is endurance day. Every class that day is built around endurance, which makes it a great fit for hybrid athletes.</p>
     <p>Included with Unlimited. Counts as one sign-in on Open Gym, class plans, and punch cards. <a href="/schedule/#hybrid">Full schedule →</a></p>
-  </div>
-</section>
-
-<section class="section section-dark">
-  <div class="container container-narrow">
-    <span class="eyebrow">Friday run clubs</span>
-    <h2>Every Friday at Alpine.</h2>
-    <p>HYROX-focused run clubs run every Friday morning — coached sessions built to develop running endurance and teach pacing for the 8-kilometer format. The hardest part of HYROX is running well after a workout station, and that's exactly what these sessions train.</p>
-    <p>Whether you're racing solo, in doubles, or on a relay team, Friday run clubs prep you for race day.</p>
   </div>
 </section>
 

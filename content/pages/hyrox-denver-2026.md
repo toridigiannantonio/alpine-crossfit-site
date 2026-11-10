@@ -124,7 +124,6 @@ faqIds:
       <li><strong>Tuesday classes</strong> — compromised running + station strength</li>
       <li><strong>Thursday classes</strong> — sled work, sandbag, wall ball volume</li>
       <li><strong>Sunday classes</strong> — full station simulations</li>
-      <li><strong>Friday run club</strong> — building the engine</li>
       <li><strong>Race simulations</strong> hosted on the floor — confirm times with Alpine staff or text us at <a href="sms:{{ site.phoneSms }}">{{ site.phoneDisplay }}</a></li>
     </ul>
     <p>Owner April DiGiannantonio, a former Division I Director of Sports Performance, leads the programming for the whole gym. Our coaches Lisa (Masters Semifinalist), Liz (Quarterfinalist), and Dean (decade of training, active competitor) bring real race experience to the room.</p>
