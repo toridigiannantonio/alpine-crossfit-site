@@ -355,7 +355,7 @@ export const items = [
     id: "hyrox-where",
     group: "programs",
     q: "Where can I train for HYROX near Denver?",
-    a: 'Alpine is an Official HYROX Training Center in Wheat Ridge, serving the northwest Denver metro — coached, race-specific programming and Friday run clubs focused on the 8-kilometer format. <a href="/hyrox/">See HYROX training →</a>',
+    a: 'Alpine is an Official HYROX Training Center in Wheat Ridge, serving the northwest Denver metro — coached, race-specific programming built for the race format. <a href="/hyrox/">See HYROX training →</a>',
   },
   {
     id: "hyrox-stations",
